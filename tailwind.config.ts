@@ -56,7 +56,16 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
+	  animation: {
+        'scroll': 'scroll 40s linear infinite',
+      },
+	  keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-300px * 7))' },
+        },
+      },
   },
   plugins: [require("tailwindcss-animate")],
 };

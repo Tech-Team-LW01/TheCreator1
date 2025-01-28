@@ -1,10 +1,19 @@
 "use client"
 import Image from "next/image";
-import {IndiaMap} from "../components/customComponents/Hero/IndiaMap"
+import {Demo} from "../components/customComponents/Hero/IndiaMap"
+import Hero from "@/components/customComponents/Hero/Hero";
+import TechStack from "@/components/customComponents/Technology/Technology";
+import {TopLeaders} from "@/components/customComponents/TopLeaders/TopLeaders"
+import {LeftRightAlumniCarousel} from "@/components/customComponents/CompaniesCarousel/CompaniesCarousel"
+import Projets from "@/components/customComponents/Projects/Project"
 export default function Home() {
   return (
     <div >
-      <IndiaMap/>
+<Hero></Hero>
+<TechStack/>
+<TopLeaders/>
+<LeftRightAlumniCarousel/>
+<Projets/>
     </div>
   );
 }

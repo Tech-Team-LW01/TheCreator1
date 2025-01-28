@@ -10,7 +10,7 @@ interface Connection {
   end: { lat: number; lng: number; label: string };
 }
 
-export function IndiaMapUI({ connections }: { connections: Connection[] }) {
+export function IndiaMap({ connections }: { connections: Connection[] }) {
   const { theme } = useTheme();
 
   // India-focused map
@@ -24,17 +24,30 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
     grid: "diagonal"
   });
 
+  map.addPin({
+    lat: 40.73061,
+    lng: -73.935242,
+    svgOptions: { color: '#d6ff79', radius: 0.4 },
+  });
+
   const svgMap = map.getSVG({
     radius: 0.2,
     color: theme === "dark" ? "#FFFFFF30" : "#00000030",
     backgroundColor: "transparent"
   });
 
-  // Convert lat/lng to SVG coordinates
-  const project = (lat: number, lng: number) => ({
-    x: (lng + 180) * (800 / 360),
-    y: (90 - lat) * (400 / 180)
-  });
+  // Corrected projection function
+  const project = (lat: number, lng: number) => {
+    const INDIA_BOUNDS = {
+      lat: { min: 6, max: 36 },
+      lng: { min: 68, max: 98 }
+    };
+
+    const x = ((lng - INDIA_BOUNDS.lng.min) / (INDIA_BOUNDS.lng.max - INDIA_BOUNDS.lng.min)) * 800;
+    const y = ((INDIA_BOUNDS.lat.max - lat) / (INDIA_BOUNDS.lat.max - INDIA_BOUNDS.lat.min)) * 400;
+
+    return { x, y };
+  };
 
   // Create curved path
   const createCurvedPath = (
@@ -47,11 +60,11 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
   };
 
   return (
-    <div className="relative w-full aspect-[2/1]">
+    <div className="relative w-full aspect-[2/1] h-[300px]">
       {/* Base Map */}
       <img 
         src={`data:image/svg+xml,${encodeURIComponent(svgMap)}`} 
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-96 "
         alt="India Map"
       />
 
@@ -68,7 +81,7 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
               <motion.path
                 d={path}
                 stroke="#3b82f6"
-                strokeWidth="1.5"
+                strokeWidth="1.2"
                 fill="none"
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
@@ -86,6 +99,17 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
                 transition={{ delay: i * 0.2 }}
               />
 
+              {/* Start City Label */}
+              <text
+                x={start.x}
+                y={start.y + 15} // Position below the dot
+                textAnchor="middle"
+                fill={theme === 'dark' ? 'white' : 'black'}
+                fontSize="10"
+              >
+                {conn.start.label}
+              </text>
+
               {/* End Dot */}
               <motion.circle
                 cx={end.x}
@@ -97,8 +121,19 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
                 transition={{ delay: i * 0.2 + 0.5 }}
               />
 
+              {/* End City Label */}
+              <text
+                x={end.x}
+                y={end.y + 15} // Position below the dot
+                textAnchor="middle"
+                fill={theme === 'dark' ? 'white' : 'black'}
+                fontSize="10"
+              >
+                {conn.end.label}
+              </text>
+
               {/* Connection Label */}
-              <motion.text
+              {/* <motion.text
                 x={(start.x + end.x) / 2}
                 y={Math.min(start.y, end.y) - 60} // Position above the curve
                 textAnchor="middle"
@@ -109,7 +144,7 @@ export function IndiaMapUI({ connections }: { connections: Connection[] }) {
                 transition={{ delay: i * 0.2 + 0.8 }}
               >
                 {conn.start.label} → {conn.end.label}
-              </motion.text>
+              </motion.text> */}
             </g>
           );
         })}
