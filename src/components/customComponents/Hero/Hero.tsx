@@ -28,6 +28,7 @@ const Hero = () => {
                 </p>
               </div>
 
+
               {/* Target Audience */}
               <div className="space-y-2">
                 <h2 className="text-lg lg:text-xl font-medium">
