@@ -100,8 +100,8 @@ const Hero = () => {
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <MdOnlinePrediction className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
-                        <span className="text-black text-xs font-medium">ONLINE</span>
-                        <span className="font-bold text-xs block">3 months</span>
+                        <span className="text-black text-xs font-medium">SUMMER TRAINING </span>
+                        <span className="font-bold text-xs block"></span>
                       </div>
                     </div>
 
@@ -109,8 +109,8 @@ const Hero = () => {
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
-                        <span className="text-black text-xs font-medium">ADMISSION CLOSES ON</span>
-                        <span className="font-bold text-xs block">22nd Jan</span>
+                        <span className="text-black text-xs font-medium"> TENTATIVE START DATES</span>
+                        <span className="font-bold text-xs block">May, 2025 <br /> June, 2025 <br /> July, 2025</span>
                         <Badge variant="outline" className="text-yellow-600 border-yellow-600 text-[10px] mt-0.5">
                           Limited seats
                         </Badge>
@@ -121,6 +121,16 @@ const Hero = () => {
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <FaMoneyBillWave className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
+                        <span className="text-black text-xs font-medium">DURATION SUMMER PROGRAM​</span>
+                        <div className="flex flex-col gap-1">
+                          <div className="flex items-center gap-2">
+                             <span className="font-bold text-xs">6 weeks / 8 weeks</span>
+                             {/* <span className="line-through text-gray-400 text-xs">₹75,000</span>
+                             <span className="text-green-600 font-semibold text-[10px]">
+                               Save ₹30,000/-
+                             </span> */}
+                          </div>
+                      {/* <div>
                         <span className="text-black text-xs font-medium">Course Fees</span>
                         <div className="flex flex-col gap-1">
                           <div className="flex items-center gap-2">
@@ -129,14 +139,28 @@ const Hero = () => {
                              <span className="text-green-600 font-semibold text-[10px]">
                                Save ₹30,000/-
                              </span>
-                          </div>
+                          </div> */}
+                         
+
+
                         </div>
+                      </div>
+
+
+                    </div>
+                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
+                      <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <div>
+                        <span className="text-black text-xs font-medium">DELIVERABLES FOR 6 WEEKS SUMMER PROGRAM​</span>
+                        <span className="font-bold text-xs block"> - Industry Recognised Internship (Project) Certificate <br /> - Training Certificate from LinuxWorld Informatics Pvt Ltd</span>
+
                       </div>
                     </div>
                   </div>
+                 
 
                   {/* Button Section */}
-                  <div className="flex items-start gap-4 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
+                  <div className="flex items-start gap-2 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
                     <div className="flex flex-col items-start sm:items-center lg:items-center w-full lg:w-auto">
                       <a href="" target="blank">
                         <Button className="bg-[#ff0000] md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
