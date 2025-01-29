@@ -13,7 +13,7 @@ import { FaMoneyBillWave } from "react-icons/fa"
 const Hero = () => {
   return (
     <section className="container mx-auto">
-      <div className="relative flex flex-col lg:flex-row min-h-[420px] overflow-hidden rounded-xl max-w-6xl">
+      <div className="relative flex flex-col lg:flex-row min-h-[420px] overflow-hidden rounded-xl max-w-6xl ">
         {/* Left Side Content */}
         <div className="lg:w-3/5 relative">
           <div className="bg-red-600 h-full p-6 lg:p-10">
@@ -62,7 +62,7 @@ const Hero = () => {
           {/* Gradient overlay connecting left and right sections */}
           <div className="absolute left-0 inset-y-0 w-16 bg-gradient-to-r from-red-600/20 to-transparent z-10" />
           
-          <div className="bg-white/80 backdrop-blur-sm h-full p-6">
+          <div className="bg-white/80 backdrop-blur-sm h-full  md:pl-32 md:pt-6">
             <div className="relative z-10">
             <IndiaMap
   connections={[
