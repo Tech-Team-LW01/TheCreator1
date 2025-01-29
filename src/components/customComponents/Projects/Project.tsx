@@ -9,7 +9,7 @@ export default function Projets() {
         <div className="md:sticky md:top-20 md:h-[calc(100vh-80px)]">
           <div className="flex h-full items-center justify-center">
             <Image
-              src="https://cdn.prod.website-files.com/62a8969da1ab561666c8c408/64e4603b768b6be8f6aa5e07_Career%20Page%20-%20KodeKloud%20and%20Devops%20Logo.webp"
+              src="/assets/Projects/Project1.jpg"
               alt="KodeKloud Technology Diagram"
               width={400}
               height={400}

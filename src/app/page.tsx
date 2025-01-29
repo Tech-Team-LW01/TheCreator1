@@ -11,8 +11,10 @@ import VideoTestimonials from "@/components/customComponents/Testimonials/VideoT
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
 import Benifits from "@/components/customComponents/Benefits/Benefits";
-import Tedx from "@/components/customComponents/Tedx/Tedx";
+// import Tedx from "@/components/customComponents/Tedx/Tedx";
 import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
+import FeatureGrid from "@/components/customComponents/Tedx/Feature"
+import MediaSection from "@/components/customComponents/Media/Media";
 export default function Home() {
   return (
     <div >
@@ -23,13 +25,16 @@ export default function Home() {
 <Projets/>
 <VideoTestimonials/>
 <Benifits></Benifits>
+<MediaSection/>
 {/* <div>
 <OutCome/>
 </div> */}
 <FactAndFiqure/>
 <Awards/>
-<Tedx/>
-<Tedx2></Tedx2>
+{/* <Tedx/> */}
+{/* <Tedx2></Tedx2> */}
+{/* FeatureGrid is TedX */}
+<FeatureGrid/>
 
     </div>
   );
