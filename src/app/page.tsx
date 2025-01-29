@@ -15,6 +15,8 @@ import Benifits from "@/components/customComponents/Benefits/Benefits";
 import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
 import FeatureGrid from "@/components/customComponents/Tedx/Feature"
 import MediaSection from "@/components/customComponents/Media/Media";
+import Mentor from "@/components/customComponents/Mentor/Mentor";
+import Mentor2 from "@/components/customComponents/Mentor/Mentor2";
 export default function Home() {
   return (
     <div >
@@ -34,6 +36,8 @@ export default function Home() {
 {/* <Tedx/> */}
 {/* <Tedx2></Tedx2> */}
 {/* FeatureGrid is TedX */}
+<Mentor/>
+{/* <Mentor2/> */}
 <FeatureGrid/>
 
     </div>
