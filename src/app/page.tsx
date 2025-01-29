@@ -10,7 +10,9 @@ import {OutCome}  from "@/components/customComponents/OutCome/OutCome";
 import VideoTestimonials from "@/components/customComponents/Testimonials/VideoTestimonials";
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
-import Benifits from "@/components/customComponents/Benefits/Benefits"
+import Benifits from "@/components/customComponents/Benefits/Benefits";
+import Tedx from "@/components/customComponents/Tedx/Tedx";
+import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
 export default function Home() {
   return (
     <div >
@@ -26,6 +28,8 @@ export default function Home() {
 </div> */}
 <FactAndFiqure/>
 <Awards/>
+<Tedx/>
+<Tedx2></Tedx2>
 
     </div>
   );
