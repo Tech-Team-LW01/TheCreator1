@@ -10,6 +10,7 @@ import {OutCome}  from "@/components/customComponents/OutCome/OutCome";
 import VideoTestimonials from "@/components/customComponents/Testimonials/VideoTestimonials";
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
+import Benifits from "@/components/customComponents/Benefits/Benefits"
 export default function Home() {
   return (
     <div >
@@ -19,6 +20,7 @@ export default function Home() {
 <LeftRightAlumniCarousel/>
 <Projets/>
 <VideoTestimonials/>
+<Benifits></Benifits>
 {/* <div>
 <OutCome/>
 </div> */}

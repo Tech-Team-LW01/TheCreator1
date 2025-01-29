@@ -16,7 +16,7 @@ const Award = () => {
               />
               <span className="text-[#666666] text-3xl font-semibold">Microsoft</span>
             </div>
-            <span className="text-[#666666] text-2xl pl-2">Solutions Partner</span>
+            {/* <span className="text-[#666666] text-2xl pl-2">Solutions Partner</span> */}
           </div>
 
           {/* Center Section */}
