@@ -8,6 +8,8 @@ import {LeftRightAlumniCarousel} from "@/components/customComponents/CompaniesCa
 import Projets from "@/components/customComponents/Projects/Project";
 import {OutCome}  from "@/components/customComponents/OutCome/OutCome";
 import VideoTestimonials from "@/components/customComponents/Testimonials/VideoTestimonials";
+import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
+import Awards from "@/components/customComponents/Awards/Awards";
 export default function Home() {
   return (
     <div >
@@ -20,6 +22,8 @@ export default function Home() {
 {/* <div>
 <OutCome/>
 </div> */}
+<FactAndFiqure/>
+<Awards/>
 
     </div>
   );
