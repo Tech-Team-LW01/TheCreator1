@@ -32,7 +32,8 @@ export default function Home() {
 <FactAndFiqure/>
 <Awards/>
 {/* <Tedx/> */}
-<Tedx2></Tedx2>
+{/* <Tedx2></Tedx2> */}
+{/* FeatureGrid is TedX */}
 <FeatureGrid/>
 
     </div>
