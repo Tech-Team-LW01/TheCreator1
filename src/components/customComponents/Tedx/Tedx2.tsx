@@ -2,9 +2,9 @@ import React from 'react';
 
 const Tedx2 = () => {
   return (
-    <div className="relative w-full h-[400px] bg-purple-900 flex items-center justify-center">
+    <>
       {/* Container to maintain relative positioning */}
-      <div className="relative w-[320px] h-[320px]">
+      <div className="relative w-[320px] h-[320px] group">
         {/* Main circle with gradient border */}
         <div className="absolute inset-0 rounded-full bg-emerald-500 overflow-hidden">
           <img 
@@ -15,7 +15,8 @@ const Tedx2 = () => {
         </div>
 
         {/* Purple semi-transparent card - repositioned to left-center */}
-        <div className="absolute top-1/2 -translate-y-1/2 -left-44 max-w-[280px]">
+        {/* Now displays only when user hovers on the container */}
+        <div className="absolute top-1/2 -translate-y-1/2 -left-44 max-w-[280px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="bg-purple-900/80 backdrop-blur-sm rounded-lg p-4 text-white shadow-lg">
             <p className="text-sm">
               At CROJungle, we combine human expertise with cutting-edge technology to create designs that drive real results.
@@ -37,7 +38,7 @@ const Tedx2 = () => {
           </h2>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
