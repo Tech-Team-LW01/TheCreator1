@@ -1,5 +1,5 @@
 "use client"
-import PythonLogo from "../../../../public/assets/TechStackLogo/pythonLogo.svg"
+// import PythonLogo from "../../../../public/assets/TechStackLogo/pythonLogo.svg"
 import { Card } from "@/components/ui/card"
 import { motion } from "framer-motion"
 
