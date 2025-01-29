@@ -14,8 +14,8 @@ const Tedx2 = () => {
           />
         </div>
 
-        {/* Purple semi-transparent card - positioned relative to container */}
-        <div className="absolute -top-4 -left-4 max-w-[280px]">
+        {/* Purple semi-transparent card - repositioned to left-center */}
+        <div className="absolute top-1/2 -translate-y-1/2 -left-44 max-w-[280px]">
           <div className="bg-purple-900/80 backdrop-blur-sm rounded-lg p-4 text-white shadow-lg">
             <p className="text-sm">
               At CROJungle, we combine human expertise with cutting-edge technology to create designs that drive real results.
@@ -31,7 +31,7 @@ const Tedx2 = () => {
         </div>
 
         {/* Name */}
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-full text-center">
+        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full text-center">
           <h2 className="text-2xl font-bold text-white">
             Muhammad <span className="text-purple-300">Junaid</span>
           </h2>
