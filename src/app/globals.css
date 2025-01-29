@@ -76,3 +76,50 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes alumni-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.alumni-scroll-animation {
+  animation: alumni-scroll var(--alumni-scroll-duration, 20s) linear infinite;
+}
+
+.alumni-scroller:hover .alumni-scroll-animation {
+  /* animation-play-state: paused; */
+}
+
+.company-card {
+  transition: all 0.3s ease;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+}
+
+.company-logo {
+  transition: all 0.3s ease;
+  /* filter: grayscale(100%); */
+}
+
+.company-card:hover .company-logo {
+  filter: grayscale(0%);
+}

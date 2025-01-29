@@ -1,6 +1,6 @@
 "use client"
-import Image from "next/image";
-import {Demo} from "../components/customComponents/Hero/IndiaMap"
+// import Image from "next/image";
+// import {Demo} from "../components/customComponents/Hero/IndiaMap"
 import Hero from "@/components/customComponents/Hero/Hero";
 import TechStack from "@/components/customComponents/Technology/Technology";
 import {TopLeaders} from "@/components/customComponents/TopLeaders/TopLeaders"
