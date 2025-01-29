@@ -13,7 +13,7 @@ export function TopLeaders() {
 
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-        AtleastOnce,Every Engineer should be part of LinuxWorld's summer Internship Program 
+        AtleastOnce,Every Engineer should be part of LinuxWorld&apos;s summer Internship Program 
 
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
