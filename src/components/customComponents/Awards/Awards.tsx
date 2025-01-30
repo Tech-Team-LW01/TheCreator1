@@ -4,42 +4,42 @@ import { Card } from "@/components/ui/card";
 const Award = () => {
   return (
     <div className="w-full max-w-7xl mx-auto p-6">
-      <Card className="bg-white shadow-lg rounded-[40px] px-10 py-8 relative"> {/* Removed overflow-hidden */}
-        <div className="flex items-start justify-between">
+      <Card className="bg-white shadow-lg rounded-[40px] px-4 sm:px-6 md:px-10 py-8 relative">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between">
           {/* Left Section */}
-          <div className="flex flex-col gap-3 z-10"> {/* Added z-index */}
+          <div className="flex flex-col gap-3 z-10 mb-4 sm:mb-0">
             <div className="flex items-center gap-4">
               <img 
                 src="/assets/Award/microsoft.png" 
                 alt="Microsoft Logo" 
-                className="h-20 w-20"
+                className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20"
               />
-              <span className="text-[#666666] text-3xl font-semibold">Microsoft</span>
+              <span className="text-[#666666] text-xl sm:text-2xl md:text-3xl font-semibold">Microsoft</span>
             </div>
-            {/* <span className="text-[#666666] text-2xl pl-2">Solutions Partner</span> */}
           </div>
 
           {/* Center Section */}
-          <div className="flex flex-col ml-12 mr-auto z-10"> {/* Added z-index */}
-            <h2 className="text-[#0A2751] text-[40px] font-bold leading-[1.1] mb-3">
+          <div className="flex flex-col text-center sm:text-left sm:ml-12 sm:mr-auto z-10 md:pt-0 pt-4">
+            <h2 className="text-[#0A2751] text-2xl sm:text-3xl md:text-[40px] font-bold leading-[1.1] mb-3">
               2024 Partner Of the Year
             </h2>
             <div className="flex flex-col text-[#666666] gap-1">
-              <span className="text-2xl">Analytics Award</span>
-              <span className="text-xl text-[#888888]">Finalist</span>
+              <span className="text-xl sm:text-2xl">Analytics Award</span>
+              <span className="text-lg sm:text-xl text-[#888888]">Finalist</span>
             </div>
           </div>
 
-          {/* Trophy Graphic - Fixed positioning */}
-          <div className="absolute right-4 -top-8"> {/* Adjusted positioning */}
+          {/* Trophy Graphic */}
+          <div className="absolute right-2 sm:right-4 -top-4 sm:-top-8">
             <svg 
               preserveAspectRatio="xMidYMid meet" 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 233 233" 
-              className="h-[200px] w-[200px] text-yellow-500" // Tailwind size + color
+              className="h-[120px] w-[120px] sm:h-[160px] sm:w-[160px] md:h-[200px] md:w-[200px] text-yellow-500"
               role="img" 
               aria-label="trophy"
             >
+              {/* SVG paths remain same */}
               <g>
                 <path fill="#EDA900" d="M176.115 102.302h-5.916V93.2h5.916c25.075 0 45.508-20.433 45.508-45.508V34.131h-51.424v-9.102h60.526v22.663c0 30.08-24.484 54.61-54.61 54.61m-119.23 0H62.8V93.2h-5.916c-25.075 0-45.508-20.433-45.508-45.508V34.131h52.789v-9.102H2.276v22.663c0 30.08 24.483 54.61 54.609 54.61" />
                 <path fill="#1F3F77" d="M190.678 180.666H42.322v50.059h148.356z" />
@@ -61,8 +61,6 @@ const Award = () => {
                 <path fill="#F8D707" d="M6.826 47.692a4.564 4.564 0 0 1-4.55-4.55V25.028h9.101V43.14a4.564 4.564 0 0 1-4.55 4.551" />
                 <path fill="#F8961E" d="M121.051 97.842h-9.102V56.885h-4.551v-9.102h9.102a4.564 4.564 0 0 1 4.551 4.551z" />
               </g>
-
-              {/* SVG paths remain same */}
             </svg>
           </div>
         </div>
