@@ -4,7 +4,7 @@ import { WavyBackground } from "../../ui/wavy-background";
 
 export function OutCome() {
   return (
-    <WavyBackground className="max-w-full mx-auto">
+    <WavyBackground className="max-w-full h-[350px]  mx-auto">
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
         Hero waves are cool
       </p>
