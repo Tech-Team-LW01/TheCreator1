@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Projets() {
   return (
-    <div className="container relative min-h-screen py-8 md:py-12">
+    <div className="container bg-gray-800 relative min-h-screen py-8 md:py-12">
       <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
         {/* Left side - Sticky Image */}
         <div className="md:sticky md:top-20 md:h-[calc(100vh-80px)]">
@@ -24,26 +24,26 @@ export default function Projets() {
           {/* Add multiple sections to create scrollable content */}
           <section className="space-y-6">
             <h2 className="text-2xl font-bold tracking-tight text-[#ff0000]">Develop Your Own Cloud</h2>
-            <p>Develop Serverless Cloud Computing Using Container for Cloud-Native Applications to simplify development, deployment & management</p>
+            <p className="text-white">Develop Serverless Cloud Computing Using Container for Cloud-Native Applications to simplify development, deployment & management</p>
             <div className="space-y-4 text-gray-600">
               <h1 className="text-xl font-bold text-[#ff0000]">Cloud Computing : </h1>
-              <p>
+              <p className="text-white">
               AWS Cloud | AWS Services | AWS Lambda | Amazon API Gateway | AWS Step Functions | Amazon DynamoDB | Amazon S3 | Amazon SQS | Amazon SNS | AWS Serverless services | AWS Ec2 | AWS RDS | AWS Route 53 | AWS Cloud Front | Amazon API gateway & much more
               Operating System : RHELv9 (Red Hat Enterprise Linux) | Networking | Virtualization
                 
               </p>
               <h1 className="text-xl font-bold text-[#ff0000]">Operating System : </h1>
-              <p>RHELv9 (Red Hat Enterprise Linux) | Networking | Virtualization</p>
+              <p className="text-white">RHELv9 (Red Hat Enterprise Linux) | Networking | Virtualization</p>
               <h1 className="text-xl font-bold text-[#ff0000]">Programming Language : </h1>
-              <p>Python | Python TUI (Text-based User Interface)</p>
+              <p className="text-white">Python | Python TUI (Text-based User Interface)</p>
               <h1 className="text-xl font-bold text-[#ff0000]">Containerization: </h1>
-              <p> Docker | Podman</p>
+              <p className="text-white"> Docker | Podman</p>
               <h1 className="text-xl font-bold text-[#ff0000]">Web & Mobile development : </h1>
-              <p>Html | CSS | Javascript | Web Development Framework | Django OR Flask OR Nodejs  (Web App) | RestAPI | Flutter OR React Native  (Mobile App) </p>
+              <p className="text-white">Html | CSS | Javascript | Web Development Framework | Django OR Flask OR Nodejs  (Web App) | RestAPI | Flutter OR React Native  (Mobile App) </p>
               <h1 className="text-xl font-bold text-[#ff0000]">DataBase & Storage : </h1>
-              <p> Mysql | MongoDB</p>
+              <p className="text-white"> Mysql | MongoDB</p>
               <h1 className="text-xl font-bold text-[#ff0000]">Version Control: </h1>
-              <p>Git | Github</p>
+              <p className="text-white">Git | Github</p>
               
             </div>
             <div>
@@ -55,25 +55,25 @@ export default function Projets() {
 
           {/* Add more sections to demonstrate scroll effect */}
           <section className="space-y-6">
-            <h2 className="text-2xl font-bold tracking-tight">Additional Features</h2>
+            <h2 className="text-2xl font-bold tracking-tight text[#ff0000]">Additional Features</h2>
             <div className="space-y-4 text-gray-600">
-              <p>
+              <p className="text-white ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
-              <p>
+              <p className="text-white">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
           </section>
 
           <section className="space-y-6">
-            <h2 className="text-2xl font-bold tracking-tight">Why Choose Us?</h2>
+            <h2 className="text-2xl font-bold tracking-tight text[#ff0000]">Why Choose Us?</h2>
             <div className="space-y-4 text-gray-600">
-              <p>
+              <p className="text-white">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <p>
+              <p className="text-white">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
