@@ -47,7 +47,7 @@ export default function VideoTestimonials() {
   ];
 
   return (
-    <div className="max-w-full px-4 md:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
       <header className="mb-8 space-y-2">
         <div className="flex items-center gap-4">
           <h1 className="text-3xl font-bold tracking-tight">
@@ -62,7 +62,7 @@ export default function VideoTestimonials() {
         </p>
       </header>
 
-      <div className="flex overflow-x-auto pb-4 gap-4 scrollbar-hide">
+      <div className="flex w-full overflow-x-auto mx-auto pb-4 gap-4 scrollbar-hide">
         {videos.map((video, index) => (
           <Card
             key={index}
