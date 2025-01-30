@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 
 import { MdOnlinePrediction } from "react-icons/md"
 import { BsCalendarCheck } from "react-icons/bs"
-import { FaMoneyBillWave } from "react-icons/fa"
+import { AiOutlineHourglass } from "react-icons/ai"
 
 
 const Hero = () => {
@@ -119,7 +119,7 @@ const Hero = () => {
 
                     {/* Course Fee Section */}
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <FaMoneyBillWave className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <AiOutlineHourglass className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-black text-xs font-medium">DURATION SUMMER PROGRAM​</span>
                         <div className="flex flex-col gap-1">
