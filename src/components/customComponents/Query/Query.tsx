@@ -1,14 +1,27 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Facebook, Linkedin } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Facebook, Linkedin } from "lucide-react";
 
 export default function Query() {
+  const [isSwapped, setIsSwapped] = useState(false);
+
+  const handleSwap = () => {
+    setIsSwapped(!isSwapped);
+  };
+
   return (
-    <div className="min-h-full flex flex-col lg:flex-row">
+    <div className="min-h-full flex flex-col lg:flex-row overflow-hidden">
       {/* Left Side - Sign In Form */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12">
+      <motion.div
+        className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12"
+        initial={{ x: 0 }}
+        animate={{ x: isSwapped ? "100%" : 0 }}
+        transition={{ type: "tween", duration: 0.5 }}
+      >
         <div className="w-full max-w-md">
           {/* Logo */}
           <div className="mb-8">
@@ -67,13 +80,24 @@ export default function Query() {
                 Forgot your password?
               </Button>
             </div>
-            <Button className="w-full bg-[#40C7B5] hover:bg-[#3BB3A3] text-white">SIGN IN</Button>
+            <Button
+              type="button" // Prevent form submission
+              className="w-full bg-[#40C7B5] hover:bg-[#3BB3A3] text-white"
+              onClick={handleSwap}
+            >
+              SIGN IN
+            </Button>
           </form>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right Side - Welcome Panel */}
-      <div className="flex-1 bg-[#40C7B5] text-white p-12 flex flex-col items-center justify-center relative overflow-hidden">
+      <motion.div
+        className="flex-1 bg-[#40C7B5] text-white p-12 flex flex-col items-center justify-center relative overflow-hidden"
+        initial={{ x: 0 }}
+        animate={{ x: isSwapped ? "-100%" : 0 }}
+        transition={{ type: "tween", duration: 0.5 }}
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-[#40C7B5] to-[#34A599]" />
 
         {/* Decorative Elements */}
@@ -94,8 +118,7 @@ export default function Query() {
             SIGN UP
           </Button>
         </div>
-      </div>
+      </motion.div>
     </div>
-  )
+  );
 }
-

@@ -1,6 +1,6 @@
 export  const data = {
     image: {
-      src: "/assets/Projects/Project1.jpg",
+      src: "/assets/Projects/Project2.gif",
       alt: "KodeKloud Technology Diagram",
       width: 400,
       height: 400,
