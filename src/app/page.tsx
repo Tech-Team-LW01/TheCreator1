@@ -17,7 +17,8 @@ import FeatureGrid from "@/components/customComponents/Tedx/Feature"
 import MediaSection from "@/components/customComponents/Media/Media";
 import Mentor from "@/components/customComponents/Mentor/Mentor";
 import Mentor2 from "@/components/customComponents/Mentor/Mentor2";
-import Gallery from "@/components/customComponents/Gallery/Gallery"
+import Gallery from "@/components/customComponents/Gallery/Gallery";
+import ImageTestimonials from "@/components/customComponents/Testimonials/TestimonialsImage";
 export default function Home() {
   return (
     <div >
@@ -27,6 +28,7 @@ export default function Home() {
 <LeftRightAlumniCarousel/>
 <Projets/>
 <VideoTestimonials/>
+<ImageTestimonials/>
 <Benifits></Benifits>
 <MediaSection/>
 {/* <div>
