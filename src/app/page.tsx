@@ -17,7 +17,11 @@ import FeatureGrid from "@/components/customComponents/Tedx/Feature"
 import MediaSection from "@/components/customComponents/Media/Media";
 import Mentor from "@/components/customComponents/Mentor/Mentor";
 import Mentor2 from "@/components/customComponents/Mentor/Mentor2";
+<<<<<<< HEAD
 import Gallery from "@/components/customComponents/Gallery/Gallery"
+=======
+import Blogs from "@/components/customComponents/Blogs/Blogs"
+>>>>>>> d1ed467 (update code)
 export default function Home() {
   return (
     <div >
@@ -33,6 +37,7 @@ export default function Home() {
 <OutCome/>
 </div> */}
 <FactAndFiqure/>
+<Blogs/>
 <Awards/>
 {/* <Tedx/> */}
 {/* <Tedx2></Tedx2> */}
