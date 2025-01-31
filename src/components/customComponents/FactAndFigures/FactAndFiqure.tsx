@@ -14,8 +14,8 @@ export default function FactAndFigures() {
           {/* Students Trained Card */}
           <Card className="rounded-2xl bg-[#4263EB] relative overflow-hidden border-0">
             <div className="absolute inset-0 z-0">
-              <div className="absolute bottom-0 right-0 w-full h-[4px] bg-black"></div>
-              <div className="absolute bottom-0 right-0 h-full w-[4px] bg-black"></div>
+              <div className="absolute bottom-0 right-0 w-full h-[4px] bg-white"></div>
+              <div className="absolute bottom-0 right-0 h-full w-[4px] bg-white"></div>
             </div>
             <CardContent className="p-0 relative z-10">
               <div className="text-center p-4 text-white">
@@ -32,8 +32,8 @@ export default function FactAndFigures() {
             {/* Interns Card */}
             <Card className="rounded-2xl bg-[#FF9066] relative overflow-hidden border-0">
               <div className="absolute inset-0 z-0">
-                <div className="absolute bottom-0 right-0 w-full h-[4px] bg-black"></div>
-                <div className="absolute bottom-0 right-0 h-full w-[4px] bg-black"></div>
+                <div className="absolute bottom-0 right-0 w-full h-[4px] bg-white"></div>
+                <div className="absolute bottom-0 right-0 h-full w-[4px] bg-white"></div>
               </div>
               <CardContent className="p-0 relative z-10">
                 <div className="text-center p-6 text-white h-full flex flex-col items-center justify-center">
@@ -61,8 +61,8 @@ export default function FactAndFigures() {
             {/* Training Domains Card */}
             <Card className="rounded-2xl bg-[#FF6B6B] relative overflow-hidden border-0">
               <div className="absolute inset-0 z-0">
-                <div className="absolute bottom-0 right-0 w-full h-[4px] bg-black"></div>
-                <div className="absolute bottom-0 right-0 h-full w-[4px] bg-black"></div>
+                <div className="absolute bottom-0 right-0 w-full h-[4px] bg-white"></div>
+                <div className="absolute bottom-0 right-0 h-full w-[4px] bg-white"></div>
               </div>
               <CardContent className="p-0 relative z-10">
                 <div className="text-center p-6 text-white h-full flex flex-col items-center justify-center">
@@ -92,40 +92,60 @@ export default function FactAndFigures() {
         {/* Right column - YouTube Card */}
         <Card className="rounded-2xl bg-white relative overflow-hidden border-0">
           <div className="absolute inset-0 z-0">
-            <div className="absolute bottom-0 right-0 w-full h-[2px] bg-black"></div>
-            <div className="absolute bottom-0 right-0 h-full w-[2px] bg-black"></div>
+            <div className="absolute bottom-0 right-0 w-full h-[2px] bg-[#ff0000]"></div>
+            <div className="absolute bottom-0 right-0 h-full w-[2px] bg-[#ff0000]"></div>
           </div>
           <CardContent className="p-0 relative z-10">
-            <div className="relative h-full p-8">
+            <div className="relative h-full p-2">
               {/* Hexagonal images */}
-              <div className="absolute top-4 right-4">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden">
+            <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-4 right-16">
+                <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="src/components/customComponents/FactAndFigures/poketship.jpg"
+                    src="/assets/FactAndFigure/startup1.png"
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="w-16 h-16 "
                   />
                 </div>
               </div>
-              <div className="absolute top-1/3 left-4">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden">
+              <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-1/3 left-4">
+                <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/api/placeholder/64/64"
+                    src="/assets/FactAndFigure/startup1.png"
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="w-16 h-16 "
                   />
                 </div>
               </div>
-              <div className="absolute bottom-4 right-1/3">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden">
+              <div className="absolute border-2  rounded-full  p-0 border-gray-100 bottom-0 right-16">
+                <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/api/placeholder/64/64"
+                    src="/assets/FactAndFigure/startup1.png"
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="w-16 h-16 "
                   />
                 </div>
               </div>
 
+              <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-48 left-24">
+                <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/FactAndFigure/startup1.png"
+                    alt=""
+                    className="w-16 h-16 "
+                  />
+                </div>
+              </div>
+
+
+              <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-8 left-24">
+                <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/FactAndFigure/startup1.png"
+                    alt=""
+                    className="w-16 h-16 "
+                  />
+                </div>
+              </div>
               {/* Content */}
               <div className="text-center py-16">
                 <h3 className="text-5xl font-bold mb-2">90+</h3>

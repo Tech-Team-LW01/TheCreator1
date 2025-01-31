@@ -103,11 +103,11 @@ export default function TechStack() {
           {technologies.map((tech) => (
             <motion.div key={tech.name} variants={item}>
               <Card className="group relative overflow-hidden p-2 transition-all hover:shadow-lg">
-                <div className="aspect-square relative flex items-center justify-center">
+                <div className="aspect-square relative flex items-center p-0 justify-center">
                   <img
                     src={tech.image || "/placeholder.svg"}
                     alt={`${tech.name} logo`}
-                    className="w-12 h-12 object-contain transition-transform group-hover:scale-110"
+                    className="w-16 h-16 object-contain transition-transform group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center">
                     <div className="text-center px-1">

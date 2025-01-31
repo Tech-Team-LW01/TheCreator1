@@ -92,7 +92,8 @@ export default function OutComeGallary() {
   return (
     <div className="flex flex-col bg-black items-center" id="gallery">
       <h2 className="text-3xl font-bold text-white text-center mb-0 mt-12">Glimpse Of JAZBAA  <span className="text-[#ff0000]">2024</span></h2>
-      <div className="h-1 w-16 bg-red-500 mt-2 mb-6 mx-auto"></div>
+      {/* <div className="h-1 w-16 bg-red-500 mt-2 mb-6 mx-auto"></div> */}
+      <br></br>
       <div className="relative w-full max-w-6xl flex overflow-hidden justify-center">
         <div className="flex transition-transform duration-500 ease-in-out">
           {visibleImages.map((image, index) => {
