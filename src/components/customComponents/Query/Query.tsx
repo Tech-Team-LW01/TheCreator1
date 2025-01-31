@@ -80,7 +80,7 @@ export default function Query() {
 
         {/* Right Side - Welcome Panel */}
         <motion.div
-          className="flex-1 bg-[#ff0000] text-white p-12 flex flex-col items-center justify-center"
+          className="flex-1 bg-[#ff0000] text-white p-16 flex flex-col items-center justify-center"
           initial={{ x: 0 }}
           animate={{ x: isSwapped ? "-100%" : 0 }}
           transition={{ type: "tween", duration: 0.5 }}
