@@ -19,14 +19,6 @@ const benefitsData = [
       "An Opportunity to meet in person & get connected with many industry experts here during the Summer Program. Also know the path to contribute to major communities namely AWS Community, Docker Community, OpenSource Community & many more.",
   },
   {
-    icon: "🌟",
-    title: "Teamwork",
-    subtitle: "& Collaboration",
-    detail: "Exposure to real industry work culture",
-    description:
-      "Interns from PAN India Engineering Colleges participate in the Summer Program & while doing your projects you all will be working closely with each other which will help you learn team synergy, how to work collaboratively as a team & team building skills.",
-  },
-  {
     icon: "💼",
     title: "Build",
     subtitle: "Interpersonal Skills",
@@ -34,6 +26,15 @@ const benefitsData = [
     description:
       "Work on real-world projects that enhance your portfolio and give you practical experience in your field.",
   },
+  {
+    icon: "🌟",
+    title: "Teamwork",
+    subtitle: "& Collaboration",
+    detail: "Exposure to real industry work culture",
+    description:
+      "Interns from PAN India Engineering Colleges participate in the Summer Program & while doing your projects you all will be working closely with each other which will help you learn team synergy, how to work collaboratively as a team & team building skills.",
+  },
+  
   {
     icon: "🤝",
     title: "Problem Based",
