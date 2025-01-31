@@ -70,19 +70,19 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full bg-white transition-colors duration-300",
-        scrolled ? "bg-white" : "bg-white"
+        "sticky top-0 z-50 w-full bg-black transition-colors duration-300",
+        scrolled ? "bg-black" : "bg-black"
       )}
     >
-      <div className="container mx-auto flex bg-white bg-opacity-100 items-center justify-between py-4 px-6">
+      <div className="container mx-auto flex bg-black bg-opacity-100 items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="#Hero" className="flex items-center space-x-2">
           <Image
             src={LOGO}
             alt="Logo"
-            width={110}
-            height={32}
-            className="object-contain overflow-hidden"
+            width={96}
+            height={18}
+            className="object-contain overflow-hidden "
           />
         </a>
 
@@ -90,32 +90,32 @@ const Navbar: React.FC = () => {
         <nav className="hidden lg:flex space-x-6">
           <ul className="flex space-x-4">
             <li>
-              <a href="#hero" className="text-black hover:text-[#ff0000]">
+              <a href="#hero" className="text-white hover:text-[#ff0000]">
                 Home
               </a>
             </li>
             <li>
-              <a href="#mentor" className="text-black hover:text-[#ff0000]">
+              <a href="#mentor" className="text-white hover:text-[#ff0000]">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#trainingcontent" className="text-black hover:text-[#ff0000]">
+              <a href="#trainingcontent" className="text-white hover:text-[#ff0000]">
                 Training Content
               </a>
             </li>
             <li>
-              <a href="#projects" className="text-black hover:text-[#ff0000]">
+              <a href="#projects" className="text-white hover:text-[#ff0000]">
                 Projects
               </a>
             </li>
             <li>
-              <a href="#placements" className="text-black hover:text-[#ff0000]">
+              <a href="#placements" className="text-white hover:text-[#ff0000]">
                 Placements
               </a>
             </li>
             <li>
-              <a href="#careertransformation" className="text-black hover:text-[#ff0000]">
+              <a href="#careertransformation" className="text-white hover:text-[#ff0000]">
                 Career Transition
               </a>
             </li>
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div
           ref={menuRef}
-          className="lg:hidden absolute right-4 top-full bg-white w-64 shadow-md z-40"
+          className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-md z-40"
         >
           <div className="p-4">
             <ul className="space-y-4">

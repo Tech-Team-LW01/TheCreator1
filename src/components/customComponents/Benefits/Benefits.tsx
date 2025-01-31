@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, } from "@/components/ui/card";
 
 const benefitsData = [
   {
@@ -44,49 +44,64 @@ const benefitsData = [
   },
 ];
 
-export default function Benifits() {
+
+export default function Benefits() {
   return (
-    <div className="min-h-full w-full flex items-center justify-center bg-black p-4">
-      <div className="max-w-6xl w-full bg-black rounded-lg shadow-lg p-8">
-        <h1 className="text-3xl font-bold text-center text-white mb-4">
-          Benefits of Summer Program 2025
-        </h1>
-        <h2 className="text-xl text-center text-white mb-8">
-          Learn with Engineering students from Across India
-        </h2>
+    <section className="bg-[#000000] py-12">
+      <div className="container mx-auto px-4">
+        {/* Main Container Box */}
+        <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-8">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <h1 className="text-3xl font-bold text-white mb-4">
+              Benefits of Summer Program 2025
+            </h1>
+            <h2 className="text-xl text-white mb-8">
+              Learn with Engineering students from Across India
+            </h2>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefitsData.slice(0, 3).map((benefit, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
-                <span className="text-4xl">{benefit.icon}</span>
-                <CardTitle className="text-2xl text-blue-800">{benefit.title}</CardTitle>
-                <CardDescription className="text-lg text-blue-600">{benefit.subtitle}</CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <h3 className="text-gray-700 font-semibold">{benefit.detail}</h3>
-                <p className="text-gray-600 mt-2">{benefit.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+          {/* Top Row Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {benefitsData.slice(0, 3).map((benefit, index) => (
+              <Card 
+                key={index} 
+                className="bg-white border border-gray-700 hover:border-gray-500 transition-all"
+              >
+                <CardHeader className="text-center">
+                  <span className="text-4xl">{benefit.icon}</span>
+                  <CardTitle className="text-2xl text-black">{benefit.title}</CardTitle>
+                  <CardDescription className="text-lg text-black">{benefit.subtitle}</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <h3 className="text-black font-semibold">{benefit.detail}</h3>
+                  <p className="text-black mt-2">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
-        <div className="flex flex-col md:flex-row justify-center gap-6 mt-6">
-          {benefitsData.slice(3).map((benefit, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow flex-1">
-              <CardHeader className="text-center">
-                <span className="text-4xl">{benefit.icon}</span>
-                <CardTitle className="text-2xl text-blue-800">{benefit.title}</CardTitle>
-                <CardDescription className="text-lg text-blue-600">{benefit.subtitle}</CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <h3 className="text-gray-700 font-semibold">{benefit.detail}</h3>
-                <p className="text-gray-600 mt-2">{benefit.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {/* Bottom Row Cards */}
+          <div className="flex flex-col md:flex-row justify-center gap-6 mt-6">
+            {benefitsData.slice(3).map((benefit, index) => (
+              <Card 
+                key={index} 
+                className="bg-white border border-gray-700 hover:border-gray-500 transition-all flex-1"
+              >
+                <CardHeader className="text-center">
+                  <span className="text-4xl">{benefit.icon}</span>
+                  <CardTitle className="text-2xl text-black">{benefit.title}</CardTitle>
+                  <CardDescription className="text-lg text-gray-900">{benefit.subtitle}</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <h3 className="text-black font-semibold">{benefit.detail}</h3>
+                  <p className="text-black mt-2">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

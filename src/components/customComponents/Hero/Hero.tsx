@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button";
 import { IndiaMap } from "@/components/ui/India-map";
 import { Badge } from "@/components/ui/badge"
 
-import { MdOnlinePrediction } from "react-icons/md"
+// import { MdOnlinePrediction } from "react-icons/md"
 import { BsCalendarCheck } from "react-icons/bs"
 import { AiOutlineHourglass } from "react-icons/ai"
 
 
 const Hero = () => {
   return (
-    <section className="container mx-auto">
-      <div className="relative flex flex-col  lg:flex-row min-h-[420px] overflow-hidden rounded-xl max-w-6xl ">
+    <section className=" w-full ">
+      <div className="relative flex flex-col  lg:flex-row min-h-[420px] overflow-hidden rounded-xl w-full ">
         {/* Left Side Content */}
         <div className="lg:w-3/5 relative">
           <div className="bg-red-600 h-full p-6 lg:p-10">
@@ -91,19 +91,19 @@ const Hero = () => {
 
 
       </div>
-        <div className="relative md:-mt-12  lg:-mt-12 z-50">
-              <div className={`bg-black rounded-lg p-4 shadow-lg max-w-7xl border border-white mx-auto`}>
+        <div className="relative md:-mt-12  lg:-mt-12 z-30">
+              <div className={`bg-black rounded-lg p-4 shadow-lg max-w-6xl border border-white mx-auto`}>
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-4"> {/* Adjusted for consistency */}
                   {/* Info Sections Container */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
-                    {/* Online Section */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
+                    {/* Online Section
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <MdOnlinePrediction className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium">SUMMER TRAINING </span>
                         <span className="font-bold text-xs block"></span>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Admission Section */}
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">

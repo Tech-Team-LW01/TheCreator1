@@ -29,43 +29,39 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 bg-black">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-white">Our Latest Blog</h1>
-        <p className="text-white-600">
-          A Gateway to Insightful Stories and Expertise, Unveiling a Tapestry of Ideas and Inspiration.
-        </p>
-      </div>
-
-      {/* Blog Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {blogs.map((blog, index) => (
-          <div 
-            key={index}
-            className={`${blog.bgColor} rounded-lg p-6 h-full flex flex-col justify-between ${
-              index === 2 ? 'md:col-span-1' : ''
-            }`}
-          >
-            <div>
-              <h2 className={`text-xl font-semibold mb-4 ${
-                blog.bgColor === 'bg-navy-900' ? 'text-white' : 'text-gray-800'
-              }`}>
-                {blog.title}
-              </h2>
-              <p className={`mb-4 ${
-                blog.bgColor === 'bg-navy-900' ? 'text-white-300' : 'text-gray-600'
-              }`}>
-                {blog.description}
-              </p>
-            </div>
-            <button className={`${blog.textColor} font-medium hover:underline`}>
-              Read More...
-            </button>
+    <section className="bg-[#000000] py-12 flex justify-center">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="bg-[#111111] border p-10 border-gray-600 rounded-2xl shadow-lg">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold mb-4 text-white">Our Latest Blog</h1>
+            <p className="text-white">
+              A Gateway to Insightful Stories and Expertise, Unveiling a Tapestry of Ideas and Inspiration.
+            </p>
           </div>
-        ))}
+
+          {/* Blog Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {blogs.map((blog, index) => (
+              <div 
+                key={index}
+                className={`${blog.bgColor} rounded-lg p-6 h-full flex flex-col justify-between shadow-md`}
+              >
+                <div>
+                  <h2 className={`text-xl font-semibold mb-4 text-gray-800`}>
+                    {blog.title}
+                  </h2>
+                  <p className="mb-4 text-gray-600">
+                    {blog.description}
+                  </p>
+                </div>
+                <button className={`${blog.textColor} font-medium hover:underline`}>Read More...</button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
