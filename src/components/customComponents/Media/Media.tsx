@@ -50,47 +50,53 @@ const mediaData = [
 
 ];
 
+
 export default function MediaSection() {
   return (
-    <div className="min-h-full w-full flex items-center justify-center bg-black ">
-      <div className="max-w-6xl w-full rounded-lg p-8">
-        <div className="text-center mb-8">
-          <span className="text-yellow-400 text-sm">✦ PIONEERING EDUCATION</span>
-          <h1 className="text-3xl font-bold text-white mt-2">In the News</h1>
-        </div>
+    <section className="bg-[#000000] py-12">
+      <div className="container mx-auto px-4">
+        {/* Main Container Box - Reduced width using max-w-5xl */}
+        <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-8 max-w-5xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <span className="text-yellow-400 text-sm">✦ PIONEERING EDUCATION</span>
+            <h1 className="text-3xl font-bold text-white mt-2">In the News</h1>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {mediaData.map((media, index) => (
-            <Card 
-              key={index} 
-              className="relative h-44 overflow-hidden group cursor-pointer hover:-translate-y-1 transition-all duration-300"
-            >
-              <div 
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${media.backgroundImage})` }}
-              />
-              <div className="absolute inset-0 bg-black/50" />
-              
-              <CardHeader className="relative h-full flex flex-col justify-center items-center pt-4 pb-0 px-4">
-                <div className="relative w-full h-full">
-                  <Image 
-                    src={media.logo}
-                    alt={media.source}
-                    width={300}
-                    height={100}
-                    className="object-contain"
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "100%",
-                      objectFit: "contain"
-                    }}
-                  />
-                </div>
-              </CardHeader>
-            </Card>
-          ))}
+          {/* Media Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {mediaData.map((media, index) => (
+              <Card 
+                key={index} 
+                className="relative h-44 overflow-hidden group cursor-pointer hover:-translate-y-1 transition-all duration-300 border border-gray-700 hover:border-gray-500"
+              >
+                <div 
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${media.backgroundImage})` }}
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all" />
+                
+                <CardHeader className="relative h-full flex flex-col justify-center items-center pt-4 pb-0 px-1">
+                  <div className="relative w-full h-full">
+                    <Image 
+                      src={media.logo}
+                      alt={media.source}
+                      width={300}
+                      height={100}
+                      className="object-contain px-1 pt-4 pb-0"
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: "100%",
+                        objectFit: "contain"
+                      }}
+                    />
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
