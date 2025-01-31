@@ -107,7 +107,7 @@ export default function TechStack() {
                   <img
                     src={tech.image || "/placeholder.svg"}
                     alt={`${tech.name} logo`}
-                    className="w-8 h-8 object-contain transition-transform group-hover:scale-110"
+                    className="w-12 h-12 object-contain transition-transform group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center">
                     <div className="text-center px-1">
