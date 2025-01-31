@@ -101,7 +101,11 @@ export default function FactAndFigures() {
             <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-4 right-16">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
+<<<<<<< HEAD
                     src="/assets/FactAndFigure/startup1.png"
+=======
+                    src="src/components/customComponents/FactAndFigures/poketship.jpg"
+>>>>>>> 6b9b588fb4d50c0ad112d01b4e64019d289427fb
                     alt=""
                     className="w-16 h-16 "
                   />
