@@ -22,6 +22,7 @@ import Blogs from "@/components/customComponents/Blogs/Blogs"
 import ImageTestimonials from "@/components/customComponents/Testimonials/TestimonialsImage";
 import Query from "@/components/customComponents/Query/Query";
 import OutComeGallary from "@/components/customComponents/OutCome/OutComeGallary";
+import JazbaaStartupPlatform from "@/components/customComponents/OutCome/JazbaaStartp/JazbaaStartup";
 export default function Home() {
   return (
     <div >
@@ -37,8 +38,11 @@ export default function Home() {
 <div>
 <OutCome/>
 <OutComeGallary/>
+
+<JazbaaStartupPlatform/>
 </div>
 <FactAndFiqure/>
+
 <Blogs/>
 <Awards/>
 {/* <Tedx/> */}
