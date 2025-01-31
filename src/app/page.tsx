@@ -21,6 +21,7 @@ import Gallery from "@/components/customComponents/Gallery/Gallery"
 import Blogs from "@/components/customComponents/Blogs/Blogs"
 import ImageTestimonials from "@/components/customComponents/Testimonials/TestimonialsImage";
 import Query from "@/components/customComponents/Query/Query";
+import OutComeGallary from "@/components/customComponents/OutCome/OutComeGallary";
 export default function Home() {
   return (
     <div >
@@ -35,6 +36,7 @@ export default function Home() {
 <MediaSection/>
 <div>
 <OutCome/>
+<OutComeGallary/>
 </div>
 <FactAndFiqure/>
 <Blogs/>
