@@ -2,22 +2,13 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function FactAndFigures() {
   return (
-<<<<<<< HEAD
-    <div className="w-full mx-auto  ">
+    <div className="max-w-6xl mx-auto  ">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold text-[#ff0000] mb-2">Our Impact Numbers</h2>
       
-=======
-    <div className="container mx-auto px-4 py-6">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl text-white font-semibold mb-2">Our Impact Numbers</h2>
-        <p className="text-sm text-gray-600">
-          Join our rapidly growing learning community and acquire real-world skills.
-        </p>
->>>>>>> fb3605b320e5a842a743b1e993756482ed696a62
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full mx-auto">
         {/* Left column */}
         <div className="space-y-6">
           {/* Students Trained Card */}
