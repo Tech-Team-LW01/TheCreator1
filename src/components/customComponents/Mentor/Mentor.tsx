@@ -22,11 +22,11 @@ const Mentor = () => {
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-red-900 via-black to-red-900 p-8">
-      <div className="max-w-7xl mx-auto relative flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="max-w-6xl mx-auto relative flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Left Section - Improved Contrast */}
         <div className="lg:w-1/2 z-10 space-y-8 text-white">
           <div className="prose prose-invert">
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-4">
               Your Summer Internship Mentor
             </h1>
             

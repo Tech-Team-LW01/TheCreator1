@@ -23,7 +23,7 @@ export default function ImageTestimonials() {
   };
 
   return (
-    <div className="bg-[#000000] p-6 mx-auto ">
+    <div className="bg-[#000000] py-6 mx-auto ">
       <div className="mx-auto max-w-6xl" >
         <h2 className="text-white text-md font-semibold">
           HERE IT FROM THEM

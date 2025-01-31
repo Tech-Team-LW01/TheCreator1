@@ -80,9 +80,9 @@ const Navbar: React.FC = () => {
           <Image
             src={LOGO}
             alt="Logo"
-            width={110}
-            height={32}
-            className="object-contain overflow-hidden"
+            width={96}
+            height={18}
+            className="object-contain overflow-hidden "
           />
         </a>
 

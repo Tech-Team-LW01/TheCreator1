@@ -91,8 +91,8 @@ const Hero = () => {
 
 
       </div>
-        <div className="relative md:-mt-12  lg:-mt-12 z-50">
-              <div className={`bg-black rounded-lg p-4 shadow-lg max-w-7xl border border-white mx-auto`}>
+        <div className="relative md:-mt-12  lg:-mt-12 z-30">
+              <div className={`bg-black rounded-lg p-4 shadow-lg max-w-6xl border border-white mx-auto`}>
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-4"> {/* Adjusted for consistency */}
                   {/* Info Sections Container */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">

@@ -2,9 +2,9 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function FactAndFigures() {
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-6">
       <div className="text-center mb-12">
-        <h2 className="text-2xl font-semibold mb-2">Our Impact Numbers</h2>
+        <h2 className="text-3xl text-white font-semibold mb-2">Our Impact Numbers</h2>
         <p className="text-sm text-gray-600">
           Join our rapidly growing learning community and acquire real-world skills.
         </p>
@@ -20,7 +20,7 @@ export default function FactAndFigures() {
               <div className="absolute bottom-0 right-0 h-full w-[4px] bg-black"></div>
             </div>
             <CardContent className="p-0 relative z-10">
-              <div className="text-center p-8 text-white">
+              <div className="text-center p-4 text-white">
                 <h3 className="text-5xl font-bold mb-1">150K+</h3>
                 <p className="text-xl font-medium mb-2">Students Trained</p>
                 <p className="text-sm opacity-90 max-w-md mx-auto">
