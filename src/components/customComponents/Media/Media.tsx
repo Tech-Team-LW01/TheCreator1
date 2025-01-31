@@ -46,6 +46,21 @@ const mediaData = [
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
     logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+  },
+  {
+    source: "Business India",
+    backgroundImage: "/assets/media/graduation.jpeg",
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+  },
+  {
+    source: "Business India",
+    backgroundImage: "/assets/media/graduation.jpeg",
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+  },
+  {
+    source: "Business India",
+    backgroundImage: "/assets/media/graduation.jpeg",
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
   }
 
 ];
@@ -64,7 +79,7 @@ export default function MediaSection() {
           </div>
 
           {/* Media Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
             {mediaData.map((media, index) => (
               <Card 
                 key={index} 
@@ -77,13 +92,13 @@ export default function MediaSection() {
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all" />
                 
                 <CardHeader className="relative h-full flex flex-col justify-center items-center pt-4 pb-0 px-1">
-                  <div className="relative w-full h-full">
+                  <div className="relative z-10 w-full  h-full">
                     <Image 
                       src={media.logo}
                       alt={media.source}
                       width={300}
                       height={100}
-                      className="object-contain px-1 pt-4 pb-0"
+                      className="object-contain w-full h-full px-1 pt-4 pb-0"
                       style={{
                         maxWidth: "100%",
                         maxHeight: "100%",
