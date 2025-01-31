@@ -160,10 +160,10 @@ const Hero = () => {
                  
 
                   {/* Button Section */}
-                  <div className="flex items-start gap-2 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
-                    <div className="flex flex-col items-start sm:items-center lg:items-center w-full lg:w-auto">
+                  <div className="flex items-center justify-center gap-2 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
+                    <div className="flex flex-col items-start justify-center sm:items-center lg:items-center w-full lg:w-auto">
                       <a href="" target="blank">
-                        <Button className="bg-[#ff0000] md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
+                        <Button className="bg-[#ff0000] mt-6 item-center justify-center md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
                           Apply Now
                         </Button>
                       </a>
