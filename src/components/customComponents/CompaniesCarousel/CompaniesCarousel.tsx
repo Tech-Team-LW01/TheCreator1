@@ -43,7 +43,7 @@ import unthinkable from "../../../../public/assets/companyLogo/logo_unthinkable_
 
 export function LeftRightAlumniCarousel() {
   return (
-    <div className="max-w-7xl px-4 md:py-8 lg:py-8 py-2 mx-auto relative bg-white">
+    <div className="max-w-full px-4 md:py-8 lg:py-8 py-2 mx-auto relative bg-white">
       <div className="text-center mb-8">
         <div className="font-bold text-3xl inline-block">
           <span className="text-[#ff0000]">Our  Learner&apos;s</span> Are Working At

@@ -8,16 +8,62 @@ import { Facebook, Linkedin } from "lucide-react";
 
 export default function Query() {
   const [isSwapped, setIsSwapped] = useState(false);
+  const [isSignInForm, setIsSignInForm] = useState(true);
 
   const handleSwap = () => {
     setIsSwapped(!isSwapped);
+    setIsSignInForm(!isSignInForm);
   };
+
+  const SignInForm = () => (
+    <form className="space-y-6">
+      <div>
+        <Input type="email" placeholder="Email" className="bg-gray-50" />
+      </div>
+      <div>
+        <Input type="password" placeholder="Password" className="bg-gray-50" />
+      </div>
+      <div className="text-right">
+        <Button variant="link" className="text-sm text-gray-600">
+          Forgot your password?
+        </Button>
+      </div>
+      <Button
+        type="button"
+        className="w-full bg-[#40C7B5] hover:bg-[#3BB3A3] text-white"
+        onClick={handleSwap}
+      >
+        SIGN IN
+      </Button>
+    </form>
+  );
+
+  const SignUpForm = () => (
+    <form className="space-y-6">
+      <div>
+        <Input type="text" placeholder="Full Name" className="bg-gray-50" />
+      </div>
+      <div>
+        <Input type="email" placeholder="Email" className="bg-gray-50" />
+      </div>
+      <div>
+        <Input type="password" placeholder="Password" className="bg-gray-50" />
+      </div>
+      <Button
+        type="button"
+        className="w-full bg-[#40C7B5] hover:bg-[#3BB3A3] text-white"
+        onClick={handleSwap}
+      >
+        SIGN UP
+      </Button>
+    </form>
+  );
 
   return (
     <div className="min-h-full flex flex-col lg:flex-row overflow-hidden">
-      {/* Left Side - Sign In Form */}
+      {/* Left Side - Form Section */}
       <motion.div
-        className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12"
+        className="flex-1 bg-white flex flex-col items-center justify-center px-6 lg:px-16 py-12"
         initial={{ x: 0 }}
         animate={{ x: isSwapped ? "100%" : 0 }}
         transition={{ type: "tween", duration: 0.5 }}
@@ -32,8 +78,10 @@ export default function Query() {
             />
           </div>
 
-          {/* Sign In Header */}
-          <h1 className="text-2xl font-semibold text-gray-900 mb-8">Have any Query ?</h1>
+          {/* Header */}
+          <h1 className="text-2xl font-semibold text-gray-900 mb-8">
+            {isSignInForm ? "Have any Query?" : "Create an Account"}
+          </h1>
 
           {/* Social Login */}
           <div className="flex justify-center space-x-4 mb-8">
@@ -65,29 +113,12 @@ export default function Query() {
             </Button>
           </div>
 
-          <div className="text-center text-sm text-gray-500 mb-8">or use your email account</div>
+          <div className="text-center text-sm text-gray-500 mb-8">
+            or use your email account
+          </div>
 
-          {/* Sign In Form */}
-          <form className="space-y-6">
-            <div>
-              <Input type="email" placeholder="Email" className="bg-gray-50" />
-            </div>
-            <div>
-              <Input type="password" placeholder="Password" className="bg-gray-50" />
-            </div>
-            <div className="text-right">
-              <Button variant="link" className="text-sm text-gray-600">
-                Forgot your password?
-              </Button>
-            </div>
-            <Button
-              type="button" // Prevent form submission
-              className="w-full bg-[#40C7B5] hover:bg-[#3BB3A3] text-white"
-              onClick={handleSwap}
-            >
-              SIGN IN
-            </Button>
-          </form>
+          {/* Conditional Form Rendering */}
+          {isSignInForm ? <SignInForm /> : <SignUpForm />}
         </div>
       </motion.div>
 
@@ -114,8 +145,12 @@ export default function Query() {
             <br />
             and start journey with us
           </p>
-          <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10">
-            SIGN UP
+          <Button
+            variant="outline"
+            className="border-2 border-white text-white hover:bg-white/10"
+            onClick={handleSwap}
+          >
+            {isSignInForm ? "SIGN UP" : "SIGN IN"}
           </Button>
         </div>
       </motion.div>
