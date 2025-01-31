@@ -50,12 +50,12 @@ export const WavyBackground = ({
     canvas = canvasRef.current;
     ctx = canvas.getContext("2d");
     w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    h = ctx.canvas.height = canvas.parentElement.clientHeight; // Use container height
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
     window.onresize = function () {
       w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
+      h = ctx.canvas.height = canvas.parentElement.clientHeight; // Update height on resize
       ctx.filter = `blur(${blur}px)`;
     };
     render();
@@ -112,7 +112,7 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-[200px] flex flex-col items-center justify-center",
+        "h-full flex flex-col items-center justify-center",
         containerClassName
       )}
     >
