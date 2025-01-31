@@ -38,42 +38,7 @@ export default function ImageTestimonials() {
               key={post.id}
               className={`relative overflow-hidden bg-[#ffffff] text-black border border-gray-500 mb-4 break-inside-avoid`}
             >
-              {post.videoUrl && post.id === 5 ? (
-                /* Card with Short Video */
-                <CardContent className="p-0">
-                  <iframe
-                    className="video-iframe "
-                    src={post.videoUrl}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ 
-                      width: '100%', 
-                      height: '450px', 
-                      borderRadius: '0' 
-                    }}
-                  ></iframe>
-                </CardContent>
-              ) : post.videoUrl ? (
-                /* Regular Video Card */
-                <CardContent className="p-0">
-                  <iframe
-                    className="video-iframe"
-                    src={post.videoUrl}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ 
-                      width: '100%', 
-                      height: '400px', 
-                      borderRadius: '0' 
-                    }}
-                  ></iframe>
-                </CardContent>
-              ) : (
-                /* Other Content Cards */
+         
                 <>
                   <CardHeader className="pb-2">
                     <div className="flex items-center space-x-4">
@@ -104,7 +69,7 @@ export default function ImageTestimonials() {
                     <p className="mt-4 text-xs text-gray-400">{post.timestamp}</p>
                   </CardContent>
                 </>
-              )}
+            
             </Card>
           ))}
         </div>  
