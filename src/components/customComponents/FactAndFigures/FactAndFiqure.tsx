@@ -98,10 +98,10 @@ export default function FactAndFigures() {
           <CardContent className="p-0 relative z-10">
             <div className="relative h-full p-8">
               {/* Hexagonal images */}
-              <div className="absolute top-4 right-4">
+              <div className="absolute top-4 right-16">
                 <div className="w-16 h-16 rounded-2xl overflow-hidden">
                   <img
-                    src="/api/placeholder/64/64"
+                    src="/assets/FactAndFigure/startup1.jpg"
                     alt=""
                     className="w-full h-full object-cover"
                   />
