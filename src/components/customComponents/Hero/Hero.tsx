@@ -110,7 +110,7 @@ const Hero = () => {
                       <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium"> TENTATIVE START DATES</span>
-                        <span className="font-bold text-xs block text-white">May, 2025 <br /> June, 2025 <br /> July, 2025</span>
+                        <span className="font-bold text-xs block text-white">May 2025 / June 2025 / July 2025</span>
                         <Badge variant="outline" className="text-yellow-600 border-yellow-600 text-[10px] mt-0.5">
                           Limited seats
                         </Badge>
@@ -180,7 +180,7 @@ const Hero = () => {
                   <div className="flex items-center justify-center gap-2 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
                     <div className="flex flex-col items-start justify-center sm:items-center lg:items-center w-full lg:w-auto">
                       <a href="" target="blank">
-                        <Button className="bg-[#ff0000] mt-6 item-center justify-center md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
+                        <Button className="bg-[#ff0000] mt-2 item-center justify-center md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
                           Apply Now
                         </Button>
                       </a>
