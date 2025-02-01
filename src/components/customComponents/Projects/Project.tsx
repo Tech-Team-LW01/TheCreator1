@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { data } from './data';
@@ -6,35 +6,31 @@ import { Project } from './types';
 
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleScroll = (): void => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
+    setIsLoading(false);
 
-      projectRefs.current.forEach((ref, index) => {
-        if (
-          ref &&
-          ref.offsetTop <= scrollPosition &&
-          (index === projectRefs.current.length - 1 ||
-            (projectRefs.current[index + 1]?.offsetTop ?? 0) > scrollPosition)
-        ) {
+    const handleScroll = () => {
+      projectRefs.current.forEach((ref) => {
+        if (!ref) return;
+
+        const rect = ref.getBoundingClientRect();
+        const isInView = rect.top <= window.innerHeight * 0.75;
+
+        if (isInView) {
           ref.style.opacity = '1';
           ref.style.transform = 'translateY(0)';
         }
       });
     };
 
-    const debouncedScroll = () => {
-      let timeout: NodeJS.Timeout;
-      return () => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => handleScroll(), 100);
-      };
-    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
 
-    window.addEventListener('scroll', debouncedScroll());
-    handleScroll(); // Initial check
-    return () => window.removeEventListener('scroll', debouncedScroll());
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const renderProjectContent = (project: Project): JSX.Element => (
@@ -62,14 +58,17 @@ export default function Projects(): JSX.Element {
 
   const renderImageContent = (project: Project): JSX.Element => (
     <div className="w-full max-w-[400px] mx-auto pt-4">
-      <Image
-        src={project.image.src}
-        alt={project.image.alt}
-        width={project.image.width}
-        height={project.image.height}
-        className={`${project.image.className} transition-transform duration-300 hover:scale-105`}
-        priority={project.image.priority}
-      />
+      <div className="relative group">
+        <Image
+          src={project.image.src}
+          alt={project.image.alt}
+          width={project.image.width}
+          height={project.image.height}
+          className={`${project.image.className} transition-transform duration-300 group-hover:scale-105`}
+          priority={project.image.priority}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
     </div>
   );
 
@@ -81,6 +80,11 @@ export default function Projects(): JSX.Element {
         ref={(el) => { projectRefs.current[index] = el }}
         key={index}
         className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen py-16 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        style={{ 
+          opacity: 0,
+          transform: 'translateY(20px)',
+          transition: 'opacity 0.5s ease-out, transform 0.5s ease-out'
+        }}
       >
         {isEven ? (
           <>
@@ -105,9 +109,17 @@ export default function Projects(): JSX.Element {
     );
   };
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white text-xl">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen bg-black">
-      <div className="container mx-auto max-w-6xl px-4">
+      <div className="container mx-auto max-w-6xl px-4 pt-16">
         {/* Projects Section */}
         <div className="space-y-8">
           {data.projects.map((project, index) => renderProject(project, index))}
@@ -117,7 +129,7 @@ export default function Projects(): JSX.Element {
         <div className="flex justify-center py-12">
           <Button
             size="lg"
-            className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full`}
+            className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
             aria-label={data.button.text}
           >
             {data.button.text}
@@ -166,6 +178,11 @@ export default function Projects(): JSX.Element {
 
         ::-webkit-scrollbar-thumb:hover {
           background: #e00000;
+        }
+
+        .project-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
         }
       `}</style>
     </div>
