@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function FactAndFigures() {
   return (
-    <div className="max-w-6xl mx-auto ">
+    <div className="max-w-4xl mx-auto ">
     <div className="max-w-6xl px-6  ">
       <div className="text-center mb-6">
         <h2 className="text-3xl font-semibold text-[#ff0000] mb-2">Our Impact Numbers</h2>
