@@ -5,12 +5,13 @@ import Hero from "@/components/customComponents/Hero/Hero";
 import TechStack from "@/components/customComponents/Technology/Technology";
 import {TopLeaders} from "@/components/customComponents/TopLeaders/TopLeaders";
 import {LeftRightAlumniCarousel} from "@/components/customComponents/CompaniesCarousel/CompaniesCarousel";
-// import Projets from "@/components/customComponents/Projects/Project";
+import Projects from "@/components/customComponents/Projects/Project";
 import {OutCome}  from "@/components/customComponents/OutCome/OutCome";
 import VideoTestimonials from "@/components/customComponents/Testimonials/VideoTestimonials";
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
 import Benifits from "@/components/customComponents/Benefits/Benefits";
+import Community from "@/components/customComponents/Community/Community";
 // import Tedx from "@/components/customComponents/Tedx/Tedx";
 import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
 import FeatureGrid from "@/components/customComponents/Tedx/Feature"
@@ -30,11 +31,12 @@ export default function Home() {
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
-{/* <Projets/> */}
+<Projects/>
 <VideoTestimonials/>
 <ImageTestimonials/>
 <Benifits></Benifits>
 <MediaSection/>
+<Community/>
 
 <OutCome/>
 <OutComeGallary/>
