@@ -26,13 +26,7 @@ export default function Query() {
           transition={{ type: "tween", duration: 0.5 }}
         >
           <div className="w-full max-w-md">
-            {/* <div className="mb-8">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Pli8x9DOuwTY15uvCmswwA2AemCz33.png"
-                alt="Diprella Logo"
-                className="h-8 w-auto"
-              />
-            </div> */}
+
 
             <h1 className="text-2xl font-semibold text-gray-900 mb-8">
               {isSignInForm ? "Have any Query?" : "Create an Account"}
@@ -80,7 +74,7 @@ export default function Query() {
 
         {/* Right Side - Welcome Panel */}
         <motion.div
-          className="flex-1 bg-[#ff0000] text-white p-16 flex flex-col items-center justify-center"
+          className="flex-1 bg-[#ff0000] text-white p-16gg flex flex-col items-center justify-center"
           initial={{ x: 0 }}
           animate={{ x: isSwapped ? "-100%" : 0 }}
           transition={{ type: "tween", duration: 0.5 }}
