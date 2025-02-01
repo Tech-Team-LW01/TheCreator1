@@ -24,6 +24,7 @@ import OutComeGallary from "@/components/customComponents/OutCome/OutComeGallary
 import JazbaaStartupPlatform from "@/components/customComponents/OutCome/JazbaaStartp/JazbaaStartup";
 import InitPlacement from "@/components/customComponents/OutCome/Init/InitPlacement";
 import Community from "@/components/customComponents/Community/Community";
+import { MentorScroll } from "@/components/customComponents/Mentor/mentorScroll";
 export default function Home() {
   return (
     <div >
@@ -53,6 +54,7 @@ export default function Home() {
 {/* <Tedx2></Tedx2> */}
 {/* FeatureGrid is TedX */}
 <Mentor/>
+<MentorScroll/>
 <Gallery/>
 
 <Query/>
