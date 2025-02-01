@@ -56,12 +56,12 @@ export default function Projects(): JSX.Element {
   const renderImageContent = (image: Project['image']): JSX.Element => (
     <div className="w-full max-w-[400px] mx-auto">
       <Image
-        src={image.src}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
+        src=""
+        alt=""
+        width=""
+        height=""
         className="w-full h-auto rounded-lg object-cover"
-        priority={image.priority}
+        priority=""
       />
     </div>
   );
@@ -99,7 +99,7 @@ export default function Projects(): JSX.Element {
   };
 
   return (
-    <div className="container mx-auto relative min-h-full bg-black">
+    <div className="container mx-auto relative min-h-full bg-black max-w-6xl">
       {/* Render Projects */}
       {data.projects.map((project, index) => renderProject(project, index))}
 
