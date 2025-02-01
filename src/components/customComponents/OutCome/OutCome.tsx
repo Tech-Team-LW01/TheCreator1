@@ -17,6 +17,7 @@ export function OutCome() {
 
             {/* Cards Container */}
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 px-4">
+           
               {/* First Card */}
               <div className="w-full md:w-1/2 max-w-[400px]">
                 <JazbaaCard />
