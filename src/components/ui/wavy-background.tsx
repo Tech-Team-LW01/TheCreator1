@@ -110,9 +110,10 @@ export const WavyBackground = ({
   }, []);
 
   return (
+    // <div className="max-w-6xl mx-auto">
     <div
       className={cn(
-        "h-full max-w-6xl mx-auto flex flex-col items-center justify-center",
+        "h-full max-w-6xl mx-auto  flex flex-col items-center justify-center",
         containerClassName
       )}
     >
@@ -127,6 +128,7 @@ export const WavyBackground = ({
       <div className={cn("relative z-10", className)} {...props}>
         {children}
       </div>
-    </div>
+      </div>    
+      // </div>
   );
 };
