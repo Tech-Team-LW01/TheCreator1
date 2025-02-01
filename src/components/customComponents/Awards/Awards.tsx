@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 const Award = () => {
   return (
   <div className='max-w-6xl mx-auto'>
-    <div className="w-full max-w-6xl mx-auto py-6 bg-black">
+    <div className="w-full max-w-6xl mx-auto py-6 bg-black px-12">
       <Card className="bg-white shadow-lg rounded-[40px] px-4 sm:px-6 md:px-10 py-8 relative">
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between">
           {/* Left Section */}

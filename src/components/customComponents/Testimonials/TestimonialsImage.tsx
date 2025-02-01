@@ -20,8 +20,8 @@ export default function ImageTestimonials() {
   };
 
   return (
-    <section className="bg-[#000000] py-12">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="bg-[#000000] py-6">
+      <div className="max-w-6xl mx-auto px-2">
         {/* Container Box with Border */}
         <div className="bg-[#111111] border border-gray-600 rounded-xl p-8 shadow-2xl">
           {/* Header Section */}

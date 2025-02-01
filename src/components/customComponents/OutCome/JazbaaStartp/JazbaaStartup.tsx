@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function JazbaaStartupPlatform() {
   return (
-    <div className="min-h-full max-w-6xl mx-auto bg-black">
+    <div className="min-h-full max-w-6xl mx-auto px-4 bg-black">
       {/* Main Content Container */}
       <div className="container mx-auto px-4 py-12 relative">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#ff0000] mb-2">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#ff0000] mb-2">
             JAZBAA Start-up Platform
           </h1>
          

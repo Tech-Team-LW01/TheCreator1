@@ -68,12 +68,12 @@ const mediaData = [
 
 export default function MediaSection() {
   return (
-    <section className="bg-[#000000] py-12">
-      <div className="container mx-auto px-4">
+    <section className="bg-[#000000] py-6">
+      <div className="container mx-auto px-16">
         {/* Main Container Box - Reduced width using max-w-5xl */}
-        <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-8 max-w-5xl mx-auto">
+        <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-8 max-w-6xl px-4  mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <span className="text-yellow-400 text-sm">✦ PIONEERING EDUCATION</span>
             <h1 className="text-3xl font-bold text-white mt-2">In the News</h1>
           </div>

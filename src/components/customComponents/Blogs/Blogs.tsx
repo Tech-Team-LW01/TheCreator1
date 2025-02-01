@@ -29,8 +29,8 @@ const Blogs = () => {
   ];
 
   return (
-    <section className="bg-[#000000] py-12 flex justify-center">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section className="bg-[#000000] py-6 flex justify-center">
+      <div className="container mx-auto px-2 max-w-6xl">
         <div className="bg-[#111111] border p-10 border-gray-600 rounded-2xl shadow-lg">
           {/* Header Section */}
           <div className="text-center mb-12">

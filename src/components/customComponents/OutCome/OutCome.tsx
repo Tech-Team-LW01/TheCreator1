@@ -3,19 +3,33 @@ import React from "react";
 import { WavyBackground } from "../../ui/wavy-background";
 import JazbaaCard from "./JazbaaCard";
 import InitCard from "./InitCard";
+
 export function OutCome() {
   return (
-<div className=" mx-auto max-w-6xl">
-    <WavyBackground className="max-w-6xl h-[400px]  mt-8  mx-auto"> {/* Set a fixed height */}
-      <p className="text-2xl md:text-3xl pt- lg:text-3xl text-white font-bold inter-var text-center">
-      Outcome of Summer Internship Program
-      </p>
+    <section className="w-full overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <WavyBackground className="w-full relative rounded-xl">
+          <div className="flex flex-col items-center justify-center py-12 md:py-16">
+            {/* Heading */}
+            <h2 className="text-3xl md:text-3xl lg:text-4xl text-white font-bold inter-var text-center mb-8 md:mb-12 px-4">
+              Outcome of Summer Internship Program
+            </h2>
 
-      <div className="flex w-full mx-auto item-center justify-center p-4 mt-2 col-1 space-x-4 md:col-2">
-        <JazbaaCard/>
-        <InitCard/>
+            {/* Cards Container */}
+            <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 px-4">
+              {/* First Card */}
+              <div className="w-full md:w-1/2 max-w-[400px]">
+                <JazbaaCard />
+              </div>
+              
+              {/* Second Card */}
+              <div className="w-full md:w-1/2 max-w-[400px]">
+                <InitCard />
+              </div>
+            </div>
+          </div>
+        </WavyBackground>
       </div>
-    </WavyBackground>
-    </div>
+    </section>
   );
 }

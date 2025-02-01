@@ -48,8 +48,8 @@ const benefitsData = [
 
 export default function Benefits() {
   return (
-    <section className="bg-[#000000] py-12">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="bg-[#000000] py-6">
+      <div className="max-w-6xl mx-auto px-2  ">
         {/* Main Container Box */}
         <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-8">
           {/* Header Section */}
