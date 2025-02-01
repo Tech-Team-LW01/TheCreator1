@@ -11,6 +11,7 @@ import VideoTestimonials from "@/components/customComponents/Testimonials/VideoT
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
 import Benifits from "@/components/customComponents/Benefits/Benefits";
+import Community from "@/components/customComponents/Community/Community";
 // import Tedx from "@/components/customComponents/Tedx/Tedx";
 import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
 import FeatureGrid from "@/components/customComponents/Tedx/Feature"
@@ -35,6 +36,7 @@ export default function Home() {
 <ImageTestimonials/>
 <Benifits></Benifits>
 <MediaSection/>
+<Community/>
 
 <OutCome/>
 <OutComeGallary/>
