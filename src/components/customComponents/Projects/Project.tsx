@@ -64,7 +64,7 @@ export default function Projects(): JSX.Element {
           alt={project.image.alt}
           width={project.image.width}
           height={project.image.height}
-          className={`${project.image.className} transition-transform duration-300 group-hover:scale-105`}
+          className={`${project.image.className} transition-transform duration-300 group-hover:scale-105 bg-white`}
           priority={project.image.priority}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
