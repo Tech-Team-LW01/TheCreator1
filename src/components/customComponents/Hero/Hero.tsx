@@ -95,7 +95,7 @@ const Hero = () => {
               <div className={`bg-black rounded-lg p-4 shadow-lg max-w-6xl border border-white mx-auto`}>
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-4"> {/* Adjusted for consistency */}
                   {/* Info Sections Container */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
+                  <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 ">
                     {/* Online Section
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <MdOnlinePrediction className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
@@ -151,10 +151,27 @@ const Hero = () => {
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
                       <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
                       <div>
-                        <span className="text-white text-xs font-medium">DELIVERABLES FOR 6 WEEKS SUMMER PROGRAM​</span>
-                        <span className="font-bold text-xs block text-white"> - Industry Recognised Internship (Project) Certificate <br /> - Training Certificate from LinuxWorld Informatics Pvt Ltd</span>
+                        <span className="text-white text-xs font-medium">Internship ​</span>
+                        {/* <span className="font-bold text-xs block text-white"> - Industry Recognised Internship (Project) Certificate <br /> - Training Certificate from LinuxWorld Informatics Pvt Ltd</span> */}
+
+                        <span className="font-bold text-xs block text-white">  Industry Recognised Internship (Project) Certificate </span>
 
                       </div>
+
+                      
+                    </div>
+
+                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
+                      <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <div>
+                        <span className="text-white text-xs font-medium">Training Certificate</span>
+                        
+
+                        <span className="font-bold text-xs block text-white">  Training Certificate from LinuxWorld Informatics Pvt Ltd </span>
+
+                      </div>
+
+                      
                     </div>
                   </div>
                  

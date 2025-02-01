@@ -32,7 +32,7 @@ export default function Home() {
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
-<Projets/>
+
 
 <VideoTestimonials/>
 <ImageTestimonials/>
@@ -58,8 +58,10 @@ export default function Home() {
 <Gallery/>
 
 <Query/>
+
 {/* <Mentor2/> */}
 <FeatureGrid/>
+<Projets/>
 
     </div>
   );
