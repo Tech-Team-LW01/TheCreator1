@@ -23,7 +23,6 @@ export default function Projects(): JSX.Element {
       });
     };
 
-    // Debounce scroll handler for better performance
     const debouncedScroll = () => {
       let timeout: NodeJS.Timeout;
       return () => {
@@ -37,31 +36,33 @@ export default function Projects(): JSX.Element {
   }, []);
 
   const renderProjectContent = (project: Project): JSX.Element => (
-    <div className="space-y-4 bg-[#202020] p-4 rounded-lg">
+    <div className="space-y-6 bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300">
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000]">
         {project.title}
       </h2>
       <p className="text-sm md:text-base text-white">{project.description}</p>
-      {project.sections.map((section, idx) => (
-        <div key={idx} className="text-white">
-          <h3 className="text-lg md:text-xl font-bold text-[#ff0000]">
-            {section.heading}:
-          </h3>
-          <p className="text-sm md:text-base text-white">{section.content}</p>
-        </div>
-      ))}
+      <div className="space-y-4">
+        {project.sections.map((section, idx) => (
+          <div key={idx} className="text-white">
+            <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mb-2">
+              {section.heading}
+            </h3>
+            <p className="text-sm md:text-base text-white">{section.content}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 
-  const renderImageContent = (image: Project['image']): JSX.Element => (
+  const renderImageContent = (): JSX.Element => (
     <div className="w-full max-w-[400px] mx-auto">
       <Image
-        src={image.src}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
-        className="w-full h-auto rounded-lg object-cover"
-        priority={image.priority}
+        src={data.image.src}
+        alt={data.image.alt}
+        width={data.image.width}
+        height={data.image.height}
+        className={`${data.image.className} transition-transform duration-300 hover:scale-105`}
+        priority={data.image.priority}
       />
     </div>
   );
@@ -73,12 +74,12 @@ export default function Projects(): JSX.Element {
       <div
         ref={(el) => { projectRefs.current[index] = el }}
         key={index}
-        className="grid grid-cols-1 gap-6 md:grid-cols-2 min-h-screen items-center py-12"
+        className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen items-center py-16"
       >
         {isEven ? (
           <>
             <div className="md:sticky md:top-20 md:h-[calc(100vh-80px)] flex items-center">
-              {renderImageContent(project.image)}
+              {renderImageContent()}
             </div>
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
@@ -90,7 +91,7 @@ export default function Projects(): JSX.Element {
               {renderProjectContent(project)}
             </div>
             <div className="md:sticky md:top-20 md:h-[calc(100vh-80px)] flex items-center">
-              {renderImageContent(project.image)}
+              {renderImageContent()}
             </div>
           </>
         )}
@@ -99,7 +100,7 @@ export default function Projects(): JSX.Element {
   };
 
   return (
-    <div className="container mx-auto relative min-h-full bg-black">
+    <div className="container mx-auto relative min-h-screen bg-black max-w-6xl px-4">
       {/* Render Projects */}
       {data.projects.map((project, index) => renderProject(project, index))}
 
@@ -107,7 +108,7 @@ export default function Projects(): JSX.Element {
       <div className="flex justify-center py-12">
         <Button
           size="lg"
-          className="bg-[#ff0000] hover:bg-[#e00000] text-white"
+          className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105`}
           aria-label={data.button.text}
         >
           {data.button.text}

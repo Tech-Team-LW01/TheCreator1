@@ -1,142 +1,147 @@
-import React from 'react';
-import { BentoGrid } from 'react-bento';
+import React, { useState, useEffect } from "react";
+import { BentoGrid } from "react-bento";
+import { motion, AnimatePresence } from "framer-motion";
 
-const BentoGallery = () => {
-  const bentoItems = [
+// Define props for ImageCycler
+interface ImageCyclerProps {
+  images: string[];
+  interval?: number;
+  transitionDuration?: number;
+}
+
+// ImageCycler Component
+const ImageCycler: React.FC<ImageCyclerProps> = ({ images, interval = 2000, transitionDuration = 1 }) => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+
+  return (
+    <div className="w-full h-full relative">
+      <AnimatePresence mode="wait">
+        <motion.img
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt="Cycling image"
+          className="w-full h-full object-cover absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: transitionDuration }}
+        />
+      </AnimatePresence>
+    </div>
+  );
+};
+
+// Define a type for each item in the BentoGrid
+interface BentoItem {
+  id: number;
+  title: string;
+  images: string[];
+  width: number;
+  height: number;
+  interval: number;
+  transitionDuration: number;
+}
+
+// BentoGallery Component
+const BentoGallery: React.FC = () => {
+  const bentoItems: BentoItem[] = [
     {
       id: 1,
       title: "Settings Menu",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/300/300" 
-            alt="Settings menu"
-            className="w-full h-full object-cover" 
-          />
-        </div>
-      ),
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
       width: 2,
       height: 2,
+      interval: 5000,
+      transitionDuration: 1,
     },
     {
       id: 2,
       title: "Email Preview",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/400/200" 
-            alt="Email preview"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
-      width: 3,
+      images: [
+        "/assets/event-gallery/event-gallery-4.jpg",
+        "/assets/event-gallery/event-gallery-5.jpg",
+      ],
+      width: 4,
       height: 2,
+      interval: 20000,
+      transitionDuration: 1.5,
     },
     {
       id: 3,
-      title: "Today's Recap",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/200/200" 
-            alt="Today's recap"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
+      title: "Settings Menu",
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
       width: 2,
       height: 2,
-    },
-    {
-      id: 4,
-      title: "Adidas Card",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/200/200" 
-            alt="Adidas promotion"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
-      width: 2,
-      height: 3,
-    },
-    {
-      id: 5,
-      title: "Hello Luna",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/600/300" 
-            alt="Hello Luna notification"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
-      width: 4,
-      height: 3,
+      interval: 17000,
+      transitionDuration: 1,
     },
     {
       id: 6,
-      title: "House Listing",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/300/300" 
-            alt="House listing preview"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
-      width: 2,
-      height: 3,
+      title: "Settings Menu",
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
+      width: 3,
+      height: 2,
+      interval: 6000,
+      transitionDuration: 1,
     },
     {
       id: 7,
-      title: "Partnership Email",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/400/200" 
-            alt="Partnership email"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
+      title: "Settings Menu",
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
       width: 3,
-      height: 2,
+      height: 4,
+      interval: 10000,
+      transitionDuration: 1,
     },
     {
       id: 8,
-      title: "Circular Logos",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/300/200" 
-            alt="Logo preview"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
+      title: "Settings Menu",
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
       width: 2,
-      height: 2,
+      height: 3,
+      interval: 10000,
+      transitionDuration: 1,
     },
     {
       id: 9,
-      title: "Inbox Interface",
-      element: (
-        <div className="w-full h-full relative">
-          <img 
-            src="/api/placeholder/300/200" 
-            alt="Inbox interface"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ),
-      width: 2,
-      height: 2,
+      title: "Settings Menu",
+      images: [
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+      ],
+      width: 3,
+      height: 3,
+      interval: 10000,
+      transitionDuration: 1,
     },
   ];
 
@@ -144,26 +149,32 @@ const BentoGallery = () => {
     <div className="w-full max-w-6xl mx-auto min-h-screen bg-black p-0">
       {/* Main Heading */}
       <div className="w-full text-center py-6">
-        <h1 className="text-3xl font-bold text-white ">
-          Bento Grid Gallery
-        </h1>
-        <p className="text-gray-400 text-lg">
-          A modern layout showcase
-        </p>
+        <h1 className="text-3xl font-bold text-[#ff0000]"> Gallery</h1>
+        <p className="text-white text-lg">A modern layout showcase</p>
       </div>
 
       {/* Bento Grid */}
       <BentoGrid
-        items={bentoItems}
+        items={bentoItems.map((item) => ({
+          ...item,
+          element: (
+            <ImageCycler
+              images={item.images}
+              interval={item.interval}
+              transitionDuration={item.transitionDuration}
+            />
+          ),
+        }))}
         gridCols={8}
         rowHeight={80}
         classNames={{
-          container: "max-w-full mx-auto",
-          elementContainer: "bg-zinc-900 rounded-none gap-0 overflow-hidden hover:opacity-90 transition-opacity duration-300", 
+          container: "max-w-full mx-auto gap-2",
+          elementContainer:
+            "bg-zinc-900 rounded-none gap-0 p-2 gap-2  overflow-hidden hover:opacity-90 transition-opacity duration-300",
         }}
       />
 
-      {/* Optional: Add hover effect and title overlay for each item */}
+      {/* Global Styles */}
       <style jsx global>{`
         .bento-item {
           position: relative;
@@ -194,8 +205,6 @@ const BentoGallery = () => {
           transform: scale(1.05);
         }
       `}</style>
-
-  
     </div>
   );
 };
