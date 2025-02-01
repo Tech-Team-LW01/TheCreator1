@@ -1,17 +1,24 @@
-export  const data = {
-  image: {
-    src: "/assets/Projects/Project2.gif",
-    alt: "KodeKloud Technology Diagram",
-    width: 400,
-    height: 400,
-    className: "rounded-[32px] h-auto w-auto object-contain",
-    priority: true
-  },
+
+
+
+
+
+
+// data.ts
+
+export const data = {
   projects: [
-    
     {
       title: "1. Develop Your Own Cloud",
       description: "Develop Serverless Cloud Computing Using Container for Cloud-Native Applications to simplify development, deployment & management",
+      image: {
+        src: "/assets/Projects/Project2.gif",
+        alt: "Cloud Computing Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Cloud Computing",
@@ -46,6 +53,14 @@ export  const data = {
     {
       title: "2. Next Generation DevOps With Cloud Computing",
       description: "Develop High-End Next Generation End to End DevOps Pipeline Managed Service in High Performance Cloud Computing Platform.",
+      image: {
+        src: "/assets/Projects/Project2.gif",
+        alt: "DevOps Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "DevOps/Infrastructure as Code",
@@ -96,6 +111,14 @@ export  const data = {
     {
       title: "3. Create OWN Artificial Intelligence Platform App - ML/DL",
       description: "Build Intelligence Platform using Machine Learning/Deep Learning Model Design, and Create Interactive App Integrated with Generative AI - ChatGPT API",
+      image: {
+        src: "/assets/Projects/Project3.gif",
+        alt: "AI Platform Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Python Libraries",
@@ -150,6 +173,14 @@ export  const data = {
     {
       title: "4. Create OWN Intelligence Metaverse Platform App : Using BlockChain",
       description: "Build a Personalized Intelligence Metaverse Platform App with Blockchain.",
+      image: {
+        src: "/assets/Projects/Project4.gif",
+        alt: "Metaverse Platform Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Blockchain Technology",
@@ -196,6 +227,14 @@ export  const data = {
     {
       title: "5. Create OWN Intelligence MLOps Platform App",
       description: "Build Intelligence Platform using Machine Learning/Deep Learning Model Design, Build and Deploy using CI/CD Devops Automation Pipeline Integrated with Generative AI - ChatGPT API.",
+      image: {
+        src: "/assets/Projects/Project5.gif",
+        alt: "MLOps Platform Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Python Libraries",
@@ -250,6 +289,14 @@ export  const data = {
     {
       title: "6. Smarter World Using IoT Powered By AI (ML/DL) And Industry 4.0",
       description: "Create OWN Automation Edge Computing Platform - Develop and Build a High-Performance Application using Edge Computing, Microservices, and Containerization over Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploys using DevOps Technology Integrated with Generative AI - ChatGPT API.",
+      image: {
+        src: "/assets/Projects/Project6.gif",
+        alt: "IoT and AI Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Python Libraries",
@@ -304,6 +351,14 @@ export  const data = {
     {
       title: "7. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
       description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",
+      image: {
+        src: "/assets/Projects/Project7.gif",
+        alt: "Generative AIOps Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true
+      },
       sections: [
         {
           heading: "Python Libraries",
