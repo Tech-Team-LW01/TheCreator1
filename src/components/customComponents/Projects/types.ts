@@ -1,14 +1,3 @@
-export interface Section {
-  heading: string;
-  content: string;
-}
-
-export interface Project {
-  title: string;
-  description: string;
-  sections: Section[];
-}
-
 export interface ImageData {
   src: string;
   alt: string;
@@ -18,19 +7,26 @@ export interface ImageData {
   priority: boolean;
 }
 
-export interface ButtonData {
-  text: string;
-  className: string;
+export interface Section {
+  heading: string;
+  content: string;
 }
 
-export interface AdditionalSection {
+export interface Project {
   title: string;
-  content: string[];
+  description: string;
+  image: ImageData;  // Added image to each project
+  sections: Section[];
 }
 
 export interface Data {
-  image: ImageData;
   projects: Project[];
-  button: ButtonData;
-  additionalSections: AdditionalSection[];
+  button: {
+    text: string;
+    className: string;
+  };
+  additionalSections: {
+    title: string;
+    content: string[];
+  }[];
 }
