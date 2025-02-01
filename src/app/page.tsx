@@ -35,12 +35,12 @@ export default function Home() {
 <ImageTestimonials/>
 <Benifits></Benifits>
 <MediaSection/>
-<div>
+
 <OutCome/>
 <OutComeGallary/>
 
 <JazbaaStartupPlatform/>
-</div>
+
 <FactAndFiqure/>
 
 <Blogs/>
