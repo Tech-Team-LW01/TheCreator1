@@ -136,26 +136,7 @@ export default function Projects(): JSX.Element {
           </Button>
         </div>
 
-        {/* Additional Sections */}
-        <div className="space-y-12 py-12">
-          {data.additionalSections.map((section, index) => (
-            <section 
-              key={index} 
-              className="space-y-4 transform transition-all duration-300 hover:translate-x-2"
-            >
-              <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000]">
-                {section.title}
-              </h2>
-              <div className="space-y-4">
-                {section.content.map((paragraph, idx) => (
-                  <p key={idx} className="text-sm md:text-base text-white leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
+    
       </div>
 
       <style jsx global>{`

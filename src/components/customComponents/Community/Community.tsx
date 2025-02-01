@@ -53,6 +53,8 @@ const Community = () => {
           cardHeight={80}
         />
       </div>
+
+    
     </div>
   );
 };
