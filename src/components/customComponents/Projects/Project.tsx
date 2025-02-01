@@ -57,7 +57,7 @@ export default function Projects(): JSX.Element {
   );
 
   const renderImageContent = (project: Project): JSX.Element => (
-    <div className="w-full max-w-[400px] mx-auto pt-4">
+    <div className="w-full max-w-[400px] mx-auto pt-24">
       <div className="relative group">
         <Image
           src={project.image.src}

@@ -12,7 +12,7 @@ export const data = {
       title: "1. Develop Your Own Cloud",
       description: "Develop Serverless Cloud Computing Using Container for Cloud-Native Applications to simplify development, deployment & management",
       image: {
-        src: "/assets/Projects/Project1.gif",
+        src: "/assets/Projects/Project2.gif",
         alt: "Cloud Computing Project",
         width: 400,
         height: 400,
