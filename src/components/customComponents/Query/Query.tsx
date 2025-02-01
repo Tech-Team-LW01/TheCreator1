@@ -79,14 +79,17 @@ export default function Query() {
         </motion.div>
 
         {/* Right Side - Welcome Panel */}
-        <motion.div
-          className="flex-1 bg-[#ff0000] text-white p-16 flex flex-col items-center justify-center"
-          initial={{ x: 0 }}
-          animate={{ x: isSwapped ? "-100%" : 0 }}
-          transition={{ type: "tween", duration: 0.5 }}
-        >
-          <h2 className="text-4xl font-bold mb-6">Hello, Friend!</h2>
-          <p className="mb-8 text-lg">Enter your personal details and start journey with us</p>
+       <motion.div
+            className="flex-1 p-16 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/assets/Projects/form.jpg')"
+              }}
+              initial={{ x: 0 }}
+              animate={{ x: isSwapped ? "-100%" : 0 }}
+              transition={{ type: "tween", duration: 0.5 }}
+            >
+          <h2 className="text-4xl font-bold mb-6 text-[#ff0000]">Hello, Friend!</h2>
+          <p className="mb-8 text-lg text-[#ff0000]">Enter your personal details and start journey with us</p>
           <Button
             variant="outline"
             className="border-2 border-white bg-[#ff0000] text-white hover:bg-white/10"
