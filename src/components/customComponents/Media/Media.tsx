@@ -1,117 +1,171 @@
 import React from "react";
-import { Card, CardHeader, } from "@/components/ui/card";
-import Image from "next/image"
+import { Card, CardHeader } from "@/components/ui/card";
+import Image from "next/image";
+
 const mediaData = [
   {
     source: "PR Newswire",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Millennium Post",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "CXO Today",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "The Economic Times",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
   },
   {
     source: "Business India",
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp"
-  }
-
+    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+  },
 ];
-
 
 export default function MediaSection() {
   return (
-    <section className="bg-[#000000] py-6">
-      <div className="container mx-auto px-16">
-        {/* Main Container Box - Reduced width using max-w-5xl */}
-        <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-8 max-w-6xl px-4  mx-auto">
+    <section className="w-full bg-[#000000] py-6 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
+        {/* Main Container Box */}
+        <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-4 sm:p-6 md:p-8 w-full max-w-6xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-6">
-            <span className="text-yellow-400 text-sm">✦ PIONEERING EDUCATION</span>
-            <h1 className="text-3xl font-bold text-white mt-2">In the News</h1>
+          <div className="text-center mb-6 md:mb-8">
+            <span className="text-yellow-400 text-xs sm:text-sm inline-block mb-2">
+              ✦ PIONEERING EDUCATION
+            </span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+              In the News
+            </h1>
           </div>
 
           {/* Media Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
             {mediaData.map((media, index) => (
-              <Card 
-                key={index} 
-                className="relative h-44 overflow-hidden group cursor-pointer hover:-translate-y-1 transition-all duration-300 border border-gray-700 hover:border-gray-500"
+              <Card
+                key={index}
+                className="group relative overflow-hidden transition-all duration-300 ease-in-out
+                  h-28 sm:h-32 md:h-36 lg:h-44
+                  border border-gray-700 hover:border-gray-500
+                  hover:-translate-y-1 hover:shadow-lg
+                  active:scale-95 cursor-pointer
+                  touch-manipulation"
               >
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundImage: `url(${media.backgroundImage})` }}
                 />
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all" />
                 
-                <CardHeader className="relative h-full flex flex-col justify-center items-center pt-4 pb-0 px-1">
-                  <div className="relative z-10 w-full  h-full">
-                    <Image 
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all duration-300" />
+
+                {/* Content */}
+                <CardHeader className="relative h-full flex flex-col justify-center items-center p-2 sm:p-3 md:p-4">
+                  <div className="relative z-10 w-full h-full flex items-center justify-center">
+                    <Image
                       src={media.logo}
                       alt={media.source}
                       width={300}
                       height={100}
-                      className="object-contain w-full h-full px-1 pt-4 pb-0"
+                      loading="lazy"
+                      className="object-contain w-full h-full 
+                        px-1 pt-2 md:pt-4 pb-0
+                        transition-transform duration-300 
+                        group-hover:scale-105"
                       style={{
                         maxWidth: "100%",
                         maxHeight: "100%",
-                        objectFit: "contain"
+                        objectFit: "contain",
                       }}
                     />
                   </div>
                 </CardHeader>
+
+                {/* Optional: Source Name Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent
+                  p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-xs text-center truncate">
+                    {media.source}
+                  </p>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Optional: Add custom styles */}
+      <style jsx global>{`
+        .media-card-container {
+          perspective: 1000px;
+        }
+
+        @media (hover: hover) {
+          .group:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        @media (max-width: 640px) {
+          .group:active {
+            transform: scale(0.98);
+          }
+        }
+
+        .image-loading {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-loaded {
+          opacity: 1;
+        }
+      `}</style>
     </section>
   );
 }
+;

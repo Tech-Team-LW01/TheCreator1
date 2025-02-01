@@ -6,7 +6,7 @@ import InitCard from "./InitCard";
 
 export function OutCome() {
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full overflow-hidden ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <WavyBackground className="w-full relative rounded-xl">
           <div className="flex flex-col items-center justify-center py-12 md:py-16">

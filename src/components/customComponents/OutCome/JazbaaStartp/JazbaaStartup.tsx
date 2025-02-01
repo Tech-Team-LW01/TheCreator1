@@ -4,32 +4,28 @@ import Link from "next/link";
 
 export default function JazbaaStartupPlatform() {
   return (
-    <div className="min-h-full max-w-6xl mx-auto px-4 bg-black">
-      {/* Main Content Container */}
-      <div className="container mx-auto px-4 py-12 relative">
+    <section className="w-full bg-black overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#ff0000] mb-2">
+        <div className="text-center mb-12 max-w-3xl mx-auto">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#ff0000] mb-4">
             JAZBAA Start-up Platform
           </h1>
-         
-      
-      
-          <p className="text-gray-300 max-w-3xl mx-auto">
+          <p className="text-gray-300 text-sm md:text-base lg:text-lg px-4">
             An event which showcases the StartUps incubated by Engineering Students in 45 days during Summer Industrial
             Training Program.
           </p>
         </div>
 
         {/* Statistics Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-16">
           {/* Angel Investors Card */}
-          <Card className="bg-gray-800">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center text-center">
+          <Card className="bg-gray-800 h-full">
+            <CardContent className="p-4 md:p-6 h-full">
+              <div className="flex flex-col items-center text-center h-full">
                 <div className="mb-4">
                   <svg
-                    className="w-12 h-12 text-[#ff0000]"
+                    className="w-8 h-8 md:w-12 md:h-12 text-[#ff0000]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -42,8 +38,8 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-2 text-white">65+ Top-Notch</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">65+ Top-Notch</h3>
+                <p className="text-gray-300 text-sm md:text-base">
                   Angel Investors & Industry Experts from various cities namely Mumbai, Bangalore, Hyderabad, Gurgaon
                   were present at JAZBAA 2.0 & JAZBAA 3.0
                 </p>
@@ -52,12 +48,12 @@ export default function JazbaaStartupPlatform() {
           </Card>
 
           {/* Startups Card */}
-          <Card className="bg-[#ff0000] text-white">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center text-center">
+          <Card className="bg-[#ff0000] h-full">
+            <CardContent className="p-4 md:p-6 h-full">
+              <div className="flex flex-col items-center text-center h-full">
                 <div className="mb-4">
                   <svg
-                    className="w-12 h-12 text-white"
+                    className="w-8 h-8 md:w-12 md:h-12 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -70,8 +66,8 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">123+ Startups</h3>
-                <p>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">123+ Startups</h3>
+                <p className="text-white text-sm md:text-base">
                   "Unbelievable" was the feedback from the investors to these 123+ Startups which were ideated, build
                   and showcased at JAZBAA 2.0 & JAZBAA 3.0
                 </p>
@@ -80,12 +76,12 @@ export default function JazbaaStartupPlatform() {
           </Card>
 
           {/* Sectors Card */}
-          <Card className="bg-gray-800">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center text-center">
+          <Card className="bg-gray-800 h-full">
+            <CardContent className="p-4 md:p-6 h-full">
+              <div className="flex flex-col items-center text-center h-full">
                 <div className="mb-4">
                   <svg
-                    className="w-12 h-12 text-[#ff0000]"
+                    className="w-8 h-8 md:w-12 md:h-12 text-[#ff0000]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -98,8 +94,8 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-2 text-white">10+ Sectors</h3>
-                <p className="text-gray-300">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">10+ Sectors</h3>
+                <p className="text-gray-300 text-sm md:text-base">
                   Healthcare, Education, Logistics & Transportation, Agriculture, Consumer Products & Services, Retail,
                   Human Resource and many more
                 </p>
@@ -108,14 +104,14 @@ export default function JazbaaStartupPlatform() {
           </Card>
         </div>
 
-        {/* Background Decoration */}
-        <div className="absolute top-0 right-0 -z-10 opacity-20">
-          <div className="w-64 h-64 bg-red-900 transform rotate-45"></div>
+        {/* Background Decoration - Made them more subtle and contained */}
+        <div className="absolute top-0 right-0 -z-10 opacity-10 overflow-hidden">
+          <div className="w-48 h-48 md:w-64 md:h-64 bg-red-900 transform rotate-45 translate-x-1/2 -translate-y-1/2"></div>
         </div>
-        <div className="absolute bottom-0 left-0 -z-10 opacity-20">
-          <div className="w-64 h-64 bg-red-900 transform -rotate-45"></div>
+        <div className="absolute bottom-0 left-0 -z-10 opacity-10 overflow-hidden">
+          <div className="w-48 h-48 md:w-64 md:h-64 bg-red-900 transform -rotate-45 -translate-x-1/2 translate-y-1/2"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
