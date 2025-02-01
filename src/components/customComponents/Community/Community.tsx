@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, {  } from 'react';
 import { OurAlumniWorksAtCarousel } from "../../ui2/OurAlumniWorksAtCarousel";
 
 const Community = () => {
-  const [position, setPosition] = useState(0);
+ 
   
 
   const logos = [
     { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
-    { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
+    { image: '/assets/collogelogo/AU,JAipur.jpeg' },
+    { image: '/assets/collogelogo/CU,Punjab.jpeg' },
+    { image: '/assets/collogelogo/DEI,Agra.jpeg' },
+    { image: '/assets/collogelogo/IGEC.MP.jpeg' },
+    { image: '/assets/collogelogo/iiit,nagpur.jpeg' },
+    { image: '/assets/collogelogo/MCE,Bihar.jpeg' },
+    { image: '/assets/collogelogo/MU,jaipur.jpeg' },
+    { image: '/assets/collogelogo/MU,Rajsthan.jpeg' },
+    { image: '/assets/collogelogo/NIT,Goa.jpeg' },
+    { image: '/assets/collogelogo/NIT,kurukshetra.jpeg' },
     { image: '/assets/collogelogo/PVC,mumbai.jpeg' },
     { image: '/assets/collogelogo/RBS,Agra.jpeg' },
     { image: '/assets/collogelogo/UIET.MOU.Rohthak.jpeg' },
@@ -24,19 +24,7 @@ const Community = () => {
     { image: '/assets/collogelogo/VIT,Pune.jpeg' },
   ];
 
-  useEffect(() => {
-    const animate = () => {
-      setPosition((prevPosition) => {
-        if (prevPosition <= -100 * (logos.length - 5)) {
-          return 0;
-        }
-        return prevPosition - 0.9;
-      });
-    };
-
-    const animationFrame = setInterval(animate, 50);
-    return () => clearInterval(animationFrame);
-  }, [logos.length]);
+ 
 
   return (
     <div className="w-full max-w-full mx-auto overflow-hidden bg-white p-8">
@@ -44,13 +32,13 @@ const Community = () => {
         Our College Community
       </h1>
       {/* First row - Moving Left */}
-      <div className="flex flex-col items-center justify-center bg-white  relative overflow-hidden mt-6">
+      <div className="flex flex-col items-center justify-center bg-white   relative overflow-hidden mt-6">
         <OurAlumniWorksAtCarousel
           items={logos}
           direction="left"
           speed="slow"
-          cardWidth={150}
-          cardHeight={80}
+          cardWidth={200}
+          cardHeight={150}
         />
       </div>
 

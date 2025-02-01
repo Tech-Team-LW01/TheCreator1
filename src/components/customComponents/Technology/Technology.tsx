@@ -6,57 +6,57 @@ import { motion } from "framer-motion"
 const technologies = [
   {
     name: "Python",
-    image: "/assets/TechStackLogo/pythonLogo.svg",
+    image: "/assets/TechStackLogo/Python-Emblem.png",
     category: "Programming Language",
   },
   {
     name: "Redis",
-    image: "/assets/TechStackLogo/redisLogo.svg",
+    image: "/assets/TechStackLogo/5738031.png",
     category: "Database",
   },
   {
     name: "Docker",
-    image: "/assets/TechStackLogo/dockerLogo.svg",
+    image: "/assets/TechStackLogo/blockchain.png",
     category: "Containerization",
   },
   {
     name: "Apache",
-    image:"/assets/TechStackLogo/apacheLogo.svg",
+    image:"/assets/TechStackLogo/IOT.png",
     category: "Web Server",
   },
   {
     name: "VS Code",
-    image:"/assets/TechStackLogo/vscodeLogo.svg",
+    image:"/assets/TechStackLogo/linux7.png",
     category: "IDE",
   },
   {
     name: "MySQL",
-    image:"/assets/TechStackLogo/mysqlLogo.svg",
+    image:"/assets/TechStackLogo/machine learning.png",
     category: "Database",
   },
   {
     name: "Firebase",
-    image:"/assets/TechStackLogo/firebaseLogo.svg",
+    image:"/assets/TechStackLogo/web3.0.png",
     category: "Backend Platform",
   },
   {
     name: "AWS",
-    image:"/assets/TechStackLogo/awsLogo.svg",
+    image:"/assets/TechStackLogo/11096817.png",
     category: "Cloud Platform",
   },
   {
     name: "Kubernetes",
-    image: "/assets/TechStackLogo/kubernetesLogo.svg",
+    image: "/assets/TechStackLogo/10551606.png",
     category: "Container Orchestration",
   },
   {
     name: "React",
-    image:"/assets/TechStackLogo/reactLogo.svg",
+    image:"/assets/TechStackLogo/8618881.png",
     category: "Frontend Framework",
   },
   {
     name: "MongoDB",
-    image:"/assets/TechStackLogo/mogodbLogo.svg",
+    image:"/assets/TechStackLogo/cloud computing.png",
     category: "Database",
   },
   {
@@ -107,7 +107,7 @@ export default function TechStack() {
                   <img
                     src={tech.image || "/placeholder.svg"}
                     alt={`${tech.name} logo`}
-                    className="w-16 h-16 object-contain transition-transform group-hover:scale-110"
+                    className="w-12 h-12 object-contain transition-transform group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center">
                     <div className="text-center px-1">
