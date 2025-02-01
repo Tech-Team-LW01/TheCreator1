@@ -5,13 +5,12 @@ import Hero from "@/components/customComponents/Hero/Hero";
 import TechStack from "@/components/customComponents/Technology/Technology";
 import {TopLeaders} from "@/components/customComponents/TopLeaders/TopLeaders";
 import {LeftRightAlumniCarousel} from "@/components/customComponents/CompaniesCarousel/CompaniesCarousel";
-import Projects from "@/components/customComponents/Projects/Project";
+// import Projets from "@/components/customComponents/Projects/Project";
 import {OutCome}  from "@/components/customComponents/OutCome/OutCome";
 import VideoTestimonials from "@/components/customComponents/Testimonials/VideoTestimonials";
 import FactAndFiqure from "@/components/customComponents/FactAndFigures/FactAndFiqure";
 import Awards from "@/components/customComponents/Awards/Awards";
 import Benifits from "@/components/customComponents/Benefits/Benefits";
-import Community from "@/components/customComponents/Community/Community";
 // import Tedx from "@/components/customComponents/Tedx/Tedx";
 import Tedx2 from "@/components/customComponents/Tedx/Tedx2";
 import FeatureGrid from "@/components/customComponents/Tedx/Feature"
@@ -24,6 +23,8 @@ import ImageTestimonials from "@/components/customComponents/Testimonials/Testim
 import Query from "@/components/customComponents/Query/Query";
 import OutComeGallary from "@/components/customComponents/OutCome/OutComeGallary";
 import JazbaaStartupPlatform from "@/components/customComponents/OutCome/JazbaaStartp/JazbaaStartup";
+import InitPlacement from "@/components/customComponents/OutCome/Init/InitPlacement";
+import Community from "@/components/customComponents/Community/Community";
 export default function Home() {
   return (
     <div >
@@ -31,18 +32,20 @@ export default function Home() {
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
-<Projects/>
+
+
 <VideoTestimonials/>
 <ImageTestimonials/>
 <Benifits></Benifits>
 <MediaSection/>
 <Community/>
-
+<div>
 <OutCome/>
 <OutComeGallary/>
 
 <JazbaaStartupPlatform/>
-
+<InitPlacement/>
+</div>
 <FactAndFiqure/>
 
 <Blogs/>
