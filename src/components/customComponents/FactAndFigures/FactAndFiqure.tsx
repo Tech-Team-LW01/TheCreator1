@@ -102,7 +102,7 @@ export default function FactAndFigures() {
             <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-4 right-16">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/FactAndFigure/startup1.png"
+                    src="/assets/FactAndFigure/kidzogram.png"
                     alt=""
                     className="w-16 h-16 "
                   />
@@ -111,7 +111,7 @@ export default function FactAndFigures() {
               <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-1/3 left-4">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/FactAndFigure/startup1.png"
+                    src="/assets/FactAndFigure/mystic-map.png"
                     alt=""
                     className="w-16 h-16 "
                   />
@@ -120,7 +120,7 @@ export default function FactAndFigures() {
               <div className="absolute border-2  rounded-full  p-0 border-gray-100 bottom-0 right-16">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/FactAndFigure/startup1.png"
+                    src="/assets/FactAndFigure/poketship.png"
                     alt=""
                     className="w-16 h-16 "
                   />
@@ -130,7 +130,7 @@ export default function FactAndFigures() {
               <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-48 left-24">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/FactAndFigure/startup1.png"
+                    src="/assets/FactAndFigure/logo.jpeg"
                     alt=""
                     className="w-16 h-16 "
                   />
@@ -141,7 +141,7 @@ export default function FactAndFigures() {
               <div className="absolute border-2  rounded-full  p-0 border-gray-100 top-8 left-24">
                 <div className="w-full h-full object-fill rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/FactAndFigure/startup1.png"
+                    src="/assets/FactAndFigure/validx.png"
                     alt=""
                     className="w-16 h-16 "
                   />
