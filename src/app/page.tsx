@@ -44,9 +44,9 @@ export default function Home() {
 <OutComeGallary/>
 
 <JazbaaStartupPlatform/>
-<InitPlacement/>
+{/* <InitPlacement/> */}
 </div>
-<FactAndFiqure/>
+{/* <FactAndFiqure/> */}
 
 <Blogs/>
 <Awards/>

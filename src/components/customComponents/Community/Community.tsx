@@ -37,7 +37,7 @@ const Community = () => {
           items={logos}
           direction="left"
           speed="slow"
-          cardWidth={200}
+          cardWidth={150}
           cardHeight={150}
         />
       </div>
