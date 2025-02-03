@@ -2,12 +2,14 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { IndiaMap } from "@/components/ui/India-map";
+// import { IndiaMap } from "@/components/ui/India-map";
 import { Badge } from "@/components/ui/badge"
 
 // import { MdOnlinePrediction } from "react-icons/md"
 import { BsCalendarCheck } from "react-icons/bs"
 import { AiOutlineHourglass } from "react-icons/ai"
+// import { HiShieldCheck } from "react-icons/hi2"
+import { Album ,ShieldCheck} from "lucide-react";
 
 
 const Hero = () => {
@@ -26,14 +28,15 @@ const Hero = () => {
 
             <div className="relative z-10 text-white space-y-5">
               {/* Main Content Stack */}
-              <div className="space-y-2">
-                <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold tracking-tight">
-                  Summer Internship 2025
-                </h1>
-                <p className="text-xl lg:text-2xl font-medium text-red-100">
-                  Industrial Training Program
-                </p>
-              </div>
+              <div className="space-y-2 font-[Poppins]">
+                   <h1 className="text-2xl lg:text-4xl xl:text-5xl font-[Khand] tracking-tight">
+                      Summer Internship 2025
+                    </h1>
+                    <p className="text-2xl lg:text-4xl font-bold text-red-100">
+                      Industrial Training Program
+                    </p>
+                  </div>
+
 
 
               {/* Target Audience */}
@@ -77,7 +80,7 @@ const Hero = () => {
 
                     {/* Admission Section */}
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <BsCalendarCheck className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium"> TENTATIVE START DATES</span>
                         <span className="font-bold text-xs block text-white">May 2025 / June 2025 / July 2025</span>
@@ -89,7 +92,7 @@ const Hero = () => {
 
                     {/* Course Fee Section */}
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <AiOutlineHourglass className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <AiOutlineHourglass className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium">DURATION SUMMER PROGRAM​</span>
                         <div className="flex flex-col gap-1">
@@ -119,25 +122,29 @@ const Hero = () => {
 
                     </div>
                     <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                      <Album className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium">Internship ​</span>
                        
 
-                        <span className="font-bold text-xs block text-white">  Industry Recognised Internship (Project) Certificate </span>
+                        <span className="font-bold text-xs block text-white">  Industry Recognised Internship    (Project) Certificate
+                          
+                           </span>
 
                       </div>
 
                       
                     </div>
-
-                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <BsCalendarCheck className="text-gray-700 text-3xl bg-gray-50 p-1 rounded-lg mt-1" />
+                    {/* text-3xl bg-red-50 p-1 rounded-lg mt-1 */}
+                    <div className="flex items-start gap-2 justify-start sm:justify-center  lg:justify-center">
+                      <ShieldCheck className="text-[#ff0000] text-3xl bg-red-50  rounded-lg mt-1" />
                       <div>
                         <span className="text-white text-xs font-medium">Training Certificate</span>
                         
 
-                        <span className="font-bold text-xs block text-white">  Training Certificate from LinuxWorld Informatics Pvt Ltd </span>
+                        <span className="font-bold text-xs block text-white">  
+                          Training Certificate from LinuxWorld Informatics Pvt Ltd 
+                          </span>
 
                       </div>
 
