@@ -1,11 +1,10 @@
 "use client"
 
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Linkedin } from 'lucide-react';
-import { landingPageTestimonialPosts } from "./data"
-
+import { Card, CardContent } from "@/components/ui/card";
+import ImageSlideshow from './ImageSlideshow';
+import { motion } from 'framer-motion';
+import { landingPageTestimonialPosts } from './data';
 export default function ImageTestimonials() {
   const [showAll, setShowAll] = useState(false);
   const initialDisplayCount = 10;
@@ -22,56 +21,53 @@ export default function ImageTestimonials() {
   return (
     <section className="bg-[#000000] py-6">
       <div className="max-w-6xl mx-auto px-2">
-        {/* Container Box with Border */}
         <div className="bg-[#111111] border border-gray-600 rounded-xl p-8 shadow-2xl">
           {/* Header Section */}
           <div className="text-center mb-12">
-
             <h2 className="text-[#ff0000] text-2xl md:text-3xl font-bold mt-2">
               Ambitious Student
             </h2>
-
             <h2 className="text-white pt-2 text-md font-semibold">
               HERE IT FROM THEM
             </h2>
           </div>
           
           {/* Testimonials Grid */}
-          <div className="columns-1 md:columns-4 lg:columns-4 gap-6 space-y-4">
-            {displayedTestimonials.map((post) => (
-              <Card
-                key={post.id}
-                className="relative overflow-hidden bg-[#000000] text-white border border-gray-500 mb-4 break-inside-avoid hover:border-gray-400 transition-colors"
-              >
-                <CardHeader className="pb-2">
-                  <div className="flex items-center space-x-4">
-                    <Avatar className="h-12 w-12 flex-shrink-0">
-                      <AvatarImage src={post.author.avatar} alt={post.author.name} />
-                      <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div className="flex-grow">
-                      <h3 className="text-sm font-semibold">{post.author.name}</h3>
-                      <p className="text-xs text-gray-400">{post.author.title}</p>
-                    </div>
-                    <Linkedin className="h-5 w-5 text-gray-400 hover:text-blue-400 cursor-pointer" />
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-2">
-                  <div className="space-y-2 text-sm">
-                    {post.content.split('\n\n').map((paragraph, index) => (
-                      <p key={index}>
-                        {paragraph.split(' ').map((word, wordIndex) => {
-                          if (word.startsWith('@') || word.startsWith('#')) {
-                            return <span key={wordIndex} className="text-[#63B3ED]">{word} </span>;
-                          }
-                          return word + ' ';
-                        })}
-                      </p>
-                    ))}
-                  </div>
-                  <p className="mt-4 text-xs text-gray-400">{post.timestamp}</p>
-                </CardContent>
-              </Card>
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-4">
+            {displayedTestimonials.map((testimonial:any) => (
+              <div key={testimonial.id} className="break-inside-avoid space-y-4">
+                {/* Testimonial Screenshot Card */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+                    <CardContent className="p-4">
+                      <img 
+                        src={testimonial.testimonialScreenShot} 
+                        alt="Testimonial"
+                        className="w-full h-auto rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                      />
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                {/* Additional Images Slideshow (if exists) */}
+                {testimonial.images && testimonial.images.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                  >
+                    <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+                      <CardContent className="p-4">
+                        <ImageSlideshow images={testimonial.images} />
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                )}
+              </div>
             ))}
           </div>  
 

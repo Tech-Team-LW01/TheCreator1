@@ -2,86 +2,75 @@
 export const landingPageTestimonialPosts = [
   {
     id: 1,
-    author: {
-      name: "Nikita Chawre",
-      title: "Data Analysis Enthusiast",
-      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-    },
-    content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
-    timestamp: "18 Mar 2023"
+    testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+    images:[
+
+      "/assets/event-gallery/event-gallery-1.jpg",
+      "/assets/event-gallery/event-gallery-2.jpg",
+      "/assets/event-gallery/event-gallery-3.jpg",
+
+    ]
+   
   },
    
     {
       id: 2,
-      author: {
-        name: "Ayushi Jain",
-        title: "Branding | Marketing and Strategy",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `From Google searches...`,
-      timestamp: "10 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial2.png",
+      images:[
+
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+  
+      ]
     },
     {
       id: 3,
-      author: {
-        name: "Prashant Hada",
-        title: "Student at Ronald University of Applied Sciences",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `Happy to announce the completion of the Power BI workshop. Thanks to @LinuxWorld and @DeekshaAnand for the guidance and knowledge transfer. #PowerBI #DataAnalytics`,
-      timestamp: "15 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial3.png",
+      images:[
+
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+  
+      ]
     },
     {
       id: 4,
-      author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
+      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
       timestamp: "18 Mar 2023"
     },
     
     {
       id: 5,
-      author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
-      timestamp: "18 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+      images:[
+
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+  
+      ]
     },
   
     {
       id: 7,
-      author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
-      timestamp: "18 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
     },
     {
       id: 8,
-      author: {
-        name: "Nikita Chawre",
-        title: "Data Analysis Enthusiast",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `Updated my dashboard with a new color scheme for better UX! Appreciate the feedback from the community. #DataVisualization #UserExperience`,
-      timestamp: "18 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
     },
     {
       id: 9,
-      author: {
-        name: "Ayushi Jain",
-        title: "Branding | Marketing and Strategy",
-        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHXkuvnF5Zm7g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724997745281?e=1741824000&v=beta&t=4L3p08LUosAQ3DGvDfuJ3VVdjuPLoY3hgzwy7A7rTQQ"
-      },
-      content: `From Google searches...`,
-      timestamp: "10 Mar 2023"
+      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+      images:[
+
+        "/assets/event-gallery/event-gallery-1.jpg",
+        "/assets/event-gallery/event-gallery-2.jpg",
+        "/assets/event-gallery/event-gallery-3.jpg",
+  
+      ]
     },
   
   ];
