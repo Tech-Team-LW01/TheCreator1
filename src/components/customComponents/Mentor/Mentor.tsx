@@ -23,7 +23,7 @@ const Mentor = () => {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-br from-red-900 via-black to-red-900">
+    <section className="w-full ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12">
           {/* Left Section */}
@@ -31,8 +31,9 @@ const Mentor = () => {
             <div className="prose prose-invert max-w-none">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold 
                 bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent 
-                mb-3 sm:mb-4">
-                Your Summer Internship Mentor
+                mb-3 sm:mb-4 ">
+                  <p className='text-[#ff0000]'>  Your Summer Internship Mentor</p>
+
               </h1>
               
               <p className="text-lg sm:text-xl text-white font-medium mb-6 sm:mb-8">
@@ -57,7 +58,7 @@ const Mentor = () => {
               <blockquote className="text-lg sm:text-xl italic mt-8 sm:mt-12 
                 pl-4 sm:pl-6 border-l-4 border-red-400/50 text-white">
                 Mentor to Fortune 500 executives, specializing in knowledge transfer to 
-                <span className="text-red-400 font-medium"> C-level technologists</span> 
+                <span className="text-[#ff0000] font-medium"> C-level technologists</span> 
                 {" "}across cutting-edge domains.
               </blockquote>
             </div>
@@ -93,13 +94,13 @@ const Mentor = () => {
                   >
                     <Card className="bg-black/90 backdrop-blur-sm p-2 sm:p-3 
                       rounded-lg sm:rounded-xl flex items-center gap-2 sm:gap-3 
-                      border-red-900/50 shadow-xl transform hover:scale-105 
+                      border-red-200 shadow-xl transform hover:scale-105 
                       transition-transform">
-                      <div className="bg-red-400/20 p-1.5 sm:p-2 rounded-full">
-                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-red-400" />
+                      <div className="bg-green-700 p-1.5 sm:p-2 rounded-full">
+                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-black" />
                       </div>
                       <div className="text-white">
-                        <div className="text-[10px] sm:text-xs font-medium text-red-200">
+                        <div className="text-[10px] sm:text-xs font-medium text-white">
                           Successful Transfer
                         </div>
                         <div className="text-xs sm:text-sm font-semibold">

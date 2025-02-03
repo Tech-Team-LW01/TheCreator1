@@ -86,7 +86,7 @@ export default function TechStack() {
     <section className="container bg-black mx-auto px-4 py-8">
       <div className="grid mx-auto gap-8 lg:grid-cols-2 lg:gap-12 items-center max-w-6xl" >
         <div className="space-y-4">
-          <h1 className="text-3xl text-white font-bold tracking-tight lg:text-3xl">
+          <h1 className="text-3xl text-[#ff0000] font-bold tracking-tight lg:text-3xl">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
           <p className="text-muted-foreground text-base text-white">
