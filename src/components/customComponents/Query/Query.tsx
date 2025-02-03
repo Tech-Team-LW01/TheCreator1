@@ -79,7 +79,7 @@ export default function Query() {
         </motion.div>
 
         {/* Right Side - Welcome Panel */}
-       <motion.div
+        <motion.div
             className="flex-1 p-16 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: "url('/assets/Projects/form.jpg')"
@@ -88,8 +88,8 @@ export default function Query() {
               animate={{ x: isSwapped ? "-100%" : 0 }}
               transition={{ type: "tween", duration: 0.5 }}
             >
-          <h2 className="text-4xl font-bold mb-6 text-[#ff0000]">Hello, Friend!</h2>
-          <p className="mb-8 text-lg text-[#ff0000]">Enter your personal details and start journey with us</p>
+          <h2 className="text-4xl font-bold mb-6 text-white">Hello, Friend!</h2>
+          <p className="mb-8 text-lg text-white">Enter your personal details and start journey with us</p>
           <Button
             variant="outline"
             className="border-2 border-white bg-[#ff0000] text-white hover:bg-white/10"
@@ -98,6 +98,7 @@ export default function Query() {
             {isSignInForm ? "SIGN UP" : "SIGN IN"}
           </Button>
         </motion.div>
+
       </div>
     </div>
   );

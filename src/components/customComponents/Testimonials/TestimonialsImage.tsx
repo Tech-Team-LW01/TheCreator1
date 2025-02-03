@@ -26,11 +26,13 @@ export default function ImageTestimonials() {
         <div className="bg-[#111111] border border-gray-600 rounded-xl p-8 shadow-2xl">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h2 className="text-white text-md font-semibold">
-              HERE IT FROM THEM
-            </h2>
-            <h2 className="text-white text-2xl md:text-3xl font-bold mt-2">
+
+            <h2 className="text-[#ff0000] text-2xl md:text-3xl font-bold mt-2">
               Ambitious Student
+            </h2>
+
+            <h2 className="text-white pt-2 text-md font-semibold">
+              HERE IT FROM THEM
             </h2>
           </div>
           

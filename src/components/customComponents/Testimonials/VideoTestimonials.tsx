@@ -107,11 +107,11 @@ export default function VideoTestimonials() {
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
             Hear it From Our Learners
           </h1>
-          <span className="bg-orange-500 text-white px-3 py-1 rounded-md text-sm">
+          <span className="bg-[#ff0000] text-white px-3 py-1 rounded-md text-sm">
             Testimonials
           </span>
         </div>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-500 text-lg">
           Tech Alumni Stories, You can't afford to miss.
         </p>
       </header>

@@ -54,10 +54,10 @@ export default function Benefits() {
         <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-8">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold text-white mb-4">
+            <h1 className="text-3xl font-bold text-[#ff0000] mb-4">
               Benefits of Summer Program 2025
             </h1>
-            <h2 className="text-xl text-white mb-8">
+            <h2 className="text-lg text-white mb-8">
               Learn with Engineering students from Across India
             </h2>
           </div>
@@ -67,7 +67,7 @@ export default function Benefits() {
             {benefitsData.slice(0, 3).map((benefit, index) => (
               <Card 
                 key={index} 
-                className="bg-white border border-gray-700 hover:border-gray-500 transition-all"
+                className="bg-white border p-2 border-gray-700 hover:border-gray-500 transition-all"
               >
                 <CardHeader className="text-center">
                   <span className="text-4xl">{benefit.icon}</span>
