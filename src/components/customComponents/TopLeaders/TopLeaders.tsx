@@ -1,6 +1,6 @@
 import React from "react";
 import { Vortex } from "../../ui/vortex";
-
+import { Quote } from 'lucide-react';
 export function TopLeaders() {
   return (
     <div className="w-[100%] mx-auto rounded-md  h-[20rem] overflow-hidden">
@@ -13,8 +13,9 @@ export function TopLeaders() {
 
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+        <Quote className='inline mb-4 rotate-180 text-red-500' />
         AtleastOnce,Every Engineer should be part of LinuxWorld&apos;s summer Internship Program 
-
+        <Quote className='inline mt-2 text-red-500'/>
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
           <button className="px-4 py-2 bg-[#ff0000] hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
