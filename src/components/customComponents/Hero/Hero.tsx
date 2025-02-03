@@ -71,101 +71,87 @@ const Hero = () => {
 {/* end right section  */}
       </div>
      
-        <div className="relative md:-mt-12  lg:-mt-4 z-30">
-              <div className={`bg-black rounded-lg p-4 shadow-lg max-w-6xl border border-white mx-auto`}>
-                <div className="flex flex-col lg:flex-row justify-between items-start gap-4"> {/* Adjusted for consistency */}
-                  {/* Info Sections Container */}
-                  <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 ">
-               
+      <div className="relative md:-mt-12 lg:-mt-4 z-30">
+  <div className="bg-black rounded-lg p-6 shadow-lg max-w-6xl border border-white mx-auto">
+    <div className="flex flex-col lg:flex-row justify-between items-start gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+        {/* Admission Section */}
+        <div className="flex items-start gap-2 justify-start min-w-[250px]">
+          <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-red-50 rounded-lg">
+            <BsCalendarCheck className="w-5 h-5 text-[#ff0000]" />
+          </div>
+          <div className="flex flex-col flex-grow min-w-0">
+            <span className="text-white text-xs font-medium uppercase tracking-wide">
+              TENTATIVE START DATES
+            </span>
+            <span className="font-bold text-xs text-white mt-1">
+              May 2025 / June 2025 / July 2025
+            </span>
+            <Badge variant="outline" className="text-[#ff0000] border-red-200 text-[10px] mt-2 w-fit">
+              Limited seats
+            </Badge>
+          </div>
+        </div>
 
-                    {/* Admission Section */}
-                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <BsCalendarCheck className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
-                      <div>
-                        <span className="text-white text-xs font-medium"> TENTATIVE START DATES</span>
-                        <span className="font-bold text-xs block text-white">May 2025 / June 2025 / July 2025</span>
-                        <Badge variant="outline" className="text-[#ff0000] border-red-200 text-[10px] mt-0.5">
-                          Limited seats
-                        </Badge>
-                      </div>
-                    </div>
+        {/* Duration Section */}
+        <div className="flex items-start gap-2 justify-start min-w-[250px]">
+          <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-red-50 rounded-lg">
+            <AiOutlineHourglass className="w-5 h-5 text-[#ff0000]" />
+          </div>
+          <div className="flex flex-col flex-grow min-w-0">
+            <span className="text-white text-xs font-medium uppercase tracking-wide">
+              DURATION SUMMER PROGRAM​
+            </span>
+            <span className="font-bold text-xs text-white mt-1">
+              6 weeks / 8 weeks
+            </span>
+          </div>
+        </div>
 
-                    {/* Course Fee Section */}
-                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <AiOutlineHourglass className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
-                      <div>
-                        <span className="text-white text-xs font-medium">DURATION SUMMER PROGRAM​</span>
-                        <div className="flex flex-col gap-1">
-                          <div className="flex items-center gap-2">
-                             <span className="font-bold text-xs text-white">6 weeks / 8 weeks</span>
-                             {/* <span className="line-through text-gray-400 text-xs">₹75,000</span>
-                             <span className="text-green-600 font-semibold text-[10px]">
-                               Save ₹30,000/-
-                             </span> */}
-                          </div>
-                      {/* <div>
-                        <span className="text-black text-xs font-medium">Course Fees</span>
-                        <div className="flex flex-col gap-1">
-                          <div className="flex items-center gap-2">
-                             <span className="font-bold text-xs">₹45,000 (+taxes)</span>
-                             <span className="line-through text-gray-400 text-xs">₹75,000</span>
-                             <span className="text-green-600 font-semibold text-[10px]">
-                               Save ₹30,000/-
-                             </span>
-                          </div> */}
-                         
+        {/* Internship Section */}
+        <div className="flex items-start gap-2 justify-start min-w-[250px]">
+          <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-red-50 rounded-lg">
+            <Album className="w-6 h-6 text-[#ff0000]" />
+          </div>
+          <div className="flex flex-col flex-grow min-w-0">
+            <span className="text-white text-xs font-medium uppercase tracking-wide">
+              Internship ​
+            </span>
+            <span className="font-bold text-xs text-white mt-1">
+              Industry Recognised Internship (Project) Certificate
+            </span>
+          </div>
+        </div>
 
+        {/* Training Certificate Section */}
+        <div className="flex items-start gap-3 justify-start min-w-[250px]">
+          <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 bg-red-50 rounded-lg">
+            <ShieldCheck className="w-6 h-6 text-[#ff0000]" />
+          </div>
+          <div className="flex flex-col flex-grow min-w-0">
+            <span className="text-white text-xs font-medium uppercase tracking-wide">
+              Training Certificate
+            </span>
+            <span className="font-bold text-xs text-white mt-1">
+              Training Certificate from LinuxWorld Informatics Pvt Ltd
+            </span>
+          </div>
+        </div>
+      </div>
 
-                        </div>
-                      </div>
-
-
-                    </div>
-                    <div className="flex items-start gap-2 justify-start sm:justify-center lg:justify-center">
-                      <Album className="text-[#ff0000] text-3xl bg-red-50 p-1 rounded-lg mt-1" />
-                      <div>
-                        <span className="text-white text-xs font-medium">Internship ​</span>
-                       
-
-                        <span className="font-bold text-xs block text-white">  Industry Recognised Internship    (Project) Certificate
-                          
-                           </span>
-
-                      </div>
-
-                      
-                    </div>
-                    {/* text-3xl bg-red-50 p-1 rounded-lg mt-1 */}
-                    <div className="flex items-start gap-2 justify-start sm:justify-center  lg:justify-center">
-                      <ShieldCheck className="text-[#ff0000] text-3xl bg-red-50  rounded-lg mt-1" />
-                      <div>
-                        <span className="text-white text-xs font-medium">Training Certificate</span>
-                        
-
-                        <span className="font-bold text-xs block text-white">  
-                          Training Certificate from LinuxWorld Informatics Pvt Ltd 
-                          </span>
-
-                      </div>
-
-                      
-                    </div>
-                  </div>
-                 
-
-                  {/* Button Section */}
-                  <div className="flex items-center justify-center gap-2 lg:border-l lg:pl-4 w-full lg:w-auto pl-8">
-                    <div className="flex flex-col items-start justify-center sm:items-center lg:items-center w-full lg:w-auto">
-                      <a href="" target="blank">
-                        <Button className="bg-[#ff0000] mt-2 item-center justify-center md:mx-4 hover:bg-[#ff0000] hover:shadow-md hover:shadow-black w-full sm:w-auto text-sm py-6">
-                          Apply Now
-                        </Button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      {/* Button Section */}
+      <div className="flex items-center justify-center lg:border-l lg:pl-6 w-full lg:w-auto mt-6 lg:mt-0">
+        <div className="flex flex-col items-center justify-center w-full lg:w-auto">
+          <a href="" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto">
+            <Button className="bg-[#ff0000] w-full lg:w-auto text-sm py-6 px-8 hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300">
+              Apply Now
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
   );
 };
