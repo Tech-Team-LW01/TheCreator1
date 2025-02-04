@@ -4,64 +4,64 @@ import Image from "next/image";
 
 const mediaData = [
   {
-    source: "PR Newswire",
+   
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/with-names3.jpg",
   },
   {
-    source: "Millennium Post",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/with-names2.jpg",
   },
   {
-    source: "CXO Today",
+ 
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/with-names.jpg",
   },
   {
-    source: "The Economic Times",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/WhatsApp-Image-2023-09-02-at-4.41.jpg",
   },
   {
-    source: "Business India",
+   
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.16 PM.jpeg",
   },
   {
-    source: "Business India",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.06 PM.jpeg",
   },
   {
-    source: "Business India",
+   
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.04 PM.jpeg",
   },
   {
-    source: "Business India",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/Asset 1.png",
   },
   {
-    source: "Business India",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/1 (1).jpg",
   },
   {
-    source: "Business India",
+  
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/2.jpg",
   },
   {
-    source: "Business India",
+  
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/3 (1).jpg",
   },
   {
-    source: "Business India",
+    
     backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/mu-journalist-barkha-dutt.media.webp",
+    logo: "/assets/media/Media 4.jpg",
   },
 ];
 
@@ -107,9 +107,9 @@ export default function MediaSection() {
                   <div className="relative z-10 w-full h-full flex items-center justify-center">
                     <Image
                       src={media.logo}
-                      alt={media.source}
-                      width={300}
-                      height={100}
+                      alt={''}
+                      width={400}
+                      height={200}
                       loading="lazy"
                       className="object-contain w-full h-full 
                         px-1 pt-2 md:pt-4 pb-0
@@ -128,7 +128,7 @@ export default function MediaSection() {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent
                   p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white text-xs text-center truncate">
-                    {media.source}
+                    
                   </p>
                 </div>
               </Card>
