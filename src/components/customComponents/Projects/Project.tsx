@@ -122,6 +122,7 @@ export default function Projects(): JSX.Element {
 
   return (
     <div className="relative min-h-screen bg-black">
+      <div >hi</div>
       <div className="container mx-auto max-w-6xl px-4 pt-16">
         {/* Projects Section */}
         <div className="space-y-8">
