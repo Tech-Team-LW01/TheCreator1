@@ -26,6 +26,7 @@ import InitPlacement from "@/components/customComponents/OutCome/Init/InitPlacem
 import Community from "@/components/customComponents/Community/Community";
 import { MentorScroll } from "@/components/customComponents/Mentor/mentorScroll";
 import Map from "@/components/customComponents/Map/Map";
+import { JazbaaTimeLine } from "@/components/customComponents/JazbaaTimeLine/JazbaaTimeLine";
 export default function Home() {
   return (
     <div >
@@ -63,6 +64,7 @@ export default function Home() {
 
 {/* <Mentor2/> */}
 <FeatureGrid/>
+<JazbaaTimeLine/>
 <Projets/>
 
     </div>
