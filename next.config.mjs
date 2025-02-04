@@ -13,9 +13,15 @@ const nextConfig = {
               hostname: 'utfs.io',
   
             },
+
             {
               protocol: 'https',
               hostname: 'assets.aceternity.com',
+  
+            },
+            {
+              protocol: 'https',
+              hostname: 'media.licdn.com',
   
             },
           ],
