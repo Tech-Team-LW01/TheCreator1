@@ -114,36 +114,6 @@ updateConfigsForMobile(mediaQuery.matches);
 // Listen for changes
 mediaQuery.addListener((e) => updateConfigsForMobile(e.matches));
 
-// export const wavyLinePoints: Point[] = [
-//   { x: 50, y: 0 },
-//   { 
-//     x: 50, 
-//     y: 200, 
-//     controlPoint1: { x: 60, y: 100 }, 
-//     controlPoint2: { x: 40, y: 150 } 
-//   },
-//   { 
-//     x: 50, 
-//     y: 400, 
-//     controlPoint1: { x: 60, y: 300 }, 
-//     controlPoint2: { x: 40, y: 350 } 
-//   },
-//   { 
-//     x: 50, 
-//     y: 600, 
-//     controlPoint1: { x: 60, y: 500 }, 
-//     controlPoint2: { x: 40, y: 550 } 
-//   },
-//   { 
-//     x: 50, 
-//     y: 800, 
-//     controlPoint1: { x: 60, y: 700 }, 
-//     controlPoint2: { x: 40, y: 750 } 
-//   },
-//   { x: 50, y: 1000 }
-// ];
-
-// ;
 
 
 export const wavyLinePoints: Point[] = [

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ImageSlideshow = ({ images }:any) => {
+interface ImageSlideshowProps {
+  images: string[]; // Array of image URLs (strings)
+}
+
+
+const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

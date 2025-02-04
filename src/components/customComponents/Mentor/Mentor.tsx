@@ -37,7 +37,7 @@ const Mentor = () => {
               </h1>
               
               <p className="text-lg sm:text-xl text-white font-medium mb-6 sm:mb-8">
-                Visionary Leader Committed to "Making India Future-Ready"
+                Visionary Leader Committed to &quot;Making India Future-Ready&quot;
               </p>
 
               <div className="grid gap-4 sm:gap-6">

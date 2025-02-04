@@ -5,6 +5,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import ImageSlideshow from './ImageSlideshow';
 import { motion } from 'framer-motion';
 import { landingPageTestimonialPosts } from './data';
+import Image from 'next/image';
+
+// Define interface for testimonial data
+interface Testimonial {
+  id: string | number;
+  testimonialScreenShot: string;
+  images?: string[];
+}
+
 export default function ImageTestimonials() {
   const [showAll, setShowAll] = useState(false);
   const initialDisplayCount = 10;
@@ -34,7 +43,7 @@ export default function ImageTestimonials() {
           
           {/* Testimonials Grid */}
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-4">
-            {displayedTestimonials.map((testimonial:any) => (
+            {displayedTestimonials.map((testimonial: Testimonial) => (
               <div key={testimonial.id} className="break-inside-avoid space-y-4">
                 {/* Testimonial Screenshot Card */}
                 <motion.div
@@ -44,11 +53,16 @@ export default function ImageTestimonials() {
                 >
                   <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                     <CardContent className="p-4">
-                      <img 
-                        src={testimonial.testimonialScreenShot} 
-                        alt="Testimonial"
-                        className="w-full h-auto rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-200"
-                      />
+                      <div className="relative w-full h-[200px]"> {/* Adjust height as needed */}
+                        <Image 
+                          src={testimonial.testimonialScreenShot} 
+                          alt="Testimonial"
+                          fill
+                          className="rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                          style={{ objectFit: 'cover' }}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
                     </CardContent>
                   </Card>
                 </motion.div>

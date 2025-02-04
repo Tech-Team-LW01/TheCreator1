@@ -3,7 +3,7 @@ import hash13 from "../../../public/assets/logo2.webp";
 import lwlogo from "../../../public/assets/logo2.webp";
 import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
 import Image from "next/image"
-import Footer from "./Footer";
+
 
 export default function Footer2() {
   
