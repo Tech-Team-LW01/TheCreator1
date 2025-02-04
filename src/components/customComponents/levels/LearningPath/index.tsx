@@ -5,12 +5,15 @@ import styles from './styles.module.css';
 import WavyLine from './WavyLine';
 import NumberBadge from './NumberBadge';
 import { LearningPathProps, LevelItem } from './types';
-import { badgeConfigs } from './config';
+import { badgeConfigs, useMediaQuery } from './config';
 
 const LearningPath: React.FC<LearningPathProps> = ({ 
   className = '', 
   customStyle = {} 
 }) => {
+  // Initialize media query handling
+  useMediaQuery();
+
   const levels: LevelItem[] = [
     {
       number: 1,

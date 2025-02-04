@@ -1,6 +1,7 @@
-
+'use client';
 
 import { BadgeConfig, Point } from './types';
+import { useEffect } from 'react';
 
 export const badgeConfigs: { [key: number]: BadgeConfig } = {
   1: {
@@ -89,32 +90,37 @@ export const badgeConfigs: { [key: number]: BadgeConfig } = {
   }
 };
 
-// Add media query handling in your CSS
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+export const useMediaQuery = () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-// Function to update positions for mobile
-const updateConfigsForMobile = (isMobile: boolean) => {
-  if (isMobile) {
-    badgeConfigs[1].position = { left: '-70px', top: '-40px' };
-    badgeConfigs[2].position = { left: '-70px', top: '-60px' };
-    badgeConfigs[3].position = { left: '-70px', top: '-60px' };
-    badgeConfigs[4].position = { left: '-75px', top: '-50px' };
-  } else {
-    // Reset to desktop positions
-    badgeConfigs[1].position = { right: '-60px', top: '-40px' };
-    badgeConfigs[2].position = { left: '-50px', top: '-40px' };
-    badgeConfigs[3].position = { right: '-60px', top: '-40px' };
-    badgeConfigs[4].position = { left: '-58px', top: '-25px' };
-  }
+      const updateConfigsForMobile = (isMobile: boolean) => {
+        if (isMobile) {
+          badgeConfigs[1].position = { left: '-70px', top: '-40px' };
+          badgeConfigs[2].position = { left: '-70px', top: '-60px' };
+          badgeConfigs[3].position = { left: '-70px', top: '-60px' };
+          badgeConfigs[4].position = { left: '-75px', top: '-50px' };
+        } else {
+          badgeConfigs[1].position = { right: '-60px', top: '-40px' };
+          badgeConfigs[2].position = { left: '-50px', top: '-40px' };
+          badgeConfigs[3].position = { right: '-60px', top: '-40px' };
+          badgeConfigs[4].position = { left: '-58px', top: '-25px' };
+        }
+      };
+
+      // Initial check
+      updateConfigsForMobile(mediaQuery.matches);
+
+      // Event listener for changes
+      const handleChange = (e: MediaQueryListEvent) => updateConfigsForMobile(e.matches);
+      mediaQuery.addEventListener('change', handleChange);
+
+      // Cleanup
+      return () => mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
 };
-
-// Initial check
-updateConfigsForMobile(mediaQuery.matches);
-
-// Listen for changes
-mediaQuery.addListener((e) => updateConfigsForMobile(e.matches));
-
-
 
 export const wavyLinePoints: Point[] = [
   { x: 50, y: 0 },
