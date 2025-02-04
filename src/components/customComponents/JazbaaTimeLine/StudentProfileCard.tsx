@@ -6,7 +6,7 @@ import { Linkedin } from 'lucide-react';
 const StudentProfileCard = () => {
   return (
     <Card className="bg-white p-4 flex gap-4 w-9/10 max-w-md h-24 relative"> {/* Add relative positioning */}
-      
+    
       {/* Left side - Student Image */}
       <div className="flex-shrink-0">
         <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100">
