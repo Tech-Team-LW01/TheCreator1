@@ -104,15 +104,15 @@ export default function VideoTestimonials() {
     <div className="max-w-6xl mx-auto px-4 md:px-8 py-6 bg-black">
       <header className="mb-8 space-y-2">
         <div className="flex items-center gap-4 flex-wrap">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-            Hear it From Our Learners
+          <h1 className="text-3xl md:text-3xl font-bold tracking-tight text-white">
+            Hear it From Our <span className="text-[#ff0000]">Summer Learner&apos;s</span> 
           </h1>
           <span className="bg-[#ff0000] text-white px-3 py-1 rounded-md text-sm">
             Testimonials
           </span>
         </div>
         <p className="text-gray-500 text-lg">
-          Tech Alumni Stories, You can't afford to miss.
+          Tech Alumni Stories, You can&apos;t afford to miss.
         </p>
       </header>
 

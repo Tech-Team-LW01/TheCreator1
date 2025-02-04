@@ -28,11 +28,11 @@ const Hero = () => {
 
             <div className="relative z-10 text-white space-y-5">
               {/* Main Content Stack */}
-              <div className="space-y-2 font-[Poppins]">
-                   <h1 className="text-2xl lg:text-4xl xl:text-5xl font-[Khand] tracking-tight">
+              <div className="space-y-2 ">
+                   <h1 className="text-4xl lg:text-4xl xl:text-5xl font-bold tracking-tight">
                       Summer Internship 2025
                     </h1>
-                    <p className="text-2xl lg:text-4xl font-bold text-red-100">
+                    <p className="text-2xl lg:text-4xl font-bold text-[#ff0000]">
                       Industrial Training Program
                     </p>
                   </div>
@@ -44,7 +44,7 @@ const Hero = () => {
                 <h2 className="text-lg lg:text-xl font-medium">
                   For Engineering Students
                 </h2>
-                <p className="text-base lg:text-lg text-red-100">
+                <p className="text-base lg:text-lg text-[#ff0000]">
                   Open for B.Tech | M.Tech | BCA | MCA | B.SC IT
                 </p>
               </div>
@@ -53,7 +53,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="secondary"
-                className="bg-white text-[#ff0000] hover:bg-red-50 font-semibold relative z-10 shadow-lg"
+                className="bg-white text-[#ff0000] hover:bg-red-200 font-semibold relative z-10 shadow-lg"
               >
                 Applications Open
               </Button>
