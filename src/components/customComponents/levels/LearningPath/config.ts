@@ -98,7 +98,7 @@ const updateConfigsForMobile = (isMobile: boolean) => {
     badgeConfigs[1].position = { left: '-70px', top: '-40px' };
     badgeConfigs[2].position = { left: '-70px', top: '-60px' };
     badgeConfigs[3].position = { left: '-70px', top: '-60px' };
-    badgeConfigs[4].position = { left: '-70px', top: '-60px' };
+    badgeConfigs[4].position = { left: '-75px', top: '-50px' };
   } else {
     // Reset to desktop positions
     badgeConfigs[1].position = { right: '-60px', top: '-40px' };
