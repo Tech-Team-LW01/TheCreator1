@@ -25,6 +25,7 @@ import JazbaaStartupPlatform from "@/components/customComponents/OutCome/JazbaaS
 import InitPlacement from "@/components/customComponents/OutCome/Init/InitPlacement";
 import Community from "@/components/customComponents/Community/Community";
 import { MentorScroll } from "@/components/customComponents/Mentor/mentorScroll";
+import Map from "@/components/customComponents/Map/Map";
 export default function Home() {
   return (
     <div >
@@ -44,6 +45,7 @@ export default function Home() {
 <OutComeGallary/>
 
 <JazbaaStartupPlatform/>
+<Map/>
 {/* <InitPlacement/> */}
 </div>
 {/* <FactAndFiqure/> */}

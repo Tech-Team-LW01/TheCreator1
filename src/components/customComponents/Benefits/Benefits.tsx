@@ -9,6 +9,7 @@ const benefitsData = [
     detail: "Time to meet the Creators of the technologies",
     description:
       "Lifetime Opportunity to visit International conference where you meet the creators of different upcoming technologies, know the Future booming technical concepts, experience a different technical approach & also get unbelievable job opportunities.",
+    bgImage:"/assets/benefits/1.jpg"
   },
   {
     icon: "📚",
@@ -17,6 +18,7 @@ const benefitsData = [
     detail: "Get Connected - Get Inspired",
     description:
       "An Opportunity to meet in person & get connected with many industry experts here during the Summer Program. Also know the path to contribute to major communities namely AWS Community, Docker Community, OpenSource Community & many more.",
+          bgImage:"/assets/benefits/1.jpg"
   },
   {
     icon: "💼",
@@ -25,6 +27,7 @@ const benefitsData = [
     detail: "Become Confident & Interview Ready",
     description:
       "Work on real-world projects that enhance your portfolio and give you practical experience in your field.",
+          bgImage:"/assets/benefits/1.jpg"
   },
   {
     icon: "🌟",
@@ -33,6 +36,7 @@ const benefitsData = [
     detail: "Exposure to real industry work culture",
     description:
       "Interns from PAN India Engineering Colleges participate in the Summer Program & while doing your projects you all will be working closely with each other which will help you learn team synergy, how to work collaboratively as a team & team building skills.",
+          bgImage:"/assets/benefits/1.jpg"
   },
   
   {
@@ -42,6 +46,7 @@ const benefitsData = [
     detail: "Develop Problem Solving Skills",
     description:
       "The problem-based project work @ THE CREATOR 2025 gives you a unique opportunity to acquire new knowledge and technical competences in an independent manner. You get to apply theory to practice when you work to solve real-life problems, and you will be well prepared for your future career.",
+          bgImage:"/assets/benefits/1.jpg"
   },
 ];
 
@@ -65,20 +70,25 @@ export default function Benefits() {
           {/* Top Row Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefitsData.slice(0, 3).map((benefit, index) => (
-              <Card 
-                key={index} 
-                className="bg-white border p-2 border-gray-700 hover:border-gray-500 transition-all"
-              >
-                <CardHeader className="text-center">
-                  <span className="text-4xl">{benefit.icon}</span>
-                  <CardTitle className="text-2xl text-black">{benefit.title}</CardTitle>
-                  <CardDescription className="text-lg text-black">{benefit.subtitle}</CardDescription>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <h3 className="text-black font-semibold">{benefit.detail}</h3>
-                  <p className="text-black mt-2">{benefit.description}</p>
-                </CardContent>
-              </Card>
+             <Card 
+             key={index} 
+             className="relative bg-white bg-cover bg-center border p-2 border-gray-700 hover:border-gray-500 transition-all"
+             style={{ backgroundImage: "url(/assets/benefits/1.jpg)" }} 
+           >
+             {/* Red Overlay */}
+             <div className="absolute inset-0 bg-red-100 opacity-50"></div>
+           
+             <CardHeader className="relative z-10 text-center">
+               <span className="text-4xl">{benefit.icon}</span>
+               <CardTitle className="text-2xl text-white">{benefit.title}</CardTitle>
+               <CardDescription className="text-lg text-white">{benefit.subtitle}</CardDescription>
+             </CardHeader>
+             <CardContent className="relative z-10 text-center">
+               <h3 className="text-white font-semibold">{benefit.detail}</h3>
+               <p className="text-white mt-2">{benefit.description}</p>
+             </CardContent>
+           </Card>
+           
             ))}
           </div>
 

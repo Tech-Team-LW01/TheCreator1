@@ -104,14 +104,14 @@ export default function TechStack() {
         </div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-14 gap-y-2"
           variants={container}
           initial="hidden"
           animate="show"
         >
           {technologies.map((tech) => (
             <motion.div key={tech.name} variants={item}>
-              <Card className="group relative overflow-hidden p-2 transition-all hover:shadow-lg">
+              <Card className="group relative  w-24 space-y-4 overflow-hidden p-4 transition-all hover:shadow-lg">
                 <div className="flex flex-col items-center space-y-2">
                   <div className="aspect-square relative flex items-center p-0 justify-center">
                     <img
