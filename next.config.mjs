@@ -7,6 +7,11 @@ const nextConfig = {
               hostname: 'cdn.prod.website-files.com',
               
             },
+            {
+              protocol: 'https',
+              hostname: 'utfs.io',
+  
+            },
           ],
     }
 };

@@ -10,7 +10,7 @@ import { BsCalendarCheck } from "react-icons/bs"
 import { AiOutlineHourglass } from "react-icons/ai"
 // import { HiShieldCheck } from "react-icons/hi2"
 import { Album ,ShieldCheck} from "lucide-react";
-
+import MapScroll from "./MapScroll";
 
 const Map = () => {
   return (
@@ -39,6 +39,8 @@ const Map = () => {
 
 
 
+
+
               {/* Target Audience */}
               <div className="space-y-2">
                 <h2 className="text-lg lg:text-xl font-medium">
@@ -57,6 +59,8 @@ const Map = () => {
               >
                 Applications Open
               </Button>
+
+                <MapScroll/>
             </div>
           </div>
 
