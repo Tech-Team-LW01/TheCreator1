@@ -1,0 +1,370 @@
+/* Container Styles */
+.learningPathContainer {
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  background: #f8f9fa;
+}
+
+.mainTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2d3436;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #636e72;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+/* Path Container and Timeline */
+.pathContainer {
+  position: relative;
+  min-height: 800px;
+  padding: 2rem 0;
+}
+
+.timelineContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Timeline Items */
+.timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.timelineItem:nth-child(1) { animation-delay: 0.2s; }
+.timelineItem:nth-child(2) { animation-delay: 0.4s; }
+.timelineItem:nth-child(3) { animation-delay: 0.6s; }
+.timelineItem:nth-child(4) { animation-delay: 0.8s; }
+
+.left {
+  left: 0;
+  padding-right: 40px;
+}
+
+.right {
+  left: 50%;
+  padding-left: 40px;
+}
+
+/* Level Box Styling */
+.levelBox {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.levelBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Content Styling */
+.content {
+  position: relative;
+}
+
+.content h3 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  color: #636e72;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.content li:before {
+  content: "•";
+  color: #ff0000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Connector Elements */
+.connectorDot {
+  width: 12px;
+  height: 12px;
+  background: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 0 0 4px rgba(113, 88, 226, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.connectorDot:hover {
+  box-shadow: 0 0 0 6px rgba(113, 88, 226, 0.3);
+}
+
+.left .connectorDot {
+  right: -6px;
+}
+
+.right .connectorDot {
+  left: -6px;
+}
+
+/* Number Badge */
+.numberBadge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  background: #ff0000;
+  box-shadow: 0 4px 10px rgba(113, 88, 226, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 3;
+}
+
+.numberBadge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(113, 88, 226, 0.4);
+}
+
+/* Wavy Line */
+.wavyLineContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  z-index: 0;
+}
+
+.wavySvg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100px;
+}
+
+.wavyLineBackground {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 2;
+}
+
+.wavyLineForeground {
+  fill: none;
+  stroke: #ff0000;
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 2s ease forwards;
+}
+
+.wavyDot {
+  fill: #ff0000;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Animations */
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timelineItem {
+    width: 100%;
+    left: 0 !important;
+    padding: 0 20px !important;
+  }
+
+  .wavyLineContainer {
+    left: 20px;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .levelBox {
+    padding: 1.2rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .numberBadge {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark Mode Support (optional) */
+@media (prefers-color-scheme: dark) {
+  .learningPathContainer {
+    background: #1a1a1a;
+  }
+
+  .mainTitle {
+    color: #ffffff;
+  }
+
+  .subtitle {
+    color: #a0a0a0;
+  }
+
+  .levelBox {
+    background: #2d2d2d;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .content h3 {
+    color: #ffffff;
+  }
+
+  .content li {
+    color: #d0d0d0;
+  }
+
+  .wavyLineBackground {
+    stroke: #404040;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add or update in your styles.module.css */
+
+/* Desktop styles remain the same */
+.timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+  padding-right: 40px;
+}
+
+.right {
+  left: 50%;
+  padding-left: 40px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .timelineItem {
+    width: 100%;
+    margin-left: 50px; /* Add margin for all cards in mobile */
+    padding-right: 20px;
+    left: 0 !important; /* Override left positioning */
+  }
+
+  .left, .right {
+    padding-left: 30px !important; /* Consistent padding for both sides */
+  }
+
+  .levelBox {
+    margin-left: 20px; /* Additional margin for the card box */
+  }
+
+  .wavyLineContainer {
+    left: 30px !important;
+  }
+
+
+
+  .connectorDot {
+    left: -6px !important;
+    right: auto !important;
+  }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+  .timelineItem {
+    margin-left: 40px; /* Adjust margin for smaller screens */
+  }
+
+  .levelBox {
+    margin-left: 15px; /* Adjust card margin for smaller screens */
+  }
+}

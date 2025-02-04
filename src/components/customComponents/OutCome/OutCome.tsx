@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { WavyBackground } from "../../ui/wavy-background";
+// import { WavyBackground } from "../../ui/wavy-background";
 import JazbaaCard from "./JazbaaCard";
 import InitCard from "./InitCard";
-import backgroudnImage from "../../../../public/assets/outCome/backOutCome.jpg"
-import { url } from "inspector";
+// import backgroudnImage from "../../../../public/assets/outCome/backOutCome.jpg"
+// import { url } from "inspector";
 export function OutCome() {
   return (
     <section className="w-full overflow-hidden">

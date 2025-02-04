@@ -5,7 +5,8 @@ import { Linkedin } from 'lucide-react';
 
 const StudentProfileCard = () => {
   return (
-    <Card className="bg-white p-4 flex gap-4 w-9/10 max-w-md h-24">
+    <Card className="bg-white p-4 flex gap-4 w-9/10 max-w-md h-24 relative"> {/* Add relative positioning */}
+      
       {/* Left side - Student Image */}
       <div className="flex-shrink-0">
         <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100">
@@ -24,20 +25,11 @@ const StudentProfileCard = () => {
           <h3 className="text-sm font-semibold text-[#ff0000] truncate">
             Sumit pal sumit
           </h3>
-          {/* to do , position the badge to top right side of the card */}
-          <Badge 
-            variant="outline" 
-            className="flex inset-0 items-center gap-1 hover:bg-blue-50 cursor-pointer text-xs"
-          >
-            <Linkedin className=" w-2 h-2" />
-            {/* LinkedIn */}
-          </Badge>
         </div>
 
         {/* Company section */}
         <div className="flex flex-col">
-
-        <p className="text-[9px]  p-[2px]    text-black font-semibold">
+          <p className="text-[9px] p-[2px] text-black font-semibold">
             Senior Frontend Developer
           </p>
           <div className="h-5 w-16 mb-1">
@@ -47,9 +39,16 @@ const StudentProfileCard = () => {
               className="h-full w-full object-contain"
             />
           </div>
-
         </div>
       </div>
+
+      {/* Badge positioned absolutely */}
+      <Badge 
+        variant="outline" 
+        className="absolute top-0 right-0.5 flex items-center gap-1 hover:bg-blue-50 cursor-pointer text-xs"
+      >
+        <Linkedin className="w-2 h-2" />
+      </Badge>
     </Card>
   );
 };
