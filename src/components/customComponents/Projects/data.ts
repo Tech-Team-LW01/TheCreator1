@@ -11,6 +11,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
+      projectCode:"101",
       sections: [
         {
           heading: "Cloud Computing",
@@ -53,6 +54,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
+      projectCode:"102",
       sections: [
         {
           heading: "DevOps/Infrastructure as Code",
@@ -110,7 +112,9 @@ export const data = {
         height: 400,
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
+
       },
+      projectCode:"103",
       sections: [
         {
           heading: "Python Libraries",
@@ -173,6 +177,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
+      projectCode:"104",
       sections: [
         {
           heading: "Blockchain Technology",
@@ -222,6 +227,7 @@ export const data = {
         height: 400,
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
+        projectCode:"104",
       },
       sections: [
         {
@@ -285,6 +291,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
+      projectCode:"106",
       sections: [
         {
           heading: "Python Libraries",
@@ -339,6 +346,7 @@ export const data = {
     {
       title: "7. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
       description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",
+      projectCode:"107",
       image: {
         src: "/assets/Projects/106.gif",
         alt: "Generative AIOps Project",
@@ -347,6 +355,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
+      
       sections: [
         {
           heading: "Python Libraries",

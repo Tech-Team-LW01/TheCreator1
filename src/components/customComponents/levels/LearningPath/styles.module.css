@@ -1,0 +1,243 @@
+/* styles.module.css */
+/* Base Container Styles */
+.learningPathContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pathContainer {
+  position: relative;
+  min-height: 800px;
+  padding: 40px 0;
+}
+
+/* Wavy Line Styles */
+.wavyLineContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 100%;
+  z-index: 1;
+  overflow: visible;
+}
+
+.wavySvg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.wavyLineBackground {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 10 10; /* Dashed line pattern */
+}
+
+.wavyLineForeground {
+  fill: none;
+  stroke: #7158e2;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 10 10; /* Matching dash pattern */
+  stroke-dashoffset: 4000;
+  animation: drawWavyLine 2s ease-out forwards;
+}
+
+.wavyDot {
+  fill: #7158e2;
+  opacity: 0;
+  animation: fadeInDot 0.5s ease-out forwards;
+}
+
+/* Timeline Content Styles */
+.timelineContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 120px; /* Increased gap between items */
+}
+
+.timelineItem {
+  width: 35%; /* Reduced width for cards */
+  position: relative;
+}
+
+.left {
+  padding-right: 150px; /* Increased padding for more wave space */
+  align-self: flex-start;
+}
+
+.right {
+  padding-left: 150px; /* Increased padding for more wave space */
+  align-self: flex-end;
+}
+
+/* Level Box Styles */
+.levelBox {
+  width: 100%;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.levelBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Number Badge Styles */
+.numberBadge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #7158e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  z-index: 3;
+  box-shadow: 0 4px 15px rgba(113, 88, 226, 0.3);
+}
+
+.left .numberBadge {
+  right: -168px; /* Adjusted for wider wave area */
+  top: 20px;
+}
+
+.right .numberBadge {
+  left: -270px; /* Adjusted for wider wave area */
+  top: -130px;
+}
+
+
+
+.left .connectorDot {
+  right: -154px; /* Adjusted for wider wave area */
+}
+
+.right .connectorDot {
+  left: -100px; /* Adjusted for wider wave area */
+}
+
+/* Content Text Styles */
+.content h3 {
+  font-size: 1.1rem;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content ul li {
+  font-size: 0.9rem;
+  margin: 8px 0;
+  color: #636e72;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.4;
+}
+
+.content ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #7158e2;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes drawWavyLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeInDot {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left {
+  animation: slideFromLeft 0.5s ease-out forwards;
+}
+
+.right {
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timelineContent {
+    gap: 60px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 60px !important;
+    padding-right: 20px !important;
+  }
+
+  .wavyLineContainer {
+    left: 30px;
+    width: 60px;
+  }
+
+  .levelBox {
+    width: 100%;
+  }
+
+  .numberBadge {
+    left: -48px !important;
+    right: auto !important;
+  }
+
+  .connectorDot {
+    left: -34px !important;
+    right: auto !important;
+  }
+}

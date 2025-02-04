@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { data } from './data';
 import { Project } from './types';
-
+import { Badge } from '@/components/ui/badge';
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +35,7 @@ export default function Projects(): JSX.Element {
 
   const renderProjectContent = (project: Project): JSX.Element => (
     <div className="space-y-6 bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300">
+        
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000]">
         {project.title}
       </h2>
@@ -90,8 +91,10 @@ export default function Projects(): JSX.Element {
           <>
             <div className="md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
+         
             </div>
             <div className="flex flex-col space-y-6">
+
               {renderProjectContent(project)}
             </div>
           </>
@@ -119,6 +122,7 @@ export default function Projects(): JSX.Element {
 
   return (
     <div className="relative min-h-screen bg-black">
+      <div >hi</div>
       <div className="container mx-auto max-w-6xl px-4 pt-16">
         {/* Projects Section */}
         <div className="space-y-8">

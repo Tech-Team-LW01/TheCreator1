@@ -1,14 +1,24 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { List } from "lucide-react";
+import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
- import LOGO from "../../../public/assets/logo2.webp";
-// import { payment } from "../../data/paymentLink";
+import LOGO from "../../../public/assets/logo2.webp";
 import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 
-// Define route configuration
+// Navigation Items
+const NAV_ITEMS = [
+  { href: "#hero", text: "Home" },
+  { href: "#mentor", text: "About Us" },
+  { href: "#trainingcontent", text: "Training Content" },
+  { href: "#projects", text: "Projects" },
+  { href: "#placements", text: "Placements" },
+  { href: "#careertransformation", text: "Career Transition" },
+];
+
+// Route Configuration
 interface RouteConfig {
   link: string;
   buttonText: string;
@@ -16,13 +26,25 @@ interface RouteConfig {
 
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
-    link: "", // Add this to your payment data
+    link: "https://your-payment-link.com",
     buttonText: 'Apply Now'
   },
   'default': {
-    link: "",
+    link: "https://default-payment-link.com",
     buttonText: 'Apply Now'
   }
+};
+
+// Animation Variants
+const menuVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -10 }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -10 },
+  visible: { opacity: 1, x: 0 }
 };
 
 const Navbar: React.FC = () => {
@@ -31,27 +53,21 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // Get route-specific configuration
+  // Get route configuration
   const getRouteConfig = (currentPath: string): RouteConfig => {
     return ROUTE_CONFIG[currentPath] || ROUTE_CONFIG.default;
   };
 
   const { link, buttonText } = getRouteConfig(pathname);
 
+  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
-      ) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setMobileMenuOpen(false);
       }
     };
@@ -65,16 +81,29 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  const closeMobileMenu = () => setMobileMenuOpen(false);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
+  const handleNavClick = (href: string) => {
+    closeMobileMenu();
+    document.querySelector(href)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full bg-black transition-colors duration-300",
-        scrolled ? "bg-black" : "bg-black"
+        "sticky top-0 z-50 w-full transition-colors duration-300",
+        scrolled ? "bg-black shadow-lg" : "bg-black"
       )}
     >
-      <div className="container mx-auto flex bg-black bg-opacity-100 items-center justify-between py-4 px-6">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <a href="#Hero" className="flex items-center space-x-2">
           <Image
@@ -82,138 +111,108 @@ const Navbar: React.FC = () => {
             alt="Logo"
             width={96}
             height={18}
-            className="object-contain overflow-hidden "
+            className="object-contain overflow-hidden"
+            priority
           />
         </a>
 
-        {/* Desktop Navigation Menu */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#hero" className="text-white hover:text-[#ff0000]">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#mentor" className="text-white hover:text-[#ff0000]">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#trainingcontent" className="text-white hover:text-[#ff0000]">
-                Training Content
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="text-white hover:text-[#ff0000]">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#placements" className="text-white hover:text-[#ff0000]">
-                Placements
-              </a>
-            </li>
-            <li>
-              <a href="#careertransformation" className="text-white hover:text-[#ff0000]">
-                Career Transition
-              </a>
-            </li>
+          <ul className="flex space-x-6">
+            {NAV_ITEMS.map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.href}
+                  className="text-white hover:text-[#ff0000] transition-colors duration-200"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden p-2 text-gray-600 hover:text-blue-600"
-          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+          className="lg:hidden p-2 text-white hover:text-[#ff0000] transition-colors duration-200"
+          onClick={toggleMobileMenu}
+          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
         >
-          <List className="h-6 w-6" />
+          {isMobileMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <List className="h-6 w-6" />
+          )}
         </button>
 
-        {/* Desktop Call to Action Button */}
+        {/* Desktop CTA Button */}
         <a
           href={link}
-          target="blank"
-          className="hidden lg:block bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:shadow-black hover:shadow-md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:block bg-[#ff0000] text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300"
         >
           {buttonText}
         </a>
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div
-          ref={menuRef}
-          className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-md z-40"
-        >
-          <div className="p-4">
-            <ul className="space-y-4">
-              <li>
-                <a
-                  href="#hero"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#mentor"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#trainingcontent"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  Training Content
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#placements"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  Placements
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#careertransformation"
-                  className="block hover:text-red-600"
-                  onClick={closeMobileMenu}
-                >
-                  Career Transition
-                </a>
-              </li>
-            </ul>
-            {/* Mobile Call to Action Button */}
-            <a
-              href={link}
-              className="block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 text-center"
-              onClick={closeMobileMenu}
-            >
-              {buttonText}
-            </a>
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            ref={menuRef}
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{ duration: 0.2 }}
+            className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-lg z-40 rounded-lg border border-gray-800"
+          >
+            <div className="p-4">
+              <ul className="space-y-4">
+                {NAV_ITEMS.map((item, index) => (
+                  <motion.li
+                    key={index}
+                    variants={itemVariants}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <a
+                      href={item.href}
+                      className="block text-white hover:text-[#ff0000] transition-colors duration-200"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick(item.href);
+                      }}
+                    >
+                      {item.text}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+              
+              {/* Mobile CTA Button */}
+              <motion.a
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-6 bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
+                onClick={closeMobileMenu}
+              >
+                {buttonText}
+              </motion.a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
