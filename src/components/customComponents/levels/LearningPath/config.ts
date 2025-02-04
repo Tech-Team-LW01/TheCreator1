@@ -1,87 +1,146 @@
+
+
 import { BadgeConfig, Point } from './types';
 
 export const badgeConfigs: { [key: number]: BadgeConfig } = {
   1: {
     position: {
-      right: '-168px',
-      top: '20px'
+      right: '-60px',
+      top: '-40px'
     },
     size: {
       width: '36px',
       height: '36px'
     },
     style: {
-      backgroundColor: '#7158e2'
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(226, 0, 0, 0.3)'
     }
   },
   2: {
     position: {
-      left: '-148px',
-      top: '40px'
+      left: '-50px',
+      top: '-40px'
     },
     size: {
       width: '36px',
       height: '36px'
     },
     style: {
-      backgroundColor: '#7158e2'
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(255, 0, 0, 0.3)'
     }
   },
   3: {
     position: {
-      right: '-18px',
-      top: '0px'
+      right: '-60px',
+      top: '-40px'
     },
     size: {
       width: '36px',
       height: '36px'
     },
     style: {
-      backgroundColor: '#7158e2'
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(230, 12, 12, 0.3)'
     }
   },
   4: {
     position: {
-      left: '-158px',
-      top: '25px'
+      left: '-58px',
+      top: '-25px'
     },
     size: {
       width: '36px',
       height: '36px'
     },
     style: {
-      backgroundColor: '#7158e2'
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(224, 11, 11, 0.3)'
     }
   }
 };
 
-export const wavyLinePoints: Point[] = [
-  { 
-    x: -70, y: 50,
-    controlPoint1: { x: -80, y: 20 },
-    controlPoint2: { x: -100, y: 270 }
-  },
-  { 
-    x: 100, y: 240,
-    controlPoint1: { x: 200, y: 450 },
-    controlPoint2: { x: -120, y: 300 }
-  },
-  { 
-    x: -70, y: 500,
-    controlPoint1: { x: -80, y: 600 },
-    controlPoint2: { x: -100, y: 750 }
-  },
-  { 
-    x: 100, y: 750,
-    controlPoint1: { x: 200, y: 900 },
-    controlPoint2: { x: -120, y: 950 }
-  },
-  { 
-    x: -70, y: 1000,
-    controlPoint1: { x: -80, y: 1100 },
-    controlPoint2: { x: -100, y: 1200 }
-  },
-  { 
-    x: 50, y: 1200 
+// Add media query handling in your CSS
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+// Function to update positions for mobile
+const updateConfigsForMobile = (isMobile: boolean) => {
+  if (isMobile) {
+    badgeConfigs[1].position = { left: '-70px', top: '-40px' };
+    badgeConfigs[2].position = { left: '-70px', top: '-60px' };
+    badgeConfigs[3].position = { left: '-70px', top: '-60px' };
+    badgeConfigs[4].position = { left: '-70px', top: '-60px' };
+  } else {
+    // Reset to desktop positions
+    badgeConfigs[1].position = { right: '-60px', top: '-40px' };
+    badgeConfigs[2].position = { left: '-50px', top: '-40px' };
+    badgeConfigs[3].position = { right: '-60px', top: '-40px' };
+    badgeConfigs[4].position = { left: '-58px', top: '-25px' };
   }
+};
+
+// Initial check
+updateConfigsForMobile(mediaQuery.matches);
+
+// Listen for changes
+mediaQuery.addListener((e) => updateConfigsForMobile(e.matches));
+
+export const wavyLinePoints: Point[] = [
+  { x: 50, y: 0 },
+  { 
+    x: 50, 
+    y: 200, 
+    controlPoint1: { x: 60, y: 100 }, 
+    controlPoint2: { x: 40, y: 150 } 
+  },
+  { 
+    x: 50, 
+    y: 400, 
+    controlPoint1: { x: 60, y: 300 }, 
+    controlPoint2: { x: 40, y: 350 } 
+  },
+  { 
+    x: 50, 
+    y: 600, 
+    controlPoint1: { x: 60, y: 500 }, 
+    controlPoint2: { x: 40, y: 550 } 
+  },
+  { 
+    x: 50, 
+    y: 800, 
+    controlPoint1: { x: 60, y: 700 }, 
+    controlPoint2: { x: 40, y: 750 } 
+  },
+  { x: 50, y: 1000 }
 ];
+
+;

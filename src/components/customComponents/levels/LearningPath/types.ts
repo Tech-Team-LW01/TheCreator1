@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 export interface Point {
   x: number;
   y: number;
@@ -14,16 +16,16 @@ export interface BadgePosition {
 
 export interface BadgeConfig {
   position: BadgePosition;
-  size?: {
+  size: {
     width: string;
     height: string;
   };
-  style?: React.CSSProperties;
+  style: CSSProperties;
 }
 
 export interface LearningPathProps {
   className?: string;
-  customStyle?: React.CSSProperties;
+  customStyle?: CSSProperties;
 }
 
 export interface NumberBadgeProps {

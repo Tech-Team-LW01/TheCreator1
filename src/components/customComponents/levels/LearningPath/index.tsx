@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import styles from './LearningPath/styles.module.css';
-import WavyLine from './LearningPath/WavyLine';
-import NumberBadge from './LearningPath/NumberBadge';
-import { LearningPathProps, LevelItem } from './LearningPath/types';
-import { badgeConfigs } from './LearningPath/config';
+import styles from './styles.module.css';
+import WavyLine from './WavyLine';
+import NumberBadge from './NumberBadge';
+import { LearningPathProps, LevelItem } from './types';
+import { badgeConfigs } from './config';
 
 const LearningPath: React.FC<LearningPathProps> = ({ 
   className = '', 
