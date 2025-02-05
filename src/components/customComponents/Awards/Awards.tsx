@@ -27,8 +27,8 @@ const Award = () => {
 
             {/* Trophy Image */}
             <div className="absolute right-10 -top-12"> {/* Positioned absolutely */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-white rounded-full w-[160px] h-[160px] -top-2"></div> {/* White border effect */}
+              <div className="relative border-4 rounded-[100px] border-white">
+                {/* <div className="absolute inset-0 bg-white rounded-full w-[150px] h-[150px] -top-2"></div> White border effect */}
                 <img 
                   className='relative w-[150px] h-[150px] rounded-full object-cover' 
                   src='/assets/Award/award1.jpg'
