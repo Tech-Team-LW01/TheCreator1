@@ -38,6 +38,7 @@ export default function Projects(): JSX.Element {
 
   const renderProjectContent = (project: Project): JSX.Element => (
     <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
+      {/* Project Code Badge */}
       <div className="absolute top-0 right-0 sm:block md:hidden">
         <Badge 
           variant="secondary" 
@@ -47,6 +48,7 @@ export default function Projects(): JSX.Element {
         </Badge>
       </div>
   
+      {/* Project Code Badge for larger screens */}
       <div className="hidden md:block absolute top-0 right-0">
         <Badge 
           variant="secondary" 
@@ -57,6 +59,7 @@ export default function Projects(): JSX.Element {
       </div>
         
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] pr-">
+      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
         {project.title}
       </h2>
       <p className="text-sm pl-6 md:text-base text-white leading-relaxed">
@@ -123,9 +126,15 @@ export default function Projects(): JSX.Element {
           transition: 'opacity 0.5s ease-out, transform 0.5s ease-out'
         }}
       >
+        {/* Mobile View (Image always on top) */}
+        <div className="md:hidden w-full">
+          {renderImageContent(project)}
+        </div>
+
+        {/* Desktop View (Alternating layout) */}
         {isEven ? (
           <>
-            <div className="md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
+            <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
             </div>
             <div className="flex flex-col space-y-6">
@@ -137,7 +146,7 @@ export default function Projects(): JSX.Element {
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
             </div>
-            <div className="md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
+            <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
             </div>
           </>
@@ -163,6 +172,9 @@ export default function Projects(): JSX.Element {
       </div>
 
       <div className="container mx-auto max-w-6xl px-4">
+      <div>hi</div>
+      <div className="container mx-auto max-w-6xl px-4 pt-16">
+        {/* Projects Section */}
         <div className="space-y-8">
           {data.projects.map((project, index) => renderProject(project, index))}
         </div>
