@@ -10,12 +10,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 // Navigation Items
 const NAV_ITEMS = [
-  { href: "#hero", text: "Home" },
-  { href: "#mentor", text: "Mentor" },
-  { href: "#trainingcontent", text: "Training Content" },
-  { href: "#projects", text: "Projects" },
-  { href: "#placements", text: "Placements" },
-  { href: "#careertransformation", text: "Career Transition" },
+  { href: "#Projects", text: "Projects" },
+  { href: "#ApplyNow", text: "Apply Now" },
+  { href: "#Placement", text: "Placement" },
+  { href: "#Benefits", text: "Benefits" },
+  { href: "#JAZBAA", text: "JAZBAA" },
+  { href: "#Preivous Summer", text: "Previous Summer" },
 ];
 
 // Route Configuration
@@ -27,11 +27,11 @@ interface RouteConfig {
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
     link: "https://your-payment-link.com",
-    buttonText: 'Apply Now'
+    buttonText: 'Enroll Now'
   },
   'default': {
     link: "https://default-payment-link.com",
-    buttonText: 'Apply Now'
+    buttonText: 'Enroll Now'
   }
 };
 
