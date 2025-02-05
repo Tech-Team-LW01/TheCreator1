@@ -58,7 +58,6 @@ export default function Projects(): JSX.Element {
         </Badge>
       </div>
         
-      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] pr-">
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
         {project.title}
       </h2>
@@ -165,20 +164,20 @@ export default function Projects(): JSX.Element {
 
   return (
     <div className="relative min-h-screen bg-black">
-      {/* Added Main Heading Section */}
+      {/* Main Heading Section */}
       <div className="w-full text-center py-4">
         <h1 className="text-4xl font-bold text-[#ff0000]">Unique Summer Projects</h1>
-        <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN’T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
+        <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN&apos;T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
       </div>
 
-      <div className="container mx-auto max-w-6xl px-4">
-      <div>hi</div>
+      {/* Main Content Container */}
       <div className="container mx-auto max-w-6xl px-4 pt-16">
         {/* Projects Section */}
         <div className="space-y-8">
           {data.projects.map((project, index) => renderProject(project, index))}
         </div>
 
+        {/* Button Section */}
         <div className="flex justify-center py-12">
           <Button
             size="lg"

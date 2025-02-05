@@ -17,43 +17,57 @@ const LearningPath: React.FC<LearningPathProps> = ({
   const levels: LevelItem[] = [
     {
       number: 1,
-      title: "The Data Science Beginner",
+      title: "Learn & Implement",
       items: [
-        "Learn Core Mathematical Concepts",
-        "Build Python Skills for Analytics",
-        "Conduct Foundational Analytics Tasks"
+        "No prior Knowledge Required",
+        "Learn & Implement market trending technologies from the very basics"
+
       ],
       badgeConfig: badgeConfigs[1]
     },
     {
       number: 2,
-      title: "The Analytics Expert",
+      title: "Deep Research",
       items: [
-        "Manage Data Using SQL & Spark",
-        "Master Tools like Tableau & Power BI",
-        "Create ML Models for Business Cases"
+        "Go deep dive into the core architecture,research & think out of the box."
+        
       ],
       badgeConfig: badgeConfigs[2]
     },
     {
       number: 3,
-      title: "The Advanced ML & AI Professional",
+      title: "Develop a Summer Project",
       items: [
-        "Master Advanced Machine Learning Models",
-        "Understand Generative AI and MLOps",
-        "Develop ML & AI Solutions"
+        "Integrate & Develop a project as per industry demand (product/prototype)."
       ],
       badgeConfig: badgeConfigs[3]
     },
     {
       number: 4,
-      title: "The Practitioner",
+      title: "Showcase the Summer Project",
       items: [
-        "Choose from 5 Industry Capstone Projects",
-        "Create Solutions for Real-world Challenges",
-        "Showcase Expertise to Potential Recruiters"
+        "JAZBAA 3.0, a platform to showcase project to industry experts & investors .",
+     
       ],
       badgeConfig: badgeConfigs[4]
+    },
+    {
+      number: 5,
+      title: "Get Internship (Project) Certificate",
+      items: [
+        "Achieve Industry Recognized Internship (Project) Certificate.",
+     
+      ],
+      badgeConfig: badgeConfigs[5]
+    },
+    {
+      number: 6,
+      title: "Higher Growth",
+      items: [
+        "A Life Changing Experience of 45 days.",
+     
+      ],
+      badgeConfig: badgeConfigs[6]
     }
   ];
 

@@ -27,11 +27,11 @@ interface RouteConfig {
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
     link: "https://your-payment-link.com",
-    buttonText: 'Enroll Now'
+    buttonText: 'Enquire Now'
   },
   'default': {
     link: "https://default-payment-link.com",
-    buttonText: 'Enroll Now'
+    buttonText: 'Enquire Now'
   }
 };
 

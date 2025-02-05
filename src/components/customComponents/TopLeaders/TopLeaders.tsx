@@ -16,7 +16,7 @@ export function TopLeaders() {
 
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-0 text-center">
-        <Quote className='inline mb-6 rotate-180 text-[#ff0000]' />
+        <Quote className='inline mb-6 rotate-180 text-[#ff0000] text-lg' />
         AtleastOnce, Every Engineer should be part of LinuxWorld&apos;s Summer Internship Program. 
         <Quote className='inline mt-2 text-[#ff0000]'/>
         </p>
@@ -24,7 +24,7 @@ export function TopLeaders() {
           {/* <button className="px-4 py-4 bg-[#ff0000] mb-4 hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
             Apply Now
           </button> */}
-          <button className=" mb-6  text-white text-xl bg-[#ff0000] text-bold ">
+          <button className=" text-5xl mb-6  text-white  bg-[#ff0000] text-bold ">
           The Creator 2025</button>
         </div>
       </Vortex>
