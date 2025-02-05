@@ -28,6 +28,7 @@ import { MentorScroll } from "@/components/customComponents/Mentor/mentorScroll"
 import Map from "@/components/customComponents/Map/Map";
 import { JazbaaTimeLine } from "@/components/customComponents/JazbaaTimeLine/JazbaaTimeLine";
 import LearningPath from "@/components/customComponents/levels/LearningPath";
+import Footer3 from "@/components/Footer3";
 export default function Home() {
   return (
     <div >

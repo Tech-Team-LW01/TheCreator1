@@ -11,7 +11,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "Projects" },
-  { href: "#ApplyNow", text: "Apply Now" },
+   
+  { href: "#ApplyNow", text: "Enquire Now" },
   { href: "#Placement", text: "Placement" },
   { href: "#Benefits", text: "Benefits" },
   { href: "#JAZBAA", text: "JAZBAA" },
@@ -31,7 +32,7 @@ const ROUTE_CONFIG: Record<string, RouteConfig> = {
   },
   'default': {
     link: "https://default-payment-link.com",
-    buttonText: 'Enroll Now'
+    buttonText: 'Enquire Now'
   }
 };
 

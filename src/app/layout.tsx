@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/customComponents/Navbar";
 import Footer from "@/components/customComponents/Footer";
 import Footer2 from "@/components/customComponents/Footer2";
+import Footer3 from "@/components/Footer3";
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+        <Footer3/>
         {/* <Footer2/> */}
       </body>
     </html>
