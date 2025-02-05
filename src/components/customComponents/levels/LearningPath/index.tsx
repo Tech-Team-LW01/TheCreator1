@@ -58,6 +58,10 @@ const LearningPath: React.FC<LearningPathProps> = ({
   ];
 
   return (
+    <section className="bg-[#000000] py-6">
+       <div className="max-w-6xl mx-auto px-2">
+       <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl ">
+     
     <div className={`${styles.learningPathContainer} ${className}`} style={customStyle}>
       <h1 className={styles.mainTitle}>
         Your Master&apos;s Degree Journey
@@ -92,7 +96,10 @@ const LearningPath: React.FC<LearningPathProps> = ({
           ))}
         </div>
       </div>
+      </div>
+      </div>
     </div>
+    </section>
   );
 };
 
