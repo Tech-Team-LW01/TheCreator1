@@ -42,7 +42,9 @@ export default function Projects(): JSX.Element {
       <p className="text-sm md:text-base text-white leading-relaxed">
         {project.description}
       </p>
-      <div className="space-y-6">
+  <div className='w-full h-[2px] mt-2  bg-white'/>
+      {/* Project Sections */}
+      <div className="space-y-2">
         {project.sections.map((section, idx) => (
           <div key={idx} className="text-white">
             <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mb-2">
