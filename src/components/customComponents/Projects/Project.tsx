@@ -3,10 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { data } from './data';
 import { Project } from './types';
-import { Badge } from "@/components/ui/badge";
-import { CalendarDays } from "lucide-react";
-import { MdCircle } from "react-icons/md";
-
+import { Badge } from '@/components/ui/badge';
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,71 +33,29 @@ export default function Projects(): JSX.Element {
     };
   }, []);
 
-
   const renderProjectContent = (project: Project): JSX.Element => (
-    <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
-      {/* Project Code Badge */}
-      <div className="absolute top-0 right-0 sm:block md:hidden">
-        <Badge
-          variant="secondary"
-          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
-        >
-          Project {project.projectCode}
-        </Badge>
-      </div>
-  
-      {/* Project Code Badge for larger screens */}
-      <div className="hidden md:block absolute top-0 right-0">
-        <Badge
-          variant="secondary"
-          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
-        >
-          Project {project.projectCode}
-        </Badge>
-      </div>
-  
-      {/* Project Title */}
-      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
+    <div className="space-y-6 bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300">
+        
+      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000]">
         {project.title}
       </h2>
-  
-      {/* Project Description */}
-      <p className="text-sm pl-6 md:text-base text-white leading-relaxed">
+      <p className="text-sm md:text-base text-white leading-relaxed">
         {project.description}
       </p>
-  
-      {/* Project Sections */}
-      <div className="space-y-2">
+      <div className="space-y-6">
         {project.sections.map((section, idx) => (
           <div key={idx} className="text-white">
-            <div className="flex space-x-3">
-              <MdCircle
-                className="text-[#ff0000] flex-shrink-0"
-                size={8}
-                style={{ marginTop: '18px' }}
-              />
-              <div className="flex-1">
-                <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mt-2">
-                  {section.heading}
-                </h3>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                  {section.content.split('|').map((item, i) => (
-                    <span key={i} className="inline-block">
-                      {item.trim()}
-                      {i < section.content.split('|').length - 1 && (
-                        <span className="mx-2 text-gray-500">|</span>
-                      )}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </div>
+            <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mb-2">
+              {section.heading}
+            </h3>
+            <p className="text-sm md:text-base text-white leading-relaxed">
+              {section.content}
+            </p>
           </div>
         ))}
       </div>
     </div>
   );
-  
 
   const renderImageContent = (project: Project): JSX.Element => (
     <div className="w-full max-w-[400px] mx-auto pt-24">
@@ -132,18 +87,14 @@ export default function Projects(): JSX.Element {
           transition: 'opacity 0.5s ease-out, transform 0.5s ease-out'
         }}
       >
-        {/* Mobile View (Image always on top) */}
-        <div className="md:hidden w-full">
-          {renderImageContent(project)}
-        </div>
-
-        {/* Desktop View (Alternating layout) */}
         {isEven ? (
           <>
-            <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
+            <div className="md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
+         
             </div>
             <div className="flex flex-col space-y-6">
+
               {renderProjectContent(project)}
             </div>
           </>
@@ -152,7 +103,7 @@ export default function Projects(): JSX.Element {
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
             </div>
-            <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
+            <div className="md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
             </div>
           </>
@@ -171,13 +122,7 @@ export default function Projects(): JSX.Element {
 
   return (
     <div className="relative min-h-screen bg-black">
-      {/* Main Heading Section */}
-      <div className="w-full text-center py-4">
-        <h1 className="text-4xl font-bold text-[#ff0000]">Unique Summer Projects</h1>
-        <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN&apos;T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
-      </div>
-
-      {/* Main Content Container */}
+      <div >hi</div>
       <div className="container mx-auto max-w-6xl px-4 pt-16">
         {/* Projects Section */}
         <div className="space-y-8">
@@ -194,6 +139,8 @@ export default function Projects(): JSX.Element {
             {data.button.text}
           </Button>
         </div>
+
+    
       </div>
 
       <style jsx global>{`
@@ -224,7 +171,5 @@ export default function Projects(): JSX.Element {
         }
       `}</style>
     </div>
-    </div>
   );
-
 }

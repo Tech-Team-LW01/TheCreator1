@@ -27,12 +27,12 @@ import Community from "@/components/customComponents/Community/Community";
 import { MentorScroll } from "@/components/customComponents/Mentor/mentorScroll";
 import Map from "@/components/customComponents/Map/Map";
 import { JazbaaTimeLine } from "@/components/customComponents/JazbaaTimeLine/JazbaaTimeLine";
-// import LearningPath from "@/components/customComponents/levels/LearningPath";
+import LearningPath from "@/components/customComponents/levels/LearningPath";
 export default function Home() {
   return (
     <div >
 <Hero></Hero>
-{/* <LearningPath /> */}
+<LearningPath />
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>

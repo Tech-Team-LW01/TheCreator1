@@ -17,13 +17,13 @@ const Blogs = () => {
     {
       title: "Cracking the Code: The Crucial Link Between Transparency, Trust, and Open Data.",
       description: "Dive into the intricate web of transparency, trust, and open data, exploring how the symbiotic relationship among these elements becomes the key to unlocking new dimensions of reliability and credibility in various...",
-      bgColor: "bg-black",
+      bgColor: "bg-[#ff908f]",
       textColor: "text-white"
     },
     {
       title: "Innovation Echo: Charting the Unseen Waves of Transformation by FIDA & PSD3.",
       description: "Embark on a journey through the dynamic world of financial innovation as we explore the seismic shifts ushered in by FIDA & PSD3. Dive into the unseen waves of transformation, unraveling how these regulatory forces...",
-      bgColor: "bg-lime-400",
+      bgColor: "bg-[#fed28f]",
       textColor: "text-green-600"
     }
   ];
