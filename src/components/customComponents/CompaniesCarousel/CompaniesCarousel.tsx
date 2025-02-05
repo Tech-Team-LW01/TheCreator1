@@ -49,9 +49,9 @@ export function LeftRightAlumniCarousel() {
         <div className="font-bold text-3xl inline-block ">
           <span className="text-[#ff0000] ">Our  Summer Learner&apos;s</span> Are Working At
         </div>
-        <div className="text-gray-500 ">
+        {/* <div className="text-gray-500 ">
           Become a part of our Alumni working at Leading Companies
-        </div>
+        </div> */}
       </div>
 
       {/* First row - Moving Left */}

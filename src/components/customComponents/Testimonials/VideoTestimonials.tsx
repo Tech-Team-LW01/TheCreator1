@@ -103,17 +103,17 @@ export default function VideoTestimonials() {
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-8 py-6 bg-black">
       <header className="mb-8 space-y-2">
-        <div className="flex items-center gap-4 flex-wrap">
-          <h1 className="text-3xl md:text-3xl font-bold tracking-tight text-white">
-            Hear it From Our <span className="text-[#ff0000]">Summer Learner&apos;s</span> 
+        <div className="flex items-center gap-4 flex-wrap justify-center">
+          <h1 className="text-4xl md:text-4xl font-bold tracking-tight text-white text-center">
+            Hear What Our <br/> <span className="text-[#ff0000]">Summer Learner&apos;s</span> have to say
           </h1>
-          <span className="bg-[#ff0000] text-white px-3 py-1 rounded-md text-sm">
+          {/* <span className="bg-[#ff0000] text-white px-3 py-1 rounded-md text-sm">
             Testimonials
-          </span>
+          </span> */}
         </div>
-        <p className="text-gray-500 text-lg">
+        {/* <p className="text-gray-500 text-lg">
           Tech Alumni Stories, You can&apos;t afford to miss.
-        </p>
+        </p> */}
       </header>
 
       {/* Mobile Carousel */}

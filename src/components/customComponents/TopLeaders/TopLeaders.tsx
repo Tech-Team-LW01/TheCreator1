@@ -10,21 +10,21 @@ export function TopLeaders() {
       >
 
         
-        <h2 className="text-white text-2xl md:text-5xl font-bold text-center">
-        <Quote className="text-[#ff0000] inline w-16 h-16 md:w-16 md:h-16 mb-24  rotate-180 opacity-80 mb-0" />
+        <h2 className="text-white text-2xl md:text-5xl font-bold text-center py-2">
+        {/* <Quote className="text-[#ff0000] inline w-16 h-16 md:w-16 md:h-16 mb-24  rotate-180 opacity-80 mb-0" /> */}
           Top Industry Leaders Recommended
 
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-0 text-center">
         <Quote className='inline mb-6 rotate-180 text-[#ff0000]' />
-        AtleastOnce,Every Engineer should be part of LinuxWorld&apos;s summer Internship Program 
+        AtleastOnce, Every Engineer should be part of LinuxWorld&apos;s Summer Internship Program. 
         <Quote className='inline mt-2 text-[#ff0000]'/>
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-          <button className="px-4 py-4 bg-[#ff0000] mb-4 hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+          {/* <button className="px-4 py-4 bg-[#ff0000] mb-4 hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
             Apply Now
-          </button>
-          <button className="px-4 py-4 mb-4  text-white ">
+          </button> */}
+          <button className=" mb-6  text-white text-xl bg-[#ff0000] text-bold ">
           The Creator 2025</button>
         </div>
       </Vortex>
