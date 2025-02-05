@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
+
 export function JazbaaTimeLine() {
   const data = [
     {
@@ -72,8 +73,13 @@ export function JazbaaTimeLine() {
     },
   
   ];
+  
   return (
     <div className="w-full">
+      <div className="w-full text-center py-2">
+        <h1 className="text-4xl font-bold text-[#ff0000]">INIT RECRUITMENT PLATFORM</h1>
+        <p className="text-white text-lg">A UNIQUE PLACEMENT PLATFORM FOR CORE TECHNICAL JOB ROLES IN DREAM COMPANIES</p>
+      </div>
       <Timeline data={data} />
     </div>
   );

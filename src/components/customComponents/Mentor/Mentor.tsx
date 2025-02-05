@@ -10,7 +10,7 @@ const Mentor = () => {
     { icon: Globe, text: "Known as the 'Integration Guru'" },
     { icon: Mic2, text: "2x TEDx Speaker" },
     { icon: Flag, text: "RedHat Certified Architect Level 25" },
-    { icon: Award, text: "11 AWS Global Certifications" }
+    { icon: Award, text: "11 AWS Global Certifications" },
   ];
 
   const transfers = [

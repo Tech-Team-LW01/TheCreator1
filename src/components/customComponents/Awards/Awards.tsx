@@ -20,15 +20,15 @@ const Award = () => {
 
             {/* Center Section */}
             <div className="flex flex-col text-center sm:text-left sm:ml-8 sm:mr-auto z-10">
-              <h2 className="text-[#000000] text-lg sm:text-2xl md:text-[24px] font-bold leading-tight">
-                Awarded as #1 for Internship in India & Asia
+              <h2 className="text-[#000000] text-4xl sm:text-2xl md:text-[24px] px-4 font-bold leading-tight text-center">
+                <span className='text-[#ff0000]'>Awarded as #1 </span> <br/>for Internship in India & Asia
               </h2>
             </div>
 
             {/* Trophy Image */}
             <div className="absolute right-10 -top-12"> {/* Positioned absolutely */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-white rounded-full w-[160px] h-[160px] -top-2"></div> {/* White border effect */}
+              <div className="relative border-4 rounded-[100px] border-white">
+                {/* <div className="absolute inset-0 bg-white rounded-full w-[150px] h-[150px] -top-2"></div> White border effect */}
                 <img 
                   className='relative w-[150px] h-[150px] rounded-full object-cover' 
                   src='/assets/Award/award1.jpg'
