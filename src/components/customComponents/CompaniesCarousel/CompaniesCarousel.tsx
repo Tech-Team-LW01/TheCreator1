@@ -42,6 +42,7 @@ import peerxp from "../../../../public/assets/companyLogo/peerXp-Photoroom.png";
 import unthinkable from "../../../../public/assets/companyLogo/logo_unthinkable_dbd9877981.png"
 
 export function LeftRightAlumniCarousel() {
+  
   return (
     <div className="max-w-full px-4 md:py-8 lg:py-8 py-2 mx-auto relative bg-white">
       <div className="text-center mb-8">
