@@ -66,7 +66,6 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[5]
     },
-
     {
       number: 6,
       title: "Higher Growth",
