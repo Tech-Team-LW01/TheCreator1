@@ -58,7 +58,7 @@ export default function Benefits() {
         <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-8">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold text-white mb-4">
+            <h1 className="text-4xl font-bold text-[#ff0000] mb-4">
               Benefits of Summer Program 2025
             </h1>
             <h2 className="text-xl text-white mb-8">
