@@ -5,13 +5,13 @@ const Blogs = () => {
     {
       title: "Unlocking Bancassurance Horizons: A Diverse Exploration of Strategic Models.",
       description: "Embark on a transformative journey through the dynamic terrain of bancassurance models. In this exploration, we delve into the intricacies of strategic insights that not only redefine financial partnerships but also play a pivotal...",
-      bgColor: "bg-green-50",
+      bgColor: "bg-[#ff908f]",
       textColor: "text-green-600"
     },
     {
       title: "Revolutionizing Finance: A Closer Look at How Open Finance Sparks Product Innovation.",
       description: "Embark on a journey through the financial frontier as we dissect the revolutionary impact of Open Finance, delving into the intricacies of how it ignites product innovation. Explore real-world examples, transformative...",
-      bgColor: "bg-gray-50",
+      bgColor: "bg-[#fed28f]",
       textColor: "text-green-600"
     },
     {
