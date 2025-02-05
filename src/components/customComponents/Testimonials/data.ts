@@ -2,7 +2,7 @@
 export const landingPageTestimonialPosts = [
   {
     id: 1,
-    testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+    testimonialScreenShot:"/assets/event-gallery/G9.jpeg",
     images:[
 
       "/assets/imagetestinomial/image1.png",
@@ -15,7 +15,7 @@ export const landingPageTestimonialPosts = [
    
     {
       id: 2,
-      testimonialScreenShot:"/assets/testimonial/testimonial2.png",
+      testimonialScreenShot:"/assets/event-gallery/G6.jpeg",
       images:[
 
         "/assets/imagetestinomial/image4.png",
@@ -26,7 +26,7 @@ export const landingPageTestimonialPosts = [
     },
     {
       id: 3,
-      testimonialScreenShot:"/assets/testimonial/testimonial3.png",
+      testimonialScreenShot:"/assets/event-gallery/G15.jpeg",
       images:[
 
         "/assets/imagetestinomial/image8.png",
@@ -37,13 +37,13 @@ export const landingPageTestimonialPosts = [
     },
     {
       id: 4,
-      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+      testimonialScreenShot:"/assets/event-gallery/G14.jpeg",
       timestamp: "18 Mar 2023"
     },
     
     {
       id: 5,
-      testimonialScreenShot:"/assets/testimonial/testimonial1.png",
+      testimonialScreenShot:"/assets/event-gallery/G25.jpeg",
       images:[
 
         "/assets/imagetestinomial/image11.png",
