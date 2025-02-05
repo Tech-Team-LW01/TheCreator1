@@ -227,8 +227,8 @@ export const data = {
         height: 400,
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
-        projectCode:"104",
       },
+      projectCode:"104",
       sections: [
         {
           heading: "Python Libraries",
