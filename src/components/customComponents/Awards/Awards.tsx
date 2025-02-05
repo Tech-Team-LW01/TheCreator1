@@ -3,72 +3,43 @@ import { Card } from "@/components/ui/card";
 
 const Award = () => {
   return (
-  <div className='max-w-6xl mx-auto'>
-    <div className="w-full max-w-5xl mx-auto  bg-black px-12">
-      <Card className=" flext item-center justify-center bg-white shadow-lg rounded-[40px] px-2 sm:px-6 md:px-10 py-0 ">
-        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between">
-          {/* Left Section */}
-          <div className="flex   justify-center item-center flex-col gap-3 z-10 mt-8 sm:mb-0">
-            <div className="flex items-center gap-4">
-              <img 
-                src="/assets/redhatLogo.png" 
-                alt="Microsoft Logo" 
-                className="h-32 w-32"
-              />
-              {/* <span className="text-[#000000] text-xl sm:text-2xl md:text-3xl font-semibold">Microsoft</span> */}
+    <div className='max-w-6xl mx-auto py-20'>
+      <div className="w-full max-w-5xl mx-auto bg-black px-12">
+        <Card className="relative bg-white shadow-lg rounded-[40px] px-2 sm:px-6 md:px-10 py-4 h-[140px]"> {/* Reduced height */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-center justify-between h-full">
+            {/* Left Section */}
+            <div className="flex justify-center items-center flex-col gap-3 z-10">
+              <div className="flex items-center gap-4">
+                <img 
+                  src="/assets/redhatLogo.png" 
+                  alt="Microsoft Logo" 
+                  className="h-20 w-20" // Reduced logo size
+                />
+              </div>
+            </div>
+
+            {/* Center Section */}
+            <div className="flex flex-col text-center sm:text-left sm:ml-8 sm:mr-auto z-10">
+              <h2 className="text-[#000000] text-lg sm:text-2xl md:text-[24px] font-bold leading-tight">
+                Awarded as #1 for Internship in India & Asia
+              </h2>
+            </div>
+
+            {/* Trophy Image */}
+            <div className="absolute right-10 -top-12"> {/* Positioned absolutely */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-white rounded-full w-[160px] h-[160px] -top-2"></div> {/* White border effect */}
+                <img 
+                  className='relative w-[150px] h-[150px] rounded-full object-cover' 
+                  src='/assets/Award/award1.jpg'
+                  alt="Award"
+                />
+              </div>
             </div>
           </div>
-
-          {/* Center Section */}
-          <div className="flex mt-12 flex-col text-center sm:text-left sm:ml-12 sm:mr-auto z-10 md:pt-0 pt-4">
-            <h2 className="text-[#000000] text-1xl sm:text-3xl md:text-[30px] font-bold leading-[1.1] mb-3">
-              Awarded as #1 for Internship in India & Asia
-            </h2>
-            {/* <div className="flex flex-col text-[#666666] gap-1">
-              <span className="text-xl sm:text-2xl">Analytic</span>
-              <span className="text-lg sm:text-xl text-[#888888]">Finalist</span>
-            </div> */}
-          </div>
-
-          {/* Trophy Graphic */}
-          <div className="flex item-center justify-center">
-            {/* <svg 
-              preserveAspectRatio="xMidYMid meet" 
-              xmlns="http://www.w3.org/2000/svg" 
-              viewBox="0 0 233 233" 
-              className="h-[120px] w-[120px] sm:h-[160px] sm:w-[160px] md:h-[200px] md:w-[200px] text-yellow-500"
-              role="img" 
-              aria-label="trophy"
-            > 
-              <g>
-                <path fill="#EDA900" d="M176.115 102.302h-5.916V93.2h5.916c25.075 0 45.508-20.433 45.508-45.508V34.131h-51.424v-9.102h60.526v22.663c0 30.08-24.484 54.61-54.61 54.61m-119.23 0H62.8V93.2h-5.916c-25.075 0-45.508-20.433-45.508-45.508V34.131h52.789v-9.102H2.276v22.663c0 30.08 24.483 54.61 54.609 54.61" />
-                <path fill="#1F3F77" d="M190.678 180.666H42.322v50.059h148.356z" />
-                <path fill="#0A2751" d="M190.678 180.666H42.322v9.329h148.356z" />
-                <path fill="#3179AF" d="M202.965 217.072H30.035v13.653h172.93z" />
-                <path fill="#68A1D6" d="M164.602 217.072H30.035v13.653h134.567z" />
-                <path fill="#E36414" d="M145.625 167.014h-58.25v13.652h58.25z" />
-                <path fill="#F8961E" d="M129.015 167.014h-41.64v13.652h41.64z" />
-                <path fill="#F8D707" d="M52.334 2.275v95.93a31.485 31.485 0 0 0 22.299 30.127c13.243 4.05 22.299 16.292 22.299 30.126v8.556h39.136v-8.556a31.485 31.485 0 0 1 22.299-30.126c13.243-4.05 22.299-16.292 22.299-30.126V2.276z" />
-                <path fill="#3179AF" d="M202.965 178.391H30.035v4.55h172.93z" />
-                <path fill="#68A1D6" d="M164.738 178.391H30.035v4.55h134.703z" />
-                <path fill="#F8D707" d="M162.008 196.594H70.992v4.551h91.016z" />
-                <path fill="#EDA900" d="M52.334 2.275V25.03h64.53c13.106 0 23.755 10.65 23.755 23.755v58.842a23.81 23.81 0 0 1-12.059 20.706 23.75 23.75 0 0 0-12.06 20.706v17.976h19.568v-8.556a31.485 31.485 0 0 1 22.299-30.126c13.243-4.05 22.299-16.292 22.299-30.126V2.276z" />
-                <path fill="#F8D707" d="M187.037 2.275H45.963v13.653h141.074z" />
-                <path fill="#FFFA5A" d="M76.817 2.275H58.25v13.653h18.567z" />
-                <path fill="#FFFA5A" d="M124.373 2.275H94.429v13.653h29.944z" />
-                <path fill="#FFFA5A" d="M84.19 34.13c-9.876 0-17.885 8.01-17.885 17.885v14.7c0 9.875 8.01 17.884 17.884 17.884 9.876 0 17.885-8.01 17.885-17.885V52.016c0-9.875-8.01-17.884-17.885-17.884" />
-                <path fill="#F8D707" d="M25.62 34.13H2.276v-9.1h23.346a4.564 4.564 0 0 1 4.55 4.55 4.535 4.535 0 0 1-4.55 4.55" />
-                <path fill="#F8D707" d="M6.826 47.692a4.564 4.564 0 0 1-4.55-4.55V25.028h9.101V43.14a4.564 4.564 0 0 1-4.55 4.551" />
-                <path fill="#F8961E" d="M121.051 97.842h-9.102V56.885h-4.551v-9.102h9.102a4.564 4.564 0 0 1 4.551 4.551z" />
-              </g>
-            </svg> */}
-          {/* I want this image to tack full widht of  */}
-            <img className='w-[200px] h-[200px]  ' src='/assets/Award/award1.jpg'/>
-          </div>
-        </div>
-      </Card>
+        </Card>
+      </div>
     </div>
-  </div>
   );
 };
 
