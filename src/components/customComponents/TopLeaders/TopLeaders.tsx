@@ -24,7 +24,7 @@ export function TopLeaders() {
           {/* <button className="px-4 py-4 bg-[#ff0000] mb-4 hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
             Apply Now
           </button> */}
-          <button className=" mb-6  text-white text-xl bg-[#ff0000] text-bold ">
+          <button className=" mb-6 p-2 rounded-sm text-white text-xl bg-[#ff0000] text-bold ">
           The Creator 2025</button>
         </div>
       </Vortex>
