@@ -30,7 +30,7 @@ const Hero = () => {
               {/* Main Content Stack */}
               <div className="space-y-2 ">
                    <h1 className="text-4xl lg:text-4xl xl:text-5xl font-bold tracking-tight">
-                      Summer Internship 2025
+                      Summer Internship 202
                     </h1>
                     <p className="text-2xl lg:text-4xl font-bold text-[#ff0000]">
                       Industrial Training Program
