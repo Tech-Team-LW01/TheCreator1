@@ -19,7 +19,9 @@ export interface Project {
   title: string;
   description: string;
   image: Image; // Use the Image interface
+  projectCode: string;
   sections: Section[]; // Use the Section interface
+
 }
 
 // Define the type for the entire data object

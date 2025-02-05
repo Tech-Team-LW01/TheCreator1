@@ -3,7 +3,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { data } from './data';
 import { Project } from './types';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from "@/components/ui/badge";
+import { CalendarDays } from "lucide-react"; // or from wherever you're importing your icons
+import { MdCircle } from "react-icons/md"; // or you can use any other icon from react-icons
+
+
+
+
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,24 +39,61 @@ export default function Projects(): JSX.Element {
     };
   }, []);
 
+
+
   const renderProjectContent = (project: Project): JSX.Element => (
-    <div className="space-y-6 bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300">
+    <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
+      {/* Project Code Badge */}
+      <div className="absolute top-0 right-0 sm:block md:hidden"> {/* Mobile view */}
+        <Badge 
+          variant="secondary" 
+          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
+        >
+           Project {project.projectCode}
+        </Badge>
+      </div>
+  
+      {/* Project Code Badge for larger screens */}
+      <div className="hidden md:block absolute top-0 right-0"> {/* Desktop view */}
+        <Badge 
+          variant="secondary" 
+          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
+        >
+          Project {project.projectCode}
+        </Badge>
+      </div>
         
-      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000]">
+      <h2 className="text-xl  md:text-2xl font-bold tracking-tight text-[#ff0000] pr-">
         {project.title}
       </h2>
-      <p className="text-sm md:text-base text-white leading-relaxed">
+      <p className="text-sm pl-6   md:text-base text-white leading-relaxed">
         {project.description}
       </p>
-      <div className="space-y-6">
+      <div className="space-y-2">
         {project.sections.map((section, idx) => (
           <div key={idx} className="text-white">
-            <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mb-2">
-              {section.heading}
-            </h3>
-            <p className="text-sm md:text-base text-white leading-relaxed">
-              {section.content}
-            </p>
+            <div className="flex  space-x-3">
+              <MdCircle 
+                className="text-[#ff0000] flex-shrink-0" 
+                size={8}
+                style={{ marginTop: '18px' }}
+              />
+              <div className="flex-1">
+                <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mt-2">
+                  {section.heading}
+                </h3>
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                  {section.content.split('|').map((item, i) => (
+                    <span key={i} className="inline-block">
+                      {item.trim()}
+                      {i < section.content.split('|').length - 1 && (
+                        <span className="mx-2 text-gray-500">|</span>
+                      )}
+                    </span>
+                  ))}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
