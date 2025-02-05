@@ -36,40 +36,46 @@ export default function Projects(): JSX.Element {
     };
   }, []);
 
+
   const renderProjectContent = (project: Project): JSX.Element => (
     <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
       {/* Project Code Badge */}
       <div className="absolute top-0 right-0 sm:block md:hidden">
-        <Badge 
-          variant="secondary" 
-          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
-        >
-           Project {project.projectCode}
-        </Badge>
-      </div>
-  
-      {/* Project Code Badge for larger screens */}
-      <div className="hidden md:block absolute top-0 right-0">
-        <Badge 
-          variant="secondary" 
+        <Badge
+          variant="secondary"
           className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
         >
           Project {project.projectCode}
         </Badge>
       </div>
-        
+  
+      {/* Project Code Badge for larger screens */}
+      <div className="hidden md:block absolute top-0 right-0">
+        <Badge
+          variant="secondary"
+          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
+        >
+          Project {project.projectCode}
+        </Badge>
+      </div>
+  
+      {/* Project Title */}
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
         {project.title}
       </h2>
+  
+      {/* Project Description */}
       <p className="text-sm pl-6 md:text-base text-white leading-relaxed">
         {project.description}
       </p>
+  
+      {/* Project Sections */}
       <div className="space-y-2">
         {project.sections.map((section, idx) => (
           <div key={idx} className="text-white">
             <div className="flex space-x-3">
-              <MdCircle 
-                className="text-[#ff0000] flex-shrink-0" 
+              <MdCircle
+                className="text-[#ff0000] flex-shrink-0"
                 size={8}
                 style={{ marginTop: '18px' }}
               />
@@ -94,6 +100,7 @@ export default function Projects(): JSX.Element {
       </div>
     </div>
   );
+  
 
   const renderImageContent = (project: Project): JSX.Element => (
     <div className="w-full max-w-[400px] mx-auto pt-24">
@@ -217,5 +224,7 @@ export default function Projects(): JSX.Element {
         }
       `}</style>
     </div>
+    </div>
   );
+
 }

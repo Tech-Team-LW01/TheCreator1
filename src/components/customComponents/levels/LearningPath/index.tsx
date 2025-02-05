@@ -25,6 +25,7 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[1]
     },
+
     {
       number: 2,
       title: "Deep Research",
@@ -34,6 +35,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[2]
     },
+
+   
     {
       number: 3,
       title: "Develop a Summer Project",
@@ -42,6 +45,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[3]
     },
+
+    
     {
       number: 4,
       title: "Showcase the Summer Project",
@@ -51,6 +56,7 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[4]
     },
+  
     {
       number: 5,
       title: "Get Internship (Project) Certificate",
@@ -69,6 +75,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
       ],
       badgeConfig: badgeConfigs[6]
     }
+
+
   ];
 
   return (

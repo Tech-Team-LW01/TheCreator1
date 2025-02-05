@@ -87,7 +87,50 @@ export const badgeConfigs: { [key: number]: BadgeConfig } = {
       fontWeight: 'bold',
       boxShadow: '0 4px 8px rgba(224, 11, 11, 0.3)'
     }
-  }
+  },
+  5: {
+    position: {
+      right: '-60px',
+      top: '-40px'
+    },
+    size: {
+      width: '36px',
+      height: '36px'
+    },
+    style: {
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(226, 0, 0, 0.3)'
+    }
+  },
+
+  6: {
+    position: {
+      left: '-58px',
+      top: '-25px'
+    },
+    size: {
+      width: '36px',
+      height: '36px'
+    },
+    style: {
+      backgroundColor: '#ff0000',
+      cursor: 'pointer',
+      transition: 'all 0.3s ease',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontWeight: 'bold',
+      boxShadow: '0 4px 8px rgba(224, 11, 11, 0.3)'
+    }
+  },
 };
 
 export const useMediaQuery = () => {
