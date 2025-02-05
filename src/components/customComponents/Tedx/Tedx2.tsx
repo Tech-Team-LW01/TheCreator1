@@ -8,9 +8,9 @@ const Tedx2 = () => {
         {/* Main circle with gradient border */}
         <div className="absolute inset-0 rounded-full bg-emerald-500 overflow-hidden">
           <img 
-            src="https://cdn.prod.website-files.com/6290bdb841b2b5659918418c/642f453956a194dca9a63d8d_123-p-800.png" 
+            src="/tedx/tedx1.jpg" 
             alt="Profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fit"
           />
         </div>
 
