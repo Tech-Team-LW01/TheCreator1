@@ -5,9 +5,9 @@ export const landingPageTestimonialPosts = [
     testimonialScreenShot:"/assets/testimonial/testimonial1.png",
     images:[
 
-      "/assets/event-gallery/event-gallery-1.jpg",
-      "/assets/event-gallery/event-gallery-2.jpg",
-      "/assets/event-gallery/event-gallery-3.jpg",
+      "/assets/imagetestinomial/image1.png",
+      "/assets/imagetestinomial/image2.png",
+      "/assets/imagetestinomial/image3.png",
 
     ]
    
@@ -18,9 +18,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/testimonial/testimonial2.png",
       images:[
 
-        "/assets/event-gallery/event-gallery-1.jpg",
-        "/assets/event-gallery/event-gallery-2.jpg",
-        "/assets/event-gallery/event-gallery-3.jpg",
+        "/assets/imagetestinomial/image4.png",
+        "/assets/imagetestinomial/image5.png",
+        "/assets/imagetestinomial/image7.png",
   
       ]
     },
@@ -29,9 +29,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/testimonial/testimonial3.png",
       images:[
 
-        "/assets/event-gallery/event-gallery-1.jpg",
-        "/assets/event-gallery/event-gallery-2.jpg",
-        "/assets/event-gallery/event-gallery-3.jpg",
+        "/assets/imagetestinomial/image8.png",
+        "/assets/imagetestinomial/image9.png",
+        "/assets/imagetestinomial/image10.png",
   
       ]
     },
@@ -46,9 +46,10 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/testimonial/testimonial1.png",
       images:[
 
-        "/assets/event-gallery/event-gallery-1.jpg",
-        "/assets/event-gallery/event-gallery-2.jpg",
-        "/assets/event-gallery/event-gallery-3.jpg",
+        "/assets/imagetestinomial/image11.png",
+        "/assets/imagetestinomial/image12.png",
+        "/assets/imagetestinomial/image13.png",
+  
   
       ]
     },
@@ -66,9 +67,10 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/testimonial/testimonial1.png",
       images:[
 
-        "/assets/event-gallery/event-gallery-1.jpg",
-        "/assets/event-gallery/event-gallery-2.jpg",
-        "/assets/event-gallery/event-gallery-3.jpg",
+        "/assets/imagetestinomial/image13.png",
+        "/assets/imagetestinomial/image14.png",
+        "/assets/imagetestinomial/image15.png",
+  
   
       ]
     },
