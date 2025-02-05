@@ -63,9 +63,9 @@ const LearningPath: React.FC<LearningPathProps> = ({
        <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl ">
      
     <div className={`${styles.learningPathContainer} ${className}`} style={customStyle}>
-      <h1 className={styles.mainTitle}>
-        Your Master&apos;s Degree Journey
-        <div className={styles.subtitle}>4 Levels to Data Science and AI Mastery</div>
+      <h1 className={styles.mainTitle} >
+       Journey of a Summer Intern 2025
+        <div className={styles.subtitle}>LEARN, INTEGRATE, IMPLEMENT & DEVELOP A LIVE SUMMER PROJECT</div>
       </h1>
 
       <div className={styles.pathContainer}>

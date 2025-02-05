@@ -2,37 +2,26 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
+
 export function JazbaaTimeLine() {
   const data = [
     {
       title: "2024",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
-          </p>
           <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-3 gap-2">
-           
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-        
-
-
-                {/* <StudentProfileCard/>
-                <StudentProfileCard/> */}
-
-           
-           
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
+            <StudentProfileCard/>
           </div>
         </div>
       ),
@@ -140,8 +129,13 @@ export function JazbaaTimeLine() {
       ),
     },
   ];
+  
   return (
     <div className="w-full">
+      <div className="w-full text-center py-2">
+        <h1 className="text-4xl font-bold text-[#ff0000]">INIT RECRUITMENT PLATFORM</h1>
+        <p className="text-white text-lg">A UNIQUE PLACEMENT PLATFORM FOR CORE TECHNICAL JOB ROLES IN DREAM COMPANIES</p>
+      </div>
       <Timeline data={data} />
     </div>
   );
