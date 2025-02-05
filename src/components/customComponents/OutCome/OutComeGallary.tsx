@@ -6,15 +6,15 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
-import Event1Image from "../../../../public/assets/event-gallery/G21.jpeg";
-import Event2Image from "../../../../public/assets/event-gallery/G12.jpeg";
-import Event3Image from "../../../../public/assets/event-gallery/G15.jpeg";
-import Event4Image from "../../../../public/assets/event-gallery/G17.jpeg";
-import Event5Image from "../../../../public/assets/event-gallery/G18.jpeg";
-import Event6Image from "../../../../public/assets/event-gallery/G19.jpeg";
-import Event7Image from "../../../../public/assets/event-gallery/G21.jpeg";
-import Event8Image from "../../../../public/assets/event-gallery/G15.jpeg";
-import Event9Image from "../../../../public/assets/event-gallery/G12.jpeg";
+import Event1Image from "../../../../public/assets/event-gallery/G3.jpeg";
+import Event2Image from "../../../../public/assets/event-gallery/G26.jpeg";
+import Event3Image from "../../../../public/assets/event-gallery/G6.jpeg";
+import Event4Image from "../../../../public/assets/event-gallery/G15.jpeg";
+import Event5Image from "../../../../public/assets/event-gallery/G11.jpeg";
+import Event6Image from "../../../../public/assets/event-gallery/G5.jpeg";
+import Event7Image from "../../../../public/assets/event-gallery/G14.jpeg";
+import Event8Image from "../../../../public/assets/event-gallery/G13.jpeg";
+import Event9Image from "../../../../public/assets/event-gallery/G13.jpeg";
 
 // Define your image type and data array for gallery images
 interface ImageData {

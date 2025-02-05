@@ -45,7 +45,7 @@ export default function Home() {
 <Community/>
 <div>
 <OutCome/>
-{/* <OutComeGallary/> */}
+<OutComeGallary/>
 
 <JazbaaStartupPlatform/>
 <Map/>
