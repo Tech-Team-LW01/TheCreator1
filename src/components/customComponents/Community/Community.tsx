@@ -27,12 +27,12 @@ const Community = () => {
  
 
   return (
-    <div className="w-full max-w-full mx-auto h-[220px] overflow-hidden bg-white pt-6">
-      <h1 className="text-4xl font-bold text-[#ff0000] text-center mb-4">
+    <div className="w-full max-w-full mx-auto h-[200px] overflow-hidden bg-white pt-4">
+      <h1 className="text-4xl font-bold text-[#ff0000] text-center mb-0">
         Our College Community
       </h1>
       {/* First row - Moving Left */}
-      <div className="flex flex-col items-center justify-center bg-white  relative overflow-hidden mt-6">
+      <div className="flex flex-col items-center justify-center bg-white  relative overflow-hidden mt-0">
         <OurAlumniWorksAtCarousel
           items={logos}
           direction="left"

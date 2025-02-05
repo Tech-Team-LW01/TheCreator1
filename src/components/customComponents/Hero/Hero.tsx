@@ -133,7 +133,9 @@ const Hero = () => {
               Training Certificate
             </span>
             <span className="font-bold text-xs text-white mt-1">
-              Training Certificate from LinuxWorld Informatics Pvt Ltd
+              Training Certificate from 
+              <br></br>
+              LinuxWorld Informatics Pvt Ltd
             </span>
           </div>
         </div>

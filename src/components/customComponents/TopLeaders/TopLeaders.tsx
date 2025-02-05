@@ -15,8 +15,8 @@ export function TopLeaders() {
           Top Industry Leaders Recommended
 
         </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-0 text-center">
-        <Quote className='inline mb-6 rotate-180 text-[#ff0000] text-lg' />
+        <p className="text-white p-0 text-sm md:text-2xl max-w-xl mt-0 text-center">
+        <Quote className='inline mb-6 space-y-[1px] rotate-180 text-[#ff0000]' />
         AtleastOnce, Every Engineer should be part of LinuxWorld&apos;s Summer Internship Program. 
         <Quote className='inline mt-2 text-[#ff0000]'/>
         </p>
@@ -24,7 +24,7 @@ export function TopLeaders() {
           {/* <button className="px-4 py-4 bg-[#ff0000] mb-4 hover:bg-red-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
             Apply Now
           </button> */}
-          <button className=" mb-6  text-white text-xl bg-[#ff0000] text-bold ">
+          <button className=" mb-6 p-2 rounded-sm text-white text-3xl text-bold bg-[#ff0000] text-bold ">
           The Creator 2025</button>
         </div>
       </Vortex>
