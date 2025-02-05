@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#hero", text: "Home" },
-  { href: "#mentor", text: "About Us" },
+  { href: "#mentor", text: "Mentor" },
   { href: "#trainingcontent", text: "Training Content" },
   { href: "#projects", text: "Projects" },
   { href: "#placements", text: "Placements" },

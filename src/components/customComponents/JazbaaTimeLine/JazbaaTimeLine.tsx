@@ -11,7 +11,7 @@ export function JazbaaTimeLine() {
           <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-3 gap-2">
            
                 <StudentProfileCard/>
                 <StudentProfileCard/>
