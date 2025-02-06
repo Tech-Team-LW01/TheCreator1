@@ -19,11 +19,12 @@ const LearningPath: React.FC<LearningPathProps> = ({
       number: 1,
       title: "Learn & Implement",
       items: [
-        "No prior Knowledge Required",
+
         "Learn & Implement market trending technologies from the very basics"
 
       ],
-      badgeConfig: badgeConfigs[1]
+      badgeConfig: badgeConfigs[1],
+      image:"/assets/learningPath/1.png"
     },
 
     {
@@ -33,7 +34,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
         "Go deep dive into the core architecture,research & think out of the box."
         
       ],
-      badgeConfig: badgeConfigs[2]
+      badgeConfig: badgeConfigs[2],
+      image:"/assets/learningPath/1.png"
     },
 
    
@@ -43,7 +45,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
       items: [
         "Integrate & Develop a project as per industry demand (product/prototype)."
       ],
-      badgeConfig: badgeConfigs[3]
+      badgeConfig: badgeConfigs[3],
+      image:"/assets/learningPath/1.png"
     },
 
     
@@ -54,7 +57,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
         "JAZBAA 3.0, a platform to showcase project to industry experts & investors .",
      
       ],
-      badgeConfig: badgeConfigs[4]
+      badgeConfig: badgeConfigs[4],
+      image:"/assets/learningPath/1.png"
     },
   
     {
@@ -64,7 +68,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
         "Achieve Industry Recognized Internship (Project) Certificate.",
      
       ],
-      badgeConfig: badgeConfigs[5]
+      badgeConfig: badgeConfigs[5],
+      image:"/assets/learningPath/1.png"
     },
     {
       number: 6,
@@ -73,7 +78,8 @@ const LearningPath: React.FC<LearningPathProps> = ({
         "A Life Changing Experience of 45 days.",
      
       ],
-      badgeConfig: badgeConfigs[6]
+      badgeConfig: badgeConfigs[6],
+      image:"/assets/learningPath/1.png"
     }
 
 
@@ -99,21 +105,41 @@ const LearningPath: React.FC<LearningPathProps> = ({
               key={level.number}
               className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}
             >
-              <div className={styles.levelBox}>
-                <NumberBadge 
-                  number={level.number}
-                  config={level.badgeConfig}
-                />
-                <div className={styles.connectorDot} />
-                <div className={styles.content}>
-                  <h3>{level.title}</h3>
-                  <ul>
-                    {level.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+           <div className={styles.levelBox}>
+  <NumberBadge 
+    number={level.number}
+    config={level.badgeConfig}
+  />
+  
+  {/* Grid with 2 columns */}
+  <div className="grid grid-cols-2 gap-4 items-center">
+    {/* Content on the left */}
+    <div className={styles.content}>
+      <h3 className="text-xl font-semibold text-gray-900">
+        {level.title}
+      </h3>
+      
+      {/* Bullet points */}
+      <ul className="space-y-2 list-disc list-inside text-gray-600">
+        {level.items.map((item, itemIndex) => (
+          <li key={itemIndex} className="text-base">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+    
+    {/* Image on the right */}
+    <div className="w-32 h-32 flex-shrink-0">
+      <img 
+        src={level.image}
+        alt={level.title}
+        className="w-full h-full object-cover rounded-lg"
+      />
+    </div>
+  </div>
+</div>
+
             </div>
           ))}
         </div>
