@@ -14,7 +14,7 @@ export const speakersData = [
     badge: "Tech Educator",
     firstName: "Preeti",
     lastName: "Sharma",
-    link: "https://example.com/preeti"
+    link: "https://www.linkedin.com/posts/preeti-chandak_bethecreator-linuxworld-engineerstechrathyatra-activity-7247115002107572224-b0ZD?utm_source=share&utm_medium=member_desktop"
   },
   {
     imageUrl: "/tedx/tedx2.png",

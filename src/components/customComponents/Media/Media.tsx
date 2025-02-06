@@ -5,63 +5,61 @@ import Image from "next/image";
 const mediaData = [
   {
    
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/with-names3.jpg",
+    
+    backgroundImage: "/assets/media/with-names3.jpg",
   },
   {
     
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/with-names2.jpg",
+    
+    backgroundImage:"/assets/media/with-names2.jpg",
   },
   {
  
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/with-names.jpg",
+   
+    backgroundImage:"/assets/media/with-names.jpg",
   },
   {
     
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/WhatsApp-Image-2023-09-02-at-4.41.jpg",
+    
+    backgroundImage: "/assets/media/WhatsApp-Image-2023-09-02-at-4.41.jpg",
   },
   {
    
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.16 PM.jpeg",
+    
+    backgroundImage: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.16 PM.jpeg",
   },
   {
     
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.06 PM.jpeg",
+    
+    backgroundImage: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.06 PM.jpeg",
   },
   {
+  
+    backgroundImage:"/assets/media/WhatsApp Image 2023-09-02 at 4.41.04 PM.jpeg",
+  },
+  {
+    
+    
+    backgroundImage:"/assets/media/Asset 1.png",
+  },
+  {
+    
    
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.04 PM.jpeg",
-  },
-  {
-    
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/Asset 1.png",
-  },
-  {
-    
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/1 (1).jpg",
+    backgroundImage: "/assets/media/1 (1).jpg",
   },
   {
   
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/2.jpg",
+    
+    backgroundImage:"/assets/media/2.jpg",
   },
   {
   
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/3 (1).jpg",
+    backgroundImage: "/assets/media/3 (1).jpg",
   },
   {
     
-    backgroundImage: "/assets/media/graduation.jpeg",
-    logo: "/assets/media/Media 4.jpg",
+  
+    backgroundImage: "/assets/media/Media 4.jpg",
   },
 ];
 
@@ -95,7 +93,7 @@ export default function MediaSection() {
               >
                 {/* Background Image */}
                 <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                  className="absolute inset-0 bg-cover  transition-transform duration-300 group-hover:scale-110"
                   style={{ backgroundImage: `url(${media.backgroundImage})` }}
                 />
                 
@@ -105,8 +103,8 @@ export default function MediaSection() {
                 {/* Content */}
                 <CardHeader className="relative h-full flex flex-col justify-center items-center p-2 sm:p-3 md:p-4">
                   <div className="relative z-10 w-full h-full flex items-center justify-center">
-                    <Image
-                      src={media.logo}
+                    {/* <Image
+                      src={media.}
                       alt={''}
                       width={400}
                       height={200}
@@ -120,7 +118,7 @@ export default function MediaSection() {
                         maxHeight: "100%",
                         objectFit: "contain",
                       }}
-                    />
+                    /> */}
                   </div>
                 </CardHeader>
 
