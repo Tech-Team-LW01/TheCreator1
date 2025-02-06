@@ -6,7 +6,7 @@ const mediaData = [
   {
    
     
-    backgroundImage: "/assets/media/1 (1).jpg",
+    backgroundImage: "/assets/media/1.jpg",
   },
   {
     
@@ -16,50 +16,60 @@ const mediaData = [
   {
  
    
-    backgroundImage:"/assets/media/3 (1).jpg",
+    backgroundImage:"/assets/media/3.jpg",
   },
   {
     
     
-    backgroundImage: "/assets/media/Asset 1.png",
+    backgroundImage: "/assets/media/4.jpg",
   },
   {
    
     
-    backgroundImage: "/assets/media/media5.jpeg",
+    backgroundImage: "/assets/media/5.jpeg",
   },
   {
     
     
-    backgroundImage: "public/assets/media/media6.jpeg",
+    backgroundImage: "/assets/media/6.jpg",
   },
   {
   
-    backgroundImage:"public/assets/media/media7.jpeg",
+    backgroundImage:"/assets/media/7.jpg",
   },
   {
     
     
-    backgroundImage:"public/assets/media/media8.jpeg",
+    backgroundImage:"/assets/media/8.jpg",
   },
   {
     
    
-    backgroundImage: "/assets/media/media9.jpeg",
+    backgroundImage: "/assets/media/9.jpg",
   },
   {
   
     
-    backgroundImage:"/assets/media/media10.jpeg",
+    backgroundImage:"/assets/media/10.jpg",
   },
   {
   
-    backgroundImage: "/assets/media/media11.jpeg",
+    backgroundImage: "/assets/media/11.jpg",
   },
   {
     
   
-    backgroundImage: "/assets/media/media12.jpeg",
+    backgroundImage: "/assets/media/12.jpg",
+  },
+  {
+    
+  
+    backgroundImage: "/assets/media/13.jpg",
+  },
+  {
+    
+  
+    backgroundImage: "/assets/media/14.jpg",
   },
 ];
 
