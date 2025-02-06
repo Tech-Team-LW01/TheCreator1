@@ -32,7 +32,7 @@ export const landingPageTestimonialPosts = [
         "/assets/imagetestinomial/image2.png",
       ],
       images:[
-        "/assets/Jazbaa/JAZBAA 2.jpg",
+        "/assets/imagetestinomial/image1.png",
         "/assets/event-gallery/G11.jpeg",
   
       ]
@@ -46,7 +46,7 @@ export const landingPageTestimonialPosts = [
       ],
       images:[
           "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/JAZBAA 8.jpg",
+        "/assets/Jazbaa/DSC02436.JPG",
         
   
       ]
@@ -67,7 +67,7 @@ export const landingPageTestimonialPosts = [
 
     
         "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/JAZBAA 8.jpg",
+        "/assets/Jazbaa/DSC02436.JPG",
         
    
        ]
