@@ -2,7 +2,20 @@
 
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
+<<<<<<< HEAD
 import { cn } from "@/lib/utils";
+=======
+import { cn } from "@/lib/utils"; // Helper for conditional classes
+import Event1Image from "../../../../public/assets/Jazbaa/JAZBAA 1.jpg";
+import Event2Image from "../../../../public/assets/Jazbaa/JAZBAA 20.jpg";
+import Event3Image from "../../../../public/assets/Jazbaa/JAZBAA 3.jpg";
+import Event4Image from "../../../../public/assets/Jazbaa/JAZBAA 19.jpg";
+import Event5Image from "../../../../public/assets/Jazbaa/JAZBAA 16.jpg";
+import Event6Image from "../../../../public/assets/Jazbaa/JAZBAA 6.jpg";
+import Event7Image from "../../../../public/assets/Jazbaa/JAZBAA 7.jpg";
+import Event8Image from "../../../../public/assets/Jazbaa/JAZBAA 8.jpg";
+import Event9Image from "../../../../public/assets/Jazbaa/JAZBAA 13.jpg";
+>>>>>>> af3186cd572303b24e4403ad2b2345c37387fc73
 
 // Separate constants and types into their own files
 interface ImageData {

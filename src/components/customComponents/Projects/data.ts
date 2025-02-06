@@ -11,7 +11,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
-      projectCode:"101",
+      projectCode:": LW-PSI-SP-100",
       sections: [
         {
           heading: "Cloud Computing",
@@ -54,7 +54,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
-      projectCode:"102",
+      projectCode:": LW-PSI-SP-101",
       sections: [
         {
           heading: "DevOps/Infrastructure as Code",
@@ -114,7 +114,7 @@ export const data = {
         priority: true,
 
       },
-      projectCode:"103",
+      projectCode:": LW-PSI-SP-102",
       sections: [
         {
           heading: "Python Libraries",
@@ -177,7 +177,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
-      projectCode:"104",
+      projectCode:": LW-PSI-SP-103",
       sections: [
         {
           heading: "Blockchain Technology",
@@ -228,7 +228,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
-      projectCode:"104",
+      projectCode:": LW-PSI-SP-104",
       sections: [
         {
           heading: "Python Libraries",
@@ -291,7 +291,7 @@ export const data = {
         className: "rounded-[32px] h-auto w-auto object-contain",
         priority: true,
       },
-      projectCode:"106",
+      projectCode:": LW-PSI-SP-105",
       sections: [
         {
           heading: "Python Libraries",
@@ -346,7 +346,7 @@ export const data = {
     {
       title: "7. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
       description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",
-      projectCode:"107",
+      projectCode:": LW-PSI-SP-106",
       image: {
         src: "/assets/Projects/106.gif",
         alt: "Generative AIOps Project",
