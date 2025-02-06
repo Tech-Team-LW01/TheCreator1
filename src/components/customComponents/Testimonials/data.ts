@@ -5,7 +5,7 @@ export const landingPageTestimonialPosts = [
     testimonialScreenShot:"/assets/imagetestinomial/image1.png",
     images:[
 
-      
+        "/assets/event-gallery/G26.jpeg",
         "/assets/event-gallery/G4.jpeg",
         "/assets/Jazbaa/JAZBAA 11.jpg",
 
@@ -30,8 +30,7 @@ export const landingPageTestimonialPosts = [
       id: 4,
       testimonialScreenShot:"/assets/imagetestinomial/image3.png",
       images:[
-
-       "/assets/event-gallery/G26.jpeg",
+          "/assets/Jazbaa/DSC02436.JPG",
         "/assets/Jazbaa/JAZBAA 8.jpg",
         
   
