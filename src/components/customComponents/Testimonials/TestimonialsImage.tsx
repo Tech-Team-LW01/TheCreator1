@@ -33,7 +33,7 @@ export default function ImageTestimonials() {
         <div className="bg-[#111111] border border-gray-600 rounded-xl p-6 shadow-2xl">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h2 className="text-[#ff0000] text-3xl md:text-4xl font-bold mt-2">
+            <h2 className="text-[#ff0000] text-3xl md:text-4xl font-bold mt-2 font-khand">
             Summer Interns felt <br/>
             “It’s a Life Changing Program”
             </h2>

@@ -31,7 +31,7 @@ const Mentor = () => {
             <div className="prose prose-invert max-w-none">
               <h1 className="text-2xl text-3xl md:text-4xl lg:text-5xl font-bold 
                 bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent 
-                mb-3 sm:mb-4 ">
+                mb-3 sm:mb-4 font-khand ">
                   <p className='text-[#ff0000]'>  Your Summer Internship Mentor</p>
 
               </h1>

@@ -88,7 +88,7 @@ export default function Query() {
               animate={{ x: isSwapped ? "-100%" : 0 }}
               transition={{ type: "tween", duration: 0.5 }}
             >
-          <h2 className="text-4xl font-bold mb-6 text-white">Hello, Friend!</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white font-khand">Hello, Friend!</h2>
           <p className="mb-8 text-lg text-white">Enter your personal details and start journey with us</p>
           <Button
             variant="outline"
