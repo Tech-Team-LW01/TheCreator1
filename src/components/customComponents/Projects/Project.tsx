@@ -172,7 +172,7 @@ export default function Projects(): JSX.Element {
     <div className="relative min-h-screen bg-black">
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4">
-        <h1 className="text-4xl font-bold text-[#ff0000]">Unique Summer Projects</h1>
+        <h1 className="text-4xl font-bold text-[#ff0000] font-khand">Unique Summer Projects</h1>
         <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN'T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
       </div>
 
