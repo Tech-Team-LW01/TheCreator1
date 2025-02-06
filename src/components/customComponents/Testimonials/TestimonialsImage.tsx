@@ -54,14 +54,14 @@ export default function ImageTestimonials() {
                 >
                   <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                     <CardContent className="p-4">
-                      <div className="relative w-full h-[200px]"> {/* Adjust height as needed */}
+                      <div className="relative w-full min-h-[150px]"> {/* Adjust height as needed */}
                         <Image 
                           src={testimonial.testimonialScreenShot} 
                           alt="Testimonial"
                           fill
-                          className="rounded-lg shadow-lg hover:scale-[1.02] transition-transform duration-200"
-                          style={{ objectFit: 'cover' }}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="rounded-lg object-fit min-h-[200px] shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                         
+                          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       </div>
                     </CardContent>
