@@ -7,7 +7,7 @@ const FeatureGrid = () => {
     
     <div className="w-full py-12 bg-black flex items-center justify-center p-10">
       {/* Grid container for 3 columns */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-12 ">
         <Tedx2 />
         <Tedx2 />
         <Tedx2 />
