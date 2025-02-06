@@ -54,12 +54,12 @@ export default function ImageTestimonials() {
                 >
                   <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                     <CardContent className="p-4">
-                      <div className="relative w-full min-h-[150px]"> {/* Adjust height as needed */}
+                      <div className="relative w-full h-[200px]"> {/* Adjust height as needed */}
                         <Image 
                           src={testimonial.testimonialScreenShot} 
                           alt="Testimonial"
                           fill
-                          className="rounded-lg object-fit min-h-[200px] shadow-lg hover:scale-[1.02] transition-transform duration-200"
+                          className="rounded-lg object-contain min-h-[200px] shadow-lg hover:scale-[1.02] transition-transform duration-200"
                          
                           // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
@@ -75,7 +75,7 @@ export default function ImageTestimonials() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
-                    <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+                    <Card className="relative object-fit overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                       <CardContent className="p-4">
                         <ImageSlideshow images={testimonial.images} />
                       </CardContent>
