@@ -2,7 +2,11 @@
 export const landingPageTestimonialPosts = [
   {
     id: 1,
-    testimonialScreenShot:"/assets/imagetestinomial/image1.png",
+    testimonialScreenShot:[
+      "/assets/imagetestinomial/image1.png",
+      "/assets/imagetestinomial/image1.png",
+      "/assets/imagetestinomial/image1.png"
+    ],
     images:[
 
         "/assets/event-gallery/G26.jpeg",
@@ -14,12 +18,19 @@ export const landingPageTestimonialPosts = [
   },
   {
     id:2 ,
-    testimonialScreenShot:"/assets/imagetestinomial/image31.png",
+    testimonialScreenShot:[
+      "/assets/imagetestinomial/image31.png",
+      "/assets/imagetestinomial/image31.png"
+    ],
   },
    
     {
       id: 3,
-      testimonialScreenShot:"/assets/imagetestinomial/image2.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image2.png",
+        "/assets/imagetestinomial/image2.png",
+        "/assets/imagetestinomial/image2.png",
+      ],
       images:[
         "/assets/Jazbaa/JAZBAA 2.jpg",
         "/assets/event-gallery/G11.jpeg",
@@ -28,7 +39,11 @@ export const landingPageTestimonialPosts = [
     },
     {
       id: 4,
-      testimonialScreenShot:"/assets/imagetestinomial/image3.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image3.png",
+        "/assets/imagetestinomial/image3.png",
+        "/assets/imagetestinomial/image3.png"
+      ],
       images:[
           "/assets/Jazbaa/DSC02436.JPG",
         "/assets/Jazbaa/JAZBAA 8.jpg",
@@ -37,30 +52,42 @@ export const landingPageTestimonialPosts = [
       ]
     }, {
       id: 5,
-      testimonialScreenShot:"/assets/imagetestinomial/image25.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image25.png",
+        "/assets/imagetestinomial/image25.png"
+      ],
     },
     {
       id: 6,
-      testimonialScreenShot:"/assets/imagetestinomial/image4.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image4.png",
+        "/assets/imagetestinomial/image4.png"
+      ],
       images:[
 
     
-         "/assets/event-gallery/G11.jpeg",
-         "/assets/Jazbaa/JAZBAA 14.jpg"
+        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/Jazbaa/JAZBAA 8.jpg",
+        
    
        ]
     },
     {
       id: 7,
-      testimonialScreenShot:"/assets/imagetestinomial/image9.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image9.png",
+        "/assets/imagetestinomial/image9.png"
+      ],
     },
     
     {
       id: 8,
-      testimonialScreenShot:"/assets/imagetestinomial/image5.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image5.png"
+      ],
       images:[
 
-       "/assets/Jazbaa/JAZBAA 12.jpg",
+       "/assets/imagetestinomial/image5.png",
         "/assets/Jazbaa/DSC02436.JPG",
         "/assets/Jazbaa/DSC08897.JPG",
   
@@ -70,50 +97,69 @@ export const landingPageTestimonialPosts = [
   
     {
       id: 9,
-      testimonialScreenShot:"/assets/imagetestinomial/image6.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image6.png",
+        "/assets/imagetestinomial/image6.png"
+      ],
     },
     {
       id: 10,
-      testimonialScreenShot:"/assets/imagetestinomial/image7.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image7.png"
+      ],
     },
     {
       id: 11,
-      testimonialScreenShot:"/assets/imagetestinomial/image8.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image8.png"
+      ],
       images:[
 
-        "/assets/Jazbaa/JAZBAA 20.jpg",
-        "/assets/event-gallery/G6.jpeg",
+        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/Jazbaa/JAZBAA 8.jpg",
+        
         
   
       ]
     },
     {
       id: 12,
-      testimonialScreenShot:"/assets/imagetestinomial/image13.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image13.png"
+      ],
     },
     {
       id: 13,
-      testimonialScreenShot:"/assets/imagetestinomial/image12.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image12.png"
+      ],
     },
 
     {
       id: 14,
-      testimonialScreenShot:"/assets/imagetestinomial/image10.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image10.png"
+      ],
     },
     {
       id: 15,
-      testimonialScreenShot:"/assets/imagetestinomial/image11.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image11.png"
+      ],
       images:[
 
-        "/assets/Jazbaa/DSC02436.JPG",
-         "/assets/Jazbaa/DSC02451.JPG",
+        "/assets/imagetestinomial/image13.png",
+         "/assets/imagetestinomial/image13.png",
         
    
        ]
     },
     {
       id: 16,
-      testimonialScreenShot:"/assets/imagetestinomial/image9.png",
+      testimonialScreenShot:[
+        "/assets/imagetestinomial/image9.png",
+        "/assets/imagetestinomial/image9.png"
+      ],
     },
   
   ];
