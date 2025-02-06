@@ -36,7 +36,6 @@ export default function Projects(): JSX.Element {
     };
   }, []);
 
-
   const renderProjectContent = (project: Project): JSX.Element => (
     <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
       {/* Project Code Badge */}
@@ -48,7 +47,7 @@ export default function Projects(): JSX.Element {
           Project {project.projectCode}
         </Badge>
       </div>
-  
+
       {/* Project Code Badge for larger screens */}
       <div className="hidden md:block absolute top-0 right-0">
         <Badge
@@ -58,17 +57,18 @@ export default function Projects(): JSX.Element {
           Project {project.projectCode}
         </Badge>
       </div>
-  
+
       {/* Project Title */}
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
         {project.title}
       </h2>
-  
+
       {/* Project Description */}
       <p className="text-sm pl-6 md:text-base text-white leading-relaxed">
         {project.description}
       </p>
-  <div className='w-full h-[2px] mt-2  bg-white'/>
+      <div className='w-full h-[2px] mt-2 bg-white'/>
+
       {/* Project Sections */}
       <div className="space-y-2">
         {project.sections.map((section, idx) => (
@@ -100,10 +100,9 @@ export default function Projects(): JSX.Element {
       </div>
     </div>
   );
-  
 
   const renderImageContent = (project: Project): JSX.Element => (
-    <div className="w-full max-w-[400px] mx-auto pt-24">
+    <div className="w-full max-w-[400px] mx-auto md:pt-24 lg:pt-24 pt-0">
       <div className="relative group">
         <Image
           src={project.image.src}
@@ -125,7 +124,7 @@ export default function Projects(): JSX.Element {
       <div
         ref={(el) => { projectRefs.current[index] = el }}
         key={index}
-        className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen py-16 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen md:py-6 py-1 lg:py-6 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         style={{ 
           opacity: 0,
           transform: 'translateY(20px)',
@@ -174,57 +173,55 @@ export default function Projects(): JSX.Element {
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4">
         <h1 className="text-4xl font-bold text-[#ff0000]">Unique Summer Projects</h1>
-        <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN’T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
+        <p className="text-white text-lg">LEARN & DEVELOP A LEVEL OF PROJECT WHICH YOU CAN'T FIND ANYWHERE – INTERNET / GOOGLE / CHATGPT</p>
       </div>
 
       <div className="container mx-auto max-w-6xl px-4">
-      <div>hi</div>
-      <div className="container mx-auto max-w-6xl px-4 pt-16">
-        {/* Projects Section */}
-        <div className="space-y-8">
-          {data.projects.map((project, index) => renderProject(project, index))}
+        <div className="container mx-auto max-w-6xl px-4 pt-4">
+          {/* Projects Section */}
+          <div className="space-y-8">
+            {data.projects.map((project, index) => renderProject(project, index))}
+          </div>
+
+          <div className="flex justify-center py-12">
+            <Button
+              size="lg"
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+              aria-label={data.button.text}
+            >
+              {data.button.text}
+            </Button>
+          </div>
         </div>
 
-        <div className="flex justify-center py-12">
-          <Button
-            size="lg"
-            className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
-            aria-label={data.button.text}
-          >
-            {data.button.text}
-          </Button>
-        </div>
+        <style jsx global>{`
+          html {
+            scroll-behavior: smooth;
+          }
+
+          ::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background: #ff0000;
+            border-radius: 4px;
+          }
+
+          ::-webkit-scrollbar-thumb:hover {
+            background: #e00000;
+          }
+
+          .project-visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+          }
+        `}</style>
       </div>
-
-      <style jsx global>{`
-        html {
-          scroll-behavior: smooth;
-        }
-
-        ::-webkit-scrollbar {
-          width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-          background: #1a1a1a;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: #ff0000;
-          border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-          background: #e00000;
-        }
-
-        .project-visible {
-          opacity: 1 !important;
-          transform: translateY(0) !important;
-        }
-      `}</style>
-    </div>
     </div>
   );
-
 }

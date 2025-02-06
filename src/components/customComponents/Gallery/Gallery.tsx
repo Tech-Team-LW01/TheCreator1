@@ -97,8 +97,8 @@ const BentoGallery: React.FC = () => {
       title: "Settings Menu",
       images: [
         "/assets/event-gallery/G6.jpeg",
-        "/assets/event-gallery/G15.jpg",
-        "/assets/event-gallery/G13.jpg",
+        "/assets/event-gallery/G15.jpeg",
+        "/assets/event-gallery/G13.jpeg",
       ],
       width: 2,
       height: 4,
@@ -124,7 +124,7 @@ const BentoGallery: React.FC = () => {
       images: [
         "/assets/event-gallery/G16.jpeg",
         "/assets/event-gallery/G29.jpeg",
-        "/assets/event-gallery/G13.jpg",
+        "/assets/event-gallery/G13.jpeg",
       ],
       width: 1,
       height: 2,
@@ -175,7 +175,7 @@ const BentoGallery: React.FC = () => {
       id: 9,
       title: "Settings Menu",
       images: [
-        "/assets/event-gallery/G9.jpge",
+        "/assets/event-gallery/G9.jpeg",
         "/assets/event-gallery/G5.jpeg",
         "/assets/event-gallery/G10.jpeg",
       ],
