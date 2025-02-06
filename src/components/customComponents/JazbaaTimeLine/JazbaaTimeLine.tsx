@@ -2,35 +2,27 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
-
+import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022 } from './data';
 export function JazbaaTimeLine() {
   const data = [
     {
-      title: "2024",
+      title: "2014",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-        
 
-
-                {/* <StudentProfileCard/>
-                <StudentProfileCard/> */}
+            {Data2014.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+            
 
            
            
@@ -39,7 +31,7 @@ export function JazbaaTimeLine() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "2015",
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
@@ -47,25 +39,14 @@ export function JazbaaTimeLine() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
            
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-                <StudentProfileCard/>
-        
-
-
-                {/* <StudentProfileCard/>
-                <StudentProfileCard/> */}
-
-           
+          {Data2015.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
            
           </div>
         </div>
