@@ -6,7 +6,7 @@ export const speakersData = [
     badge: "the CE-YOOO!",
     firstName: "Vimal",
     lastName: "Daga",
-    link: "https://www.linkedin.com/in/vimaldaga/"
+    link: "https://www.youtube.com/watch?v=4Z3oHURLkds"
   },
   {
     imageUrl: "/tedx/yourstory.png",
@@ -22,6 +22,6 @@ export const speakersData = [
     badge: "Tech Leader",
     firstName: "Rahul",
     lastName: "Kumar",
-    link: "https://example.com/rahul"
+    link: "https://www.youtube.com/watch?v=Q1NpXvC1_Fg"
   }
 ];
