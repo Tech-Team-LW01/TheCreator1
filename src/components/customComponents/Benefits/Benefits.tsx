@@ -55,13 +55,13 @@ export default function Benefits() {
   return (
     <section className="bg-[#000000] py-6">
       <div className="max-w-6xl mx-auto px-2">
-        <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-8">
+        <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-6">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-[#ff0000] mb-4">
+            <h1 className="text-4xl font-bold text-[#ff0000] mb-">
               Benefits of Summer Program 2025
             </h1>
-            <h2 className="text-xl text-white mb-8">
+            <h2 className="text-xl text-white mb-6">
               Learn with Engineering students from Across India
             </h2>
           </div>
