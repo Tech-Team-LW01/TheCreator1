@@ -26,6 +26,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
             
@@ -51,6 +52,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -73,6 +75,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -96,6 +99,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -120,6 +124,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -144,6 +149,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -167,6 +173,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            
@@ -190,6 +197,7 @@ export function JazbaaTimeLine() {
                 studentName={student.studentName}
                 role={student.role}
                 companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
               />
             ))}
            

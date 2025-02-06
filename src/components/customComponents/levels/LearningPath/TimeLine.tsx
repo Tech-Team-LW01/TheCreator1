@@ -60,7 +60,7 @@
 import React from 'react';
 import TimelineCard from './TimeLineCard';
 import StraightLine from './StraightLine';
-import { timelineData } from './TimeLineData';
+import { timelineData } from './timeLineData';
 
 const Timeline = () => {
   return (

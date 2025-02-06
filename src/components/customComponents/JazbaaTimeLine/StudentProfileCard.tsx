@@ -9,6 +9,7 @@ interface StudentProfileCardProps {
   studentName: string;
   role: string;
   companyLogoUrl: string;
+  profileImage: string;
 }
 
 const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
@@ -16,6 +17,7 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
   studentName,
   role,
   companyLogoUrl,
+  profileImage,
 }) => {
   return (
     <Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
@@ -23,7 +25,7 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
       <div className="flex-shrink-0">
         <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-100">
           <img
-            src={linkedinUrl} // Dynamic LinkedIn URL from props
+            src={profileImage} // Dynamic LinkedIn URL from props
             alt={`Profile of ${studentName}`} // Dynamic alt text - more accessible
             className="w-full h-full object-cover"
           />
