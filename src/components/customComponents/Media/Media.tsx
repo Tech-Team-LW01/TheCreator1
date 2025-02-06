@@ -6,60 +6,60 @@ const mediaData = [
   {
    
     
-    backgroundImage: "/assets/media/with-names3.jpg",
-  },
-  {
-    
-    
-    backgroundImage:"/assets/media/with-names2.jpg",
-  },
-  {
- 
-   
-    backgroundImage:"/assets/media/with-names.jpg",
-  },
-  {
-    
-    
-    backgroundImage: "/assets/media/WhatsApp-Image-2023-09-02-at-4.41.jpg",
-  },
-  {
-   
-    
-    backgroundImage: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.16 PM.jpeg",
-  },
-  {
-    
-    
-    backgroundImage: "/assets/media/WhatsApp Image 2023-09-02 at 4.41.06 PM.jpeg",
-  },
-  {
-  
-    backgroundImage:"/assets/media/WhatsApp Image 2023-09-02 at 4.41.04 PM.jpeg",
-  },
-  {
-    
-    
-    backgroundImage:"/assets/media/Asset 1.png",
-  },
-  {
-    
-   
     backgroundImage: "/assets/media/1 (1).jpg",
   },
   {
-  
+    
     
     backgroundImage:"/assets/media/2.jpg",
   },
   {
+ 
+   
+    backgroundImage:"/assets/media/3 (1).jpg",
+  },
+  {
+    
+    
+    backgroundImage: "/assets/media/Asset 1.png",
+  },
+  {
+   
+    
+    backgroundImage: "/assets/media/media5.jpeg",
+  },
+  {
+    
+    
+    backgroundImage: "public/assets/media/media6.jpeg",
+  },
+  {
   
-    backgroundImage: "/assets/media/3 (1).jpg",
+    backgroundImage:"public/assets/media/media7.jpeg",
+  },
+  {
+    
+    
+    backgroundImage:"public/assets/media/media8.jpeg",
+  },
+  {
+    
+   
+    backgroundImage: "/assets/media/media9.jpeg",
+  },
+  {
+  
+    
+    backgroundImage:"/assets/media/media10.jpeg",
+  },
+  {
+  
+    backgroundImage: "/assets/media/media11.jpeg",
   },
   {
     
   
-    backgroundImage: "/assets/media/Media 4.jpg",
+    backgroundImage: "/assets/media/media12.jpeg",
   },
 ];
 
