@@ -83,7 +83,7 @@ const Timeline = () => {
             <StraightLine />
 
             {/* Cards */}
-            <div className="relative z-10 h-full">
+            <div className="relative space-y-20 z-10 h-full">
               {timelineData.map((item, index) => (
                 <TimelineCard
                   key={item.id}
