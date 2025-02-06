@@ -12,7 +12,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NAV_ITEMS = [
   { href: "#Projects", text: "Projects" },
    
-  { href: "#ApplyNow", text: "Enquire Now" },
+  { href: "#ApplyNow", text: "Apply Now" },
   { href: "#Placement", text: "Placement" },
   { href: "#Benefits", text: "Benefits" },
   { href: "#JAZBAA", text: "JAZBAA" },

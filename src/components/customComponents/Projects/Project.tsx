@@ -60,15 +60,15 @@ export default function Projects(): JSX.Element {
       </div>
   
       {/* Project Title */}
-      <h2 className="text-xl md:text-2xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
+      <h2 className="text-xl md:text-xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
         {project.title}
       </h2>
   
       {/* Project Description */}
-      <p className="text-sm pl-6 md:text-base text-white leading-relaxed">
+      <p className="text-xs pl-6 md:text-base text-white leading-relaxed">
         {project.description}
       </p>
-  <div className='w-full h-[2px] mt-2  bg-white'/>
+  <div className='w-full h-[1px] mt-2 mb-2 dashed bg-[#888888]'/>
       {/* Project Sections */}
       <div className="space-y-2">
         {project.sections.map((section, idx) => (
@@ -80,10 +80,10 @@ export default function Projects(): JSX.Element {
                 style={{ marginTop: '18px' }}
               />
               <div className="flex-1">
-                <h3 className="text-lg md:text-xl font-bold text-[#ff0000] mt-2">
+                <h3 className="text-sm md:text-sm font-bold text-[#ff0000] mt-2">
                   {section.heading}
                 </h3>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                <p className="text-xs md:text-xs text-gray-300 leading-relaxed">
                   {section.content.split('|').map((item, i) => (
                     <span key={i} className="inline-block">
                       {item.trim()}
