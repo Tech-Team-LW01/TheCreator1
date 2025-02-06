@@ -13,7 +13,7 @@ export function OutCome() {
           <div className="absolute inset-0 bg-black opacity-80"></div>
           
           <div className="flex flex-col items-center justify-center py-12 md:py-16 relative z-10">
-            {/* Heading with position relative for arrow positioning */}
+
             <div className="relative mb-24"> {/* Increased margin bottom for arrows */}
               <h2 className="text-3xl  md:text-3xl lg:text-4xl text-[#ff0000] font-bold text-inter-var text-center px-4">
                 Outcome of Summer Internship Program
@@ -26,12 +26,7 @@ export function OutCome() {
                   <div className="absolute top-0 left-1/2  transform -rotate-12">
                   <img src="/assets/arrow.png"></img>
                   </div>
-                  {/* Arrow Head */}
-                  {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-
-                    <img src="/assets/arrow.png"></img>
-                   
-                  </div> */}
+                  
                 </div>
               </div>
 
@@ -42,10 +37,7 @@ export function OutCome() {
                   <div className="absolute top-0 left-1/2  transform -rotate-90">
                   <img src="/assets/arrow.png"></img>
                   </div>
-                  {/* Arrow Head */}
-                  {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                    <div className="w-3 h-3 border-b-2 border-r-2 border-[#ff0000] transform rotate-45"></div>
-                  </div> */}
+                 
                 </div>
               </div>
             </div>
@@ -64,7 +56,7 @@ export function OutCome() {
               
               {/* Second Card */}
               <div className="w-full md:w-1/2 max-w-[280px] relative">
-                {/* Mobile Arrow for Second Card */}
+
                 <div className="md:hidden absolute -top-12 left-1/2 transform -translate-x-1/2">
                   <div className="w-1 h-8 bg-[#ff0000]"></div>
                   <div className="w-3 h-3 border-b-2 border-r-2 border-[#ff0000] transform rotate-30 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
