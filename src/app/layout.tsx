@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import { Roboto } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/customComponents/Navbar";
@@ -13,6 +13,14 @@ const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
 })
+
+const khandFont = localFont(
+  {
+    src: './fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+  }
+
+)
 
 
 export const metadata: Metadata = {
@@ -28,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className}  bg-black overflow-x-hidden antialiased`}
+        className={`${khandFont.className}  bg-black overflow-x-hidden antialiased`}
       >
         <Navbar/>
         {children}
