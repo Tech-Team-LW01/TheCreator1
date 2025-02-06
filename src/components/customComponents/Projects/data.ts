@@ -47,7 +47,7 @@ export const data = {
       title: "2. Next Generation DevOps With Cloud Computing",
       description: "Develop High-End Next Generation End to End DevOps Pipeline Managed Service in High Performance Cloud Computing Platform.",
       image: {
-        src: "/assets/Projects/101.jpg",
+        src: "/assets/Projects/102.jpg",
         alt: "KodeKloud Technology Diagram",
         width: 400,
         height: 400,

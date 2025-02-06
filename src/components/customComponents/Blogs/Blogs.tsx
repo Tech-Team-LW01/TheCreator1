@@ -5,25 +5,25 @@ const Blogs = () => {
     {
       title: "Unlocking Bancassurance Horizons: A Diverse Exploration of Strategic Models.",
       description: "Embark on a transformative journey through the dynamic terrain of bancassurance models. In this exploration, we delve into the intricacies of strategic insights that not only redefine financial partnerships but also play a pivotal...",
-      bgColor: "bg-[#ff908f]",
+      bgColor: "bg-green-50",
       textColor: "text-green-600"
     },
     {
       title: "Revolutionizing Finance: A Closer Look at How Open Finance Sparks Product Innovation.",
       description: "Embark on a journey through the financial frontier as we dissect the revolutionary impact of Open Finance, delving into the intricacies of how it ignites product innovation. Explore real-world examples, transformative...",
-      bgColor: "bg-[#fed28f]",
+      bgColor: "bg-gray-50",
       textColor: "text-green-600"
     },
     {
       title: "Cracking the Code: The Crucial Link Between Transparency, Trust, and Open Data.",
       description: "Dive into the intricate web of transparency, trust, and open data, exploring how the symbiotic relationship among these elements becomes the key to unlocking new dimensions of reliability and credibility in various...",
-      bgColor: "bg-[#ff908f]",
+      bgColor: "bg-black",
       textColor: "text-white"
     },
     {
       title: "Innovation Echo: Charting the Unseen Waves of Transformation by FIDA & PSD3.",
       description: "Embark on a journey through the dynamic world of financial innovation as we explore the seismic shifts ushered in by FIDA & PSD3. Dive into the unseen waves of transformation, unraveling how these regulatory forces...",
-      bgColor: "bg-[#fed28f]",
+      bgColor: "bg-lime-400",
       textColor: "text-green-600"
     }
   ];
