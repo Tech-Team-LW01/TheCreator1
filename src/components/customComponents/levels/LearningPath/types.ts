@@ -39,4 +39,5 @@ export interface LevelItem {
   title: string;
   items: string[];
   badgeConfig: BadgeConfig;
+  image: string;
 }

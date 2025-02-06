@@ -18,13 +18,13 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="w-full h-48 relative overflow-hidden rounded-lg">
+    <div className="w-full h-full relative overflow-hidden rounded-lg">
       <AnimatePresence mode="wait">
         <motion.img
           key={currentIndex}
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fit"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
