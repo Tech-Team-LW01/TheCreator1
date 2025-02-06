@@ -12,12 +12,15 @@ export default function InitCard() {
 
           <div className="space-x-2">
             <span className="font-semibold">Get Technical dream</span>
-      <span className=" font-semibold">Job Offer with INIT</span>
+      <span className=" font-semibold">Job Offer with INIT <br></br></span>
+      <br></br>
           </div>
         </div>
 
         <p className="text-center text-gray-300 text-sm leading-relaxed">
           {'An unique placement platform where it is “Each Day, One Core Tech Based Company"'}
+          <br></br>
+          <br></br>
         </p>
       </CardContent>
 
