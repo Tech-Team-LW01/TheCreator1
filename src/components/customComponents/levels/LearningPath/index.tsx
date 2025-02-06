@@ -86,7 +86,7 @@ const LearningPath: React.FC<LearningPathProps> = ({
   ];
 
   return (
-    <section className="bg-[#000000] py-6  overflow-scroll">
+    <section className="bg-[#000000] py-6 pb-0 h-96  overflow-scroll">
        <div className="max-w-6xl mx-auto px-2">
        <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl ">
      

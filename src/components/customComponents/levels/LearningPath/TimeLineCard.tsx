@@ -111,10 +111,10 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ data, isFirst, isLast }) =>
           {/* Card Content */}
           <div className="flex gap-6 items-center">
             <div className="flex-1">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <h3 className="text-lg font-bold text-white mb-2">
                 {data.title}
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-white">
                 {data.description}
               </p>
             </div>

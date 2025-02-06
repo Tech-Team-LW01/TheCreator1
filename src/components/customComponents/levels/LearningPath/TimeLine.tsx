@@ -78,7 +78,7 @@ const Timeline = () => {
           </div>
 
           {/* Timeline Container */}
-          <div className="relative h-[1000px]"> {/* Fixed height container */}
+          <div className="relative h-[800px]"> {/* Fixed height container */}
             {/* Center Line */}
             <StraightLine />
 
