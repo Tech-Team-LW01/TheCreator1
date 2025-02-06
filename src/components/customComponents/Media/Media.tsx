@@ -21,26 +21,26 @@ const mediaData = [
   {
     
     
-    backgroundImage: "/assets/media/4.jpg",
+    backgroundImage: "/assets/media/4.png",
   },
   {
    
     
-    backgroundImage: "/assets/media/5.jpeg",
+    backgroundImage: "/assets/media/5.jpg",
   },
   {
     
     
-    backgroundImage: "/assets/media/6.jpg",
+    backgroundImage: "/assets/media/6.jpeg",
   },
   {
   
-    backgroundImage:"/assets/media/7.jpg",
+    backgroundImage:"/assets/media/7.jpeg",
   },
   {
     
     
-    backgroundImage:"/assets/media/8.jpg",
+    backgroundImage:"/assets/media/8.jpeg",
   },
   {
     
@@ -56,21 +56,13 @@ const mediaData = [
   
     backgroundImage: "/assets/media/11.jpg",
   },
+
   {
+   
     
-  
-    backgroundImage: "/assets/media/12.jpg",
+    backgroundImage: "/assets/media/1.jpg",
   },
-  {
-    
-  
-    backgroundImage: "/assets/media/13.jpg",
-  },
-  {
-    
-  
-    backgroundImage: "/assets/media/14.jpg",
-  },
+ 
 ];
 
 export default function MediaSection() {

@@ -12,7 +12,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2000); // Change image every 2 seconds
+    }, 10000); // Change image every 2 seconds
 
     return () => clearInterval(timer);
   }, [images.length]);
@@ -28,7 +28,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 2 }}
         />
       </AnimatePresence>
     </div>

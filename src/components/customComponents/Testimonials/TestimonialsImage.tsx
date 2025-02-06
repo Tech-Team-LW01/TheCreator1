@@ -5,12 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import ImageSlideshow from './ImageSlideshow';
 import { motion } from 'framer-motion';
 import { landingPageTestimonialPosts } from './data';
-import Image from 'next/image';
+// import Image from 'next/image'; // Image import is no longer directly used here
 
 // Define interface for testimonial data
 interface Testimonial {
   id: string | number;
-  testimonialScreenShot: string;
+  testimonialScreenShot: string[]; // Changed to string array
   images?: string[];
 }
 
@@ -19,8 +19,8 @@ export default function ImageTestimonials() {
   const initialDisplayCount = 10;
   const hasMoreTestimonials = landingPageTestimonialPosts.length > initialDisplayCount;
 
-  const displayedTestimonials = showAll 
-    ? landingPageTestimonialPosts 
+  const displayedTestimonials = showAll
+    ? landingPageTestimonialPosts
     : landingPageTestimonialPosts.slice(0, initialDisplayCount);
 
   const handleToggleDisplay = () => {
@@ -41,7 +41,7 @@ export default function ImageTestimonials() {
             LET’S HEAR FROM THEM WHY ?
             </h2>
           </div>
-          
+
           {/* Testimonials Grid */}
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-4">
             {displayedTestimonials.map((testimonial: Testimonial) => (
@@ -54,16 +54,7 @@ export default function ImageTestimonials() {
                 >
                   <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                     <CardContent className="p-4">
-                      <div className="relative w-full h-[200px]"> {/* Adjust height as needed */}
-                        <Image 
-                          src={testimonial.testimonialScreenShot} 
-                          alt="Testimonial"
-                          fill
-                          className="rounded-lg object-contain min-h-[200px] shadow-lg hover:scale-[1.02] transition-transform duration-200"
-                         
-                          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                      </div>
+                      <ImageSlideshow images={testimonial.testimonialScreenShot} />
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -84,12 +75,12 @@ export default function ImageTestimonials() {
                 )}
               </div>
             ))}
-          </div>  
+          </div>
 
           {/* Load More Button */}
           {hasMoreTestimonials && (
             <div className="flex items-center mt-12">
-              <button 
+              <button
                 className="mx-auto px-6 py-3 border border-gray-500 rounded-lg hover:bg-gray-800 transition-colors text-white font-medium"
                 onClick={handleToggleDisplay}
               >
