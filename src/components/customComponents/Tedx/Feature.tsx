@@ -3,6 +3,8 @@ import React from "react";
 import Tedx2 from "./Tedx2";
 import { speakersData } from "./TedxData";
 
+
+
 const FeatureGrid = () => {
   return (
     <div className="w-full py-12 bg-black flex items-center justify-center p-10">

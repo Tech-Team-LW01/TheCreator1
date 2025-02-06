@@ -7,6 +7,15 @@ const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
 })
+
+import localFont from "next/font/local";
+const khandFont = localFont(
+  {
+    src: '../../../app/fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+  }
+
+)
 const benefitsData = [
   {
     icon: "🎓",
@@ -92,14 +101,14 @@ export default function Benefits() {
                 <div className="relative z-10">
                   <CardHeader className="text-center">
                     <span className="text-4xl">{benefit.icon}</span>
-                    <CardTitle className="text-2xl text-white">{benefit.title}</CardTitle>
+                    <CardTitle className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
                     <CardDescription className="text-lg text-gray-200">
                       {benefit.subtitle}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <h3 className="text-white font-semibold">{benefit.detail}</h3>
-                    <p className="text-gray-200 mt-2">{benefit.description}</p>
+                    <p className={`text-gray-200 text-md mt-2 ${poppins.className}`}>{benefit.description}</p>
                   </CardContent>
                 </div>
               </Card>
@@ -128,14 +137,14 @@ export default function Benefits() {
                 <div className="relative z-10">
                   <CardHeader className="text-center">
                     <span className="text-4xl">{benefit.icon}</span>
-                    <CardTitle className="text-2xl text-white">{benefit.title}</CardTitle>
+                    <CardTitle className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
                     <CardDescription className="text-lg text-gray-200">
                       {benefit.subtitle}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <h3 className="text-white font-semibold">{benefit.detail}</h3>
-                    <p className="text-gray-200 mt-2">{benefit.description}</p>
+                    <p className={`text-gray-200 mt-2  text-md ${poppins.className}`}>{benefit.description}</p>
                   </CardContent>
                 </div>
               </Card>

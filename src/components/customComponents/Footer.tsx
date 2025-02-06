@@ -23,6 +23,10 @@ export default function Footer() {
               }`}
               onMouseEnter={() => setHoveredWord('THE')}
               onMouseLeave={() => setHoveredWord(null)}
+              style={{
+                letterSpacing: 'calc(0.3vw + 10px)', // Responsive letter spacing
+                padding: '0 calc(0.5vw + 5px)', // Responsive padding
+              }}
             >
               THE&nbsp;
             </span> 
@@ -32,6 +36,10 @@ export default function Footer() {
               }`}
               onMouseEnter={() => setHoveredWord('CREATOR')}
               onMouseLeave={() => setHoveredWord(null)}
+              style={{
+                letterSpacing: 'calc(0.3vw + 10px)', // Responsive letter spacing
+                padding: '0 calc(0.5vw + 5px)', // Responsive padding
+              }}
             >
               CREATOR
             </span> 
@@ -45,7 +53,7 @@ export default function Footer() {
               onMouseEnter={() => setHoveredWord('GATHERING')}
               onMouseLeave={() => setHoveredWord(null)}
               style={{
-                letterSpacing: 'calc(0.3vw + 4px)', // Responsive letter spacing
+                letterSpacing: 'calc(0.3vw + 10px)', // Responsive letter spacing
                 padding: '0 calc(0.5vw + 5px)', // Responsive padding
               }}
             >

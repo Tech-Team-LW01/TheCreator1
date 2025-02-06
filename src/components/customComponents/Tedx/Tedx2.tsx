@@ -6,6 +6,15 @@ const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
 })
+
+import localFont from "next/font/local";
+const khandFont = localFont(
+  {
+    src: '../../../app/fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+  }
+
+)
 const Tedx2: React.FC<SpeakerProps> = ({ 
   imageUrl, 
   description, 
@@ -51,7 +60,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
 
         {/* Name */}
         <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full text-center">
-          <h2 className="text-2xl font-bold text-[#ff0000]">
+          <h2 className={`text-2xl font-bold text-[#ff0000] ${poppins.className}`}>
             {firstName} <span className={`text-[#ff0000] ${poppins.className}`}>{lastName}</span>
           </h2>
         </div>
