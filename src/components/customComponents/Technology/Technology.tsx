@@ -92,10 +92,10 @@ const item = {
 
 export default function TechStack() {
   return (
-    <section className="container bg-black mx-auto px-4 py-8">
+    <section className="container bg-black mx-auto px-4 py-6">
       <div className="grid mx-auto gap-8 lg:grid-cols-2 lg:gap-12 items-center max-w-6xl">
         <div className="space-y-4">
-          <h1 className="text-3xl text-[#ff0000] font-bold tracking-tight lg:text-3xl">
+          <h1 className="text-4xl text-[#ff0000] font-bold tracking-tight lg:text-3xl">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
           <p className="text-muted-foreground text-base text-white">
@@ -104,7 +104,7 @@ export default function TechStack() {
         </div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-14 gap-y-2"
+       className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 md:gap-x-14 lg:gap-x-14 sm:gap-y-2 w-full"
           variants={container}
           initial="hidden"
           animate="show"

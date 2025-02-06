@@ -10,7 +10,7 @@ export function TopLeaders() {
       >
 
         
-        <h2 className="text-white text-2xl md:text-5xl font-bold text-center py-2">
+        <h2 className="text-white text-4xl md:text-5xl font-bold text-center py-2">
         {/* <Quote className="text-[#ff0000] inline w-16 h-16 md:w-16 md:h-16 mb-24  rotate-180 opacity-80 mb-0" /> */}
           Top Industry Leaders Recommended
 
