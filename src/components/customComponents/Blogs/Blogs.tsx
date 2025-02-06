@@ -17,13 +17,13 @@ const Blogs = () => {
     {
       title: "Cracking the Code: The Crucial Link Between Transparency, Trust, and Open Data.",
       description: "Dive into the intricate web of transparency, trust, and open data, exploring how the symbiotic relationship among these elements becomes the key to unlocking new dimensions of reliability and credibility in various...",
-      bgColor: "bg-black",
+      bgColor: "bg-[#ff908f]",
       textColor: "text-white"
     },
     {
       title: "Innovation Echo: Charting the Unseen Waves of Transformation by FIDA & PSD3.",
       description: "Embark on a journey through the dynamic world of financial innovation as we explore the seismic shifts ushered in by FIDA & PSD3. Dive into the unseen waves of transformation, unraveling how these regulatory forces...",
-      bgColor: "bg-lime-400",
+      bgColor: "bg-[#fed28f]",
       textColor: "text-green-600"
     }
   ];
@@ -34,8 +34,8 @@ const Blogs = () => {
         <div className="bg-[#111111] border p-10 border-gray-600 rounded-2xl shadow-lg">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4 text-white">Our Latest Blog</h1>
-            <p className="text-white">
+            <h1 className=" text-3xl  md:text-4xl font-bold mb-4 text-white font-khand">Our Latest Blog</h1>
+            <p className="text-white text-xl">
               A Gateway to Insightful Stories and Expertise, Unveiling a Tapestry of Ideas and Inspiration.
             </p>
           </div>

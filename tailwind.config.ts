@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			'khand': ['Khand-Regular', 'Arial', 'sans-serif'],
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
 			backgroundColor:'rgb(32, 32, 32)',

@@ -29,7 +29,7 @@ const Mentor = () => {
           {/* Left Section */}
           <div className="w-full lg:w-1/2 z-10 space-y-6 sm:space-y-8">
             <div className="prose prose-invert max-w-none">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold 
+              <h1 className="text-2xl text-3xl md:text-4xl lg:text-5xl font-bold 
                 bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent 
                 mb-3 sm:mb-4 ">
                   <p className='text-[#ff0000]'>  Your Summer Internship Mentor</p>
