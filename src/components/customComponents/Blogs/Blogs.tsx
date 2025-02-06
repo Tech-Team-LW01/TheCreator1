@@ -38,7 +38,7 @@ const Blogs = () => {
         <div className="bg-[#111111] border p-10 border-gray-600 rounded-2xl shadow-lg">
           {/* Header Section */}
           <div className="text-center mb-8 ">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white font-khand">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white ">
               Our Latest Blog
             </h1>
             <p className="text-white text-lg">

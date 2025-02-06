@@ -190,7 +190,7 @@ const BentoGallery: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto min-h-screen bg-black p-0">
       {/* Main Heading */}
       <div className="w-full text-center py-6">
-        <h1 className="text-4xl font-bold text-[#ff0000] font-khand"> Previous Summer 2024</h1>
+        <h1 className="text-4xl font-bold text-[#ff0000] "> Previous Summer 2024</h1>
         <p className="text-white text-lg">SEE HOW ENGINEERING STUDENTS FROM ACROSS INDIA ARE LEARNING TOGETHER</p>
       </div>
 

@@ -6,7 +6,7 @@ const mediaData = [
   {
    
     
-    backgroundImage: "/assets/media/1 (1).jpg",
+    backgroundImage: "/assets/media/1.jpg",
   },
   {
     
@@ -16,50 +16,60 @@ const mediaData = [
   {
  
    
-    backgroundImage:"/assets/media/3 (1).jpg",
+    backgroundImage:"/assets/media/3.jpg",
   },
   {
     
     
-    backgroundImage: "/assets/media/Asset 1.png",
+    backgroundImage: "/assets/media/4.jpg",
   },
   {
    
     
-    backgroundImage: "/assets/media/media5.jpeg",
+    backgroundImage: "/assets/media/5.jpeg",
   },
   {
     
     
-    backgroundImage: "public/assets/media/media6.jpeg",
+    backgroundImage: "/assets/media/6.jpg",
   },
   {
   
-    backgroundImage:"public/assets/media/media7.jpeg",
+    backgroundImage:"/assets/media/7.jpg",
   },
   {
     
     
-    backgroundImage:"public/assets/media/media8.jpeg",
+    backgroundImage:"/assets/media/8.jpg",
   },
   {
     
    
-    backgroundImage: "/assets/media/media9.jpeg",
+    backgroundImage: "/assets/media/9.jpg",
   },
   {
   
     
-    backgroundImage:"/assets/media/media10.jpeg",
+    backgroundImage:"/assets/media/10.jpg",
   },
   {
   
-    backgroundImage: "/assets/media/media11.jpeg",
+    backgroundImage: "/assets/media/11.jpg",
   },
   {
     
   
-    backgroundImage: "/assets/media/media12.jpeg",
+    backgroundImage: "/assets/media/12.jpg",
+  },
+  {
+    
+  
+    backgroundImage: "/assets/media/13.jpg",
+  },
+  {
+    
+  
+    backgroundImage: "/assets/media/14.jpg",
   },
 ];
 
@@ -71,7 +81,7 @@ export default function MediaSection() {
         <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-4 sm:p-6 md:p-8 w-full max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-6 md:mb-8">
-            <span className="text-[#ff0000] text-3xl md:text-4xl font-bold inline-block mb-2 font-khand">
+            <span className="text-[#ff0000] text-3xl md:text-4xl font-bold inline-block mb-2 ">
                Get Recognised
             </span>
             <h1 className="text-xl sm:text-xl md:text-xl font-bold text-white">

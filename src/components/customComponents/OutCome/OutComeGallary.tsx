@@ -89,7 +89,7 @@ export default function OutComeGallary() {
 
   return (
     <div className="flex flex-col bg-black items-center" id="gallery">
-      <h2 className="text-4xl font-bold text-white text-center mb-0 mt-12 font-khand"><span className="text-[#ff0000]">Glimpse </span>of JAZBAA 1.0, JAZBAA 2.0 & JAZBAA 3.0 </h2>
+      <h2 className="text-4xl font-bold text-white text-center mb-0 mt-12"><span className="text-[#ff0000]">Glimpse </span>of JAZBAA 1.0, JAZBAA 2.0 & JAZBAA 3.0 </h2>
       {/* <div className="h-1 w-16 bg-red-500 mt-2 mb-6 mx-auto"></div> */}
       <br></br>
       <div className="relative w-full max-w-6xl flex overflow-hidden justify-center">

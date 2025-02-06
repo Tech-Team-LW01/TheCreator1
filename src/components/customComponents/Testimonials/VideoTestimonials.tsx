@@ -104,7 +104,7 @@ export default function VideoTestimonials() {
     <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 bg-black">
       <header className="mb-8 space-y-2">
         <div className="flex items-center gap-4 flex-wrap justify-center">
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white text-center font-khand">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white text-center ">
             Hear What Our <br/> <span className="text-[#ff0000]">Summer Learner&apos;s</span> have to say
           </h1>
           {/* <span className="bg-[#ff0000] text-white px-3 py-1 rounded-md text-sm">

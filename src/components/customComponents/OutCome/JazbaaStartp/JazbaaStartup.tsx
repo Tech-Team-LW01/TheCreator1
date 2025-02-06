@@ -8,7 +8,7 @@ export default function JazbaaStartupPlatform() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
         {/* Header Section */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ff0000] mb-4 font-khand">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ff0000] mb-4 ">
             JAZBAA Start-up Platform
           </h1>
           <p className="text-gray-300 text-sm md:text-base lg:text-lg px-4">
