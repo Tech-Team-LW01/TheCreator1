@@ -25,7 +25,7 @@ export function JazbaaTimeLine() {
             
 
            
-           
+                
           </div>
         </div>
       ),
