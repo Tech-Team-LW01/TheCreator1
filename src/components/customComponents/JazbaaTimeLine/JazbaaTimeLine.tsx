@@ -52,6 +52,145 @@ export function JazbaaTimeLine() {
         </div>
       ),
     },
+    {
+      title: "2016",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2016.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "2017",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2017.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
+
+
+    {
+      title: "2018",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2018.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
+
+
+    {
+      title: "2020",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2020.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "2021",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2021.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "2022",
+      content: (
+        <div>
+          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+           
+          {Data2022.map((student) => (
+              <StudentProfileCard
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+              />
+            ))}
+           
+          </div>
+        </div>
+      ),
+    },
   
   ];
   
