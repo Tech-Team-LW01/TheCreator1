@@ -89,7 +89,7 @@ export function MentorScroll() {
     <div className='relative'>
       <div className="container max-w-6xl mx-auto px-4 py-8 md:py-4 lg:py-4">
         <div className="text-center mb-4">
-          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 font-khand">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 ">
             <span className='text-[#ff0000]'>World Record Holder - </span> Mr Vimal Daga
           </h1>
         </div>

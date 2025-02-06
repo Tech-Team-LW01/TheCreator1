@@ -77,7 +77,7 @@ export function JazbaaTimeLine() {
   return (
     <div className="w-full">
          <div className="w-full text-center pt-16 pb-4 ">
-        <h1 className="text-4xl font-bold  text-[#ff0000] font-khand">INIT RECRUITMENT PLATFORM</h1>
+        <h1 className="text-4xl font-bold  text-[#ff0000] ">INIT RECRUITMENT PLATFORM</h1>
         <p className="text-white text-lg">A UNIQUE PLACEMENT PLATFORM FOR CORE TECHNICAL JOB ROLES IN DREAM COMPANIES</p>
       </div>
       <Timeline data={data} />
