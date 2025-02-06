@@ -148,3 +148,42 @@ body {
 .scroll-snap-align-start {
   scroll-snap-align: start;
 }
+
+
+
+
+
+@layer components {
+  .timeline-card {
+    @apply relative flex-1 p-6 bg-white rounded-xl shadow-lg;
+  }
+
+  .timeline-connector {
+    @apply absolute w-3 h-3 bg-red-600 rounded-full;
+  }
+
+  .timeline-badge {
+    @apply absolute w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold;
+  }
+}
+
+@layer utilities {
+  .timeline-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+}
+
+
+@layer utilities {
+  .timeline-progress {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .timeline-dot {
+    @apply transform transition-all duration-300 ease-in-out;
+  }
+
+  .timeline-dot-active {
+    @apply scale-110;
+  }
+}
