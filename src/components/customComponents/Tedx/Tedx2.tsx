@@ -7,12 +7,19 @@ const Tedx2: React.FC<SpeakerProps> = ({
   description, 
   badge, 
   firstName, 
-  lastName 
+  lastName,
+  link 
 }) => {
+  const handleClick = () => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <>
-      <div className="relative w-[300px] h-[300px] group">
+      <div 
+        className="relative w-[300px] h-[300px] group cursor-pointer transform transition-transform hover:scale-105"
+        onClick={handleClick}
+      >
         {/* Main circle with gradient border */}
         <div className="absolute inset-0 rounded-full bg-emerald-500 overflow-hidden">
           <img 
@@ -43,6 +50,18 @@ const Tedx2: React.FC<SpeakerProps> = ({
           <h2 className="text-2xl font-bold text-[#ff0000]">
             {firstName} <span className="text-[#ff0000]">{lastName}</span>
           </h2>
+        </div>
+
+        {/* Link indicator */}
+        <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <svg 
+            className="w-6 h-6 text-white" 
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+          >
+            <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+          </svg>
         </div>
       </div>
     </>

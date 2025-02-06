@@ -5,4 +5,6 @@ export interface SpeakerProps {
     badge: string;
     firstName: string;
     lastName: string;
-  }
+    link: string;
+    onClick?: () => void;
+}

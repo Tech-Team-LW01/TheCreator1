@@ -1,7 +1,7 @@
-// FeatureGrid.jsx
+// FeatureGrid.tsx
 import React from "react";
 import Tedx2 from "./Tedx2";
-import { speakersData } from "./TedxData"; // Import the data
+import { speakersData } from "./TedxData";
 
 const FeatureGrid = () => {
   return (
@@ -15,6 +15,7 @@ const FeatureGrid = () => {
             badge={speaker.badge}
             firstName={speaker.firstName}
             lastName={speaker.lastName}
+            link={speaker.link}
           />
         ))}
       </div>
