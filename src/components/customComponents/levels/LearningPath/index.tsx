@@ -115,7 +115,7 @@ const LearningPath: React.FC<LearningPathProps> = ({
   <div className="grid grid-cols-2 gap-4 items-center">
     {/* Content on the left */}
     <div className={styles.content}>
-      <h3 className="text-xl font-semibold text-gray-900">
+      <h3 className="text-xl font-semibold text-[#ff0000]">
         {level.title}
       </h3>
       
