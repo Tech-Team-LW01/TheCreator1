@@ -1,5 +1,9 @@
 import React from 'react';
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 const Blogs = () => {
   const blogs = [
     {
@@ -38,10 +42,10 @@ const Blogs = () => {
         <div className="bg-[#111111] border p-10 border-gray-600 rounded-2xl shadow-lg">
           {/* Header Section */}
           <div className="text-center mb-8 ">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white ">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-[#ff0000] ">
               Our Latest Blog
             </h1>
-            <p className="text-white text-lg">
+            <p className={`text-white text-lg ${poppins.className}`}>
               A Gateway to Insightful Stories and Expertise, Unveiling a Tapestry of Ideas and Inspiration.
             </p>
           </div>
@@ -54,14 +58,14 @@ const Blogs = () => {
                 className={`${blog.bgColor} ${blog.colSpan} rounded-lg p-6  flex flex-col justify-between shadow-md`}
               >
                 <div>
-                  <h2 className={`text-xl font-semibold mb-2 text-gray-800`}>
+                  <h2 className={`text-xl font-semibold mb-2 text-gray-800 ${poppins.className}`}>
                     {blog.title}
                   </h2>
                   <p className="mb-2 text-gray-600 text-sm">
                     {blog.description.substring(0, 100)}...
                   </p>
                 </div>
-                <button className={`${blog.textColor} font-medium hover:underline`}>
+                <button className={`${blog.textColor} ${poppins.className} font-medium hover:underline`}>
                   Read More...
                 </button>
               </div>

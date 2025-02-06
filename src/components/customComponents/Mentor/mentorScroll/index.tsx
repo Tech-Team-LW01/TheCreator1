@@ -18,6 +18,12 @@ import tedx from "../../../../../public/assets/Mentor/tedx.jpg";
 import Image3 from "../../../../../public/assets/Mentor/3.jpg";
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
+
 export function MentorScroll() {
   const [hoveringStates, setHoveringStates] = useState(Array(9).fill(false));
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -146,10 +152,10 @@ export function MentorScroll() {
                     </div>
                   </Lens>
                   <div className="py-2 px-2 relative z-20">
-                    <h2 className="text-white text-lg font-bold">
+                    <h2 className={`text-white text-lg font-bold ${poppins.className}`}>
                       {card.title}
                     </h2>
-                    <p className="text-neutral-200 mt-1 text-sm">
+                    <p className={`text-neutral-200 mt-1 text-sm ${poppins.className}`}>
                       {card.description}
                     </p>
                   </div>

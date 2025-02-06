@@ -3,6 +3,12 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
 import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022 } from './data';
+
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 export function JazbaaTimeLine() {
   const data = [
     {
@@ -34,7 +40,7 @@ export function JazbaaTimeLine() {
       title: "2015",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -56,7 +62,7 @@ export function JazbaaTimeLine() {
       title: "2016",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+                   <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -79,7 +85,7 @@ export function JazbaaTimeLine() {
       title: "2017",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+                   <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -103,7 +109,7 @@ export function JazbaaTimeLine() {
       title: "2018",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -127,7 +133,7 @@ export function JazbaaTimeLine() {
       title: "2020",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -150,7 +156,7 @@ export function JazbaaTimeLine() {
       title: "2021",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
@@ -173,7 +179,7 @@ export function JazbaaTimeLine() {
       title: "2022",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">

@@ -2,17 +2,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Instagram } from "lucide-react";
 import Link from "next/link";
 
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 export default function JazbaaStartupPlatform() {
   return (
     <section className="w-full bg-black overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
         {/* Header Section */}
-        <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ff0000] mb-4 ">
+        <div className="text-center mb-12 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold text-[#ff0000] mb-4 ">
             JAZBAA Start-up Platform
           </h1>
-          <p className="text-gray-300 text-sm md:text-base lg:text-lg px-4">
-            (EXCLUSIVELY FOR OUR SUMMER PROGRAM STUDENTS)<br/>
+          <p className={`text-gray-200 text-sm md:text-md lg:text-lg px-4 ${poppins.className}`}>
+            EXCLUSIVELY FOR OUR SUMMER PROGRAM STUDENTS
+            <br></br>
             EVERY ENGINEERING STUDENT CAN BE A CREATOR, THE ONLY THING WE NEED IS JAZBAA.<br/>
             An event which showcases the StartUps incubated by Engineering Students in 45 days during Summer Industrial Training Program.
           </p>
@@ -39,8 +45,8 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">65+ Top-Notch</h3>
-                <p className="text-gray-300 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#ff0000]">65+ Top-Notch</h3>
+                <p className={`text-gray-200 text-sm md:text-base  ${poppins.className}`}>
                   Angel Investors & Industry Experts from various cities namely Mumbai, Bangalore, Hyderabad, Gurgaon
                   were present at JAZBAA 2.0 & JAZBAA 3.0
                 </p>
@@ -68,7 +74,8 @@ export default function JazbaaStartupPlatform() {
                   </svg>
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">123+ Startups</h3>
-                <p className="text-white text-sm md:text-base">
+                <p className={`text-white text-sm md:text-base  ${poppins.className}`}>
+
                 &quot;Unbelievable&quot; was the feedback from the investors to these 123+ Startups which were ideated, build
                   and showcased at JAZBAA 2.0 & JAZBAA 3.0
                 </p>
@@ -95,8 +102,9 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">10+ Sectors</h3>
-                <p className="text-gray-300 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#ff0000]">10+ Sectors</h3>
+                <p className={`text-white text-sm md:text-base  ${poppins.className}`}>
+
                   Healthcare, Education, Logistics & Transportation, Agriculture, Consumer Products & Services, Retail,
                   Human Resource and many more
                 </p>

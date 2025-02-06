@@ -4,7 +4,11 @@ import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Check, Globe, User, Flag, Award, Mic2, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 const Mentor = () => {
   const achievements = [
     { icon: Globe, text: "Known as the 'Integration Guru'" },
@@ -36,7 +40,7 @@ const Mentor = () => {
 
               </h1>
               
-              <p className="text-lg sm:text-xl text-white font-medium mb-6 sm:mb-8">
+              <p className={`text-lg sm:text-xl text-white font-medium mb-6 sm:mb-8 ${poppins.className}`}>
                 Visionary Leader Committed to &quot;Making India Future-Ready&quot;
               </p>
 
@@ -49,7 +53,7 @@ const Mentor = () => {
                   >
                     <div className="flex items-center gap-3 sm:gap-4">
                       <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-red-400" />
-                      <span className="text-base sm:text-lg font-medium text-white">{item.text}</span>
+                      <span className={`text-base sm:text-lg font-medium ${poppins.className} text-white`}>{item.text}</span>
                     </div>
                   </Card>
                 ))}

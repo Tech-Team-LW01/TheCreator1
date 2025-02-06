@@ -2,6 +2,13 @@ import React from 'react';
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
+
+
 const technologies = [
   {
       name: "Machine Learning",
@@ -95,10 +102,10 @@ export default function TechStack() {
     <section className="container bg-black mx-auto px-4 py-6">
       <div className="grid mx-auto gap-8 lg:grid-cols-2 lg:gap-12 items-center max-w-6xl">
         <div className="space-y-4">
-          <h1 className="text-4xl text-[#ff0000] font-bold tracking-tight lg:text-3xl ">
+          <h1 className="text-4xl text-[#ff0000] font-bold tracking-tight lg:text-4xl ">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
-          <p className="text-muted-foreground text-base text-white">
+          <p className={`text-muted-foreground text-3xl text-base text-white ${poppins.className}`}>
             Master modern technologies through hands-on experience with industry-standard tools and frameworks.
           </p>
         </div>

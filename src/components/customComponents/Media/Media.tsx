@@ -1,7 +1,11 @@
 import React from "react";
 import { Card, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 const mediaData = [
   {
    
@@ -73,10 +77,10 @@ export default function MediaSection() {
         <div className="bg-[#111111] border border-gray-600 rounded-xl shadow-2xl p-4 sm:p-6 md:p-8 w-full max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-6 md:mb-8">
-            <span className="text-[#ff0000] text-3xl md:text-4xl font-bold inline-block mb-2 ">
+            <span className="text-[#ff0000] text-4xl md:text-4xl font-bold inline-block mb-2 ">
                Get Recognised
             </span>
-            <h1 className="text-xl sm:text-xl md:text-xl font-bold text-white">
+            <h1 className={`text-xl sm:text-xl md:text-xl font-bold text-white ${poppins.className}`}>
                SUMMER INTERNS GETTING RECOGNISED IN MEDIA ACROSS INDIA
             </h1>
           </div>

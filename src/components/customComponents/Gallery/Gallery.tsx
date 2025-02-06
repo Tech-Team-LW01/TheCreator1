@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BentoGrid } from "react-bento";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 // Define props for ImageCycler
 interface ImageCyclerProps {
   images: string[];
@@ -191,7 +195,7 @@ const BentoGallery: React.FC = () => {
       {/* Main Heading */}
       <div className="w-full text-center py-6">
         <h1 className="text-4xl font-bold text-[#ff0000] "> Previous Summer 2024</h1>
-        <p className="text-white text-lg">SEE HOW ENGINEERING STUDENTS FROM ACROSS INDIA ARE LEARNING TOGETHER</p>
+        <p className={`text-white text-lg ${poppins.className}`}>SEE HOW ENGINEERING STUDENTS FROM ACROSS INDIA ARE LEARNING TOGETHER</p>
       </div>
 
       {/* Bento Grid */}

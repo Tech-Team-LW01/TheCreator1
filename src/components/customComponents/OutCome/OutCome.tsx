@@ -15,7 +15,7 @@ export function OutCome() {
           <div className="flex flex-col items-center justify-center py-12 md:py-16 relative z-10">
 
             <div className="relative mb-24"> {/* Increased margin bottom for arrows */}
-              <h2 className="text-3xl  md:text-3xl lg:text-4xl text-[#ff0000] font-bold text-inter-var text-center px-4">
+              <h2 className="text-3xl  md:text-4xl lg:text-4xl text-[#ff0000] font-bold text-inter-var text-center px-4">
                 Outcome of Summer Internship Program
               </h2>
               

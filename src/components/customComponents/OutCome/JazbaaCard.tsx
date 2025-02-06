@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Instagram, Twitter, Globe } from 'lucide-react' // Import icons
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 export default function JazbaaCard() {
   return (
     <Card className="w-full max-w-sm bg-zinc-900 text-white">
@@ -9,12 +13,12 @@ export default function JazbaaCard() {
         <div className="space-y-2 text-center">
           <h2 className="text-2xl text-[#ff0000] font-semibold">JAZBAA 4.0</h2>
           <div className="space-x-2">
-            <span className="font-semibold">to investors at</span>
-      <span className=" font-semibold">Showcase your Summer Product</span>
+            <span className={`font-semibold ${poppins.className}`}>Showcase your Summer Product to investors </span>
+      <span className=" font-semibold"></span>
           </div>
         </div>
 
-        <p className="text-center text-gray-300 text-sm leading-relaxed">
+        <p className={`text-center text-gray-300 text-sm leading-relaxed ${poppins.className}`}>
           {'Only platform where pursuing students showcase their technical startup products developed "'}
         </p>
       </CardContent>

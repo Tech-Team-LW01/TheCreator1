@@ -6,6 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Linkedin } from "lucide-react";
 
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
+
 export default function Query() {
   const [isSwapped, setIsSwapped] = useState(false);
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -89,7 +95,7 @@ export default function Query() {
               transition={{ type: "tween", duration: 0.5 }}
             >
           <h2 className="text-4xl font-bold mb-6 text-white font-khand">Hello, Friend!</h2>
-          <p className="mb-8 text-lg text-white">Enter your personal details and start journey with us</p>
+          <p className={`mb-8 text-lg text-white ${poppins.className}`}>Enter your personal details and start journey with us</p>
           <Button
             variant="outline"
             className="border-2 border-white bg-[#ff0000] text-white hover:bg-white/10"

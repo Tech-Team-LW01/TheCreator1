@@ -6,7 +6,11 @@ import { Project } from './types';
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays } from "lucide-react";
 import { MdCircle } from "react-icons/md";
-
+import { Inter,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -83,7 +87,7 @@ export default function Projects(): JSX.Element {
                 <h3 className="text-sm md:text-sm font-bold text-[#ff0000] mt-2">
                   {section.heading}
                 </h3>
-                <p className="text-xs md:text-xs text-gray-300 leading-relaxed">
+                <p className={`text-xs md:text-xs text-gray-200 leading-relaxed ${poppins.className}`}>
                   {section.content.split('|').map((item, i) => (
                     <span key={i} className="inline-block">
                       {item.trim()}
