@@ -23,11 +23,15 @@ export function OutCome() {
               <div className="hidden md:block absolute left-1/4 top-full">
                 <div className="relative w-32 h-24">
                   {/* Arrow Stem */}
-                  <div className="absolute top-0 left-1/2 h-16 w-1 bg-[#ff0000] transform -rotate-12"></div>
-                  {/* Arrow Head */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                    <div className="w-3 h-3 border-b-2 border-r-2 border-[#ff0000] transform rotate-45"></div>
+                  <div className="absolute top-0 left-1/2  transform -rotate-12">
+                  <img src="/assets/arrow.png"></img>
                   </div>
+                  {/* Arrow Head */}
+                  {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+
+                    <img src="/assets/arrow.png"></img>
+                   
+                  </div> */}
                 </div>
               </div>
 
@@ -35,11 +39,13 @@ export function OutCome() {
               <div className="hidden md:block absolute right-1/4 top-full">
                 <div className="relative w-32 h-24">
                   {/* Arrow Stem */}
-                  <div className="absolute top-0 left-1/2 h-16 w-1 bg-[#ff0000] transform rotate-12"></div>
-                  {/* Arrow Head */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                    <div className="w-3 h-3 border-b-2 border-r-2 border-[#ff0000] transform rotate-45"></div>
+                  <div className="absolute top-0 left-1/2  transform -rotate-90">
+                  <img src="/assets/arrow.png"></img>
                   </div>
+                  {/* Arrow Head */}
+                  {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                    <div className="w-3 h-3 border-b-2 border-r-2 border-[#ff0000] transform rotate-45"></div>
+                  </div> */}
                 </div>
               </div>
             </div>
