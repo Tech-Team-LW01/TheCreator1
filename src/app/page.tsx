@@ -31,14 +31,14 @@ import { JazbaaTimeLine } from "@/components/customComponents/JazbaaTimeLine/Jaz
 import Footer3 from "@/components/Footer3";
 
 import Hero2 from "@/components/customComponents/Hero/Hero2";
-import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
+// import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
 export default function Home() {
   return (
     <div >
 {/* <Hero></Hero> */}
 
 <Hero2></Hero2>
-<Timeline />
+{/* <Timeline /> */}
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
