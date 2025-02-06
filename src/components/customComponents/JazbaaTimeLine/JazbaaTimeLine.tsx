@@ -22,6 +22,7 @@ export function JazbaaTimeLine() {
 
             {Data2014.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -29,10 +30,8 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-            
 
-           
-                
+
           </div>
         </div>
       ),
@@ -45,9 +44,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2015.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -55,7 +55,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -68,9 +68,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2016.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -78,7 +79,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -92,9 +93,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2017.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -102,7 +104,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -117,9 +119,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2018.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -127,7 +130,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -142,9 +145,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2020.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -152,7 +156,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -166,9 +170,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2021.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -176,7 +181,7 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
@@ -190,9 +195,10 @@ export function JazbaaTimeLine() {
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-           
+
           {Data2022.map((student) => (
               <StudentProfileCard
+                key={student.id} 
                 linkedinUrl={student.linkedinUrl}
                 studentName={student.studentName}
                 role={student.role}
@@ -200,14 +206,14 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
-           
+
           </div>
         </div>
       ),
     },
-  
+
   ];
-  
+
   return (
     <div className="w-full">
          <div className="w-full text-center pt-16 pb-4 ">
