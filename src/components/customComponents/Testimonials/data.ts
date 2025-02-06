@@ -5,9 +5,9 @@ export const landingPageTestimonialPosts = [
     testimonialScreenShot:"/assets/imagetestinomial/image1.png",
     images:[
 
-      "/assets/event-gallery/G3.jpeg",
+      
         "/assets/event-gallery/G4.jpeg",
-        "/assets/event-gallery/G5.jpeg",
+        "/assets/Jazbaa/JAZBAA 11.jpg",
 
     ]
    
@@ -21,8 +21,7 @@ export const landingPageTestimonialPosts = [
       id: 3,
       testimonialScreenShot:"/assets/imagetestinomial/image2.png",
       images:[
-        "/assets/event-gallery/G26.jpeg",
-        "/assets/event-gallery/G14.jpeg",
+        "/assets/Jazbaa/JAZBAA 2.jpg",
         "/assets/event-gallery/G11.jpeg",
   
       ]
@@ -33,8 +32,8 @@ export const landingPageTestimonialPosts = [
       images:[
 
        "/assets/event-gallery/G26.jpeg",
-        "/assets/event-gallery/G6.jpeg",
-        "/assets/event-gallery/G11.jpeg",
+        "/assets/Jazbaa/JAZBAA 8.jpg",
+        
   
       ]
     }, {
@@ -46,9 +45,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image4.png",
       images:[
 
-        "/assets/event-gallery/G26.jpeg",
-         "/assets/event-gallery/G16.jpeg",
+    
          "/assets/event-gallery/G11.jpeg",
+         "/assets/Jazbaa/JAZBAA 14.jpg"
    
        ]
     },
@@ -62,9 +61,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image5.png",
       images:[
 
-       "/assets/event-gallery/G26.jpeg",
-        "/assets/event-gallery/G6.jpeg",
-        "/assets/event-gallery/G11.jpeg",
+       "/assets/Jazbaa/JAZBAA 12.jpg",
+        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/Jazbaa/DSC08897.JPG",
   
   
       ]
@@ -83,9 +82,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image8.png",
       images:[
 
-        "/assets/event-gallery/G26.jpeg",
+        "/assets/Jazbaa/JAZBAA 20.jpg",
         "/assets/event-gallery/G6.jpeg",
-        "/assets/event-gallery/G11.jpeg",
+        
   
       ]
     },
@@ -107,9 +106,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image11.png",
       images:[
 
-        "/assets/event-gallery/G26.jpeg",
-         "/assets/event-gallery/G6.jpeg",
-         "/assets/event-gallery/G11.jpeg",
+        "/assets/Jazbaa/DSC02436.JPG",
+         "/assets/Jazbaa/DSC02451.JPG",
+        
    
        ]
     },
