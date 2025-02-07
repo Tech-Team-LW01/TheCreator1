@@ -68,41 +68,42 @@ const VideoCarousel = () => {
             Industry Experts have to say</h1>
         </div>
         <swiper-container
-          slides-per-view="4"
-          space-between="24"
-          loop="true"
-          navigation="true"
-          pagination="false"
-          autoplay-delay="3000"
-          autoplay-disable-on-interaction="false"
-          breakpoints='{
-            "320": {
-              "slidesPerView": 1,
-              "spaceBetween": 20
-            },
-            "640": {
-              "slidesPerView": 2,
-              "spaceBetween": 20
-            },
-            "768": {
-              "slidesPerView": 3,
-              "spaceBetween": 24
-            },
-            "1024": {
-              "slidesPerView": 4,
-              "spaceBetween": 24
-            }
-          }'
-        >
-          {videos.map((video) => (
-            <swiper-slide key={video.id}>
-              <Card
-                thumbnail={video.thumbnail}
-                videoUrl={video.videoUrl}
-              />
-            </swiper-slide>
-          ))}
-        </swiper-container>
+  slides-per-view="3"
+  space-between="24"
+  loop="true"
+  navigation="true"
+  pagination="false"
+  autoplay-delay="3000"
+  autoplay-disable-on-interaction="false"
+  breakpoints='{
+    "320": {
+      "slidesPerView": 1,
+      "spaceBetween": 20
+    },
+    "640": {
+      "slidesPerView": 2,
+      "spaceBetween": 20
+    },
+    "768": {
+      "slidesPerView": 3,
+      "spaceBetween": 24
+    },
+    "1024": {
+      "slidesPerView": 3,
+      "spaceBetween": 24
+    }
+  }'
+>
+  {videos.map((video) => (
+    <swiper-slide key={video.id}>
+      <Card
+        thumbnail={video.thumbnail}
+        videoUrl={video.videoUrl}
+      />
+    </swiper-slide>
+  ))}
+</swiper-container>
+
 
 <div className='max-w-2xl mt-8 h-96 mx-auto'>
 <Dialog>
