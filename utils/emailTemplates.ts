@@ -132,7 +132,7 @@ interface ApplicationData {
         <div class="email-container">
           <div class="header">
             <h1>New Application Submission</h1>
-            <p>Summer Program 2024</p>
+            <p>Summer Program 2025</p>
           </div>
   
           <div class="content">
