@@ -42,7 +42,7 @@ const Hero2 = () => {
   </div>
   
   {/* Image */}
-  <img className="w-full h-full mx-auto" src="/assets/newHero.png" alt="Hero" />
+  <img className="w-full h-full mx-auto" src="/assets/Hero/hero-section-2.png" alt="Hero" />
 </div>
 
             {/* strip */}
