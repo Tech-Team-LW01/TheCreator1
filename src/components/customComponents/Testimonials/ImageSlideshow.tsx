@@ -12,7 +12,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 10000); // Change image every 2 seconds
+    }, 3000); // Change image every 2 seconds
 
     return () => clearInterval(timer);
   }, [images.length]);

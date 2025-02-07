@@ -4,8 +4,8 @@ export const landingPageTestimonialPosts = [
     id: 1,
     testimonialScreenShot:[
       "/assets/imagetestinomial/image1.png",
-      "/assets/imagetestinomial/image1.png",
-      "/assets/imagetestinomial/image1.png"
+      "/assets/imagetestinomial/image2.png",
+      "/assets/imagetestinomial/image3.png"
     ],
     images:[
 
@@ -19,17 +19,19 @@ export const landingPageTestimonialPosts = [
   {
     id:2 ,
     testimonialScreenShot:[
-      "/assets/imagetestinomial/image31.png",
-      "/assets/imagetestinomial/image31.png"
+      "/assets/imagetestinomial/image4.png",
+      "/assets/imagetestinomial/image5.png",
+      "/assets/imagetestinomial/image6.png",
+      "/assets/imagetestinomial/image7.png"
     ],
   },
    
     {
       id: 3,
       testimonialScreenShot:[
-        "/assets/imagetestinomial/image2.png",
-        "/assets/imagetestinomial/image2.png",
-        "/assets/imagetestinomial/image2.png",
+        "/assets/imagetestinomial/image8.png",
+        "/assets/imagetestinomial/image9.png",
+        "/assets/imagetestinomial/image10.png",
       ],
       images:[
         "/assets/imagetestinomial/image1.png",
@@ -40,9 +42,9 @@ export const landingPageTestimonialPosts = [
     {
       id: 4,
       testimonialScreenShot:[
-        "/assets/imagetestinomial/image3.png",
-        "/assets/imagetestinomial/image3.png",
-        "/assets/imagetestinomial/image3.png"
+        "/assets/imagetestinomial/image11.png",
+        "/assets/imagetestinomial/image12.png",
+        "/assets/imagetestinomial/image13.png"
       ],
       images:[
           "/assets/Jazbaa/DSC02436.JPG",
@@ -53,8 +55,8 @@ export const landingPageTestimonialPosts = [
     }, {
       id: 5,
       testimonialScreenShot:[
-        "/assets/imagetestinomial/image25.png",
-        "/assets/imagetestinomial/image25.png"
+        "/assets/imagetestinomial/image14.png",
+        "/assets/imagetestinomial/image15.png"
       ],
     },
     {
@@ -75,8 +77,8 @@ export const landingPageTestimonialPosts = [
     {
       id: 7,
       testimonialScreenShot:[
-        "/assets/imagetestinomial/image9.png",
-        "/assets/imagetestinomial/image9.png"
+        "/assets/imagetestinomial/image16.png",
+        "/assets/imagetestinomial/image17.png"
       ],
     },
     
