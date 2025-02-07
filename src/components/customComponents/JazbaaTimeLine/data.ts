@@ -87,6 +87,25 @@ export const Data2014 = [
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQEjgpV4fDw9Sw/company-logo_200_200/company-logo_200_200/0/1630559955911/abrdn_logo?e=1746662400&v=beta&t=25A4OogIhK-_n0kdYcIeVjFai0Uta3U18stwEDpDrA0",
       profileImage: "https://media.licdn.com/dms/image/v2/C4E03AQFoXrom7blX5g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517453023819?e=1744243200&v=beta&t=VsMCIxWeacfja9_8OFuxb65ODdcOVbkXakblDPucpoo",
     },
+
+   
+    {
+        id: "2022-15",
+        linkedinUrl: "https://www.linkedin.com/in/paridhi-dahake-237bb8200/",
+        studentName: "Paridhi Dahake",
+        role: "Not Working",
+        companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQFuA0RUzecqYA/company-logo_200_200/company-logo_200_200/0/1630638175284?e=1747267200&v=beta&t=JTUmUn5B_l7lluJil_lbclfMkkxmGBtO2yM4Na7AOMA",
+        profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHClZ4reazSkQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657889951818?e=1744243200&v=beta&t=e_CtDONmH6frdC5ZUaoDyCfwUig5GF-xfaF7Br7F6tE"
+    },
+
+    {
+      id: "2017-17",
+      linkedinUrl: "https://www.linkedin.com/in/darshijain/",
+      studentName: "Darshi Jain",
+      role: "Account Manager Ad Sales",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQHgzevw9ZljdQ/company-logo_200_200/company-logo_200_200/0/1631315759348?e=1747267200&v=beta&t=ZxtFPxyzgAjbIlmIEB9ZxaAfI8NdL854p_SPUeCl2Ys",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQFb_tB7HcZ7xA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679313688923?e=1744243200&v=beta&t=E5NrtB_s_DDajdz4uwxDjt7CVtRvT3dtLVEPpXV46XU",
+    },
     // {
     //   id: "2014-12",
     //   linkedinUrl: "https://www.linkedin.com/in/ankitmt01/",
@@ -148,6 +167,57 @@ export const Data2015 = [
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1746662400&v=beta&t=HxN1bBZV948EyNMcLtjOU6m1eQJ7YOc221_WWayim3I",
       profileImage: "https://media.licdn.com/dms/image/v2/C5603AQGhqGs0g-onNA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1612968535373?e=1744243200&v=beta&t=WZPaYvlyDnHi04DEE-k77J5tQp8mbUN4lpa3CTJlaZ0",
     },
+
+      
+    {
+      id: "2017-20",
+      linkedinUrl: "https://www.linkedin.com/in/sandesh-goyal-07010b146/",
+      studentName: "Sandesh Goyal",
+      role: "Java Developer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHjkUYrDIUKYA/company-logo_200_200/company-logo_200_200/0/1719839886088/cognizant_logo?e=1747267200&v=beta&t=7EIT7QH2tKRZJcuBeWcRK0Qi81x97oPOAnhRcC9elSU",
+      profileImage: "https://media.licdn.com/dms/image/v2/C5103AQE0FnQi51XX4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517016914488?e=1744243200&v=beta&t=84EMMIiuwmThVnqAorCdmoIU8CtXap9rOctTZKQtJRg",
+    },
+
+       {
+      id: "2017-21",
+      linkedinUrl: "https://www.linkedin.com/in/agarwalankit158/",
+      studentName: "Ankit Agarwal",
+      role: "Sr. Experience Designer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFZB0C1RYn7ZA/company-logo_200_200/company-logo_200_200/0/1735883672081/newgen_logo?e=1747267200&v=beta&t=QRzyf5zXOAiIBkrLo4HTeFxhYSuLrAJ_5r4XNVB62EE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQGwLzSaEzClAg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693750612513?e=1744243200&v=beta&t=0UhxjxDkHFtS_ux2AkEnFuMDVKQa_V_NtSwUWN_GPKo",
+    },
+    {
+      id: "2017-22",
+      linkedinUrl: "https://www.linkedin.com/in/nitin-jadwal/",
+      studentName: "Nitin Jadwal",
+      role: "DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_100_100/company-logo_100_100/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=zBmoAv71U-IEvHCqOFSXn7QidcwfJRddapcxI_V5IS4",
+      profileImage: "https://media.licdn.com/dms/image/v2/C4E03AQEgxDIaR9wAJA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1598419168492?e=1744243200&v=beta&t=Z3ev22SNdWe2Nf0XSz1J0F1dUlWgoWImrkJetn2-KPs",
+    },
+    {
+      id: "2017-23",
+      linkedinUrl: "https://www.linkedin.com/in/jai3sharma/",
+      studentName: "Jatin Sharma",
+      role: "Associate Consultant",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFZB0C1RYn7ZA/company-logo_200_200/company-logo_200_200/0/1735883672081/newgen_logo?e=1747267200&v=beta&t=QRzyf5zXOAiIBkrLo4HTeFxhYSuLrAJ_5r4XNVB62EE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHHKKn0RL56-A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1682615493664?e=1739523600&v=beta&t=8W4bZ-n77cPjSmp6BIWweGNfWBIjnx8UWJZnX7ox0aE",
+    },
+    {
+      id: "2017-24",
+      linkedinUrl: "https://www.linkedin.com/in/aneep-raj-agrawal-961043109/",
+      studentName: "Aneep Agrawal",
+      role: "Advisor Engineering",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFBmNPHgN7h1A/company-logo_200_200/company-logo_200_200/0/1719791037771/rio_tinto_logo?e=1747267200&v=beta&t=0noalifeJsAAJUha8OHBVVE58kCZtqI3K3YF4qQfNOU",
+      profileImage: "https://media.licdn.com/dms/image/v2/C5603AQGtaEnfnWfGow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1631617988514?e=1744243200&v=beta&t=24QucVzchfsx2blU9lXqVII1BE7eIaRUHQPo7rMqm7s",
+    },
+    {
+      id: "2017-25",
+      linkedinUrl: "https://www.linkedin.com/in/salabh-lahoti-b7a9a0b1/",
+      studentName: "Salabh Lahoti",
+      role: "Packaged App Development Senior Analyst",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHDbmrSIZ2UdA/company-logo_200_200/company-logo_200_200/0/1723130689960/accenture_logo?e=1747267200&v=beta&t=V7VS1i47ZSPWL17GTrAsMBrk7d4f47XPQ0ig99TY5n4",
+      profileImage: "https://media.licdn.com/dms/image/v2/C5103AQG432c47gL4nA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517554330627?e=1744243200&v=beta&t=KSIll3-cKBH6zYLn10I1Xt_WFeU-6UntRo4mwuyIW8Y",
+    },
   ];
   
 // ===============================================================================================
@@ -199,6 +269,55 @@ export const Data2016 = [
       role: "Associate Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHPxOQjSTf63Q/company-logo_200_200/company-logo_200_200/0/1733126326977?e=1746662400&v=beta&t=2_fNjlZu6c4fqFfvQAlYr_a8Vl1Bu_MfnY9RbDdLfns",
       profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQHcWHMwb4MYBQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703738313971?e=1744243200&v=beta&t=fhVn7Whb7nqYudHjWr0YYziz4LU7Gu3Ilp2U2ybUfFE",
+    },
+
+    {
+      id: "2017-26",
+      linkedinUrl: "https://www.linkedin.com/in/shreya-sharma-8a0ba8100/",
+      studentName: "Shreya Sharma",
+      role: "MTS at Salesforce",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQHZ9xYomLW7zg/company-logo_200_200/company-logo_200_200/0/1630658255326/salesforce_logo?e=1747267200&v=beta&t=mYrUY4iAUAaByjHXIXD6TDRBe5XUQw_NupEsNGacZt8",
+      profileImage: "https://media.licdn.com/dms/image/v2/C4E03AQHkJaycvn9jOA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1638599734310?e=1744243200&v=beta&t=WmnQE7q2sCkvzq_NXvWEgGpBA_g2uXYAdA9HpGTb0jM",
+    },
+    {
+      id: "2017-27",
+      linkedinUrl: "https://www.linkedin.com/in/kumarmayank6746/",
+      studentName: "Kumar Mayank",
+      role: "GenAI Specialist",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_200_200/company-logo_200_200/0/1631311446380?e=1747267200&v=beta&t=vU6juPS-AVsn9MDUlF0vGmmRbPh0ubxT_u-g_1hfx6c",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQEUsL3NBH9x2Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1689666232020?e=1744243200&v=beta&t=3ry9F1HS0ycCBTo0nqHB7DKbPG6NQ-g8ENHp66SrbSs",
+    },
+    {
+      id: "2017-28",
+      linkedinUrl: "https://www.linkedin.com/in/riyajain0106/",
+      studentName: "Riya Jain",
+      role: "Data Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFS4KHrj-Gxtw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1734280906708?e=1739523600&v=beta&t=OHwmWFQljld45r41v5s3Ksq8CnH7TYTLfQNCBdf4R5s",
+    },
+     {
+      id: "2020-26",
+      linkedinUrl: "https://www.linkedin.com/in/creativesid/",
+      studentName: "Siddharth Sharma",
+      role: "Senior Creative Director",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFBxzDdSJgU9A/company-logo_200_200/company-logo_200_200/0/1720900533398/wolf_mentoring_logo?e=1747267200&v=beta&t=9kigJqY-ZnsuXaw_eVfLHfxzpvyu-ys-cRRQEtMkn6k",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQG0a08120r0KA/profile-displayphoto-shrink_400_400/B56ZQzBrmlG8Ag-/0/1736022866815?e=1744243200&v=beta&t=6Hkn22n6K84OrwdE2O8IyZB2mrY6KXJI2AljHvgqI5o",
+    },
+    {
+      id: "2020-27",
+      linkedinUrl: "https://www.linkedin.com/in/pooja-rathore-91990a16a/",
+      studentName: "Pooja Rathore",
+      role: "Software Developer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQE88xCsONDULQ/company-logo_200_200/company-logo_200_200/0/1630652622688/microsoft_logo?e=1747267200&v=beta&t=tBkZB0USkIACMI61-_s2rIElE1slzdug1bVkEMBC6ko",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQF0546wDU5IWQ/profile-displayphoto-shrink_400_400/B56ZSkW9qdHEAg-/0/1737924271952?e=1744243200&v=beta&t=NdpSCJGEO78lhklpemaUcnyrR_QacN9EbZADzVmwSsw",
+    },
+    {
+      id: "2020-28",
+      linkedinUrl: "https://www.linkedin.com/in/sunil-poricha-70828b155/",
+      studentName: "Sunil Poricha",
+      role: "Lead DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQF6iwa5VSk-PQ/company-logo_200_200/company-logo_200_200/0/1724950881853/fidelity_investments_logo?e=1747267200&v=beta&t=6ZzeREsKFkIywbrOmPRG_uHwJVC6DyTv4TseqHJRnk8",
+      profileImage: "https://media.licdn.com/dms/image/v2/C5603AQEyb6IkJi56zQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1598847225223?e=1744243200&v=beta&t=N5IpJUS-bsvdoO0O3Z1OdTr18yn7kW8yqEvKh-cnKto",
     },
   ];
 // ==============================================================================================
@@ -333,102 +452,9 @@ export const Data2017 = [
       profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQGgsCNF9eNI-A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1663230325321?e=1744243200&v=beta&t=swzHUUrdEkcSjVYHKdSFglWTDjResZSc4742at_2uKY",
     }
    
-    // {
-    //   id: "2017-17",
-    //   linkedinUrl: "https://www.linkedin.com/in/darshijain/",
-    //   studentName: "Darshi Jain",
-    //   role: "Account Manager Ad Sales",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-18",
-    //   linkedinUrl: "https://www.linkedin.com/in/vishal-maheshwari-854b41141/",
-    //   studentName: "Vishal Maheshwari",
-    //   role: "Senior Consultant",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-19",
-    //   linkedinUrl: "https://www.linkedin.com/in/dakshita-tiwari-4350a0146/",
-    //   studentName: "Dakshita Tiwari",
-    //   role: "Sourcing Analyst",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-20",
-    //   linkedinUrl: "https://www.linkedin.com/in/sandesh-goyal-07010b146/",
-    //   studentName: "Sandesh Goyal",
-    //   role: "Java Developer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-21",
-    //   linkedinUrl: "https://www.linkedin.com/in/agarwalankit158/",
-    //   studentName: "Ankit Agarwal",
-    //   role: "Sr. Experience Designer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-22",
-    //   linkedinUrl: "https://www.linkedin.com/in/nitin-jadwal/",
-    //   studentName: "Nitin Jadwal",
-    //   role: "DevOps Engineer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-23",
-    //   linkedinUrl: "https://www.linkedin.com/in/jai3sharma/",
-    //   studentName: "Jatin Sharma",
-    //   role: "Associate Consultant",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-24",
-    //   linkedinUrl: "https://www.linkedin.com/in/aneep-raj-agrawal-961043109/",
-    //   studentName: "Aneep Raj Agrawal",
-    //   role: "Advisor - Data Engineering",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-25",
-    //   linkedinUrl: "https://www.linkedin.com/in/salabh-lahoti-b7a9a0b1/",
-    //   studentName: "Salabh Lahoti",
-    //   role: "Packaged App Development Senior Analyst",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-26",
-    //   linkedinUrl: "https://www.linkedin.com/in/shreya-sharma-8a0ba8100/",
-    //   studentName: "Shreya Sharma",
-    //   role: "MTS at Salesforce",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-27",
-    //   linkedinUrl: "https://www.linkedin.com/in/kumarmayank6746/",
-    //   studentName: "Kumar Mayank",
-    //   role: "GenAI Specialist",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2017-28",
-    //   linkedinUrl: "https://www.linkedin.com/in/riyajain0106/",
-    //   studentName: "Riya Jain",
-    //   role: "Data Engineer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
+ 
+ 
+    
   ];
   
 
@@ -745,30 +771,7 @@ export const Data2020 = [
     //   companyLogoUrl: "",
     //   profileImage: "",
     // },
-    // {
-    //   id: "2020-26",
-    //   linkedinUrl: "https://www.linkedin.com/in/creativesid/",
-    //   studentName: "Siddharth Sharma",
-    //   role: "Senior Creative Director",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2020-27",
-    //   linkedinUrl: "https://www.linkedin.com/in/pooja-rathore-91990a16a/",
-    //   studentName: "Pooja Rathore",
-    //   role: "Software Developer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
-    // {
-    //   id: "2020-28",
-    //   linkedinUrl: "https://www.linkedin.com/in/sunil-poricha-70828b155/",
-    //   studentName: "Sunil Poricha",
-    //   role: "Lead DevOps Engineer",
-    //   companyLogoUrl: "",
-    //   profileImage: "",
-    // },
+   
     // {
     //   id: "2020-29",
     //   linkedinUrl: "https://www.linkedin.com/in/mehul20042001/",
