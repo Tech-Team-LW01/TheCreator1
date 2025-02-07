@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Card from './Card';
 import { register } from 'swiper/element/bundle';
-
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Play } from 'lucide-react';
 
 import { Inter, Poppins } from 'next/font/google';
 
@@ -60,7 +61,7 @@ const VideoCarousel = () => {
     ];
   
     return (
-      <div className="w-full max-w-6xl mx-auto p-4">
+      <div className="w-full max-w-6xl h-full mx-auto p-4">
 
         <div className='w-full h-24 flex items-center justify-center'>
             <h1 className={`text-[#ff0000] text-4xl ${khandFont.className}`}>Hear what Investors &
@@ -102,6 +103,35 @@ const VideoCarousel = () => {
             </swiper-slide>
           ))}
         </swiper-container>
+
+<div className='max-w-2xl mt-8 h-96 mx-auto'>
+<Dialog>
+      <DialogTrigger asChild>
+        <div className="relative w-full h-full cursor-pointer group rounded-lg overflow-hidden">
+          <img
+            src="https://thecreator.one/wp-content/uploads/2024/01/JAZBAA-2.jpg"
+            alt="Video thumbnail"
+            className="w-full h-full object-fit"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Play className="w-12 h-12 text-white" />
+          </div>
+        </div>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-4xl">
+        <div className="aspect-video w-full">
+          <iframe
+            src=""
+            title="YouTube Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full rounded-lg"
+          />
+        </div>
+      </DialogContent>
+    </Dialog>
+</div>
+
       </div>
     );
   };
