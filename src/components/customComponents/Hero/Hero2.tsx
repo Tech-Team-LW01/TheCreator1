@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 // import { IndiaMap } from "@/components/ui/India-map";
 import { Badge } from "@/components/ui/badge"
-
+import { motion } from 'framer-motion';
 // import { MdOnlinePrediction } from "react-icons/md"
 import { BsCalendarCheck } from "react-icons/bs"
 import { AiOutlineHourglass } from "react-icons/ai"
@@ -11,9 +11,26 @@ import { Album ,ShieldCheck} from "lucide-react";
 const Hero2 = () => {    
     return (
         <div className=" h-full mx-auto w-full">
-            <div className="max-w-full h-full mx-auto">
-            <img className="w-full h-full mx-auto" src="/assets/newHero.png"></img>
-            </div>
+     <div className="relative max-w-full h-full mx-auto">
+  {/* Button Container - fixed position using percentages */}
+  <div className="absolute left-[4%] top-[72%] z-10">
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Button
+        size="lg"
+        variant="secondary"
+        className="bg-white text-[#ff0000] text-lg hover:bg-red-200 font-semibold relative z-10 shadow-lg"
+      >
+        Applications Open
+      </Button>
+    </motion.div>
+  </div>
+  
+  {/* Image */}
+  <img className="w-full h-full mx-auto" src="/assets/newHero.png" alt="Hero" />
+</div>
 
             {/* strip */}
 

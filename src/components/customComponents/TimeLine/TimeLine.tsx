@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Inter, Poppins } from 'next/font/google';
@@ -27,7 +28,7 @@ const TimelineHeader = () => (
   </motion.div>
 );
 
-const TimelineItem = ({ number, title, description, side = 'left', avatar = '/api/placeholder/40/40', scrollYProgress, index }:any) => {
+const TimelineItem = ({ number, title, description, side = 'left', avatar = '/api/placeholder/40/40', index }: any) => {
   const xInitial = side === 'left' ? -50 : 50;
   
   return (
@@ -73,12 +74,35 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
   );
 };
 
+// Separate component for the circle number
+const NumberCircle = ({ number, scrollYProgress, index, total }: any) => {
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [(index) / total, (index + 0.5) / total],
+    ["#ff0000", "#ff0000"]
+  );
+
+  return (
+    <motion.div
+      className="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white text-sm z-10"
+      style={{
+        backgroundColor,
+        boxShadow: "0 0 10px rgba(255,0,0,0.5)"
+      }}
+      whileHover={{ scale: 1.1 }}
+      transition={{ duration: 0.2 }}
+    >
+      {number}
+    </motion.div>
+  );
+};
+
 const Timeline = () => {
-    const containerRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-      target: containerRef,
-      offset: ["start center", "end center"]
-    });
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start center", "end center"]
+  });
 
   const timelineData = [
     {
@@ -145,24 +169,15 @@ const Timeline = () => {
         <div className="relative pt-[60px]">
           {timelineData.map((item, index) => (
             <div key={index} className="relative" style={{ height: '180px' }}>
-              <motion.div
-                className="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white text-sm z-10"
-                style={{
-                  backgroundColor: useTransform(
-                    scrollYProgress,
-                    [(index) / timelineData.length, (index + 0.5) / timelineData.length],
-                    ["#ff0000", "#ff0000"]
-                  ),
-                  boxShadow: "0 0 10px rgba(255,0,0,0.5)"
-                }}
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.2 }}
-              >
-                {item.number}
-              </motion.div>
+              <NumberCircle 
+                number={item.number} 
+                scrollYProgress={scrollYProgress} 
+                index={index}
+                total={timelineData.length}
+              />
 
               <div className="absolute w-full top-1/2 -translate-y-1/2">
-                <TimelineItem {...item} scrollYProgress={scrollYProgress} index={index} />
+                <TimelineItem {...item} index={index} />
               </div>
             </div>
           ))}
