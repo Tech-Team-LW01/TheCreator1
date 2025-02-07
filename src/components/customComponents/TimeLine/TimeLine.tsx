@@ -53,10 +53,10 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
         `}
       >
         <div className={`flex-1 ${side === 'right' ? 'order-2' : ''}`}>
-          <h3 className={`font-semibold text-[#ff0000] text-xl mb-3 ${khandFont.className}`}>
+          <h3 className={`font-semibold text-[#ff0000] text-2xl mb-3 ${khandFont.className}`}>
             {title}
           </h3>
-          <p className={`text-gray-200 text-lg leading-relaxed ${poppins.className}`}>
+          <p className={`text-gray-200 text-sm leading-relaxed ${poppins.className}`}>
             {description}
           </p>
         </div>
@@ -109,37 +109,43 @@ const Timeline = () => {
       number: 1,
       title: "Learn & Implement",
       description: "Learn & Implement market trending technologies from the very basics",
-      side: "left"
+      side: "left",
+      avatar:"/assets/journey image/1.png"
     },
     {
       number: 2,
       title: "Deep Research",
       description: "Go deep dive into the core architecture,research & think out of the box.",
-      side: "right"
+      side: "right",
+      avatar:"/assets/journey image/2.png"
     },
     {
       number: 3,
       title: "Develop a Summer Project",
       description: "Integrate & Develop a project as per industry demand (product/prototype).",
-      side: "left"
+      side: "left",
+       avatar:"/assets/journey image/3.png"
     },
     {
       number: 4,
       title: "Showcase the Summer Project",
       description: "JAZBAA 3.0, a platform to showcase project to industry experts & investors .",
-      side: "right"
+      side: "right",
+       avatar:"/assets/journey image/4.png"
     },
     {
       number: 5,
       title: "Get Internship Certificate",
       description: "Achieve Industry Recognized Internship (Project) Certificate.",
-      side: "left"
+      side: "left",
+      avatar:"/assets/journey image/5.png"
     },
     {
       number: 6,
       title: "Higher Growth",
       description: "A Life Changing Experience of 45 days.",
-      side: "right"
+      side: "right",
+      avatar:"/assets/journey image/6.png"
     }
   ];
 
