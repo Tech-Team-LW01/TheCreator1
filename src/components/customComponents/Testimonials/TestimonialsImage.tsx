@@ -68,14 +68,16 @@ export default function ImageTestimonials() {
               </div>
             ))}
 
-<Card className="relative h-40 overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+
+
+
+          </div>
+
+          <Card className="relative border-[0px] h-8 overflow-hidden  bg-[#111111]  ">
   <CardContent className="p-4 h-full w-full flex items-center justify-center">
     <h1 className="text-[#ff0000] text-lg text-center">And many More ...</h1>
   </CardContent>
 </Card>
-
-
-          </div>
 
           {/* Load More Button */}
           {hasMoreTestimonials && (

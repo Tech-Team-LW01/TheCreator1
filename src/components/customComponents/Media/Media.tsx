@@ -125,16 +125,15 @@ export default function MediaSection() {
 
 
 
-<Card
-  className="group relative overflow-hidden transition-all duration-300 ease-in-out
-    h-28 sm:h-32 md:h-36 lg:h-44
-    border border-gray-700 hover:border-gray-500
-    hover:-translate-y-1 hover:shadow-lg
-    active:scale-95 cursor-pointer
-    touch-manipulation"
+
+
+          </div>
+          <Card
+  className="group relative bg-[#111111] mt-2 border-[0px] overflow-hidden h-8
+    "
 >
   {/* Background Overlay */}
-  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all duration-300" />
+  <div className="absolute inset-0 " />
 
   {/* Content Wrapper for Centering */}
   <div className="absolute inset-0 flex items-center justify-center">
@@ -143,10 +142,11 @@ export default function MediaSection() {
     </p>
   </div>
 </Card>
-
-          </div>
         </div>
+        
       </div>
+
+    
 
       {/* Optional: Add custom styles */}
       <style jsx global>{`

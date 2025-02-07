@@ -32,7 +32,12 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+
+
+          </div>
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -51,10 +56,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-
-
-          </div>
         </div>
       ),
     },
@@ -78,7 +79,10 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -97,8 +101,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -122,7 +124,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -141,8 +147,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -167,7 +171,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -186,8 +194,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -213,7 +219,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -232,8 +242,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -259,7 +267,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -278,8 +290,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -304,7 +314,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -323,8 +337,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
@@ -350,7 +362,10 @@ export function JazbaaTimeLine() {
             ))}
 
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -369,7 +384,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-          </div>
         </div>
       ),
     },
@@ -394,7 +408,11 @@ export function JazbaaTimeLine() {
               />
             ))}
 
-<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+
+
+          </div>
+
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>
@@ -413,8 +431,6 @@ export function JazbaaTimeLine() {
     </div> */}
   </div>
 </Card>
-
-          </div>
         </div>
       ),
     },
