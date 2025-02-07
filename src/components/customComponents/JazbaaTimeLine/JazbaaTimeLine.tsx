@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
-import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022 } from './data';
+import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022,Data2023 } from './data';
 
 import { Inter,Poppins } from 'next/font/google'
 const poppins = Poppins({
@@ -197,6 +197,31 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2022.map((student) => (
+              <StudentProfileCard
+                key={student.id} 
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
+              />
+            ))}
+
+          </div>
+        </div>
+      ),
+    },
+
+    {
+      title: "2023",
+      content: (
+        <div>
+          <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+
+          {Data2023.map((student) => (
               <StudentProfileCard
                 key={student.id} 
                 linkedinUrl={student.linkedinUrl}

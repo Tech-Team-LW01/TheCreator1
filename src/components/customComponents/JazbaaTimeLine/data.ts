@@ -1124,3 +1124,216 @@ export const Data2022 = [
     //     profileImage: "/assets/profiles/akshita-parakh.jpg"
     // }
 ];
+
+
+export const Data2023 = [
+  {
+      id: "2023-01",
+      linkedinUrl: "https://www.linkedin.com/in/shiv-am-saini/",
+      studentName: "Shivam Saini",
+      role: "DevSecOps Engineer 1",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQG9PE-JEHJrNA/company-logo_200_200/company-logo_200_200/0/1691670171492/zerodha_fund_house_logo?e=1747267200&v=beta&t=ljSFE2WxlfgHFircEuJ7lfy5f-APr7erTqOXqPB-om8",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQGFvgoGLCx8nw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1697446573764?e=1744243200&v=beta&t=CxnhWqxu_A6axFGmatpa1wpgv-LHrj-yvRHXLD-5fr8"
+  },
+  {
+      id: "2023-02",
+      linkedinUrl: "https://www.linkedin.com/in/saini-prachi/",
+      studentName: "Prachi Saini",
+      role: "Aspiring DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQFhvi_VNigwYw/company-logo_200_200/company-logo_200_200/0/1630586316192/indus_towers_limited_logo?e=1747267200&v=beta&t=6dNKK_kKrlx02R7Fblt1V87c58bH0SDLKxQXG0Bhzvc",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQH54ky-F5Ma5w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722741763477?e=1739516400&v=beta&t=jQ5OMrpv0BftPy49UB4EKTFlpGtvyCmdwQUBTQ-AgTE"
+  },
+  {
+      id: "2023-03",
+      linkedinUrl: "https://www.linkedin.com/in/ritik-raj-sahani-6a5956244/",
+      studentName: "Ritik Raj Sahani",
+      role: "Summer Intern",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQHr5P1OHJ7ZUw/company-logo_200_200/company-logo_200_200/0/1630563928812/drdo_ministry_of_defence_govt_of_india_logo?e=1747267200&v=beta&t=sM9o_x1rNmwXpNj5d_iw4uHRwUjSAV6k-gMesRxqHns",
+      profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHkDZ5maa0h_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657245661067?e=1744243200&v=beta&t=tJgJ7lDq732TRygnlZg95y3zRbr1K1383TOpRVI20ac"
+  },
+  {
+      id: "2023-04",
+      linkedinUrl: "https://www.linkedin.com/in/ghiyas/",
+      studentName: "Mohammad Gayasuddin",
+      role: "DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQEdj83rRHmSMg/company-logo_200_200/company-logo_200_200/0/1736409688113/kommunicate_logo?e=1747267200&v=beta&t=bM8Mk471tNLXBJUb6nE3SXCzhqQ1hCWpswwkdHshHXw",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQGOtdYlOMpPBw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709397460178?e=1744243200&v=beta&t=fAMqX8J5P0gkqFsFaHEVAEKf0om2KIAq35SJGhbOqSk"
+  },
+  {
+      id: "2023-05",
+      linkedinUrl: "https://www.linkedin.com/in/ur-dev6/",
+      studentName: "Utsav Raj",
+      role: "DRDO Intern",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQHr5P1OHJ7ZUw/company-logo_200_200/company-logo_200_200/0/1630563928812/drdo_ministry_of_defence_govt_of_india_logo?e=1747267200&v=beta&t=sM9o_x1rNmwXpNj5d_iw4uHRwUjSAV6k-gMesRxqHns",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHqI1AjWRvBSw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719021633959?e=1744243200&v=beta&t=8W6Qyx6s-G0B8Su6Gq6J4Boo12r_8KVnGogwGa8VeEg"
+  },
+  {
+      id: "2023-06",
+      linkedinUrl: "https://www.linkedin.com/in/gulshankr7301/",
+      studentName: "Gulshan Kumar",
+      role: "Frontend Developer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQFheEbgt4_U_w/company-logo_200_200/company-logo_200_200/0/1661277231688/codeclause_logo?e=1747267200&v=beta&t=pEkpG1tIyyITCzJGAAxM92pIokVXj4N5AizYnDHwai8",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQFFLX3lUN2w-g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722429107753?e=1744243200&v=beta&t=tenROWIeOfou8Akf0PJJMsFLNxX27NBQcGE2hI4bojE"
+  },
+  {
+      id: "2023-07",
+      linkedinUrl: "https://www.linkedin.com/in/arpit-pathak-2a269016a/",
+      studentName: "Arpit Pathak",
+      role: "Systems Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQGXQfw_m2oKtQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709955540243?e=1744243200&v=beta&t=ykj-9J0ScEYuIeHJye3LP_FZtUhKdFenpBwdVBJXr-M"
+  },
+  // {
+  //     id: "2023-08",
+  //     linkedinUrl: "https://www.linkedin.com/in/shubhanghichoudhary/",
+  //     studentName: "Shubhanghi Choudhary",
+  //     role: "",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  {
+      id: "2023-09",
+      linkedinUrl: "https://www.linkedin.com/in/akash-baghel67/",
+      studentName: "Akash Baghel",
+      role: "Web Developer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQHstYTL9VAiuQ/company-logo_200_200/company-logo_200_200/0/1719256590444/shef_solutions_e_learning_provider_logo?e=1747267200&v=beta&t=N1NK1cW2TB4MS7e0UJLhgvlcygszp2IQvw_YcBF-NoE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQESWmvkFpVOtA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1725863823072?e=1739516400&v=beta&t=s1fuVz62X_WUByCp-TzTymRYAzE3HETzQbLLJqJ7OJI"
+  },
+  {
+      id: "2023-10",
+      linkedinUrl: "https://www.linkedin.com/in/ashish-kumar-yadav-597249214/",
+      studentName: "Ashish Kumar",
+      role: "Web Developer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQFJ8tySsCnoTQ/company-logo_200_200/company-logo_200_200/0/1651067233272/learn_and_build_logo?e=1747267200&v=beta&t=B4oLdov7cGhsD1Gx4Qq8FQFmskm_O-_42ze_CvGmuns",
+      profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQFnSUBUQhMEOg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1638192033925?e=1744243200&v=beta&t=_OhS7RUfh-xM782vyp2oYAQNy5VOAa44Aaj9KBJVjWE"
+  },
+  {
+      id: "2023-11",
+      linkedinUrl: "https://www.linkedin.com/in/s-diwakar/",
+      studentName: "Diwakar Singh",
+      role: "DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQET3FpMXBg_Dg/company-logo_200_200/company-logo_200_200/0/1675399012796?e=1747267200&v=beta&t=2A33zi-sQrN5GdQQLjYChAt76v1LXCjvZW7KoYA1C3A",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFopVPSN6N9Fw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1712413289322?e=1739516400&v=beta&t=TNR1jJTaqX2q7hSiRGJWg-4bncTes8bJDjzSZIPEUUY"
+  },
+  {
+      id: "2023-12",
+      linkedinUrl: "https://www.linkedin.com/in/saurav-patel-148539151/",
+      studentName: "Saurav Patel",
+      role: "System Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFXP5rj3MLrRQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730548442580?e=1739516400&v=beta&t=wCU7FCFbxkYPVNhsdzHxcWTsbuM7PC0Ugvgnbg4J9Fc"
+  },
+  // {
+  //     id: "2023-13",
+  //     linkedinUrl: "https://www.linkedin.com/in/srivastavayushmaan/",
+  //     studentName: "Ayush (Ayushmaan) Srivastav",
+  //     role: "Technical Content Creator",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  {
+      id: "2023-14",
+      linkedinUrl: "https://www.linkedin.com/in/rupesh-jha-/",
+      studentName: "Rupesh Jha",
+      role: "DevOps Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQE46aFrTYFFyQ/company-logo_200_200/company-logo_200_200/0/1631319171445?e=1747267200&v=beta&t=WPkrEkAFOgWuZCwXvVBWDQG1kw8LdLSVoZ8fEix0Anw",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQEeqg_ffYQ2FA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1680794576122?e=1744243200&v=beta&t=MHm5MEUbAqHJNw-NSBY1M2ENikXIzoSlgE3V6A-xuQg"
+  },
+  // {
+  //     id: "2023-15",
+  //     linkedinUrl: "https://www.linkedin.com/in/harinath-reddy-bhumireddy-665695229/",
+  //     studentName: "Harinath Reddy Bhumireddy",
+  //     role: "",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-16",
+  //     linkedinUrl: "https://www.linkedin.com/in/musinivr/",
+  //     studentName: "Musini Venkata Ramana",
+  //     role: "Linux System Administrator",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-17",
+  //     linkedinUrl: "https://www.linkedin.com/in/sa-chin/",
+  //     studentName: "Sachin Singh",
+  //     role: "",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-18",
+  //     linkedinUrl: "https://www.linkedin.com/in/k-sachin-kumar/",
+  //     studentName: "K Sachin Kumar",
+  //     role: "Data Engineer",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-19",
+  //     linkedinUrl: "https://www.linkedin.com/in/md-azfar-alam/",
+  //     studentName: "Md Azfar Alam",
+  //     role: "Founder",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-20",
+  //     linkedinUrl: "https://www.linkedin.com/in/vikas-chauhan-70281a265/",
+  //     studentName: "Vikas Chauhan",
+  //     role: "",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-21",
+  //     linkedinUrl: "https://www.linkedin.com/in/bhavishya-sharma8/",
+  //     studentName: "Bhavishya Sharma",
+  //     role: "SRE",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-22",
+  //     linkedinUrl: "https://www.linkedin.com/in/sayed-kashif-abbas-12b636227/",
+  //     studentName: "SAYED KASHIF ABBAS",
+  //     role: "Training",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-23",
+  //     linkedinUrl: "https://www.linkedin.com/in/divyansh-048429245/",
+  //     studentName: "Divyansh Gautam",
+  //     role: "Information Security Consultant",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-24",
+  //     linkedinUrl: "https://www.linkedin.com/in/mahimarastogi02/",
+  //     studentName: "Mahima Rastogi",
+  //     role: "Quality Engineer",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-25",
+  //     linkedinUrl: "https://www.linkedin.com/in/anshul-vishwakarma-b64685245/",
+  //     studentName: "Anshul Vishwakarma",
+  //     role: "DevOps Intern",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // },
+  // {
+  //     id: "2023-26",
+  //     linkedinUrl: "https://www.linkedin.com/in/singh--nishant/",
+  //     studentName: "Nishant Singh",
+  //     role: "Senior Software Engineer",
+  //     companyLogoUrl: "",
+  //     profileImage: ""
+  // }
+];
+// ==========================================================================================
