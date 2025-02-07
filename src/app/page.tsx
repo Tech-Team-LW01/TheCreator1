@@ -32,6 +32,7 @@ import Footer3 from "@/components/Footer3";
 
 import Hero2 from "@/components/customComponents/Hero/Hero2";
 import Timeline from "@/components/customComponents/TimeLine/TimeLine";
+import InvestorCarousel from "@/components/customComponents/InverterVideo/Carousel ";
 // import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
 
-
+<InvestorCarousel/>
 <VideoTestimonials/>
 <ImageTestimonials/>
 <Benifits></Benifits>
