@@ -20,7 +20,7 @@ export function OutCome() {
               </h2>
               
               {/* Left Arrow - Hidden on mobile and tablet */}
-              <div className="hidden lg:block absolute left-1/4 top-full">
+              <div className="hidden lg:block absolute left-[90px] top-full">
                 <div className="relative w-32 h-24">
                   <div className="absolute top-0 left-1/2 transform -rotate-12">
                     <img src="/assets/arrow.png" alt="Left arrow" className="hidden lg:block" />
