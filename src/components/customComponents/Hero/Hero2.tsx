@@ -60,7 +60,7 @@ const Hero2 = () => {
             <span className={`text-white text-xs font-medium uppercase tracking-wide ${khandFont.className}`}>
               TENTATIVE START DATES
             </span>
-            <span className={`font-bold text-xs text-white mt-1 ${poppins.className}`}>
+            <span className={`font-bold text-xs text-white mt-1 mx-2 ${poppins.className}`}>
               May 2025 / June 2025 / July 2025
             </span>
             <Badge variant="outline" className="text-[#ff0000] border-red-200 text-[10px] mt-2 w-fit">
