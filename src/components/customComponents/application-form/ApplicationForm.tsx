@@ -1,6 +1,7 @@
 // components/ApplicationForm.tsx
 "use client"
 
+import { useState } from 'react'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -24,6 +25,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
+import { Loader2 } from "lucide-react" // For loading spinner
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -58,7 +60,9 @@ const formSchema = z.object({
 })
 
 export function ApplicationForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -77,19 +81,36 @@ export function ApplicationForm() {
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true)
     try {
-      // You can implement your API call here
-      console.log(values)
-      toast({
-        title: "Application Submitted!",
-        description: "We'll get back to you soon.",
+      const response = await fetch('/api/submit-application', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
       })
-    } catch (error) {
+
+      if (!response.ok) {
+        throw new Error('Failed to submit application')
+      }
+
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
+        title: "Application Submitted Successfully!",
+        description: "We'll get back to you soon.",
+        variant: "success",
+      })
+      
+      form.reset()
+    } catch (error) {
+      console.error('Submission error:', error)
+      toast({
+        title: "Submission Failed",
+        description: "Please try again later or contact support.",
         variant: "destructive",
       })
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -111,7 +132,11 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>Full Name *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your full name" {...field} />
+                  <Input 
+                    placeholder="Enter your full name" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -125,7 +150,11 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>WhatsApp No *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your WhatsApp number" {...field} />
+                  <Input 
+                    placeholder="Enter your WhatsApp number" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -139,7 +168,12 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>Email Address *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your email address" type="email" {...field} />
+                  <Input 
+                    placeholder="Enter your email address" 
+                    type="email" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -153,7 +187,11 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>College Name *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your college name" {...field} />
+                  <Input 
+                    placeholder="Enter your college name" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -167,7 +205,11 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>Branch *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter your branch" {...field} />
+                  <Input 
+                    placeholder="Enter your branch" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -180,7 +222,11 @@ export function ApplicationForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Current Semester *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                  disabled={isSubmitting}
+                >
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select semester" />
@@ -205,7 +251,11 @@ export function ApplicationForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Applying For *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                  disabled={isSubmitting}
+                >
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select program" />
@@ -229,7 +279,11 @@ export function ApplicationForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Tentative Training Dates *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                  disabled={isSubmitting}
+                >
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select dates" />
@@ -253,7 +307,11 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>Reference Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Enter reference name (optional)" {...field} />
+                  <Input 
+                    placeholder="Enter reference name (optional)" 
+                    {...field} 
+                    disabled={isSubmitting}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -266,7 +324,11 @@ export function ApplicationForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>From where did you get to know about us? *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                  disabled={isSubmitting}
+                >
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select source" />
@@ -296,6 +358,7 @@ export function ApplicationForm() {
                     placeholder="Type your query here (optional)"
                     className="resize-none"
                     {...field}
+                    disabled={isSubmitting}
                   />
                 </FormControl>
                 <FormMessage />
@@ -303,8 +366,19 @@ export function ApplicationForm() {
             )}
           />
 
-          <Button type="submit" className="w-full bg-red-600 hover:bg-red-700">
-            Submit Application
+          <Button 
+            type="submit" 
+            className="w-full bg-red-600 hover:bg-red-700"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Submitting...
+              </>
+            ) : (
+              "Submit Application"
+            )}
           </Button>
         </form>
       </Form>
