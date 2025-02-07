@@ -45,7 +45,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
           delay: index * 0.2,
           ease: "easeOut"
         }}
-        className={`w-full md:w-[450px] min-h-[120px] rounded-lg p-6 flex items-start gap-4
+        className={`w-full md:w-[450px]  min-h-[120px] rounded-lg p-6 flex items-start gap-4
           ${side === 'right' ? 'md:text-right' : ''}
           bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A]
           shadow-[0_0_15px_rgba(255,0,0,0.1)]
@@ -153,9 +153,9 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="min-full bg-[#000000] p-8">
+    <div className="min-full bg-[#000000] p-">
       <motion.div 
-        className="max-w-6xl px-4 md:px-8 mx-auto bg-[#111111] border border-gray-700 rounded-xl shadow-2xl relative pt-10 pb-32"
+        className="md:max-w-6xl max-w-full px-2 md:px-8 mx-auto bg-[#111111] border border-gray-700 rounded-xl shadow-2xl relative pt-10 pb-32"
         ref={containerRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
