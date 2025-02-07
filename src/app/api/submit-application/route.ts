@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
       to: 'preeti.chandak@lwindia.com',
-      subject: 'New Summer Program Application',
+      subject: 'New Summer Program Application 2025',
       html: getApplicationEmailTemplate(formData),
     };
 
