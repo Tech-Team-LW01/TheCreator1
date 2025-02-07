@@ -109,22 +109,7 @@ export default function MediaSection() {
                 {/* Content */}
                 <CardHeader className="relative h-full flex flex-col justify-center items-center p-2 sm:p-3 md:p-4">
                   <div className="relative z-10 w-full h-full flex items-center justify-center">
-                    {/* <Image
-                      src={media.}
-                      alt={''}
-                      width={400}
-                      height={200}
-                      loading="lazy"
-                      className="object-contain w-full h-full 
-                        px-1 pt-2 md:pt-4 pb-0
-                        transition-transform duration-300 
-                        group-hover:scale-105"
-                      style={{
-                        maxWidth: "100%",
-                        maxHeight: "100%",
-                        objectFit: "contain",
-                      }}
-                    /> */}
+                    
                   </div>
                 </CardHeader>
 
@@ -137,6 +122,28 @@ export default function MediaSection() {
                 </div>
               </Card>
             ))}
+
+
+
+<Card
+  className="group relative overflow-hidden transition-all duration-300 ease-in-out
+    h-28 sm:h-32 md:h-36 lg:h-44
+    border border-gray-700 hover:border-gray-500
+    hover:-translate-y-1 hover:shadow-lg
+    active:scale-95 cursor-pointer
+    touch-manipulation"
+>
+  {/* Background Overlay */}
+  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all duration-300" />
+
+  {/* Content Wrapper for Centering */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <p className="text-[#ff0000] text-lg text-center">
+      And many More...
+    </p>
+  </div>
+</Card>
+
           </div>
         </div>
       </div>

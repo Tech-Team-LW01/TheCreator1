@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import ImageSlideshow from './ImageSlideshow';
-import { motion } from 'framer-motion';
-import { landingPageTestimonialPosts } from './data';
-// import Image from 'next/image'; // Image import is no longer directly used here
+import ImageSlideshow from "./ImageSlideshow";
+import { motion } from "framer-motion";
+import { landingPageTestimonialPosts } from "./data";
 
 // Define interface for testimonial data
 interface Testimonial {
   id: string | number;
-  testimonialScreenShot: string[]; // Changed to string array
+  testimonialScreenShot: string;
   images?: string[];
 }
 
@@ -33,40 +32,33 @@ export default function ImageTestimonials() {
         <div className="bg-[#111111] border border-gray-600 rounded-xl p-6 shadow-2xl">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h2 className="text-[#ff0000] text-3xl md:text-4xl font-bold mt-2 ">
-            Summer Interns felt <br/>
-            “It’s a Life Changing Program”
+            <h2 className="text-[#ff0000] text-3xl md:text-4xl font-bold mt-2">
+              Summer Interns felt <br />
+              “It’s a Life Changing Program”
             </h2>
-            <h2 className="text-white pt-2 text-xl font-semibold">
-            LET’S HEAR FROM THEM WHY ?
-            </h2>
+            <h2 className="text-white pt-2 text-xl font-semibold">LET’S HEAR FROM THEM WHY ?</h2>
           </div>
 
           {/* Testimonials Grid */}
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-4">
             {displayedTestimonials.map((testimonial: Testimonial) => (
               <div key={testimonial.id} className="break-inside-avoid space-y-4">
-                {/* Testimonial Screenshot Card */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
-                    <CardContent className="p-4">
-                      <ImageSlideshow images={testimonial.testimonialScreenShot} />
-                    </CardContent>
-                  </Card>
-                </motion.div>
+                {/* Testimonial Screenshot Card (Static Image) */}
+                <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+                  <CardContent className="p-4">
+                    <img className="w-full h-auto rounded-lg" src={testimonial.testimonialScreenShot} alt={`Testimonial ${testimonial.id}`} />
+                  </CardContent>
+                </Card>
 
-                {/* Additional Images Slideshow (if exists) */}
+                {/* Fading Image Slideshow (Dynamic) */}
                 {testimonial.images && testimonial.images.length > 0 && (
                   <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1.5 }} // Smooth fade effect
                   >
-                    <Card className="relative object-fit overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+                    <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                       <CardContent className="p-4">
                         <ImageSlideshow images={testimonial.images} />
                       </CardContent>
@@ -75,6 +67,14 @@ export default function ImageTestimonials() {
                 )}
               </div>
             ))}
+
+<Card className="relative h-40 overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
+  <CardContent className="p-4 h-full w-full flex items-center justify-center">
+    <h1 className="text-[#ff0000] text-lg text-center">And many More ...</h1>
+  </CardContent>
+</Card>
+
+
           </div>
 
           {/* Load More Button */}
@@ -84,7 +84,7 @@ export default function ImageTestimonials() {
                 className="mx-auto px-6 py-3 border border-gray-500 rounded-lg hover:bg-gray-800 transition-colors text-white font-medium"
                 onClick={handleToggleDisplay}
               >
-                {showAll ? 'View Less' : 'See our Wall of Love'}
+                {showAll ? "View Less" : "See our Wall of Love"}
               </button>
             </div>
           )}

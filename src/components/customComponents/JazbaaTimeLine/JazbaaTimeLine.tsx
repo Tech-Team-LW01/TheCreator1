@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
+import { Timeline, } from "@/components/ui/timeline";
 import StudentProfileCard from "./StudentProfileCard";
 import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022,Data2023 } from './data';
-
+import { Card } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Inter,Poppins } from 'next/font/google'
 const poppins = Poppins({
    subsets: ['latin'],
@@ -31,6 +32,27 @@ export function JazbaaTimeLine() {
               />
             ))}
 
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
+
+
 
           </div>
         </div>
@@ -56,6 +78,26 @@ export function JazbaaTimeLine() {
               />
             ))}
 
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
+
           </div>
         </div>
       ),
@@ -79,6 +121,26 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
+
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
 
           </div>
         </div>
@@ -104,6 +166,26 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
+
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
 
           </div>
         </div>
@@ -131,6 +213,26 @@ export function JazbaaTimeLine() {
               />
             ))}
 
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
+
           </div>
         </div>
       ),
@@ -157,6 +259,26 @@ export function JazbaaTimeLine() {
               />
             ))}
 
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
+
           </div>
         </div>
       ),
@@ -181,6 +303,26 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
+
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
 
           </div>
         </div>
@@ -207,6 +349,26 @@ export function JazbaaTimeLine() {
               />
             ))}
 
+
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
           </div>
         </div>
       ),
@@ -231,6 +393,26 @@ export function JazbaaTimeLine() {
                 profileImage={student.profileImage}
               />
             ))}
+
+<Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
+  {/* Left side - Student Image */}
+  <div className="flex-shrink-0">
+  </div>
+
+  {/* Right side content */}
+  <div className="flex-grow flex items-center flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
+  </div>
+</Card>
 
           </div>
         </div>
