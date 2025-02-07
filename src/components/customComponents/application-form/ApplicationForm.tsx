@@ -98,7 +98,7 @@ export function ApplicationForm() {
       toast({
         title: "Application Submitted Successfully!",
         description: "We'll get back to you soon.",
-        variant: "success",
+        variant: "default",
       })
       
       form.reset()
