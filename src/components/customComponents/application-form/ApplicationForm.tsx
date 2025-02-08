@@ -1,4 +1,3 @@
-// components/ApplicationForm.tsx
 "use client"
 
 import { useState } from 'react'
@@ -25,7 +24,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
-import { Loader2 } from "lucide-react" // For loading spinner
+import { Loader2 } from "lucide-react"
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -40,8 +39,8 @@ const formSchema = z.object({
   collegeName: z.string().min(2, {
     message: "College name must be at least 2 characters.",
   }),
-  branch: z.string().min(2, {
-    message: "Branch must be at least 2 characters.",
+  branch: z.string().min(1, {
+    message: "Please select your degree.",
   }),
   currentSemester: z.string().min(1, {
     message: "Please select your current semester.",
@@ -49,6 +48,7 @@ const formSchema = z.object({
   applyingFor: z.string().min(1, {
     message: "Please select what you're applying for.",
   }),
+  otherProgram: z.string().optional(),
   tentativeDates: z.string().min(1, {
     message: "Please select tentative dates.",
   }),
@@ -73,12 +73,15 @@ export function ApplicationForm() {
       branch: "",
       currentSemester: "",
       applyingFor: "",
+      otherProgram: "",
       tentativeDates: "",
       referenceName: "",
       source: "",
       query: "",
     },
   })
+
+  const applyingForValue = form.watch("applyingFor")
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
@@ -204,13 +207,25 @@ export function ApplicationForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Which Degree you Pursuing? *</FormLabel>
-                <FormControl>
-                  <Input 
-                    placeholder="Enter your branch" 
-                    {...field} 
-                    disabled={isSubmitting}
-                  />
-                </FormControl>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                  disabled={isSubmitting}
+                >
+                  <FormControl>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your degree" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="btech">B.Tech</SelectItem>
+                    <SelectItem value="mtech">M.Tech</SelectItem>
+                    <SelectItem value="bca">BCA</SelectItem>
+                    <SelectItem value="mca">MCA</SelectItem>
+                    <SelectItem value="bsc">BSc (CSE)</SelectItem>
+                    <SelectItem value="msc">MSc (CSE)</SelectItem>
+                  </SelectContent>
+                </Select>
                 <FormMessage />
               </FormItem>
             )}
@@ -232,13 +247,13 @@ export function ApplicationForm() {
                       <SelectValue placeholder="Select semester" />
                     </SelectTrigger>
                   </FormControl>
-                  {/* <SelectContent>
+                  <SelectContent>
                     {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
                       <SelectItem key={sem} value={sem.toString()}>
                         Semester {sem}
                       </SelectItem>
                     ))}
-                  </SelectContent> */}
+                  </SelectContent>
                 </Select>
                 <FormMessage />
               </FormItem>
@@ -266,15 +281,35 @@ export function ApplicationForm() {
                     <SelectItem value="web">FullStack Development</SelectItem>
                     <SelectItem value="ai">Machine Learning(AI)</SelectItem>
                     <SelectItem value="data">Generative AI Ops</SelectItem>
-                    <SelectItem value="web">Cloud + DevOps</SelectItem>
-                    <SelectItem value="web">ML + DevOps</SelectItem>
-                    <SelectItem value="web">Others</SelectItem>
+                    <SelectItem value="clouddevops">Cloud + DevOps</SelectItem>
+                    <SelectItem value="mldevops">ML + DevOps</SelectItem>
+                    <SelectItem value="other">Others</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
               </FormItem>
             )}
           />
+
+          {applyingForValue === "other" && (
+            <FormField
+              control={form.control}
+              name="otherProgram"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Please specify the program *</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Enter the program you're interested in"
+                      {...field}
+                      disabled={isSubmitting}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
 
           <FormField
             control={form.control}
@@ -388,7 +423,7 @@ export function ApplicationForm() {
 
       <p className="text-sm text-center mt-6 text-gray-600">
         Note: In case of any query or issue feel free to connect with us on{" "}
-        <span className="font-bold">+91-</span> or email us at{" "}
+        <span className="font-bold">+919351009002</span> or email us at{" "}
         <span className="text-red-600">Preeti@lwindia.com</span>
       </p>
       <Toaster />
