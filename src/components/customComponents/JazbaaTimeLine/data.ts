@@ -1229,7 +1229,7 @@ export const Data2022 = [
   {
       id: "2023-16",
       linkedinUrl: "https://www.linkedin.com/in/musinivr/",
-      studentName: "Musini Venkata Ramana",
+      studentName: "Musini Venkata ",
       role: "Linux System Administrator",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQGeINTe8qMUew/company-logo_200_200/company-logo_200_200/0/1660643346013/cdslindia_logo?e=1747267200&v=beta&t=vE187WzCzfrTeVarcSmsqAvWvxp7w8eIq_E_SEJpH5g",
       profileImage: "https://media.licdn.com/dms/image/v2/D5603AQEjSzzoXynuaQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1675884429263?e=1744243200&v=beta&t=WTB0ylhNxxS2_B_xtm63hZJRR_jqmCzUGEVp_KqusEE"
