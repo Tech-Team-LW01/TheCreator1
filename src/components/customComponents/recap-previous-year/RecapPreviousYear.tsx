@@ -1,110 +1,162 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Play } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
+// Define interfaces
 interface EventCard {
   title: string;
   location: string;
   image: string;
   videoUrl: string;
-  isYoutube?: boolean;
+  isYoutube: boolean;
 }
 
 export default function RecapPreviousYear() {
+  // Refs
   const videoRef = useRef<HTMLVideoElement>(null);
   
-  const [mainVideo, setMainVideo] = useState({
+  // States
+  const [mainVideo, setMainVideo] = useState<EventCard>({
     title: "2024 RECAP VIDEO",
     location: "Main Event",
-    image: "/placeholder.svg",
+    image: "/assets/events/recap2024.jpg", // Update with your actual image path
     videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?autoplay=1",
     isYoutube: true
   });
 
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState<boolean>(true);
   
   const [events, setEvents] = useState<EventCard[]>([
     {
       title: "JAZBAA 1.0",
       location: "Jaipur",
-      image: "https://media.licdn.com/dms/image/v2/D5622AQFEp74BR-lxYg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727851357915?e=1737590400&v=beta&t=sY2seTzW_33CizutwJNUqaYcg9eQOa7ZbzgPWODxsqw",
+      image: "/assets/events/jazbaa1.jpg", // Update with your actual image path
       videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1",
       isYoutube: true
     },
     {
       title: "JAZBAA 2.0",
       location: "Jaipur",
-      image: "https://media.licdn.com/dms/image/v2/D5622AQFEp74BR-lxYg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727851357915?e=1737590400&v=beta&t=sY2seTzW_33CizutwJNUqaYcg9eQOa7ZbzgPWODxsqw",
+      image: "/assets/events/jazbaa2.jpg", // Update with your actual image path
       videoUrl: "https://www.youtube.com/embed/hF6EUQYekkw?autoplay=1",
       isYoutube: true
     },
     {
       title: "Summer 2023",
       location: "Jaipur",
-      image: "https://media.licdn.com/dms/image/v2/D5622AQFEp74BR-lxYg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727851357915?e=1737590400&v=beta&t=sY2seTzW_33CizutwJNUqaYcg9eQOa7ZbzgPWODxsqw",
+      image: "/assets/events/summer2023.jpg", // Update with your actual image path
       videoUrl: "https://res.cloudinary.com/dmbxrhtoj/video/upload/v1732112346/Square_Root_Of_PI_π_2022_-_Knowledge_Oneness_rlx7zq.mp4",
       isYoutube: false
     },
   ]);
 
-  useEffect(() => {
+  // Handlers
+  const handleVideoPlay = () => {
     if (!mainVideo.isYoutube && videoRef.current) {
       videoRef.current.play().catch(error => {
-        console.log("Video autoplay failed:", error);
+        console.error("Video playback error:", error);
       });
     }
-  }, [mainVideo]);
+  };
 
-  const handleVideoSwap = (event: EventCard) => {
-    const currentMain = mainVideo;
-    setMainVideo(event);
+  const handleVideoSwap = (selectedEvent: EventCard) => {
+    const currentMain = { ...mainVideo };
+    setMainVideo(selectedEvent);
     setIsPlaying(true);
     
-    if (!event.isYoutube && videoRef.current) {
+    if (!selectedEvent.isYoutube && videoRef.current) {
       videoRef.current.load();
       videoRef.current.play().catch(error => {
-        console.log("Video play failed:", error);
+        console.error("Video play failed:", error);
       });
     }
 
-    const updatedEvents = events.map(e => 
-      e.title === event.title ? currentMain : e
+    const updatedEvents = events.map(event => 
+      event.title === selectedEvent.title ? currentMain : event
     );
     setEvents(updatedEvents);
   };
+
+  // Effects
+  useEffect(() => {
+    handleVideoPlay();
+  }, [mainVideo]);
+
+  // Render Methods
+  const renderMainVideo = () => {
+    if (mainVideo.isYoutube) {
+      return (
+        <div className="relative w-full aspect-[16/8]">
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src={mainVideo.videoUrl}
+            title={`${mainVideo.title} video player`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      );
+    }
+
+    return (
+      <video 
+        ref={videoRef}
+        className="w-full aspect-[16/8] object-cover h-[200px] sm:h-auto"
+        poster={mainVideo.image}
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={mainVideo.videoUrl} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    );
+  };
+
+  const renderEventCard = (event: EventCard, index: number) => (
+    <Card 
+      key={index} 
+      className="relative overflow-hidden rounded-none cursor-pointer group hover:scale-105 transition-transform duration-300"
+      onClick={() => handleVideoSwap(event)}
+    >
+      <CardContent className="p-0">
+        <div className="relative aspect-square h-[100px] sm:h-auto">
+          <img
+            src={event.image}
+            alt={`${event.title} ${event.location}`}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-2 sm:p-6">
+            <h3 className="text-sm sm:text-2xl font-bold text-white">{event.title}</h3>
+            <p className="text-xs sm:text-xl font-semibold text-red-400">{event.location}</p>
+          </div>
+          <Button 
+            size="icon" 
+            className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 w-6 h-6 sm:w-12 sm:h-12 rounded-full bg-red-500 hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleVideoSwap(event);
+            }}
+          >
+            <Play className="h-3 w-3 sm:h-6 sm:w-6 text-white" />
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
 
   return (
     <div className="bg-black py-4 sm:py-8">
       <div className="container mx-auto max-w-6xl px-2 sm:px-4 py-6 sm:py-12 space-y-4 sm:space-y-8">
         {/* Main Video Section */}
-        <div className="relative overflow-hidden">
-          {mainVideo.isYoutube ? (
-            <div className="relative w-full aspect-[16/8]">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src={mainVideo.videoUrl}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          ) : (
-            <video 
-              ref={videoRef}
-              className="w-full aspect-[16/8] object-cover h-[200px] sm:h-auto"
-              poster={mainVideo.image}
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={mainVideo.videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
+        <div className="relative overflow-hidden rounded-lg shadow-2xl">
+          {renderMainVideo()}
           
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent p-4 sm:p-8 flex flex-col justify-between">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent p-4 sm:p-8 flex flex-col justify-between pointer-events-none">
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-2xl sm:text-6xl font-bold text-white">
                 {mainVideo.title}
@@ -116,38 +168,7 @@ export default function RecapPreviousYear() {
 
         {/* Event Cards Grid */}
         <div className="grid grid-cols-3 gap-2 sm:gap-4 mx-auto">
-          {events.map((event, index) => (
-            <Card 
-              key={index} 
-              className="relative overflow-hidden rounded-none cursor-pointer"
-              onClick={() => handleVideoSwap(event)}
-            >
-              <CardContent className="p-0">
-                <div className="relative aspect-square h-[100px] sm:h-auto">
-                  <img
-                    src={event.image}
-                    alt={`${event.title} ${event.location}`}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-2 sm:p-6">
-                    <h3 className="text-sm sm:text-2xl font-bold text-white">{event.title}</h3>
-                    <p className="text-xs sm:text-xl font-semibold text-red-400">{event.location}</p>
-                  </div>
-                  {/* Play Button */}
-                  <Button 
-                    size="icon" 
-                    className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 w-6 h-6 sm:w-12 sm:h-12 rounded-full bg-red-500 hover:bg-red-600"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleVideoSwap(event);
-                    }}
-                  >
-                    <Play className="h-3 w-3 sm:h-6 sm:w-6 text-white" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          {events.map((event, index) => renderEventCard(event, index))}
         </div>
       </div>
     </div>
