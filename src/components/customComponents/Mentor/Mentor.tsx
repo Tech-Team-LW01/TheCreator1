@@ -33,8 +33,8 @@ const Mentor = () => {
           {/* Left Section */}
           <div className="w-full lg:w-1/2 z-10 space-y-6 sm:space-y-8">
             <div className="prose prose-invert max-w-none">
-              <h1 className="text-2xl text-3xl md:text-4xl lg:text-5xl font-bold 
-                bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent 
+              <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold 
+                bg-gradient-to-r from-[#ff0000]  to-[#ef0707] bg-clip-text text-transparent 
                 mb-3 sm:mb-4  ">
                   <p className='text-[#ff0000]'>Your Summer Internship Mentor : Mr Vimal Daga</p>
 
@@ -48,11 +48,11 @@ const Mentor = () => {
                 {achievements.map((item, index) => (
                   <Card 
                     key={index} 
-                    className="p-3 sm:p-4 bg-gradient-to-r from-red-900/80 to-black/80 
-                      border-red-900/30 hover:bg-red-900/90 transition-colors"
+                    className="p-3 sm:p-4 bg-gradient-to-r from-[#ff0000]  to-black/80 
+                      border-[#f0c8c8]  hover:bg-red-900/90 transition-colors"
                   >
                     <div className="flex items-center gap-3 sm:gap-4">
-                      <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-red-400" />
+                      <item.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                       <span className={`text-base sm:text-lg font-medium ${poppins.className} text-white`}>{item.text}</span>
                     </div>
                   </Card>
@@ -60,7 +60,7 @@ const Mentor = () => {
               </div>
 
               <blockquote className="text-lg sm:text-xl italic mt-8 sm:mt-12 
-                pl-4 sm:pl-6 border-l-4 border-red-400/50 text-white">
+                pl-4 sm:pl-6 border-l-4 border-[#ff0000]  text-white">
                 Mentor to Fortune 500 executives, specializing in knowledge transfer to 
                 <span className="text-[#ff0000] font-medium"> C-level technologists</span> 
                 {" "}across cutting-edge domains.
