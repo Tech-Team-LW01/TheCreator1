@@ -29,7 +29,7 @@ const Map = () => {
             <div className="relative z-10 text-white space-y-5">
               {/* Main Content Stack */}
               <div className="space-y-2 ">
-                   <h1 className="text-2xl lg:text-4xl xl:text-5xl font-Khand tracking-tight">
+                   <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
                       Engineering Students from across India participate
                     </h1>
                     <p className="text-2xl lg:text-2xl font-bold text-red-100 font-[Poppins]">
