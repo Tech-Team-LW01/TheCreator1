@@ -1265,7 +1265,7 @@ export const Data2023 = [
   {
       id: "2023-04",
       linkedinUrl: "https://www.linkedin.com/in/ghiyas/",
-      studentName: "Mohammad Gayasuddin",
+      studentName: "Mohammad ",
       role: "DevOps Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQEdj83rRHmSMg/company-logo_200_200/company-logo_200_200/0/1736409688113/kommunicate_logo?e=1747267200&v=beta&t=bM8Mk471tNLXBJUb6nE3SXCzhqQ1hCWpswwkdHshHXw",
       profileImage: "https://media.licdn.com/dms/image/v2/D4D03AQGOtdYlOMpPBw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709397460178?e=1744243200&v=beta&t=fAMqX8J5P0gkqFsFaHEVAEKf0om2KIAq35SJGhbOqSk"
@@ -1297,7 +1297,7 @@ export const Data2023 = [
   // {
   //     id: "2023-08",
   //     linkedinUrl: "https://www.linkedin.com/in/shubhanghichoudhary/",
-  //     studentName: "Shubhanghi Choudhary",
+  //     studentName: "Shubhanghi Choudhary", // no profile
   //     role: "",
   //     companyLogoUrl: "",
   //     profileImage: ""
@@ -1352,22 +1352,22 @@ export const Data2023 = [
   },
  
   
-  // {
-  //     id: "2023-17",
-  //     linkedinUrl: "https://www.linkedin.com/in/sa-chin/",
-  //     studentName: "Sachin Singh",
-  //     role: "",
-  //     companyLogoUrl: "",
-  //     profileImage: ""
-  // },
-  // {
-  //     id: "2023-18",
-  //     linkedinUrl: "https://www.linkedin.com/in/k-sachin-kumar/",
-  //     studentName: "K Sachin Kumar",
-  //     role: "Data Engineer",
-  //     companyLogoUrl: "",
-  //     profileImage: ""
-  // },
+  {
+      id: "2023-17",
+      linkedinUrl: "https://www.linkedin.com/in/sa-chin/",
+      studentName: "Sachin Singh",
+      role: "contributor",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQGSObrO0QPlMQ/company-logo_200_200/company-logo_200_200/0/1630597186826/girlscriptsoc_logo?e=1747267200&v=beta&t=AsFZuhkST2tdSfb4okCORbuujayQKeiqzZIbqIVuwHM",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5603AQEqK9OuroA_RA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724664558715?e=1744243200&v=beta&t=ZUww0qZu4brse5qVWQ1Cfd2NBP11XL1KbwcNPsTwaGw"
+  },
+  {
+      id: "2023-18",
+      linkedinUrl: "https://www.linkedin.com/in/k-sachin-kumar/",
+      studentName: "K Sachin Kumar",
+      role: "Data Engineer",
+      companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQFbSSALJ7n4uQ/company-logo_200_200/company-logo_200_200/0/1719834881136/takeda_pharmaceuticals_logo?e=1747267200&v=beta&t=KCfoQlhhq1E1QSu0simHal-rRcXoOHpPtoe2Ogc5STk",
+      profileImage: "https://media.licdn.com/dms/image/v2/C5603AQHAZGK1hetN8g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1662692637175?e=1744243200&v=beta&t=J4_I9o36lnp-mK5gWe27f1uh34vZgfnBeI9hHY-zPik"
+  },
  
  
 ];
