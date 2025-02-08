@@ -2,7 +2,6 @@
 export const speakersData = [
   {
     imageUrl: "/tedx/tedx1.png",
-    description: "At CROJungle, we combine human expertise with cutting-edge technology to create designs that drive real results.",
     badge: "Founder LW Informatics",
     firstName: "Vimal",
     lastName: "Daga",
@@ -10,7 +9,6 @@ export const speakersData = [
   },
   {
     imageUrl: "/tedx/yourstory.png",
-    description: "Transforming education through innovative technology and practical learning approaches.",
     badge: "Tech Educator",
    
     firstName: "Preeti",
@@ -19,7 +17,6 @@ export const speakersData = [
   },
   {
     imageUrl: "/tedx/tedx2.png",
-    description: "Building next-generation solutions with AI and cloud computing technologies.",
     badge: "Tech Leader",
     firstName: "Vimal",
     lastName: "Daga",
