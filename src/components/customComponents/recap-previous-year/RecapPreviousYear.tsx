@@ -75,7 +75,7 @@ export default function RecapPreviousYear() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-4 sm:py-8">
+    <div className="bg-black py-4 sm:py-8">
       <div className="container mx-auto max-w-6xl px-2 sm:px-4 py-6 sm:py-12 space-y-4 sm:space-y-8">
         {/* Main Video Section */}
         <div className="relative overflow-hidden">

@@ -11,10 +11,10 @@ const poppins = Poppins({
 })
 const Mentor = () => {
   const achievements = [
-    { icon: Globe, text: "Known as the 'Integration Guru'" },
-    { icon: Mic2, text: "2x TEDx Speaker" },
-    { icon: Flag, text: "RedHat Certified Architect Level 25" },
-    { icon: Award, text: "11 AWS Global Certifications" },
+    { icon: Globe, text: "The World Record Holder" },
+    { icon: Mic2, text: "2 Times TEDx Speaker" },
+    { icon: Flag, text: "Sr. Principal IT Consultant " },
+    { icon: Award, text: "Known as “Integration Guru”" },
   ];
 
   const transfers = [
