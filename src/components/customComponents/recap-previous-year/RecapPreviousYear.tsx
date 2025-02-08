@@ -18,8 +18,8 @@ export default function RecapPreviousYear() {
     title: "2024 RECAP VIDEO",
     location: "Main Event",
     image: "/placeholder.svg",
-    videoUrl: "https://res.cloudinary.com/dmbxrhtoj/video/upload/v1732112346/Square_Root_Of_PI_π_2022_-_Knowledge_Oneness_rlx7zq.mp4",
-    isYoutube: false
+    videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?autoplay=1",
+    isYoutube: true
   });
 
   const [isPlaying, setIsPlaying] = useState(true);
@@ -36,7 +36,7 @@ export default function RecapPreviousYear() {
       title: "JAZBAA 2.0",
       location: "Jaipur",
       image: "https://media.licdn.com/dms/image/v2/D5622AQFEp74BR-lxYg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727851357915?e=1737590400&v=beta&t=sY2seTzW_33CizutwJNUqaYcg9eQOa7ZbzgPWODxsqw",
-      videoUrl: "https://www.youtube.com/embed/hF6EUQYekkw?si=1GiIwTdDNuCq-99c",
+      videoUrl: "https://www.youtube.com/embed/hF6EUQYekkw?autoplay=1",
       isYoutube: true
     },
     {
