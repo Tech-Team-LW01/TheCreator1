@@ -7,7 +7,7 @@ const poppins = Poppins({
 })
 const Award = () => {
   return (
-    <div className='max-w-6xl mx-auto py-12'>
+    <div className='max-w-6xl mx-auto py-20 md:py-12'>
       <div className="w-full max-w-5xl mx-auto bg-black px-4 sm:px-12">
         <Card className="relative bg-white shadow-lg rounded-[40px] px-2 sm:px-6 md:px-10 py-4 sm:h-[140px] min-h-[200px] sm:min-h-0">
           <div className="flex flex-col sm:flex-row items-center  h-full w-full pt-16 sm:pt-0"> {/* Changed to justify-center */}
@@ -17,7 +17,7 @@ const Award = () => {
     <img
       src="/assets/redhatLogo.png"
       alt="Microsoft Logo"
-      className="h-full h-full sm:h-20 sm:w-20"
+      className="h-full h-full h-20 w-20 md:h-20 md:w-20"
     />
   </div>
 </div>
@@ -33,10 +33,10 @@ const Award = () => {
             </div>
 
             {/* Trophy Image */}
-            <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-10 -top-4">
+            <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 right-4 md:bottom-0 md:-top-8 -top-20">
               <div className="relative   border-white">
                 <img
-                  className='relative w-[270px] h-320px]   object-cover'
+                  className='relative md:w-[320px] md:h-400px] w-[200px] h-[200px] object-cover'
                   src='/assets/Award/award-image.png'
                   alt="Award"
                 />
