@@ -126,7 +126,7 @@ export async function POST(req: Request) {
     // Create email content
     const mailOptions = {
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: 'preeti.chandak@lwindia.com',
+      to: 'chandak.preeti@gmail.com',
       subject: 'New Summer Program Application 2025',
       html: getApplicationEmailTemplate(formData),
     };
