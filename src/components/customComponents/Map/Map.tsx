@@ -28,12 +28,13 @@ const Map = () => {
 
             <div className="relative z-10 text-white space-y-5">
               {/* Main Content Stack */}
-              <div className="space-y-2 font-[Poppins]">
+              <div className="space-y-2 ">
                    <h1 className="text-2xl lg:text-4xl xl:text-5xl font-Khand tracking-tight">
-                      Summer Internship 2025
+                      Engineering Students from across India participate
                     </h1>
-                    <p className="text-2xl lg:text-4xl font-bold text-red-100">
-                      Industrial Training Program
+                    <p className="text-2xl lg:text-2xl font-bold text-red-100 font-[Poppins]">
+                    The One & Only Integration Level Research Based Summer Internship Program 
+
                     </p>
                   </div>
 
@@ -42,14 +43,14 @@ const Map = () => {
 
 
               {/* Target Audience */}
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <h2 className="text-lg lg:text-xl font-medium">
                   For Engineering Students
                 </h2>
                 <p className="text-base lg:text-lg text-red-100">
                   Open for B.Tech | M.Tech | BCA | MCA | B.SC IT
                 </p>
-              </div>
+              </div> */}
 
               {/* CTA Button */}
               <Button
@@ -57,7 +58,7 @@ const Map = () => {
                 variant="secondary"
                 className="bg-white text-[#ff0000] hover:bg-red-50 font-semibold relative z-10 shadow-lg"
               >
-                Applications Open
+                Apply Now
               </Button>
 
                 <MapScroll/>

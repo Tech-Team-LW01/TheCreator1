@@ -36,7 +36,7 @@ const Mentor = () => {
               <h1 className="text-2xl text-3xl md:text-4xl lg:text-5xl font-bold 
                 bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent 
                 mb-3 sm:mb-4  ">
-                  <p className='text-[#ff0000]'>  Your Summer Internship Mentor</p>
+                  <p className='text-[#ff0000]'>Your Summer Internship Mentor : Mr Vimal Daga</p>
 
               </h1>
               
