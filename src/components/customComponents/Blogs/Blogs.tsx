@@ -43,10 +43,11 @@ const Blogs = () => {
           {/* Header Section */}
           <div className="text-center mb-8 ">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 text-[#ff0000] ">
-              Our Latest Blog
+            Our Latest Summer Blogs
             </h1>
             <p className={`text-white text-lg ${poppins.className}`}>
-              A Gateway to Insightful Stories and Expertise, Unveiling a Tapestry of Ideas and Inspiration.
+            Empowering Engineers with Industry-Relevant Knowledge & Skills.
+          
             </p>
           </div>
 

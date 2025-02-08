@@ -17,7 +17,6 @@ const khandFont = localFont(
 )
 const Tedx2: React.FC<SpeakerProps> = ({ 
   imageUrl, 
-  description, 
   badge, 
   firstName, 
   lastName,
@@ -46,7 +45,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
         <div className="absolute top-1/2 -translate-y-1/2 -left-44 max-w-[280px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="bg-red-900/80 backdrop-blur-sm rounded-lg p-4 text-white shadow-lg">
             <p className={`text-sm ${poppins.className}`}>
-              {description}
+              
             </p>
           </div>
         </div>
