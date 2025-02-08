@@ -105,7 +105,7 @@ const VideoCarousel = () => {
 </swiper-container>
 
 
-<div className='max-w-2xl mt-8 h-96 mx-auto'>
+{/* <div className='max-w-2xl mt-8 h-96 mx-auto'>
 <Dialog>
       <DialogTrigger asChild>
         <div className="relative w-full h-full cursor-pointer group rounded-lg overflow-hidden">
@@ -131,7 +131,7 @@ const VideoCarousel = () => {
         </div>
       </DialogContent>
     </Dialog>
-</div>
+</div> */}
 
       </div>
     );
