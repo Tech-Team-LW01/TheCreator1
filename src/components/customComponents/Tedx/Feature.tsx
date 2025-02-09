@@ -13,7 +13,7 @@ const FeatureGrid = () => {
           <Tedx2
             key={index}
             imageUrl={speaker.imageUrl}
-            description={speaker.description}
+            
             badge={speaker.badge}
             firstName={speaker.firstName}
             lastName={speaker.lastName}
