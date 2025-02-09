@@ -1,4 +1,4 @@
-// components/ApplicationForm.tsx
+// components/customComponents/application-form/ApplicationForm.tsx
 "use client"
 
 import { useState } from 'react'
@@ -25,15 +25,20 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
-import { Loader2 } from "lucide-react" // For loading spinner
+import { Loader2 } from "lucide-react"
+import { cn } from "@/lib/utils"
+
+const currentYear = new Date().getFullYear();
+const maxYear = currentYear + 6;
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
     message: "Full name must be at least 2 characters.",
   }),
-  whatsappNo: z.string().min(10, {
-    message: "WhatsApp number must be at least 10 digits.",
-  }),
+  whatsappNo: z.string()
+    .min(10, { message: "WhatsApp number must be 10 digits." })
+    .max(10, { message: "WhatsApp number must be 10 digits." })
+    .regex(/^[0-9]+$/, "Must contain only numbers"),
   emailAddress: z.string().email({
     message: "Please enter a valid email address.",
   }),
@@ -43,11 +48,20 @@ const formSchema = z.object({
   branch: z.string().min(2, {
     message: "Branch must be at least 2 characters.",
   }),
-  currentSemester: z.string().min(1, {
-    message: "Please select your current semester.",
+  currentSemester: z.string().refine((val) => {
+    const year = parseInt(val);
+    return !isNaN(year) && year >= currentYear && year <= maxYear;
+  }, {
+    message: `Year must be between ${currentYear} and ${maxYear}`,
   }),
   applyingFor: z.string().min(1, {
     message: "Please select what you're applying for.",
+  }),
+  otherSpecification: z.string().optional().refine((val) => {
+    if (val === undefined) return true;
+    return val.length > 0;
+  }, {
+    message: "Please specify your application type",
   }),
   tentativeDates: z.string().min(1, {
     message: "Please select tentative dates.",
@@ -60,9 +74,10 @@ const formSchema = z.object({
 })
 
 export function ApplicationForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const { toast } = useToast()
-  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showOtherSpecification, setShowOtherSpecification] = useState(false);
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -73,6 +88,7 @@ export function ApplicationForm() {
       branch: "",
       currentSemester: "",
       applyingFor: "",
+      otherSpecification: "",
       tentativeDates: "",
       referenceName: "",
       source: "",
@@ -81,36 +97,42 @@ export function ApplicationForm() {
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
     try {
+      setIsSubmitting(true);
+      console.log('Submitting values:', values);
+
       const response = await fetch('/api/submit-application', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(values),
-      })
+      });
+
+      const data = await response.json();
 
       if (!response.ok) {
-        throw new Error('Failed to submit application')
+        throw new Error(data.message || 'Submission failed');
       }
 
       toast({
-        title: "Application Submitted Successfully!",
-        description: "We'll get back to you soon.",
+        title: "Success!",
+        description: "Your application has been submitted successfully.",
         variant: "default",
-      })
-      
-      form.reset()
+      });
+
+      form.reset();
+      setShowOtherSpecification(false);
+
     } catch (error) {
-      console.error('Submission error:', error)
+      console.error('Submission error:', error);
       toast({
-        title: "Submission Failed",
-        description: "Please try again later or contact support.",
+        title: "Error",
+        description: error instanceof Error ? error.message : "Failed to submit application",
         variant: "destructive",
-      })
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -125,6 +147,7 @@ export function ApplicationForm() {
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          {/* Full Name */}
           <FormField
             control={form.control}
             name="fullName"
@@ -143,6 +166,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* WhatsApp Number */}
           <FormField
             control={form.control}
             name="whatsappNo"
@@ -161,6 +185,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Email Address */}
           <FormField
             control={form.control}
             name="emailAddress"
@@ -169,8 +194,8 @@ export function ApplicationForm() {
                 <FormLabel>Email Address *</FormLabel>
                 <FormControl>
                   <Input 
+                    type="email"
                     placeholder="Enter your email address" 
-                    type="email" 
                     {...field} 
                     disabled={isSubmitting}
                   />
@@ -180,6 +205,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* College Name */}
           <FormField
             control={form.control}
             name="collegeName"
@@ -198,6 +224,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Branch/Degree */}
           <FormField
             control={form.control}
             name="branch"
@@ -206,7 +233,7 @@ export function ApplicationForm() {
                 <FormLabel>Which Degree you Pursuing? *</FormLabel>
                 <FormControl>
                   <Input 
-                    placeholder="Enter your branch" 
+                    placeholder="Enter your degree (e.g., B.Tech, MCA)" 
                     {...field} 
                     disabled={isSubmitting}
                   />
@@ -216,6 +243,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Year of Passing */}
           <FormField
             control={form.control}
             name="currentSemester"
@@ -224,35 +252,20 @@ export function ApplicationForm() {
                 <FormLabel>Year of Passing Out *</FormLabel>
                 <FormControl>
                   <Input 
-                    placeholder="Enter your WhatsApp number" 
-                    {...field} 
+                    type="number"
+                    placeholder={`Enter your passing year (${currentYear}-${maxYear})`}
+                    {...field}
+                    min={currentYear}
+                    max={maxYear}
                     disabled={isSubmitting}
                   />
                 </FormControl>
-                {/* <Select 
-                  onValueChange={field.onChange} 
-                  defaultValue={field.value}
-                  disabled={isSubmitting}
-                  
-                > */}
-                  {/* <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select semester" />
-                    </SelectTrigger>
-                  </FormControl> */}
-                  {/* <SelectContent>
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
-                      <SelectItem key={sem} value={sem.toString()}>
-                        Semester {sem}
-                      </SelectItem>
-                    ))}
-                  </SelectContent> */}
-                {/* </Select> */}
                 <FormMessage />
               </FormItem>
             )}
           />
 
+          {/* Applying For */}
           <FormField
             control={form.control}
             name="applyingFor"
@@ -260,7 +273,13 @@ export function ApplicationForm() {
               <FormItem>
                 <FormLabel>Applying For *</FormLabel>
                 <Select 
-                  onValueChange={field.onChange} 
+                  onValueChange={(value) => {
+                    field.onChange(value);
+                    setShowOtherSpecification(value === "others");
+                    if (value !== "others") {
+                      form.setValue("otherSpecification", "");
+                    }
+                  }}
                   defaultValue={field.value}
                   disabled={isSubmitting}
                 >
@@ -270,13 +289,13 @@ export function ApplicationForm() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="aws">Cloud Computing</SelectItem>
-                    <SelectItem value="web">FullStack Development</SelectItem>
-                    <SelectItem value="ai">Machine Learning(AI)</SelectItem>
-                    <SelectItem value="data">Generative AI Ops</SelectItem>
-                    <SelectItem value="web">Cloud + DevOps</SelectItem>
-                    <SelectItem value="web">ML + DevOps</SelectItem>
-                    <SelectItem value="web">Others</SelectItem>
+                    <SelectItem value="cloud">Cloud Computing</SelectItem>
+                    <SelectItem value="fullstack">FullStack Development</SelectItem>
+                    <SelectItem value="ml">Machine Learning(AI)</SelectItem>
+                    <SelectItem value="genai">Generative AI Ops</SelectItem>
+                    <SelectItem value="clouddevops">Cloud + DevOps</SelectItem>
+                    <SelectItem value="mldevops">ML + DevOps</SelectItem>
+                    <SelectItem value="others">Others</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
@@ -284,6 +303,28 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Other Specification */}
+          {showOtherSpecification && (
+            <FormField
+              control={form.control}
+              name="otherSpecification"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Please Specify *</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Enter your program specification"
+                      {...field}
+                      disabled={isSubmitting}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
+
+          {/* Tentative Dates */}
           <FormField
             control={form.control}
             name="tentativeDates"
@@ -301,9 +342,9 @@ export function ApplicationForm() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="may2024">May 2025</SelectItem>
-                    <SelectItem value="june2024">June 2025</SelectItem>
-                    <SelectItem value="july2024">July 2025</SelectItem>
+                    <SelectItem value="may2025">May 2025</SelectItem>
+                    <SelectItem value="june2025">June 2025</SelectItem>
+                    <SelectItem value="july2025">July 2025</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
@@ -311,6 +352,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Reference Name */}
           <FormField
             control={form.control}
             name="referenceName"
@@ -329,6 +371,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Source */}
           <FormField
             control={form.control}
             name="source"
@@ -358,6 +401,7 @@ export function ApplicationForm() {
             )}
           />
 
+          {/* Query */}
           <FormField
             control={form.control}
             name="query"
@@ -377,16 +421,20 @@ export function ApplicationForm() {
             )}
           />
 
-          <Button 
-            type="submit" 
-            className="w-full bg-red-600 hover:bg-red-700"
+          {/* Submit Button */}
+          <Button
+            type="submit"
+            className={cn(
+              "w-full bg-red-600 hover:bg-red-700 text-white",
+              isSubmitting && "opacity-50 cursor-not-allowed"
+            )}
             disabled={isSubmitting}
           >
             {isSubmitting ? (
-              <>
+              <div className="flex items-center justify-center">
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Submitting...
-              </>
+                <span>Submitting...</span>
+              </div>
             ) : (
               "Submit Application"
             )}
@@ -394,14 +442,26 @@ export function ApplicationForm() {
         </form>
       </Form>
 
+      {/* Loading Overlay */}
+      {isSubmitting && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white p-4 rounded-lg">
+            <Loader2 className="animate-spin h-8 w-8 text-red-600" />
+            <p className="mt-2 text-sm">Submitting your application...</p>
+          </div>
+        </div>
+      )}
+
+      {/* Contact Information */}
       <p className="text-sm text-center mt-6 text-gray-600">
         Note: In case of any query or issue feel free to connect with us on{" "}
         <span className="font-bold">+91-</span> or email us at{" "}
         <span className="text-red-600">Preeti@lwindia.com</span>
       </p>
+
       <Toaster />
     </div>
   )
 }
 
-export default ApplicationForm
+export default ApplicationForm;

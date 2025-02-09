@@ -1,4 +1,5 @@
-  // app/api/submit-application/route.ts
+// app/api/submit-application/route.ts
+
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import dbConnect from '@/lib/mongodb';
@@ -6,134 +7,72 @@ import Application from '../../../../models/Application';
 import { getApplicationEmailTemplate } from '../../../../utils/emailTemplates';
 
 export async function POST(req: Request) {
-  if (req.method !== 'POST') {
-    return NextResponse.json({ message: 'Method not allowed' }, { status: 405 });
-  }
-
   try {
-    // Parse form data
+    // Connect to database
+    await dbConnect();
+
+    // Get form data
     const formData = await req.json();
     console.log('Received form data:', formData);
 
-    // Connect to MongoDB
-    console.log('Connecting to MongoDB...');
-    await dbConnect();
-    console.log('MongoDB connection successful');
-
-    // Save to MongoDB
-    console.log('Saving application to database...');
+    // Save to database
     const application = new Application(formData);
     await application.save();
-    console.log('Application saved successfully');
+    console.log('Application saved to database');
 
-    // Configure nodemailer
-    console.log('Configuring email transport...');
+    // Configure email transport
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
+      host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT || '587'),
       secure: false,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
-      tls: {
-        rejectUnauthorized: false // Only use in development
-      }
     });
 
-    // Verify email configuration
-    try {
-      await transporter.verify();
-      console.log('Email configuration verified');
-    } catch (emailVerifyError) {
-      console.error('Email verification failed:', emailVerifyError);
-      throw new Error('Email configuration error');
-    }
-
-    // Create email content
-    const mailOptions = {
+    // Send email to admin
+    await transporter.sendMail({
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: 'chandak.preeti@gmail.com',
-      subject: 'New Summer Program Application 2025',
+      to: process.env.ADMIN_EMAIL,
+      subject: `New Summer Program Application - ${formData.fullName}`,
       html: getApplicationEmailTemplate(formData),
-    };
+    });
 
-    // Send email
-    console.log('Sending email...');
-    await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully');
+    // Send confirmation email to applicant
+    await transporter.sendMail({
+      from: `"Summer Program" <${process.env.SMTP_USER}>`,
+      to: formData.emailAddress,
+      subject: 'Application Received - Summer Program',
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <h2 style="color: #dc2626;">Thank You for Your Application</h2>
+          <p>Dear ${formData.fullName},</p>
+          <p>We have received your application for the Summer Program. Our team will review your application and get back to you soon.</p>
+          <p>Application Details:</p>
+          <ul>
+            <li>Program: ${formData.applyingFor === 'others' ? formData.otherSpecification : formData.applyingFor}</li>
+            <li>Tentative Dates: ${formData.tentativeDates}</li>
+          </ul>
+          <p>If you have any questions, feel free to contact us.</p>
+          <p>Best regards,<br>Summer Program Team</p>
+        </div>
+      `,
+    });
 
     return NextResponse.json(
-      { 
-        message: 'Application submitted successfully',
-        applicationId: application._id 
-      },
+      { message: 'Application submitted successfully' },
       { status: 200 }
     );
 
   } catch (error) {
-    console.error('Error in submit-application:', error);
-
-    // Determine error type and send appropriate response
-    if (error instanceof Error) {
-      if (error.message.includes('MongoDB')) {
-        return NextResponse.json(
-          { message: 'Database connection error', details: error.message },
-          { status: 500 }
-        );
-      } else if (error.message.includes('email')) {
-        return NextResponse.json(
-          { message: 'Email sending failed', details: error.message },
-          { status: 500 }
-        );
-      }
-    }
-
-    // Generic error response
+    console.error('API Error:', error);
     return NextResponse.json(
       { 
-        message: 'Error submitting application',
-        details: error instanceof Error ? error.message : 'Unknown error'
+        message: 'Failed to submit application',
+        error: error instanceof Error ? error.message : 'Unknown error'
       },
       { status: 500 }
     );
   }
-}
-
-// Validate environment variables
-const validateEnvVariables = () => {
-  const requiredVars = [
-    'SMTP_HOST',
-    'SMTP_PORT',
-    'SMTP_USER',
-    'SMTP_PASSWORD',
-    'MONGODB_URI'
-  ];
-
-  for (const varName of requiredVars) {
-    if (!process.env[varName]) {
-      console.error(`Missing required environment variable: ${varName}`);
-    }
-  }
-};
-
-// Run validation on startup
-validateEnvVariables();
-
-export async function GET() {
-  return NextResponse.json(
-    { message: 'GET method not allowed for this endpoint' },
-    { status: 405 }
-  );
-}
-
-// Add OPTIONS method for CORS if needed
-export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 200,
-    headers: {
-      'Access-Control-Allow-Methods': 'POST',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
 }

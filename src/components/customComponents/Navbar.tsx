@@ -5,13 +5,13 @@ import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import LOGO from "../../../public/assets/logo2.webp";
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link'; // Import Link from next/link
 
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "Projects" },
-   
   { href: "#ApplyNow", text: "Apply Now" },
   { href: "#Placement", text: "Placement" },
   { href: "#Benefits", text: "Benefits" },
@@ -21,17 +21,14 @@ const NAV_ITEMS = [
 
 // Route Configuration
 interface RouteConfig {
-  link: string;
   buttonText: string;
 }
 
 const ROUTE_CONFIG: Record<string, RouteConfig> = {
   '/students': {
-    link: "https://your-payment-link.com",
     buttonText: 'Enquire Now'
   },
   'default': {
-    link: "https://default-payment-link.com",
     buttonText: 'Enquire Now'
   }
 };
@@ -50,18 +47,17 @@ const itemVariants = {
 
 const Navbar: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // Get route configuration
   const getRouteConfig = (currentPath: string): RouteConfig => {
     return ROUTE_CONFIG[currentPath] || ROUTE_CONFIG.default;
   };
 
-  const { link, buttonText } = getRouteConfig(pathname);
+  const { buttonText } = getRouteConfig(pathname);
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -97,6 +93,11 @@ const Navbar: React.FC = () => {
     });
   };
 
+  const handleEnquiryClick = () => {
+    router.push('/application-form');
+    closeMobileMenu();
+  };
+
   return (
     <header
       className={cn(
@@ -106,7 +107,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <a href="#Hero" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <Image
             src={LOGO}
             alt="Logo"
@@ -115,7 +116,7 @@ const Navbar: React.FC = () => {
             className="object-contain overflow-hidden"
             priority
           />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
@@ -151,14 +152,12 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop CTA Button */}
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden lg:block bg-[#ff0000] text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300"
+        <Link
+          href="/application-form"
+          className="hidden lg:block bg-[#ff0000] text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
         >
           {buttonText}
-        </a>
+        </Link>
       </div>
 
       {/* Mobile Menu */}
@@ -198,18 +197,13 @@ const Navbar: React.FC = () => {
               </ul>
               
               {/* Mobile CTA Button */}
-              <motion.a
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-6 bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
+              <Link
+                href="/application-form"
+                className="block w-full mt-6 bg-[#ff0000] text-white px-4 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
                 onClick={closeMobileMenu}
               >
                 {buttonText}
-              </motion.a>
+              </Link>
             </div>
           </motion.div>
         )}
