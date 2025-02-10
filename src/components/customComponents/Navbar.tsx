@@ -12,7 +12,7 @@ import Link from 'next/link'; // Import Link from next/link
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "Projects" },
-  { href: "#ApplyNow", text: "Apply Now" },
+  { href: "/application-form", text: "Apply Now" },
   { href: "#Placement", text: "Placement" },
   { href: "#Benefits", text: "Benefits" },
   { href: "#JAZBAA", text: "JAZBAA" },

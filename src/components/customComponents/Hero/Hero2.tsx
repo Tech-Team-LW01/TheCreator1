@@ -8,7 +8,7 @@ import { BsCalendarCheck } from "react-icons/bs"
 import { AiOutlineHourglass } from "react-icons/ai"
 // import { HiShieldCheck } from "react-icons/hi2"
 import { Album ,ShieldCheck} from "lucide-react";
-
+import Link from "next/link";
 import { Inter, Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -31,13 +31,12 @@ const Hero2 = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Button
-        size="lg"
-        variant="secondary"
-        className="bg-white text-[#ff0000] text-lg hover:bg-red-200 font-semibold relative z-10 shadow-lg"
+     
+        <Link href="/application-form"
+        className="bg-white p-2 rounded-sm pr-4 text-[#ff0000] text-lg hover:bg-red-200 font-semibold relative z-10 shadow-lg"
       >
         Applications Open
-      </Button>
+      </Link>
     </motion.div>
   </div>
   
@@ -120,11 +119,12 @@ const Hero2 = () => {
       {/* Button Section */}
       <div className="flex items-center justify-center lg:border-l lg:pl-6 w-full lg:w-auto mt-6 lg:mt-0">
         <div className="flex flex-col items-center justify-center w-full lg:w-auto">
-          <a href="" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto">
+          <Link href="/application-form" rel="noopener noreferrer" className="w-full lg:w-auto">
+
             <Button className={`bg-[#ff0000] w-full lg:w-auto text-sm py-6 px-8 hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 ${poppins.className}`}>
               Apply Now
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

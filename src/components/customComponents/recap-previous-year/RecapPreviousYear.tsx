@@ -48,7 +48,7 @@ export default function RecapPreviousYear() {
       title: "Summer 2023",
       location: "Jaipur",
       image: "/assets/events/summer2023.jpg", // Update with your actual image path
-      videoUrl: "https://res.cloudinary.com/dmbxrhtoj/video/upload/v1732112346/Square_Root_Of_PI_π_2022_-_Knowledge_Oneness_rlx7zq.mp4",
+      videoUrl: "https://www.youtube.com/watch?v=J5VoywQaOmM",
       isYoutube: false
     },
   ]);
@@ -92,7 +92,7 @@ export default function RecapPreviousYear() {
         <div className="relative w-full aspect-[16/8]">
           <iframe
             className="absolute inset-0 w-full h-full"
-            src={mainVideo.videoUrl}
+            src="https://www.youtube.com/embed/GCX02RwZ5dk?autoplay=1"
             title={`${mainVideo.title} video player`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -121,14 +121,22 @@ export default function RecapPreviousYear() {
     <Card 
       key={index} 
       className="relative overflow-hidden rounded-none cursor-pointer group hover:scale-105 transition-transform duration-300"
-      onClick={() => handleVideoSwap(event)}
+      // onClick={() => handleVideoSwap(event)}
     >
       <CardContent className="p-0">
         <div className="relative aspect-square h-[100px] sm:h-auto">
-          <img
-            src={event.image}
-            alt={`${event.title} ${event.location}`}
+          {/* <video
+            src={event.videoUrl}
+            // alt={`${event.title} ${event.location}`}
             className="w-full h-full object-cover"
+          /> */}
+
+<iframe
+            className="absolute inset-0 w-full h-full"
+            src={event.videoUrl}
+            title={`${mainVideo.title} video player`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-2 sm:p-6">
             <h3 className="text-sm sm:text-2xl font-bold text-white">{event.title}</h3>
