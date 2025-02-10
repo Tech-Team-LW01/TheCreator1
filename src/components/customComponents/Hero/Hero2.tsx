@@ -57,7 +57,7 @@ const Hero2 = () => {
             <BsCalendarCheck className="w-5 h-5 text-[#ff0000]" />
           </div>
           <div className="flex flex-col flex-grow min-w-0">
-            <span className={`text-white text-xs font-medium uppercase tracking-wide ${khandFont.className}`}>
+            <span className={`text-[#ff0000] text-sm font-medium uppercase tracking-wide ${khandFont.className}`}>
               TENTATIVE START DATES
             </span>
             <span className={`font-bold text-xs text-white mt-1 mx-2 ${poppins.className}`}>
@@ -75,7 +75,7 @@ const Hero2 = () => {
             <AiOutlineHourglass className="w-5 h-5 text-[#ff0000]" />
           </div>
           <div className="flex flex-col flex-grow min-w-0">
-            <span className={`text-white text-xs font-medium uppercase tracking-wide ${khandFont.className}`}>
+            <span className={`text-[#ff0000] text-sm font-medium uppercase tracking-wide ${khandFont.className}`}>
               DURATION SUMMER PROGRAM​
             </span>
             <span className={`font-bold text-xs text-white mt-1 ${poppins.className}`}>
@@ -90,7 +90,7 @@ const Hero2 = () => {
             <Album className="w-6 h-6 text-[#ff0000]" />
           </div>
           <div className="flex flex-col flex-grow min-w-0">
-            <span className={`text-white text-xs font-medium uppercase tracking-wide ${khandFont.className}`}>
+            <span className={`text-[#ff0000] text-sm font-medium uppercase tracking-wide ${khandFont.className}`}>
               Internship ​
             </span>
             <span className={`font-bold text-xs text-white mt-1 ${poppins.className}`}>
@@ -105,7 +105,7 @@ const Hero2 = () => {
             <ShieldCheck className="w-6 h-6 text-[#ff0000]" />
           </div>
           <div className="flex flex-col flex-grow min-w-0">
-            <span className={`text-white text-xs font-medium uppercase tracking-wide ${khandFont.className}`}>
+            <span className={`text-[#ff0000] text-sm font-medium uppercase tracking-wide ${khandFont.className}`}>
               Training Certificate
             </span>
             <span className={`font-bold text-xs text-white mt-1 ${poppins.className}`}>

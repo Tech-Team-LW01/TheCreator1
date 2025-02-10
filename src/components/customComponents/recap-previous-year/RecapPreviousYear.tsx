@@ -20,7 +20,7 @@ export default function RecapPreviousYear() {
   
   // States
   const [mainVideo, setMainVideo] = useState<EventCard>({
-    title: "2024 RECAP VIDEO",
+    title: "RECAP VIDEO",
     location: "Main Event",
     image: "/assets/events/recap2024.jpg", // Update with your actual image path
     videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?autoplay=1",

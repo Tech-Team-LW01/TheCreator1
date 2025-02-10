@@ -21,7 +21,6 @@ const Tedx2: React.FC<SpeakerProps> = ({
   firstName, 
   lastName,
   link,
-  role = "TEDx Speaker", // Added default role
   description = "Inspiring the next generation of tech innovators" // Added default description
 }) => {
   const handleClick = () => {
@@ -73,10 +72,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
         </h2>
 
         {/* Role */}
-        <h3 className={`text-xl text-gray-300 ${poppins.className}`}>
-          {role}
-        </h3>
-
+  
         {/* Description */}
         <p className={`text-base text-gray-400 ${poppins.className}`}>
           {description}
