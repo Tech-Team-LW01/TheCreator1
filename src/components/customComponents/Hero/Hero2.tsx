@@ -33,7 +33,7 @@ const Hero2 = () => {
     >
      
         <Link href="/application-form"
-        className="bg-white p-2 rounded-sm pr-4 text-[#ff0000] text-lg hover:bg-red-200 font-semibold relative z-10 shadow-lg"
+        className="bg-[#ff0000] p-2 rounded-sm pr-4 text-white text-lg hover:bg-red-800 font-semibold relative z-10 shadow-lg"
       >
         Applications Open
       </Link>

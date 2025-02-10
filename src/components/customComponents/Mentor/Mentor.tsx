@@ -2,9 +2,13 @@
 
 import React from 'react';
 import { Card } from "@/components/ui/card";
-import { Check, Globe, User, Flag, Award, Mic2, Briefcase } from 'lucide-react';
+import { Check, Globe, User, Flag, Award, Mic2, Briefcase,
+
+  Youtube, Instagram ,Linkedin  ,Cpu ,KeyRound,BriefcaseBusiness 
+ } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Inter,Poppins } from 'next/font/google'
+
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -18,12 +22,12 @@ const Mentor = () => {
   ];
 
   const transfers = [
-    { amount: "300,000+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube"},
-    { amount: "1,100,000+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" },
-    { amount: "60,000+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin" },
-    { amount: "Changed —- lives ", position: "top-[15%] right-[5%]",plateform: "" },
-    { amount: " 152+ tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "Knows"},
-    { amount: "22+ years ", position: "top-[40%] right-[3%]",plateform: "Experience" }
+    { amount: "300,000+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube", logo: Youtube },
+    { amount: "1,100,000+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" , logo: Instagram },
+    { amount: "60,000+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin",logo: Linkedin },
+    { amount: "Changed —- lives ", position: "top-[15%] right-[3%]",plateform: "",logo: Globe },
+    { amount: " 152+ tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "Knows",logo:Cpu},
+    { amount: "22+ years ", position: "top-[40%] right-[3%]",plateform: "Experience",logo: BriefcaseBusiness  }
   ];
 
   return (
@@ -100,8 +104,8 @@ const Mentor = () => {
                       rounded-lg sm:rounded-xl flex items-center gap-2 sm:gap-3 
                       border-red-200 shadow-xl transform hover:scale-105 
                       transition-transform">
-                      <div className="bg-green-700 p-1.5 sm:p-2 rounded-full">
-                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-black" />
+                      <div className="bg-[#ff0000] p-1.5 sm:p-2 rounded-full">
+                        <transfer.logo className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                       </div>
                       <div className="text-white">
                         <div className="text-[10px] sm:text-xs font-medium text-white">

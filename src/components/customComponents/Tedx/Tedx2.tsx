@@ -8,6 +8,7 @@ const poppins = Poppins({
 })
 
 import localFont from "next/font/local";
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 const khandFont = localFont(
   {
     src: '../../../app/fonts/Khand-SemiBold.woff',
@@ -78,13 +79,30 @@ const Tedx2: React.FC<SpeakerProps> = ({
           {description}
         </p>
 
-        {/* View Profile Link */}
-        <button 
-          onClick={handleClick}
-          className={`text-[#ff0000] hover:text-white transition-colors duration-300 ${poppins.className}`}
-        >
-          View Profile →
-        </button>
+          {/* Social Links */}
+          <div className="flex items-center justify-center gap-6">
+          <a 
+            href="https://www.instagram.com/init.lwindia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram size={20} />
+          </a>
+          <a 
+            href="#" 
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Twitter"
+          >
+            <Facebook  size={20} />
+          </a>
+          <a 
+            href=" https://www.linkedin.com/company/init-placement-cell-of-arth/posts/?feedView=all" 
+            className="text-gray-400 hover:text-white transition-colors"
+            aria-label="Website"
+          >
+            <Linkedin  size={20} />
+          </a>
+        </div>
       </div>
     </div>
   );
