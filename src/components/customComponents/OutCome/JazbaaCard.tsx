@@ -31,14 +31,14 @@ export default function JazbaaCard() {
         {/* Social Links */}
         <div className="flex items-center justify-center gap-6">
           <a 
-            href="#" 
+            href="https://www.instagram.com/jazbaabyiiec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Instagram"
           >
             <Instagram size={20} />
           </a>
           <a 
-            href="#" 
+            href="https://x.com/IIEC_Jazbaa" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Twitter"
           >

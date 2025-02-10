@@ -39,7 +39,7 @@ export default function InitCard() {
         {/* Social Links */}
         <div className="flex items-center justify-center gap-6">
           <a 
-            href="#" 
+            href="https://www.instagram.com/init.lwindia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Instagram"
           >
@@ -53,7 +53,7 @@ export default function InitCard() {
             <Facebook  size={20} />
           </a>
           <a 
-            href="#" 
+            href=" https://www.linkedin.com/company/init-placement-cell-of-arth/posts/?feedView=all" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Website"
           >

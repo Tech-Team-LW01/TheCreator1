@@ -28,29 +28,30 @@ export default function VideoTestimonials() {
 
   const videos: VideoCardProps[] = [
     {
-      title: "Don't Join Summer Internship 2025 without Watching...",
-      thumbnail: "https://deen3evddmddt.cloudfront.net/images/home-images/Jayant_Ranawat.webp",
-      videoUrl: "https://www.youtube.com/watch?v=GCX02RwZ5dk"
+      title: "Aditi's Journey from Summer Internship 2024",
+      thumbnail: "/assets/videotestinomial/aditi.jpg",
+      videoUrl: "https://youtu.be/BUTXyVq2gUE?si=abUFECP-0U7nxhQN"
     },
     {
-      title: "Don't Join Summer Internship 2025 without Watching...",
-      thumbnail: "https://deen3evddmddt.cloudfront.net/images/home-images/Jitesh_Bhojwani.webp",
-      videoUrl: "https://www.youtube.com/watch?v=GCX02RwZ5dk"
+      title: "Divya's Journey from Summer Internship 2024",
+      thumbnail: "/assets/videotestinomial/divya.jpg",
+      videoUrl: "https://youtu.be/EUGLeid00LE?si=ClY2XmL-8NsuMntG"
+    },
+    
+    {
+      title: "Om's Journey from Summer Internship 2024",
+      thumbnail: "/assets/videotestinomial/Om.jpg",
+      videoUrl: "https://youtu.be/C4H29L1d3ko?si=_501FeGRlvklcgjk"
     },
     {
-      title: "Don't Join Summer Internship 2025 without Watching...",
-      thumbnail: "https://deen3evddmddt.cloudfront.net/images/home-images/Jigyasa_Kanwar.webp",
-      videoUrl: "https://www.youtube.com/watch?v=GCX02RwZ5dk"
+      title: "Shrishti's Journey from Summer Internship 2024",
+      thumbnail: "/assets/videotestinomial/Shrishti.jpg",
+      videoUrl: " https://youtu.be/o31w8dWX1ZA?si=nQSuiYnGmS_9EGmK"
     },
     {
-      title: "Don't Join Summer Internship 2025 without Watching...",
-      thumbnail: "https://deen3evddmddt.cloudfront.net/images/home-images/Pushpendra_Singh_Rathore.webp",
-      videoUrl: "https://www.youtube.com/watch?v=GCX02RwZ5dk"
-    },
-    {
-      title: "Don't Join Summer Internship 2025 without Watching...",
-      thumbnail: "https://deen3evddmddt.cloudfront.net/images/home-images/Jigyasa_Kanwar.webp",
-      videoUrl: "https://www.youtube.com/watch?v=GCX02RwZ5dk"
+      title: "Vidhisha Taneja's Journey from Summer Internship 2024",
+      thumbnail: "/assets/videotestinomial/vidhisha-taneja.jpg",
+      videoUrl: " https://www.youtube.com/watch?v=oi3AiWd7dJk"
     },
   ];
 
