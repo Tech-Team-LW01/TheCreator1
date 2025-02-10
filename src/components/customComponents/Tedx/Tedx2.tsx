@@ -22,7 +22,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
   firstName, 
   lastName,
   link,
-  description = "Inspiring the next generation of tech innovators" // Added default description
+  
 }) => {
   const handleClick = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
@@ -75,9 +75,9 @@ const Tedx2: React.FC<SpeakerProps> = ({
         {/* Role */}
   
         {/* Description */}
-        <p className={`text-base text-gray-400 ${poppins.className}`}>
+        {/* <p className={`text-base text-gray-400 ${poppins.className}`}>
           {description}
-        </p>
+        </p> */}
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6">
