@@ -41,7 +41,7 @@ const benefitsData = [
     subtitle: "Interpersonal Skills",
     detail: "Become Confident & Interview Ready",
     description:
-      "Work on real-world projects that enhance your portfolio and give you practical experience in your field.",
+      "The One & Only Research Based Internship where you integrate more than 10+ technologies which helps you build a real production environment based Summer Project.",
     bgImage:"/assets/benefits/skills.png"
   },
   {
