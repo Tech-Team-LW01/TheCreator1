@@ -6,6 +6,8 @@ export interface SpeakerProps {
     firstName: string;
     lastName: string;
     link: string;
+ 
+    description?: string;
     
     onClick?: () => void;
 }
