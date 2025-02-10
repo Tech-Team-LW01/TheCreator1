@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Linkedin, Loader2 } from "lucide-react";
-import { toast } from "react-hot-toast";
+import toast, { Toaster } from 'react-hot-toast';
+
 import { Inter, Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -107,6 +108,10 @@ export default function Query() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black p-6">
+    <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row">
         {/* Left Side - Form Section */}
         <motion.div
@@ -188,16 +193,57 @@ export default function Query() {
                 </Button>
               </form>
             ) : (
-              <form className="space-y-6">
-                <Input type="text" placeholder="Full Name" className="bg-gray-50" />
-                <Input type="email" placeholder="Email" className="bg-gray-50" />
-                <Input type="password" placeholder="Password" className="bg-gray-50" />
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <Input 
+                  type="text" 
+                  name="fullName"
+                  placeholder="Full Name" 
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  className="bg-gray-50" 
+                  disabled={loading}
+                />
+                <Input 
+                  type="email" 
+                  name="email"
+                  placeholder="Email" 
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                />
+                <Input 
+                  type="tel" 
+                  name="phone"
+                  placeholder="Phone" 
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                  maxLength={10}
+                />
+                <Input 
+                  type="textarea" 
+                  name="query"
+                  placeholder="Query" 
+                  value={formData.query}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                />
                 <Button
-                  type="button"
+                  type="submit"
                   className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
-                  onClick={handleSwap}
+                  disabled={loading}
                 >
-                  SIGN UP
+                  {loading ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    'Submit'
+                  )}
                 </Button>
               </form>
             )}
