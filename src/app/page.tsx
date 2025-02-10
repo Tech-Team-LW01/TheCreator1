@@ -35,6 +35,8 @@ import Timeline from "@/components/customComponents/TimeLine/TimeLine";
 import InvestorCarousel from "@/components/customComponents/InverterVideo/Carousel ";
 import RecapPreviousYear from "@/components/customComponents/recap-previous-year/RecapPreviousYear";
 // import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
+import SupportContact from "@/components/customComponents/Support/Support";
+import InternationalMeetup from "@/components/customComponents/InternationalMeetup/InternationalMeetup";
 export default function Home() {
   return (
     <div >
@@ -47,8 +49,9 @@ export default function Home() {
 <TechStack/>
 <TopLeaders/>
 <LeftRightAlumniCarousel/>
-
+<InternationalMeetup/>
 <InvestorCarousel/>
+
 <VideoTestimonials/>
 <ImageTestimonials/>
 <Benifits></Benifits>
@@ -78,7 +81,9 @@ export default function Home() {
 {/* <Mentor2/> */}
 <FeatureGrid/>
 <JazbaaTimeLine/>
+
 <Projets/>
+<SupportContact/>
 
     </div>
   );

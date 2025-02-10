@@ -19,9 +19,15 @@ const nextConfig = {
               hostname: 'assets.aceternity.com',
   
             },
+
             {
               protocol: 'https',
               hostname: 'media.licdn.com',
+  
+            },
+            {
+              protocol: 'https',
+              hostname: 'www.upgrad.com',
   
             },
           ],
