@@ -18,12 +18,12 @@ const Mentor = () => {
   ];
 
   const transfers = [
-    { amount: "3500 USD", position: "top-[10%] left-[5%]" },
-    { amount: "700 USD", position: "top-[50%] left-[12%]" },
-    { amount: "1800 USD", position: "bottom-[20%] left-[8%]" },
-    { amount: "3500 USD", position: "top-[15%] right-[5%]" },
-    { amount: "700 USD", position: "bottom-[30%] right-[10%]" },
-    { amount: "1800 USD", position: "top-[40%] right-[3%]" }
+    { amount: "300,000+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube"},
+    { amount: "1,100,000+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" },
+    { amount: "60,000+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin" },
+    { amount: "Changed —- lives ", position: "top-[15%] right-[5%]",plateform: "" },
+    { amount: " 152+ tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "Knows"},
+    { amount: "22+ years ", position: "top-[40%] right-[3%]",plateform: "Experience" }
   ];
 
   return (
@@ -105,7 +105,7 @@ const Mentor = () => {
                       </div>
                       <div className="text-white">
                         <div className="text-[10px] sm:text-xs font-medium text-white">
-                          Successful Transfer
+                         {transfer.plateform}
                         </div>
                         <div className="text-xs sm:text-sm font-semibold">
                           {transfer.amount}

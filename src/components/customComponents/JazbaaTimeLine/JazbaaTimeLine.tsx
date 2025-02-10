@@ -17,7 +17,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+           The First Spark of Transformation!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -64,7 +64,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Innovation & Success Despite All Odds!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -109,7 +109,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
                    <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+                   Rising Stars in the Tech World!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -156,7 +156,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
                    <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+                   Summer Learners, Full-Time Achievers!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -204,7 +204,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          Engineering Success Stories Begin Here!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -252,7 +252,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          Future-Ready Engineers, Industry-Proven Skills!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -299,7 +299,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          Resilient Learners, Game-Changing Careers!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -346,7 +346,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          Engineering a Future Full of Possibilities!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
@@ -393,7 +393,7 @@ export function JazbaaTimeLine() {
       content: (
         <div>
           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          Shaping the Tech Workforce of India!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 

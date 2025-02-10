@@ -1,18 +1,19 @@
 "use client";
 
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Toaster, toast } from "react-hot-toast"; // Add Toaster import
+import { Facebook, Linkedin, Loader2 } from "lucide-react";
+import { toast } from "react-hot-toast";
+import { Inter, Poppins } from 'next/font/google';
 
-import { Poppins } from 'next/font/google'
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
-})
+});
 
+// Form data interface
 interface FormData {
   fullName: string;
   email: string;
@@ -20,18 +21,22 @@ interface FormData {
   query: string;
 }
 
-export default function Query(): JSX.Element {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    email: '',
-    phone: '',
-    query: ''
-  });
+const initialFormData: FormData = {
+  fullName: "",
+  email: "",
+  phone: "",
+  query: ""
+};
 
-  const handleInputChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ): void => {
+export default function Query() {
+  // State management
+  const [isSwapped, setIsSwapped] = useState(false);
+  const [isSignInForm, setIsSignInForm] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState<FormData>(initialFormData);
+
+  // Handle input changes
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -39,33 +44,35 @@ export default function Query(): JSX.Element {
     }));
   };
 
-  const validateForm = (): boolean => {
-    if (!formData.fullName || !formData.email || !formData.phone || !formData.query) {
-      toast.error("All fields are required");
+  // Form validation
+  const validateForm = () => {
+    if (!formData.fullName.trim()) {
+      toast.error("Please enter your full name");
       return false;
     }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast.error("Please enter a valid email");
+    if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) {
+      toast.error("Please enter a valid email address");
       return false;
     }
-
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(formData.phone)) {
+    if (!formData.phone.trim() || !/^\d{10}$/.test(formData.phone)) {
       toast.error("Please enter a valid 10-digit phone number");
       return false;
     }
-
+    if (!formData.query.trim()) {
+      toast.error("Please enter your query");
+      return false;
+    }
     return true;
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  // Form submission handler
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+    console.log("click on submit")
     if (!validateForm()) return;
-
+    
     setLoading(true);
+    
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -74,95 +81,157 @@ export default function Query(): JSX.Element {
         },
         body: JSON.stringify(formData),
       });
-
+      
       const data = await response.json();
-      console.log('Response:', data); // Debug log
-
+      console.log(data)
       if (response.ok) {
         toast.success("Query submitted successfully!");
-        setFormData({
-          fullName: '',
-          email: '',
-          phone: '',
-          query: ''
-        });
+        setFormData(initialFormData);
       } else {
+        console.error('Error:', data.message);
         toast.error(data.message || "Something went wrong!");
       }
     } catch (error) {
-      console.error('Error:', error); // Debug log
+      console.error('Error:', error);
       toast.error("Failed to submit query");
     } finally {
       setLoading(false);
     }
   };
 
+  // Handle swap between forms
+  const handleSwap = () => {
+    setIsSwapped(!isSwapped);
+    setIsSignInForm(!isSignInForm);
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-black p-6">
-      <Toaster position="top-center" /> {/* Add Toaster component */}
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row">
         {/* Left Side - Form Section */}
-        <div className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12">
+        <motion.div
+          className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12"
+          initial={{ x: 0 }}
+          animate={{ x: isSwapped ? "100%" : 0 }}
+          transition={{ type: "tween", duration: 0.5 }}
+        >
           <div className="w-full max-w-md">
             <h1 className="text-2xl font-semibold text-gray-900 mb-8">
-              Have any Query?
+              {isSignInForm ? "Have any Query?" : "Create an Account"}
             </h1>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <Input
-                type="text"
-                name="fullName"
-                placeholder="Full Name"
-                className="bg-gray-50"
-                value={formData.fullName}
-                onChange={handleInputChange}
-              />
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="bg-gray-50"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-              <Input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                className="bg-gray-50"
-                value={formData.phone}
-                onChange={handleInputChange}
-              />
-              <Textarea
-                name="query"
-                placeholder="Your Query"
-                className="bg-gray-50 min-h-[100px]"
-                value={formData.query}
-                onChange={handleInputChange}
-              />
-              <Button
-                type="submit"
-                className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
-                disabled={loading}
-              >
-                {loading ? "Submitting..." : "SUBMIT"}
+            <div className="flex justify-center space-x-4 mb-8">
+              <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
+                <Facebook className="h-5 w-5 text-[#1877F2]" />
               </Button>
-            </form>
+              <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
+                <Linkedin className="h-5 w-5 text-[#0A66C2]" />
+              </Button>
+            </div>
+
+            <div className="text-center text-sm text-gray-500 mb-8">
+              or use your email account
+            </div>
+
+            {isSignInForm ? (
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <Input 
+                  type="text" 
+                  name="fullName"
+                  placeholder="Full Name" 
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  className="bg-gray-50" 
+                  disabled={loading}
+                />
+                <Input 
+                  type="email" 
+                  name="email"
+                  placeholder="Email" 
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                />
+                <Input 
+                  type="tel" 
+                  name="phone"
+                  placeholder="Phone" 
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                  maxLength={10}
+                />
+                <Input 
+                  type="textarea" 
+                  name="query"
+                  placeholder="Query" 
+                  value={formData.query}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                />
+                <Button
+                  type="submit"
+                  className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    'Submit'
+                  )}
+                </Button>
+              </form>
+            ) : (
+              <form className="space-y-6">
+                <Input type="text" placeholder="Full Name" className="bg-gray-50" />
+                <Input type="email" placeholder="Email" className="bg-gray-50" />
+                <Input type="password" placeholder="Password" className="bg-gray-50" />
+                <Button
+                  type="button"
+                  className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
+                  onClick={handleSwap}
+                >
+                  SIGN UP
+                </Button>
+              </form>
+            )}
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Side - Welcome Panel */}
-        <div
+        <motion.div
           className="flex-1 p-16 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/assets/Projects/form.jpg')"
           }}
+          initial={{ x: 0 }}
+          animate={{ x: isSwapped ? "-100%" : 0 }}
+          transition={{ type: "tween", duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-white font-khand">Hello, Friend!</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white font-khand">
+            Hello, Friend!
+          </h2>
           <p className={`mb-8 text-lg text-white ${poppins.className}`}>
-            We're here to help! Send us your query and we'll get back to you soon.
+            {isSignInForm 
+              ? "I am looking for Offline Summer Industrial Training where I can meet Engineering students from across India & work together as a team 😊" 
+              : "I know I will miss all the Offline Benefits of Summer Program & attend JAZBAA but still want to attend Online Training 😔"}
           </p>
-        </div>
+          <Button
+            variant="outline"
+            className="border-2 border-white bg-[#ff0000] text-white hover:bg-white/10"
+            onClick={handleSwap}
+          >
+            {isSignInForm 
+              ? "No, I am looking for Online Summer Program" 
+              : "No, I think I should attend Offline Summer Program"}
+          </Button>
+        </motion.div>
       </div>
     </div>
   );

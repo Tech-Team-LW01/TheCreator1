@@ -1,7 +1,7 @@
 // Tedx2.tsx
 import React from 'react';
 import { SpeakerProps } from './types';
-import { Inter,Poppins } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -13,21 +13,24 @@ const khandFont = localFont(
     src: '../../../app/fonts/Khand-SemiBold.woff',
     weight: '100 900',
   }
-
 )
+
 const Tedx2: React.FC<SpeakerProps> = ({ 
   imageUrl, 
   badge, 
   firstName, 
   lastName,
-  link 
+  link,
+  role = "TEDx Speaker", // Added default role
+  description = "Inspiring the next generation of tech innovators" // Added default description
 }) => {
   const handleClick = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center space-y-6">
+      {/* Image Container */}
       <div 
         className="relative w-[300px] h-[300px] group cursor-pointer transform transition-transform hover:scale-105"
         onClick={handleClick}
@@ -41,27 +44,11 @@ const Tedx2: React.FC<SpeakerProps> = ({
           />
         </div>
 
-        {/* Purple semi-transparent card */}
-        {/* <div className="absolute top-1/2 -translate-y-1/2 -left-44 max-w-[280px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="bg-red-900/80 backdrop-blur-sm rounded-lg p-4 text-white shadow-lg">
-            <p className={`text-sm ${poppins.className}`}>
-              {description}
-            </p>
-          </div>
-        </div> */}
-
         {/* Badge */}
         <div className="absolute bottom-12 -right-4">
           <div className="bg-gradient-to-r from-red-500 to-pink-500 rounded-full px-6 py-2 text-white shadow-lg">
             <p className={`text-lg font-semibold ${poppins.className}`}>{badge}</p>
           </div>
-        </div>
-
-        {/* Name */}
-        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full text-center">
-          <h2 className={`text-2xl font-bold text-[#ff0000] ${poppins.className}`}>
-            {firstName} <span className={`text-[#ff0000] ${poppins.className}`}>{lastName}</span>
-          </h2>
         </div>
 
         {/* Link indicator */}
@@ -76,7 +63,34 @@ const Tedx2: React.FC<SpeakerProps> = ({
           </svg>
         </div>
       </div>
-    </>
+
+      {/* Text Content Container */}
+      <div className="text-center space-y-4 max-w-[300px]">
+        {/* Name */}
+        <h2 className={`text-3xl font-bold ${poppins.className}`}>
+          <span className="text-[#ff0000]">{firstName}</span>{' '}
+          <span className="text-white">{lastName}</span>
+        </h2>
+
+        {/* Role */}
+        <h3 className={`text-xl text-gray-300 ${poppins.className}`}>
+          {role}
+        </h3>
+
+        {/* Description */}
+        <p className={`text-base text-gray-400 ${poppins.className}`}>
+          {description}
+        </p>
+
+        {/* View Profile Link */}
+        <button 
+          onClick={handleClick}
+          className={`text-[#ff0000] hover:text-white transition-colors duration-300 ${poppins.className}`}
+        >
+          View Profile →
+        </button>
+      </div>
+    </div>
   );
 };
 
