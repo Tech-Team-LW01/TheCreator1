@@ -17,8 +17,7 @@ export default function JazbaaStartupPlatform() {
             JAZBAA Start-up Platform
           </h1>
           <p className={`text-gray-200 text-sm md:text-md lg:text-lg px-4 ${poppins.className}`}>
-          An event exclusively for Summer Interns to showcase the Technical Project / StartUp incubated during 45 days Summer Program.
-          <br/>Summer Industrial Training Program.
+           An event which showcases the StartUps incubated by Engineering Students in 45 days during Summer Industrial Training Program.
           </p>
         </div>
 
