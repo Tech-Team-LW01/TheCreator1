@@ -128,22 +128,29 @@ export default function Query() {
           transition={{ type: "tween", duration: 0.5 }}
         >
           <div className="w-full max-w-md">
-            <h1 className="text-2xl font-semibold text-gray-900 mb-8">
-              {isSignInForm ? "Have any Query?" : "Create an Account"}
+            <h1 className="text-2xl font-semibold text-[#ff0000] mb-2">
+ Lets Talk
+
             </h1>
 
-            <div className="flex justify-center space-x-4 mb-8">
+            <h1 className="text-xl font-semibold text-gray-900 mb-8">
+            Our Summer Executive will connect in next 24 hours
+
+              
+            </h1>
+
+            {/* <div className="flex justify-center space-x-4 mb-8">
               <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
                 <Facebook className="h-5 w-5 text-[#1877F2]" />
               </Button>
               <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
                 <Linkedin className="h-5 w-5 text-[#0A66C2]" />
               </Button>
-            </div>
+            </div> */}
 
-            <div className="text-center text-sm text-gray-500 mb-8">
+            {/* <div className="text-center text-sm text-gray-500 mb-8">
               or use your email account
-            </div>
+            </div> */}
 
             {isSignInForm ? (
               <form className="space-y-6" onSubmit={handleSubmit}>
