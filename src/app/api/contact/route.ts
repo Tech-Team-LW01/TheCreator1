@@ -4,8 +4,8 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { fullName, email, phone, query } = body;
-
+    const { fullName, email, phone, query,college } = body;
+    console.log('College:', college);
     // Create transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -28,6 +28,7 @@ export async function POST(request: Request) {
           <p><strong>Name:</strong> ${fullName}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Phone:</strong> ${phone}</p>
+          <p><strong>College Name:</strong> ${college}</p>
           <p><strong>Query:</strong> ${query}</p>
         </div>
       `,

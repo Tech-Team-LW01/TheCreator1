@@ -20,13 +20,15 @@ interface FormData {
   email: string;
   phone: string;
   query: string;
+  college: string;
 }
 
 const initialFormData: FormData = {
   fullName: "",
   email: "",
   phone: "",
-  query: ""
+  query: "",
+  college: ""
 };
 
 export default function Query() {
@@ -35,7 +37,7 @@ export default function Query() {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>(initialFormData);
-
+  // const [college, setCollege] = useState("");
   // Handle input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -48,6 +50,11 @@ export default function Query() {
   // Form validation
   const validateForm = () => {
     if (!formData.fullName.trim()) {
+      toast.error("Please enter your full name");
+      return false;
+    }
+
+    if (!formData.college.trim()) {
       toast.error("Please enter your full name");
       return false;
     }
@@ -168,6 +175,17 @@ export default function Query() {
                   disabled={loading}
                   maxLength={10}
                 />
+
+<Input 
+                  type="text" 
+                  name="college"
+                  placeholder="College Name" 
+                  value={formData.college}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                  maxLength={10}
+                />
                 <Input 
                   type="textarea" 
                   name="query"
@@ -217,6 +235,17 @@ export default function Query() {
                   name="phone"
                   placeholder="Phone" 
                   value={formData.phone}
+                  onChange={handleChange}
+                  className="bg-gray-50"
+                  disabled={loading}
+                  maxLength={10}
+                />
+
+<Input 
+                  type="text" 
+                  name="college"
+                  placeholder="College Name" 
+                  value={formData.college}
                   onChange={handleChange}
                   className="bg-gray-50"
                   disabled={loading}
