@@ -72,12 +72,18 @@ export default function ImageTestimonials() {
 
 
           </div>
+          <div className="flex-grow flex items-end flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
 
+  
+  </div>
+{/* 
           <Card className="relative border-[0px] h-8 overflow-hidden  bg-[#111111]  ">
   <CardContent className="p-4 h-full w-full flex items-center justify-center">
     <h1 className="text-[#ff0000] text-lg text-center">And many More ...</h1>
   </CardContent>
-</Card>
+</Card> */}
 
           {/* Load More Button */}
           {hasMoreTestimonials && (

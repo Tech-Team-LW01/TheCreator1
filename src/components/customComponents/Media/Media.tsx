@@ -135,11 +135,11 @@ export default function MediaSection() {
   {/* Background Overlay */}
   <div className="absolute inset-0 " />
 
-  {/* Content Wrapper for Centering */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    <p className="text-[#ff0000] text-lg text-center">
-      And many More...
-    </p>
+  <div className="flex-grow flex items-end flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+  
   </div>
 </Card>
         </div>
