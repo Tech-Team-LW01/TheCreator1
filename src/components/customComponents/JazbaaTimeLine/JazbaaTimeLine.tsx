@@ -43,7 +43,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -88,7 +88,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -134,7 +134,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -181,7 +181,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -229,7 +229,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -277,7 +277,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -324,7 +324,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -371,7 +371,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -418,7 +418,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-center flex-col justify-center">
+  <div className="flex-grow flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 

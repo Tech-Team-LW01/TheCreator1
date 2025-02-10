@@ -89,14 +89,14 @@ export const Data2014 = [
     },
 
    
-    {
-        id: "2022-15",
-        linkedinUrl: "https://www.linkedin.com/in/paridhi-dahake-237bb8200/",
-        studentName: "Paridhi Dahake",
-        role: "Not Working",
-        companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQFuA0RUzecqYA/company-logo_200_200/company-logo_200_200/0/1630638175284?e=1747267200&v=beta&t=JTUmUn5B_l7lluJil_lbclfMkkxmGBtO2yM4Na7AOMA",
-        profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHClZ4reazSkQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657889951818?e=1744243200&v=beta&t=e_CtDONmH6frdC5ZUaoDyCfwUig5GF-xfaF7Br7F6tE"
-    },
+    // {
+    //     id: "2022-15",
+    //     linkedinUrl: "https://www.linkedin.com/in/paridhi-dahake-237bb8200/",
+    //     studentName: "Paridhi Dahake",
+    //     role: "Not Working",
+    //     companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQFuA0RUzecqYA/company-logo_200_200/company-logo_200_200/0/1630638175284?e=1747267200&v=beta&t=JTUmUn5B_l7lluJil_lbclfMkkxmGBtO2yM4Na7AOMA",
+    //     profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHClZ4reazSkQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657889951818?e=1744243200&v=beta&t=e_CtDONmH6frdC5ZUaoDyCfwUig5GF-xfaF7Br7F6tE"
+    // },
 
     {
       id: "2017-17",
