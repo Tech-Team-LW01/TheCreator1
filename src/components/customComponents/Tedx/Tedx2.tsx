@@ -82,7 +82,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6">
           <a 
-            href="https://www.instagram.com/init.lwindia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+            href="https://www.instagram.com/vimaldaga.india/?hl=en" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Instagram"
           >
@@ -96,7 +96,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
             <Facebook  size={20} />
           </a>
           <a 
-            href=" https://www.linkedin.com/company/init-placement-cell-of-arth/posts/?feedView=all" 
+            href="https://in.linkedin.com/in/vimaldaga" 
             className="text-gray-400 hover:text-white transition-colors"
             aria-label="Website"
           >
