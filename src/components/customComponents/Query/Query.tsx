@@ -9,6 +9,13 @@ import toast, { Toaster } from 'react-hot-toast';
 
 import { Inter, Poppins } from 'next/font/google';
 
+
+import localFont from "next/font/local";
+const khandFont = localFont({
+    src: '../../../app/fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+});
+
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -296,14 +303,19 @@ export default function Query() {
           animate={{ x: isSwapped ? "-100%" : 0 }}
           transition={{ type: "tween", duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold mb-6 text-white font-khand">
+          <h2 className={`text-4xl font-bold mb-6 text-white ${khandFont.className}`}>
             Hello, Friend!
           </h2>
           <p className={`mb-8 text-lg text-white ${poppins.className}`}>
-            {isSignInForm 
-              ? `I am looking for Offline Summer Industrial Training where I can meet Engineering students from across India & work together as a team 😊` 
-              : "I know I will miss all the Offline Benefits of Summer Program & attend JAZBAA but still want to attend Online Training 😔"}
-          </p>
+  {isSignInForm ? (
+    <>
+      I am looking for <strong>Offline Summer</strong> Industrial Training where I can meet Engineering students from across India & work together as a team 😊
+    </>
+  ) : (
+    "I know I will miss all the Offline Benefits of Summer Program & attend JAZBAA but still want to attend Online Training 😔"
+  )}
+</p>
+
           <Button
             variant="outline"
             className="border-2 border-white bg-[#ff0000] text-white hover:bg-white/10"
