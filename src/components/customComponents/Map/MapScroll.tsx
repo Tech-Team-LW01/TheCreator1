@@ -4,15 +4,15 @@ import Image from 'next/image';
 
 const MapScroll = () => {
   const logos = [
-    { src: "https://utfs.io/f/eTRmNYrLOXzGpk7gzlWTJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 1" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGLv7N1Mow2fTdzxvAgRP36VyWHFCLoY9sMjuh", alt: "Gallery Image 2" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzG6BKzCcs4lFMyP2RuqN0Tx7GJhWQ4afcDHKXi", alt: "Gallery Image 3" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGsao0wBRj7eE4XFhuV5GBpPr0gMU6oOfIviWC", alt: "Gallery Image 4" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGaCkxqIny5qYCim1jBXZMVUrSWAPTvEa4xHRn", alt: "Gallery Image 5" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGCWJq10NO9aELGADxOnTSI3d24mb50FjyhVrU", alt: "Gallery Image 6" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGhsayE0Lv1odxYcIF206hQRzPZ5aC9XWVGjkE", alt: "Gallery Image 7" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGpkXxEA8TJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 8" },
-    { src: "https://utfs.io/f/eTRmNYrLOXzGpk7gzlWTJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 9" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqRe4cHkD6RV8xFyPjqHNRZMuDrL4CbtwQleYg06", alt: "Gallery Image 1" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqReJ2II8Mi09EUx2e3NqOBrDowW6Fb7QnSpyPX8", alt: "Gallery Image 2" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqReJ2II8Mi09EUx2e3NqOBrDowW6Fb7QnSpyPX8", alt: "Gallery Image 3" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqReIsixoHmfSemRkYtq2XpwZJ9EFjLKABxWry8h", alt: "Gallery Image 4" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqRet0g6CWOHa769PUWGMfvgOuYpeASC2lKkTwqo", alt: "Gallery Image 5" },
+  
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqRem3nGzUoWUh9kz6Yl83vbNSxwqIL42G1yKgei", alt: "Gallery Image 7" },
+    { src: "https://hkga9exljh.ufs.sh/f/afCowHbSNqRem04S2qoWUh9kz6Yl83vbNSxwqIL42G1yKgei", alt: "Gallery Image 8" },
+    // { src: "https://utfs.io/f/eTRmNYrLOXzGpk7gzlWTJ5oMCX3zgnwFaikv2t87bOQyrTGW", alt: "Gallery Image 9" },
   ];
 
   return (
