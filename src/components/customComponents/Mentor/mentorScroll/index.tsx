@@ -1,17 +1,10 @@
-
-
-
-
 "use client";
 
-import { PlacementCard, CardData } from './card';
-import { Rays } from './rays';
-import { Beams } from './beams';
-import { useState, useRef } from "react";
-import { Lens } from "../../../ui/lens";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Poppins } from 'next/font/google';
 import Image1 from "../../../../../public/assets/Mentor/1.jpg";
 import Image2 from "../../../../../public/assets/Mentor/2.jpg";
 import tedx from "../../../../../public/assets/Mentor/tedx.jpg";
@@ -21,18 +14,58 @@ import Image5 from "../../../../../public/assets/Mentor/TAlkofTown.jpg";
 import Image6 from "../../../../../public/assets/Mentor/techguru.jpg";
 import Image7 from "../../../../../public/assets/Mentor/TheO&O.jpg";
 import Image8 from "../../../../../public/assets/Mentor/thonlyone.jpg";
-import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 
-import { Inter,Poppins } from 'next/font/google'
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
-})
+});
+
+// Types
+interface CardData {
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
+// Lens Component
+const Lens = ({ 
+  children, 
+  hovering, 
+  setHovering 
+}: { 
+  children: React.ReactNode; 
+  hovering: boolean; 
+  setHovering: (hovering: boolean) => void;
+}) => {
+  return (
+    <div
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+      className="relative overflow-hidden"
+    >
+      {children}
+    </div>
+  );
+};
+
+// Rays Component
+const Rays = () => (
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute inset-0 opacity-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20" />
+  </div>
+);
+
+// Beams Component
+const Beams = () => (
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute inset-0 opacity-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20" />
+  </div>
+);
 
 export function MentorScroll() {
   const [hoveringStates, setHoveringStates] = useState(Array(9).fill(false));
-  const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   const handleHover = (index: number, isHovering: boolean) => {
     const newHoveringStates = [...hoveringStates];
@@ -40,7 +73,8 @@ export function MentorScroll() {
     setHoveringStates(newHoveringStates);
   };
 
-  const cardData: CardData[] = [
+  // Original card data
+  const originalCardData: CardData[] = [
     {
       title: "Worked with Creators",
       description: "Closely worked associated with the Founders & Creators of technologies. So learn the right approach clear your myths with the right mentor",
@@ -61,7 +95,6 @@ export function MentorScroll() {
       description: "First we have to create them, then Indian Engineering Students will be The Creator in technology space for our Nation",
       imageUrl: tedx.src
     },
-    // Add 5 more cards with similar or different content
     {
       title: "One Man Army",
       description: "Learn,Implement,Research,Integrate & Showcase your Summer Product under thw Internationally Recogniosed Industry Expert - Mr Vimal Daga",
@@ -80,15 +113,50 @@ export function MentorScroll() {
     {
       title: "The One & Only One in the World",
       description: "Popularly known as &quot;Integration Expert&quote; in IT Industry since he is the only one who has worked upon & knows to integrate maximum technologies.",
-      imageUrl:  Image8.src
+      imageUrl: Image8.src
     },
     {
       title: "Tech Guru",
       description: "Sr Principal IT Consultant for fortune 500 Companies & trained Directors,CTOs,CIOs,Founders,Principal Architects,Team Leaders & many more.",
-      imageUrl:  Image6.src
+      imageUrl: Image6.src
     }
   ];
 
+  // Create extended array for infinite scroll
+  const extendedCardData = [...originalCardData, ...originalCardData, ...originalCardData];
+
+  // Handle scroll position
+  const handleScroll = () => {
+    if (!scrollRef.current || isScrolling) return;
+
+    const scrollContainer = scrollRef.current;
+    const scrollWidth = scrollContainer.scrollWidth;
+    const containerWidth = scrollContainer.clientWidth;
+    const scrollLeft = scrollContainer.scrollLeft;
+
+    // If we're near the end
+    if (scrollLeft + containerWidth >= scrollWidth - 100) {
+      setIsScrolling(true);
+      scrollContainer.scrollLeft = containerWidth;
+      setTimeout(() => setIsScrolling(false), 100);
+    }
+    // If we're near the start
+    else if (scrollLeft <= 100) {
+      setIsScrolling(true);
+      scrollContainer.scrollLeft = scrollWidth - (2 * containerWidth);
+      setTimeout(() => setIsScrolling(false), 100);
+    }
+  };
+
+  // Set initial scroll position
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (scrollContainer) {
+      scrollContainer.scrollLeft = scrollContainer.clientWidth;
+    }
+  }, []);
+
+  // Handle manual scroll
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = direction === 'left' ? -800 : 800;
@@ -100,7 +168,7 @@ export function MentorScroll() {
     <div className='relative'>
       <div className="container max-w-6xl mx-auto px-4 py-8 md:py-4 lg:py-4">
         <div className="text-center mb-4">
-          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 ">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4">
             <span className='text-[#ff0000]'>World Record Holder - </span> Mr Vimal Daga
           </h1>
         </div>
@@ -123,18 +191,19 @@ export function MentorScroll() {
         <div 
           ref={scrollRef}
           className="overflow-x-auto scrollbar-hide"
+          onScroll={handleScroll}
           style={{
             scrollSnapType: 'x mandatory',
             scrollBehavior: 'smooth'
           }}
         >
           <div className="flex gap-4 min-w-max px-4">
-            {cardData.map((card, index) => (
+            {extendedCardData.map((card, index) => (
               <motion.div 
-                key={index} 
+                key={`${index}-${card.title}`}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: Math.min(index * 0.1, 1) }}
                 className="w-[300px] flex-shrink-0 relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#1D2235] to-[#121318] p-2"
                 style={{ scrollSnapAlign: 'start' }}
               >
@@ -142,8 +211,8 @@ export function MentorScroll() {
                 <Beams />
                 <div className="relative z-10">
                   <Lens 
-                    hovering={hoveringStates[index]}
-                    setHovering={(isHovering) => handleHover(index, isHovering)}
+                    hovering={hoveringStates[index % originalCardData.length]}
+                    setHovering={(isHovering) => handleHover(index % originalCardData.length, isHovering)}
                   >
                     <div className="pb-[75%] w-full relative rounded-xl overflow-hidden">
                       <Image
@@ -171,7 +240,6 @@ export function MentorScroll() {
         </div>
       </div>
 
-      {/* Add custom scrollbar styles */}
       <style jsx global>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
