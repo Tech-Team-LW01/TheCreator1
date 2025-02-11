@@ -22,12 +22,12 @@ const Mentor = () => {
   ];
 
   const transfers = [
-    { amount: "300,000+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube", logo: Youtube },
-    { amount: "1,100,000+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" , logo: Instagram },
-    { amount: "60,000+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin",logo: Linkedin },
-    { amount: "Changed —- lives ", position: "top-[15%] right-[3%]",plateform: "",logo: Globe },
+    { amount: "300k+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube", logo: Youtube },
+    { amount: "1.1M+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" , logo: Instagram },
+    { amount: "60k+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin",logo: Linkedin },
+    { amount: "22+ years ", position: "top-[15%] right-[3%]",plateform: "Experience",logo: BriefcaseBusiness  },
     { amount: " 152+ tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "Knows",logo:Cpu},
-    { amount: "22+ years ", position: "top-[40%] right-[3%]",plateform: "Experience",logo: BriefcaseBusiness  }
+    { amount: "1M+ —-> lives Changed ", position: "top-[40%] right-[3%]",plateform: "",logo: Globe }
   ];
 
   return (
