@@ -1,20 +1,18 @@
-// Tedx2.tsx
 import React from 'react';
 import { SpeakerProps } from './types';
 import { Inter, Poppins } from 'next/font/google'
+import localFont from "next/font/local";
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
+
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
 })
 
-import localFont from "next/font/local";
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
-const khandFont = localFont(
-  {
-    src: '../../../app/fonts/Khand-SemiBold.woff',
-    weight: '100 900',
-  }
-)
+const khandFont = localFont({
+  src: '../../../app/fonts/Khand-SemiBold.woff',
+  weight: '100 900',
+})
 
 const Tedx2: React.FC<SpeakerProps> = ({ 
   imageUrl, 
@@ -22,8 +20,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
   firstName, 
   lastName,
   link,
-  
-  
+  socialLinks = {} // Default empty object for social links
 }) => {
   const handleClick = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
@@ -73,36 +70,41 @@ const Tedx2: React.FC<SpeakerProps> = ({
           <span className="text-white">{lastName}</span>
         </h2>
 
-        {/* Role */}
-  
-        {/* Description */}
-        {/* <p className={`text-base text-gray-400 ${poppins.className}`}>
-          {description}
-        </p> */}
-
-          {/* Social Links */}
-          <div className="flex items-center justify-center gap-6">
-          <a 
-            href="https://www.instagram.com/vimaldaga.india/?hl=en" 
-            className="text-gray-400 hover:text-white transition-colors"
-            aria-label="Instagram"
-          >
-            <Instagram size={20} />
-          </a>
-          <a 
-            href="#" 
-            className="text-gray-400 hover:text-white transition-colors"
-            aria-label="Twitter"
-          >
-            <Facebook  size={20} />
-          </a>
-          <a 
-            href="https://in.linkedin.com/in/vimaldaga" 
-            className="text-gray-400 hover:text-white transition-colors"
-            aria-label="Website"
-          >
-            <Linkedin  size={20} />
-          </a>
+        {/* Social Links */}
+        <div className="flex items-center justify-center gap-6">
+          {socialLinks.instagram && (
+            <a 
+              href={socialLinks.instagram}
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram size={20} />
+            </a>
+          )}
+          {socialLinks.facebook && (
+            <a 
+              href={socialLinks.facebook}
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook size={20} />
+            </a>
+          )}
+          {socialLinks.linkedin && (
+            <a 
+              href={socialLinks.linkedin}
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin size={20} />
+            </a>
+          )}
         </div>
       </div>
     </div>

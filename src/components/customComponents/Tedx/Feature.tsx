@@ -19,6 +19,7 @@ const FeatureGrid = () => {
             firstName={speaker.firstName}
             lastName={speaker.lastName}
             link={speaker.link}
+            socialLinks={speaker.socialLinks}
           />
         ))}
       </div>
