@@ -12,7 +12,7 @@ import Link from 'next/link'; // Import Link from next/link
 // Navigation Items
 const NAV_ITEMS = [
   { href: "#Projects", text: "Projects" },
-  { href: "/application-form", text: "Apply Now" },
+
   { href: "#Placement", text: "Placement" },
   { href: "#Benefits", text: "Benefits" },
   { href: "#JAZBAA", text: "JAZBAA" },
@@ -133,8 +133,16 @@ const Navbar: React.FC = () => {
                 >
                   {item.text}
                 </a>
+              
               </li>
             ))}
+              <a
+                  href="/application-form"
+                  className="text-white hover:text-[#ff0000] transition-colors duration-200"
+                 
+                >
+                  Apply Now
+                </a>
           </ul>
         </nav>
 
