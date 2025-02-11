@@ -91,7 +91,7 @@ export default function RecapPreviousYear() {
   const renderMainVideo = () => {
     if (mainVideo.isYoutube) {
       return (
-        <div className="relative w-full aspect-[16/8]">
+        <div className="relative w-full aspect-[16/8]" id="#Preivous">
           <iframe
             className="absolute inset-0 w-full h-full"
             src="https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1"

@@ -93,10 +93,10 @@ const Navbar: React.FC = () => {
     });
   };
 
-  const handleEnquiryClick = () => {
-    router.push('/application-form');
-    closeMobileMenu();
-  };
+  // const handleEnquiryClick = () => {
+  //   router.push('/application-form');
+  //   closeMobileMenu();
+  // };
 
   return (
     <header

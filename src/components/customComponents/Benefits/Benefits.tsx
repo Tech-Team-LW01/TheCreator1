@@ -66,7 +66,7 @@ const benefitsData = [
 
 export default function Benefits() {
   return (
-    <section className="bg-[#000000] py-6 id=Benefits">
+    <section className="bg-[#000000] py-6 " id="Benefits">
       <div className="max-w-6xl mx-auto px-2">
         <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-6">
           {/* Header Section */}
