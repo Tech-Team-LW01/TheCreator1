@@ -21,20 +21,20 @@ export async function POST(req: Request) {
     // console.log('Application saved to database');
 
     // Configure email transport
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
-      },
-    });
+     const transporter = nodemailer.createTransport({
+          host: process.env.SMTP_HOST,
+          port: Number(process.env.SMTP_PORT),
+          secure: false, // true for 465, false for other ports
+          auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASSWORD,
+          },
+        });
 
     // Send email to admin
     await transporter.sendMail({
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL,
+      to: process.env.RECIPIENT_EMAIL,
       subject: `New Summer Program Application - ${formData.fullName}`,
       html: getApplicationEmailTemplate(formData),
     });
