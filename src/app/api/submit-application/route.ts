@@ -2,23 +2,23 @@
 
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import dbConnect from '@/lib/mongodb';
-import Application from '../../../../models/Application';
+// import dbConnect from '@/lib/mongodb';
+// import Application from '../../../../models/Application';
 import { getApplicationEmailTemplate } from '../../../../utils/emailTemplates';
 
 export async function POST(req: Request) {
   try {
     // Connect to database
-    await dbConnect();
+    // await dbConnect();
 
     // Get form data
     const formData = await req.json();
     console.log('Received form data:', formData);
 
     // Save to database
-    const application = new Application(formData);
-    await application.save();
-    console.log('Application saved to database');
+    // const application = new Application(formData);
+    // await application.save();
+    // console.log('Application saved to database');
 
     // Configure email transport
     const transporter = nodemailer.createTransport({
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     // Send confirmation email to applicant
     await transporter.sendMail({
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: formData.emailAddress,
+      to: process.env.RECIPIENT_EMAIL || "chandak.preeti@gmail.com",
       subject: 'Application Received - Summer Program',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">

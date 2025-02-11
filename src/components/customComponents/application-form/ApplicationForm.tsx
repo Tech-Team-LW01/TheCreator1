@@ -1,4 +1,3 @@
-// components/customComponents/application-form/ApplicationForm.tsx
 "use client"
 
 import { useState } from 'react'
@@ -23,8 +22,7 @@ import {
 } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/hooks/use-toast"
-import { Toaster } from "@/components/ui/toaster"
+import toast, { Toaster } from 'react-hot-toast'
 import { Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -57,12 +55,7 @@ const formSchema = z.object({
   applyingFor: z.string().min(1, {
     message: "Please select what you're applying for.",
   }),
-  otherSpecification: z.string().optional().refine((val) => {
-    if (val === undefined) return true;
-    return val.length > 0;
-  }, {
-    message: "Please specify your application type",
-  }),
+  otherSpecification: z.string().optional(),
   tentativeDates: z.string().min(1, {
     message: "Please select tentative dates.",
   }),
@@ -73,12 +66,13 @@ const formSchema = z.object({
   query: z.string().optional(),
 })
 
+type FormValues = z.infer<typeof formSchema>
+
 export function ApplicationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showOtherSpecification, setShowOtherSpecification] = useState(false);
-  const { toast } = useToast();
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       fullName: "",
@@ -96,48 +90,54 @@ export function ApplicationForm() {
     },
   })
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      setIsSubmitting(true);
-      console.log('Submitting values:', values);
+  async function onSubmit(values: FormValues) {
+    const submissionPromise = new Promise(async (resolve, reject) => {
+      try {
+        setIsSubmitting(true);
+        const response = await fetch('/api/submit-application', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
 
-      const response = await fetch('/api/submit-application', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values),
-      });
+        const data = await response.json();
 
-      const data = await response.json();
+        if (!response.ok) {
+          throw new Error(data.message || 'Submission failed');
+        }
 
-      if (!response.ok) {
-        throw new Error(data.message || 'Submission failed');
+        // Reset form on success
+        form.reset();
+        setShowOtherSpecification(false);
+        resolve('Application submitted successfully!');
+      } catch (error) {
+        console.error('Submission error:', error);
+        reject(error instanceof Error ? error.message : 'Failed to submit application');
+      } finally {
+        setIsSubmitting(false);
       }
+    });
 
-      toast({
-        title: "Success!",
-        description: "Your application has been submitted successfully.",
-        variant: "default",
-      });
-
-      form.reset();
-      setShowOtherSpecification(false);
-
-    } catch (error) {
-      console.error('Submission error:', error);
-      toast({
-        title: "Error",
-        description: error instanceof Error ? error.message : "Failed to submit application",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    toast.promise(
+      submissionPromise,
+      {
+        loading: 'Submitting application...',
+        // success: (message) => message,
+        error: (error) => error.toString(),
+      },
+      {
+        position: 'top-center',
+        duration: 4000,
+      }
+    );
   }
 
   return (
     <div className="max-w-2xl mx-auto p-6">
+      <Toaster position="top-center" reverseOrder={false} />
+      
       <div className="text-center mb-6">
         <h1 className="text-2xl font-bold text-red-600">Summer Application Form</h1>
         <p className="text-sm text-red-600">
@@ -442,24 +442,12 @@ export function ApplicationForm() {
         </form>
       </Form>
 
-      {/* Loading Overlay */}
-      {isSubmitting && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded-lg">
-            <Loader2 className="animate-spin h-8 w-8 text-red-600" />
-            <p className="mt-2 text-sm">Submitting your application...</p>
-          </div>
-        </div>
-      )}
-
       {/* Contact Information */}
       <p className="text-sm text-center mt-6 text-gray-600">
         Note: In case of any query or issue feel free to connect with us on{" "}
-        <span className="font-bold">+91-</span> or email us at{" "}
+        <span className="font-bold">+9193510 09002</span> or email us at{" "}
         <span className="text-red-600">Preeti@lwindia.com</span>
       </p>
-
-      <Toaster />
     </div>
   )
 }
