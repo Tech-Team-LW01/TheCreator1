@@ -16,6 +16,11 @@ import Image1 from "../../../../../public/assets/Mentor/1.jpg";
 import Image2 from "../../../../../public/assets/Mentor/2.jpg";
 import tedx from "../../../../../public/assets/Mentor/tedx.jpg";
 import Image3 from "../../../../../public/assets/Mentor/3.jpg";
+import Image4 from "../../../../../public/assets/Mentor/Onemanarmy.jpg";
+import Image5 from "../../../../../public/assets/Mentor/TAlkofTown.jpg";
+import Image6 from "../../../../../public/assets/Mentor/techguru.jpg";
+import Image7 from "../../../../../public/assets/Mentor/TheO&O.jpg";
+import Image8 from "../../../../../public/assets/Mentor/thonlyone.jpg";
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 
 import { Inter,Poppins } from 'next/font/google'
@@ -58,29 +63,29 @@ export function MentorScroll() {
     },
     // Add 5 more cards with similar or different content
     {
-      title: "Innovation Leader",
-      description: "Leading innovation in technology education and mentoring future tech leaders",
-      imageUrl: Image1.src
+      title: "One Man Army",
+      description: "Learn,Implement,Research,Integrate & Showcase your Summer Product under thw Internationally Recogniosed Industry Expert - Mr Vimal Daga",
+      imageUrl: Image4.src
     },
     {
-      title: "Global Educator",
-      description: "Reaching students across the globe with cutting-edge technical education",
-      imageUrl: Image2.src
+      title: "Talk of the Town",
+      description: "Awarded & Recognised by all the Top Media Publications,News Channels,Top IT Magazines for serving the Engineering Youth Community.",
+      imageUrl: Image5.src
     },
     {
-      title: "Tech Visionary",
-      description: "Shaping the future of technology education with innovative approaches",
-      imageUrl: Image3.src
+      title: "The World Record Holder",
+      description: "The One & Only to achieve 11 AWS Global Certifications in just 11 days which ohterwise professionals take more than 5 years.",
+      imageUrl: Image7.src
     },
     {
-      title: "Community Builder",
-      description: "Building strong tech communities and fostering collaboration",
-      imageUrl: tedx.src
+      title: "The One & Only One in the World",
+      description: "Popularly known as &quot;Integration Expert&quote; in IT Industry since he is the only one who has worked upon & knows to integrate maximum technologies.",
+      imageUrl:  Image8.src
     },
     {
-      title: "Digital Pioneer",
-      description: "Pioneering new methods in digital education and technical training",
-      imageUrl: Image1.src
+      title: "Tech Guru",
+      description: "Sr Principal IT Consultant for fortune 500 Companies & trained Directors,CTOs,CIOs,Founders,Principal Architects,Team Leaders & many more.",
+      imageUrl:  Image6.src
     }
   ];
 
