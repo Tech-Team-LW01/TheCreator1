@@ -301,7 +301,7 @@ export default function Query() {
           </h2>
           <p className={`mb-8 text-lg text-white ${poppins.className}`}>
             {isSignInForm 
-              ? "I am looking for Offline Summer Industrial Training where I can meet Engineering students from across India & work together as a team 😊" 
+              ? `I am looking for Offline Summer Industrial Training where I can meet Engineering students from across India & work together as a team 😊` 
               : "I know I will miss all the Offline Benefits of Summer Program & attend JAZBAA but still want to attend Online Training 😔"}
           </p>
           <Button
