@@ -25,9 +25,15 @@ const nextConfig = {
               hostname: 'media.licdn.com',
   
             },
+           
             {
               protocol: 'https',
               hostname: 'www.upgrad.com',
+  
+            },
+            {
+              protocol: 'https',
+              hostname: 'hkga9exljh.ufs.sh',
   
             },
           ],

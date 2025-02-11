@@ -92,7 +92,7 @@ export default function RecapPreviousYear() {
         <div className="relative w-full aspect-[16/8]">
           <iframe
             className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/GCX02RwZ5dk?autoplay=1"
+            src="https://www.youtube.com/watch?v=xdVdOeRmEKg"
             title={`${mainVideo.title} video player`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
