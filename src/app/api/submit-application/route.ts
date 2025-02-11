@@ -23,8 +23,8 @@ export async function POST(req: Request) {
     // Configure email transport
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: false,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     // Send email to admin
     await transporter.sendMail({
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: process.env.ADMIN_EMAIL,
+      to: process.env.RECIPIENT_EMAIL,
       subject: `New Summer Program Application - ${formData.fullName}`,
       html: getApplicationEmailTemplate(formData),
     });
@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     // Send confirmation email to applicant
     await transporter.sendMail({
       from: `"Summer Program" <${process.env.SMTP_USER}>`,
-      to: process.env.RECIPIENT_EMAIL || "chandak.preeti@gmail.com",
+      to: formData.emailAddress,
       subject: 'Application Received - Summer Program',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -60,6 +60,35 @@ export async function POST(req: Request) {
       `,
     });
 
+    // send email to preet mam 
+
+    await transporter.sendMail({
+      from: `"Summer Program" <${process.env.SMTP_USER}>`,
+      to: process.env.RECIPIENT_EMAIL,
+      subject: 'Application Received - Summer Program',
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <h2 style="color: #dc2626;">New Application Received</h2>
+          <p> Name ${formData.fullName},</p>
+          <p> Whatsapp No ${formData.whatsappNo},</p>
+            <p> college ${formData.collegeName},</p>
+                        <p> Bransh ${formData.branch},</p>
+                                    <p> Semester ${formData.currentSemester},</p>
+
+                                                                        <p> Applying for ${formData.applyingFor},</p>
+
+                                                                         <p> Tentative Date ${formData.tentativeDates},</p>
+
+                                                                          <p> Source ${formData.source},</p>
+
+                                                                          <p> Query ${formData.query},</p>
+                                                                         
+          
+          <p>Application Details:</p>
+          
+        </div>
+      `,
+    });
     return NextResponse.json(
       { message: 'Application submitted successfully' },
       { status: 200 }
@@ -68,7 +97,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(
-      { 
+      {
         message: 'Failed to submit application',
         error: error instanceof Error ? error.message : 'Unknown error'
       },

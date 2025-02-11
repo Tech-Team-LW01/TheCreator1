@@ -153,7 +153,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop CTA Button */}
         <Link
-          href="/application-form"
+          href="#query"
           className="hidden lg:block bg-[#ff0000] text-white px-6 py-2 rounded-lg hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 text-center"
         >
           {buttonText}

@@ -20,6 +20,12 @@ const poppins = Poppins({
    weight: ['400']
 });
 
+import localFont from "next/font/local";
+const khandFont = localFont({
+  
+    src: '../../../../app/fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+});
 // Types
 interface CardData {
   title: string;
@@ -226,7 +232,7 @@ export function MentorScroll() {
                     </div>
                   </Lens>
                   <div className="py-2 px-2 relative z-20">
-                    <h2 className={`text-white text-lg font-bold ${poppins.className}`}>
+                    <h2 className={`text-[#ff0000] text-lg text-bold ${khandFont.className}`}>
                       {card.title}
                     </h2>
                     <p className={`text-neutral-200 mt-1 text-sm ${poppins.className}`}>

@@ -112,6 +112,7 @@ export function ApplicationForm() {
         form.reset();
         setShowOtherSpecification(false);
         resolve('Application submitted successfully!');
+        toast.success("Query submitted successfully!");
       } catch (error) {
         console.error('Submission error:', error);
         reject(error instanceof Error ? error.message : 'Failed to submit application');
