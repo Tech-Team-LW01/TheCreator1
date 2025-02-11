@@ -112,7 +112,7 @@ export function MentorScroll() {
     },
     {
       title: "The One & Only One in the World",
-      description: "Popularly known as &quot;Integration Expert&quote; in IT Industry since he is the only one who has worked upon & knows to integrate maximum technologies.",
+      description: "Popularly known as Integration Expert in IT Industry since he is the only one who has worked upon & knows to integrate maximum technologies.",
       imageUrl: Image8.src
     },
     {
