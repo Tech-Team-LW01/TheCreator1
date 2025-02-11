@@ -114,7 +114,7 @@ export default function Query() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black p-6">
+    <div className="min-h-screen flex items-center justify-center bg-black p-6" id="#query">
     <Toaster
   position="top-center"
   reverseOrder={false}
