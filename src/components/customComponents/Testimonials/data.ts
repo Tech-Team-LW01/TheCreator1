@@ -21,7 +21,7 @@ export const landingPageTestimonialPosts = [
       id: 3,
       testimonialScreenShot:"/assets/imagetestinomial/image8.png",
       images:[
-        "/assets/Jazbaa/JAZBAA 11.jpg",
+        "/assets/event-gallery/G24.jpg",
         "/assets/event-gallery/G11.jpeg",
   
       ]
@@ -30,8 +30,8 @@ export const landingPageTestimonialPosts = [
       id: 4,
       testimonialScreenShot:"/assets/imagetestinomial/image11.png",
       images:[
-          "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/DSC02436.JPG",
+          "/assets/event-gallery/G16.jpeg",
+          "/assets/event-gallery/G21.jpeg",
         
   
       ]
@@ -45,8 +45,8 @@ export const landingPageTestimonialPosts = [
       images:[
 
     
-        "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/event-gallery/galleryimg.jpeg",
+        "/assets/Jazbaa/JAZBAA 2.jpg",
         
    
        ]
@@ -58,7 +58,7 @@ export const landingPageTestimonialPosts = [
 
     
         
-        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/Jazbaa/JAZBAA 19.jpg",
         
    
        ]
@@ -69,9 +69,9 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image5.png",
       images:[
 
-       "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/DSC08897.JPG",
+       "/assets/event-gallery/G15.jpg",
+        "/assets/Jazbaa/JAZBAA 8.jpg",
+        "/assets/event-gallery/G29.jpeg",
   
   
       ]
@@ -90,7 +90,7 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image8.png",
       images:[
 
-        "/assets/Jazbaa/DSC02436.JPG",
+        "/assets/Jazbaa/JAZBAA 14.jpg",
         "/assets/Jazbaa/JAZBAA 8.jpg",
         
         
@@ -114,8 +114,8 @@ export const landingPageTestimonialPosts = [
       id: 15,
       testimonialScreenShot: "/assets/imagetestinomial/image11.png",
       images:[
-        "/assets/Jazbaa/DSC02436.JPG",
-        "/assets/Jazbaa/JAZBAA 8.jpg",
+        "/assets/event-gallery/G13 copy.jpg",
+        "/assets/event-gallery/G5.jpeg",
         
    
        ]
