@@ -32,23 +32,23 @@ export default function RecapPreviousYear() {
   const [events, setEvents] = useState<EventCard[]>([
     {
       title: "JAZBAA 1.0",
-      location: "Jaipur",
+      location: "",
       image: "/assets/events/jazbaa1.jpg", // Update with your actual image path
       videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1",
       isYoutube: true
     },
     {
       title: "JAZBAA 2.0",
-      location: "Jaipur",
+      location: "",
       image: "/assets/events/jazbaa2.jpg", // Update with your actual image path
       videoUrl: "https://www.youtube.com/embed/hF6EUQYekkw?autoplay=1",
       isYoutube: true
     },
     {
-      title: "Summer 2023",
-      location: "Jaipur",
+      title: "JAZBAA 3.0",
+      location: "",
       image: "/assets/events/summer2023.jpg", // Update with your actual image path
-      videoUrl: "https://www.youtube.com/watch?v=J5VoywQaOmM",
+      videoUrl: "https://www.youtube.com/embed/xdVdOeRmEKg?si=-GSjmAmjUSmgjHcB",
       isYoutube: false
     },
   ]);
@@ -92,7 +92,7 @@ export default function RecapPreviousYear() {
         <div className="relative w-full aspect-[16/8]">
           <iframe
             className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/watch?v=xdVdOeRmEKg"
+            src="https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1"
             title={`${mainVideo.title} video player`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

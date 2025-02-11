@@ -21,9 +21,9 @@ const Award = () => {
     />
   </div>
 </div>
-<div className="h-20 ml-4 bg-[#ff0000] w-[3px]"></div>
+<div className="h-20 ml-4 bg-[#ff0000] w-[2px]"></div>
             {/* Center Section */}
-            <div className="flex flex-col text-center sm:text-left mx-20 z-10 mt-2 sm:mt-0"> {/* Added mx-auto, removed sm:ml-8 sm:mr-auto */}
+            <div className="flex flex-col text-center sm:text-left mx-6 z-10 mt-2 sm:mt-0"> {/* Added mx-auto, removed sm:ml-8 sm:mr-auto */}
               <h2 className="text-[#000000] text-[20px] sm:text-2xl md:text-4xl px-2 sm:px-4 font-bold  leading-tight text-center">
                 <span className='text-[#ff0000] '>Awarded as #1 </span>
                 <br className="hidden sm:block"/>
