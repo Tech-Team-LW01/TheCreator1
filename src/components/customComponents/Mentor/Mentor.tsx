@@ -27,7 +27,7 @@ const Mentor = () => {
     { amount: "followers", position: "bottom-[20%] left-[8%]",plateform: "60K+",logo: Linkedin },
     { amount: "years Experience ", position: "top-[15%] right-[3%]",plateform: "22+",logo: BriefcaseBusiness  },
     { amount: " tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "152+ ",logo:Cpu},
-    { amount: "1M+ —-> lives Changed ", position: "top-[40%] right-[3%]",plateform: "",logo: Globe }
+    { amount: " lives Changed ", position: "top-[40%] right-[3%]",plateform: "1M+",logo: Globe }
   ];
 
   return (
