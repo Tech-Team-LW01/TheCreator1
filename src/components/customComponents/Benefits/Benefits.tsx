@@ -74,7 +74,7 @@ export default function Benefits() {
             <h1 className="text-4xl  text-[#ff0000] ">
               Benefits of Summer Program 2025
             </h1>
-            <h2 className={`text-xl text-white ${poppins.className} mb-6`}>
+            <h2 className={`text-lg text-white ${poppins.className} mb-6`}>
               Learn with Engineering students from Across India
             </h2>
           </div>

@@ -177,7 +177,7 @@ export default function Projects(): JSX.Element {
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4">
         <h1 className="text-4xl font-bold text-[#ff0000] font-khand " id="#Projects">Unique Summer Projects</h1>
-        <p className="text-white text-lg text-Uppercase">Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
+        <p className="text-white text-lg ">Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
       </div>
 
       <div className="container mx-auto max-w-6xl px-4">

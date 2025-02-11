@@ -23,6 +23,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
   lastName,
   link,
   
+  
 }) => {
   const handleClick = () => {
     window.open(link, '_blank', 'noopener,noreferrer');
