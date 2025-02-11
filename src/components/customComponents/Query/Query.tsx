@@ -13,7 +13,11 @@ const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
 });
-
+import localFont from "next/font/local";
+const khandFont = localFont({
+    src: '../../../app/fonts/Khand-SemiBold.woff',
+    weight: '100 900',
+});
 // Form data interface
 interface FormData {
   fullName: string;
@@ -114,13 +118,23 @@ export default function Query() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black p-6" id="#query">
+    <div className="min-h-full flex-row max-w-4xl mx-auto items-center justify-center bg-black p-6" id="#query">
+
+<h1 className={`text-4xl font-bold text-[#ff0000] mb-2 text-center ${khandFont.className}`}>
+  Lets Talk
+</h1>
+
+<h1 className="text-xl  text-white mb-8 text-center">
+  Our Summer Executive will connect in next 24 hours
+</h1>
     <Toaster
   position="top-center"
   reverseOrder={false}
 />
-      <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row">
+
+      <div className="w-full w-full bg-white shadow-lg rounded-lg overflow-hidden flex flex-col lg:flex-row">
         {/* Left Side - Form Section */}
+     
         <motion.div
           className="flex-1 flex flex-col items-center justify-center px-6 lg:px-16 py-12"
           initial={{ x: 0 }}
@@ -128,29 +142,9 @@ export default function Query() {
           transition={{ type: "tween", duration: 0.5 }}
         >
           <div className="w-full max-w-md">
-            <h1 className="text-2xl font-semibold text-[#ff0000] mb-2">
- Lets Talk
+  
 
-            </h1>
-
-            <h1 className="text-xl font-semibold text-gray-900 mb-8">
-            Our Summer Executive will connect in next 24 hours
-
-              
-            </h1>
-
-            {/* <div className="flex justify-center space-x-4 mb-8">
-              <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
-                <Facebook className="h-5 w-5 text-[#1877F2]" />
-              </Button>
-              <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
-                <Linkedin className="h-5 w-5 text-[#0A66C2]" />
-              </Button>
-            </div> */}
-
-            {/* <div className="text-center text-sm text-gray-500 mb-8">
-              or use your email account
-            </div> */}
+          
 
             {isSignInForm ? (
               <form className="space-y-6" onSubmit={handleSubmit}>
