@@ -26,7 +26,7 @@ const TimelineHeader = () => (
   >
     <h1 className="text-4xl text-[#ff0000] font-bold mb-2">Journey of a Summer Intern 2025</h1>
     <p className={`text-gray-200 uppercase text-xl ${poppins.className}`}>
-      LEAN INTEGRATE IMPLEMENT & DEVELOP A LIVE SUMMER PROJECT
+      Learn Intergrate Implement & Develop a Live Summer Project
     </p>
   </motion.div>
 );

@@ -67,7 +67,7 @@ const Tedx2: React.FC<SpeakerProps> = ({
       {/* Text Content Container */}
       <div className="text-center space-y-4 max-w-[300px]">
         {/* Name */}
-        <h2 className={`text-3xl font-bold ${poppins.className}`}>
+        <h2 className={`text-xl font-bold ${poppins.className}`}>
           <span className="text-[#ff0000]">{firstName}</span>{' '}
           <span className="text-white">{lastName}</span>
         </h2>
