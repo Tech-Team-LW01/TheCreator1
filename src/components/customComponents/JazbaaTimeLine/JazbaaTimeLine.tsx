@@ -47,7 +47,13 @@ export function JazbaaTimeLine() {
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
-  
+    {/* Company section */}
+    {/* <div className="flex flex-col items-center justify-center">
+      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+      </p>
+      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+      </div>
+    </div> */}
   </div>
 </Card>
         </div>
@@ -434,8 +440,8 @@ export function JazbaaTimeLine() {
   return (
     <div className="w-full" id="Placement">
          <div className="w-full text-center pt-16 pb-4 ">
-        <h1 className="text-4xl font-bold  text-[#ff0000] ">INIT RECRUITMENT PLATFORM</h1>
-        <p className="text-white text-lg">A UNIQUE PLACEMENT PLATFORM FOR CORE TECHNICAL JOB ROLES IN DREAM COMPANIES</p>
+        <h1 className="text-4xl font-bold  text-[#ff0000]  "id="Placement" >INIT RECRUITMENT PLATFORM</h1>
+        <p className="text-white text-lg">A Unique Placement Plateform For Core Technical Job Roles In Dream Companies.</p>
       </div>
       <Timeline data={data} />
     </div>
