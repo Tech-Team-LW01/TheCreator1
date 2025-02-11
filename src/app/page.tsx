@@ -42,44 +42,67 @@ export default function Home() {
 {/* <Hero></Hero> */}
 
 <Hero2></Hero2>
-<RecapPreviousYear />
-<Timeline/>
-{/* <Timeline /> */}
 <TechStack/>
+<RecapPreviousYear />
+
+<Mentor/>
+<MentorScroll/>
+<Awards/>
 <TopLeaders/>
-<LeftRightAlumniCarousel/>
-
-<InvestorCarousel/>
-<VideoTestimonials/>
-<ImageTestimonials/>
-<Benifits></Benifits>
-<MediaSection/>
 <Community/>
-<div>
-<OutCome/>
-<OutComeGallary/>
-
-<JazbaaStartupPlatform/>
+<Projets/>
 <Map/>
+<Gallery/>
+<Benifits></Benifits>
+<Timeline/>
+<OutCome/>
+<JazbaaStartupPlatform/>
+
+<OutComeGallary/>
+<InvestorCarousel/>
+<JazbaaTimeLine/>
+<LeftRightAlumniCarousel/>
+<VideoTestimonials/>
+
+<ImageTestimonials/>
+<FeatureGrid/>
+<Query/>
+<MediaSection/>
+
+{/* <Timeline /> */}
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+
 {/* <InitPlacement/> */}
 </div>
 {/* <FactAndFiqure/> */}
 
-<Blogs/>
-<Awards/>
+{/* <Blogs/> */}
+
 {/* <Tedx/> */}
 {/* <Tedx2></Tedx2> */}
 {/* FeatureGrid is TedX */}
-<Mentor/>
-<MentorScroll/>
-<Gallery/>
 
-<Query/>
+
+
+
+
 
 {/* <Mentor2/> */}
-<FeatureGrid/>
-<JazbaaTimeLine/>
-<Projets/>
+
+
+
 <SupportContact/>
     </div>
   );

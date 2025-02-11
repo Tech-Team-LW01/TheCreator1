@@ -22,11 +22,11 @@ const Mentor = () => {
   ];
 
   const transfers = [
-    { amount: "300k+ subscribers", position: "top-[10%] left-[5%]", plateform: "YouTube", logo: Youtube },
-    { amount: "1.1M+ followers", position: "top-[50%] left-[12%]",plateform: "InstaGram" , logo: Instagram },
-    { amount: "60k+ followers", position: "bottom-[20%] left-[8%]",plateform: "LinkeDin",logo: Linkedin },
-    { amount: "22+ years ", position: "top-[15%] right-[3%]",plateform: "Experience",logo: BriefcaseBusiness  },
-    { amount: " 152+ tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "Knows",logo:Cpu},
+    { amount: " subscribers", position: "top-[10%] left-[5%]", plateform: "300k+", logo: Youtube },
+    { amount: "followers", position: "top-[50%] left-[12%]",plateform: "1.1M+" , logo: Instagram },
+    { amount: "followers", position: "bottom-[20%] left-[8%]",plateform: "60K+",logo: Linkedin },
+    { amount: "years Experience ", position: "top-[15%] right-[3%]",plateform: "22+",logo: BriefcaseBusiness  },
+    { amount: " tools & technologies", position: "bottom-[30%] right-[10%]" ,plateform: "152+ ",logo:Cpu},
     { amount: "1M+ —-> lives Changed ", position: "top-[40%] right-[3%]",plateform: "",logo: Globe }
   ];
 
@@ -108,7 +108,7 @@ const Mentor = () => {
                         <transfer.logo className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                       </div>
                       <div className="text-white">
-                        <div className="text-[10px] sm:text-xs font-medium text-white">
+                        <div className="text-[20px] sm:text-sm font-medium text-[#ff0000]">
                          {transfer.plateform}
                         </div>
                         <div className="text-xs sm:text-sm font-semibold">
