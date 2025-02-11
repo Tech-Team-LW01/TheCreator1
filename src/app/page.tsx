@@ -34,6 +34,7 @@ import Hero2 from "@/components/customComponents/Hero/Hero2";
 import Timeline from "@/components/customComponents/TimeLine/TimeLine";
 import InvestorCarousel from "@/components/customComponents/InverterVideo/Carousel ";
 import RecapPreviousYear from "@/components/customComponents/recap-previous-year/RecapPreviousYear";
+import SupportContact from "@/components/customComponents/Support/Support";
 // import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
 export default function Home() {
   return (
@@ -79,7 +80,7 @@ export default function Home() {
 <FeatureGrid/>
 <JazbaaTimeLine/>
 <Projets/>
-
+<SupportContact/>
     </div>
   );
 }
