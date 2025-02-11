@@ -134,17 +134,7 @@ export default function Query() {
           animate={{ x: isSwapped ? "100%" : 0 }}
           transition={{ type: "tween", duration: 0.5 }}
         >
-          <div className="w-full max-w-md">
-            <h1 className="text-2xl font-semibold text-[#ff0000] mb-2">
- Lets Talk
-
-            </h1>
-
-            <h1 className="text-xl font-semibold text-gray-900 mb-8">
-            Our Summer Executive will connect in next 24 hours
-
-              
-            </h1>
+          
 
             {/* <div className="flex justify-center space-x-4 mb-8">
               <Button variant="outline" size="icon" className="rounded-full w-10 h-10">
@@ -290,7 +280,7 @@ export default function Query() {
                 </Button>
               </form>
             )}
-          </div>
+         
         </motion.div>
 
         {/* Right Side - Welcome Panel */}
@@ -326,6 +316,19 @@ export default function Query() {
               : "No, I think I should attend Offline Summer Program"}
           </Button>
         </motion.div>
+
+        <div className="w-full max-w-md">
+            <h1 className="text-4xl font-bold text-[#ff0000] mb-2">
+              Lets Talk
+
+            </h1>
+
+            <h1 className="text-xl  text-gray-900 mb-8">
+            Our Summer Executive will connect in next 24 hours
+
+              
+            </h1>
+            </div>
       </div>
     </div>
   );

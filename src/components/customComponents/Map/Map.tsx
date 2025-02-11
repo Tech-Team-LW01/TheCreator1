@@ -25,7 +25,7 @@ const Map = () => {
                    <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
                       Engineering Students from across India participate
                     </h1>
-                    <p className="text-2xl lg:text-2xl font-bold text-red-100 font-[Poppins]">
+                    <p className="text-2xl lg:text-2xl text-red-100 font-[Poppins]">
                     The One & Only Integration Level Research Based Summer Internship Program 
 
                     </p>
