@@ -35,7 +35,7 @@ const Map = () => {
                 variant="secondary"
                 className="bg-[#ff0000] p-2 rounded-sm pr-4 text-white  text-lg hover:bg-red-800 font-semibold relative shadow-lg"
               >
-                  Applications Open
+                  Apply Now
               </Button>
              
 
