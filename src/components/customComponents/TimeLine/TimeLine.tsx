@@ -68,7 +68,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
           transition={{ duration: 0.2 }}
           src={avatar}
           alt="Avatar"
-          className={`w-20 h-20 rounded-full bg-gray-700 shadow-lg ${side === 'right' ? 'md:order-1' : ''}`}
+          className={`w-20 h-20   shadow-lg ${side === 'right' ? 'md:order-1' : ''}`}
         />
       </motion.div>
 

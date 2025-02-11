@@ -31,11 +31,11 @@ export default function RecapPreviousYear() {
   
   const [events, setEvents] = useState<EventCard[]>([
     {
-      title: "JAZBAA 1.0",
+      title: "JAZBAA 3.0",
       location: "",
-      image: "/assets/events/jazbaa1.jpg", // Update with your actual image path
-      videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1",
-      isYoutube: true
+      image: "/assets/events/summer2023.jpg", // Update with your actual image path
+      videoUrl: "https://www.youtube.com/embed/xdVdOeRmEKg?si=-GSjmAmjUSmgjHcB",
+      isYoutube: false
     },
     {
       title: "JAZBAA 2.0",
@@ -45,12 +45,14 @@ export default function RecapPreviousYear() {
       isYoutube: true
     },
     {
-      title: "JAZBAA 3.0",
+      title: "JAZBAA 1.0",
       location: "",
-      image: "/assets/events/summer2023.jpg", // Update with your actual image path
-      videoUrl: "https://www.youtube.com/embed/xdVdOeRmEKg?si=-GSjmAmjUSmgjHcB",
-      isYoutube: false
+      image: "/assets/Thumbnail/jazbaa1.jpg", // Update with your actual image path
+      videoUrl: "https://www.youtube.com/embed/GCX02RwZ5dk?si=SVL-08eoPyxMhBko&autoplay=1",
+      isYoutube: true
     },
+   
+   
   ]);
 
   // Handlers
@@ -125,19 +127,18 @@ export default function RecapPreviousYear() {
     >
       <CardContent className="p-0">
         <div className="relative aspect-square h-[100px] sm:h-auto">
-          {/* <video
-            src={event.videoUrl}
-            // alt={`${event.title} ${event.location}`}
-            className="w-full h-full object-cover"
-          /> */}
+       {/*  */}
 
 <iframe
             className="absolute inset-0 w-full h-full"
             src={event.videoUrl}
             title={`${mainVideo.title} video player`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            // thumbnail={event.image}
           />
+
+
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-2 sm:p-6">
             <h3 className="text-sm sm:text-2xl font-bold text-white">{event.title}</h3>
             <p className="text-xs sm:text-xl font-semibold text-red-400">{event.location}</p>
