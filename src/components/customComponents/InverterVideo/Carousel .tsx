@@ -31,32 +31,32 @@ const VideoCarousel = () => {
       {
         id: 1,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_1',
-        thumbnail:"https://thecreator.one/wp-content/uploads/2024/01/nayan-bheda-scaled.jpg",
+        thumbnail:"/assets/Thumbnail/1.jpg",
       },
       {
         id: 2,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_2',
-        thumbnail:"https://thecreator.one/wp-content/uploads/2024/01/vimal-daga-scaled.jpg",
+        thumbnail:"/assets/Thumbnail/2.jpg",
       },
       {
         id: 3,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3',
-        thumbnail:"https://thecreator.one/wp-content/uploads/2024/01/pramod-scaled.jpg",
+        thumbnail:"/assets/Thumbnail/3.jpg",
       },
       {
         id: 4,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_4',
-        thumbnail:"https://thecreator.one/wp-content/uploads/2024/01/pramod-scaled.jpg",
+        thumbnail:"/assets/Thumbnail/4.jpg",
       },
       {
         id: 5,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_5',
-        thumbnail:"/assets/media/5.jpg",
+        thumbnail:"/assets/Thumbnail/5.jpg",
       },
       {
         id: 6,
         videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_6',
-        thumbnail:"/assets/media/6.jpeg",
+        thumbnail:"/assets/Thumbnail/6.jpg",
       },
     ];
   
