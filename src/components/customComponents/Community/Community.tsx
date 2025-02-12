@@ -1,9 +1,13 @@
 import React, {  } from 'react';
 import { OurAlumniWorksAtCarousel } from "../../ui2/OurAlumniWorksAtCarousel";
-
-const Community = () => {
+import { Inter,Khand,Poppins } from 'next/font/google'
+const khandFont = Khand({
+  subsets: ['latin'],
+  weight: ['700']
+})
  
-  
+const Community = () => {
+
 
   const logos = [
     { image: '/assets/collogelogo/AIETM.jaipur.jpeg' },
@@ -28,7 +32,7 @@ const Community = () => {
 
   return (
     <div className="w-full max-w-full mx-auto h-[200px] overflow-hidden bg-white pt-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#ff0000] text-center mb-0 ">
+      <h1 className={`text-3xl md:text-4xl font-bold text-[#ff0000] text-center mb-0  ${khandFont.className}`}>
         Our College Community
       </h1>
       {/* First row - Moving Left */}
