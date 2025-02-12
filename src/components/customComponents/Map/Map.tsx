@@ -7,7 +7,15 @@ import { Youtube,Instagram ,Linkedin ,Globe ,Cpu ,KeyRound  } from 'lucide-react
 
 
 import MapScroll from "./MapScroll";
-
+import { Inter,Khand,Poppins } from 'next/font/google'
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+})
+const khandFont = Khand({
+  subsets: ['latin'],
+  weight: ['700']
+})
 const Map = () => {
   return (
     <section className=" max-w-6xl mx-auto ">
@@ -22,10 +30,10 @@ const Map = () => {
             <div className="relative z-10 pt-8 text-white space-y-5">
               {/* Main Content Stack */}
               <div className="space-y-2 ">
-                   <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
+                   <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-[#ff0000] tracking-tight ${khandFont.className}`}>
                       Engineering Students from across India participate
                     </h1>
-                    <p className="text-2xl lg:text-2xl text-red-100 font-[Poppins]">
+                    <p className={`text-2xl lg:text-3xl text-red-100  ${poppins.className}`}>
                     The One & Only Integration Level Research Based Summer Internship Program 
 
                     </p>

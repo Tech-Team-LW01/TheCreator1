@@ -24,7 +24,7 @@ const Mentor = () => {
   const transfers = [
     { amount: " subscribers", position: "lg:top-[10%] lg:left-[5%] top-[10%] left-[5%]", plateform: "300k+", logo: Youtube },
     { amount: "followers", position: "lg:top-[50%] lg:left-[12%] top-[50%] left-[12%]",plateform: "1.1M+" , logo: Instagram },
-    { amount: "followers", position: "lg:bottom-[20%] lg:left-[8%] bottom-[20%] left-[8%]",plateform: "60K+",logo: Linkedin },
+    { amount: "followers", position: "lg:bottom-[20%] lg:left-[8%] bottom-[20%] left-[8%]",plateform: "62K+",logo: Linkedin },
     { amount: "years Experience ", position: "lg:top-[15%] lg:right-[3%] top-[15%] right-[3%]",plateform: "22+",logo: BriefcaseBusiness  },
     { amount: " tools & technologies", position: "lg:bottom-[30%] lg:right-[10%] bottom-[30%] right-[10%]" ,plateform: "152+ ",logo:Cpu},
     { amount: " lives Changed ", position: "lg:top-[40%] lg:right-[3%] top-[40%] right-[3%]",plateform: "1M+",logo: Globe }
@@ -37,11 +37,11 @@ const Mentor = () => {
           {/* Left Section */}
           <div className="w-full lg:w-1/2 space-y-6">
             <div className="prose prose-invert max-w-none">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
+              <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold mb-3">
                 <p className="text-[#ff0000]">Your Summer Internship Mentor : Mr Vimal Daga</p>
               </h1>
               
-              <p className={`text-base sm:text-lg text-white font-medium mb-6 ${poppins.className}`}>
+              <p className={`text-sm md:text-3xl text-white  mb-6 ${poppins.className}`}>
                 Visionary Leader Committed to &quot;Making India Future-Ready&quot;
               </p>
 

@@ -41,7 +41,7 @@ export default function TechStack() {
           <h1 className="text-4xl text-[#ff0000] font-bold tracking-tight lg:text-4xl">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
-          <p className={`text-3xl sm:text-xs md:text-sm text-white ${poppins.className}`}>
+          <p className={`text-sm md:text-3xl  text-white ${poppins.className}`}>
             Master modern technologies through hands-on experience with industry-standard tools and frameworks.
           </p>
         </div>

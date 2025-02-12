@@ -42,7 +42,15 @@ export const data = {
           content: "Git | Github",
         },
       ],
+      button: {
+        text: "Apply Now",
+        className: "bg-[#ff0000] text-white",
+      },
+      
+      
     },
+    
+    
     {
       title: "2. Next Generation DevOps With Cloud Computing",
       description: "Develop High-End Next Generation End to End DevOps Pipeline Managed Service in High Performance Cloud Computing Platform.",
@@ -342,7 +350,12 @@ export const data = {
           content: "RHELv9 (Red Hat Enterprise Linux)",
         },
       ],
+      button: {
+        text: "Apply Now",
+        className: "bg-[#ff0000] text-white",
+      },
     },
+    
     {
       title: "7. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
       description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",

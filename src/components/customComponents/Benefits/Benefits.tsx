@@ -71,10 +71,10 @@ export default function Benefits() {
         <div className="bg-[#111111] border border-gray-700 rounded-xl shadow-2xl p-6">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl  text-[#ff0000] ">
+            <h1 className="text-3xl md:text-4xl  text-[#ff0000] ">
               Benefits of Summer Program 2025
             </h1>
-            <h2 className={`text-lg text-white ${poppins.className} mb-6`}>
+            <h2 className={`text-lg md:text:3xl text-white ${poppins.className} mb-6`}>
               Learn with Engineering students from Across India
             </h2>
           </div>
