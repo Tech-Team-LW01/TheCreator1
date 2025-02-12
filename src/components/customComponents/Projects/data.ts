@@ -413,7 +413,7 @@ export const data = {
     },
   ],
   button: {
-    text: "Enroll Now",
+    text: "Apply Now",
     className: "bg-[#ff0000] text-white",
   },
   additionalSections: [
