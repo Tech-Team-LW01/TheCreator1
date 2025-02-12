@@ -7,10 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays } from "lucide-react";
 import { MdCircle } from "react-icons/md";
 import { Inter,Poppins } from 'next/font/google'
+
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
 })
+
 export default function Projects(): JSX.Element {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -41,34 +43,22 @@ export default function Projects(): JSX.Element {
   }, []);
 
   const renderProjectContent = (project: Project): JSX.Element => (
-    <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
+    <div className="space-y-4 bg-[#202020] p-4 md:p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
       {/* Project Code Badge */}
-      <div className="absolute top-0 right-0 sm:block md:hidden">
-        <Badge
-          variant="secondary"
-          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
-        >
-          Project {project.projectCode}
-        </Badge>
-      </div>
-
-      {/* Project Code Badge for larger screens */}
-      <div className="hidden md:block absolute top-0 right-0">
-        <Badge
-          variant="secondary"
-          className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
-        >
-          Project {project.projectCode}
-        </Badge>
-      </div>
+      <Badge
+        variant="secondary"
+        className="absolute top-2 right-2 h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
+      >
+        Project {project.projectCode}
+      </Badge>
 
       {/* Project Title */}
-      <h2 className="text-xl md:text-xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap">
+      <h2 className="text-lg md:text-xl font-bold tracking-tight text-[#ff0000] whitespace-pre-wrap mt-4">
         {project.title}
       </h2>
 
       {/* Project Description */}
-      <p className="text-xs pl-6 md:text-base text-white leading-relaxed">
+      <p className="text-xs md:text-base text-white leading-relaxed pl-0 md:pl-6">
         {project.description}
       </p>
       <div className='w-full h-[2px] mt-2 bg-white'/>
@@ -79,15 +69,14 @@ export default function Projects(): JSX.Element {
           <div key={idx} className="text-white">
             <div className="flex space-x-3">
               <MdCircle
-                className="text-[#ff0000] flex-shrink-0"
+                className="text-[#ff0000] flex-shrink-0 mt-[18px]"
                 size={8}
-                style={{ marginTop: '18px' }}
               />
               <div className="flex-1">
                 <h3 className="text-sm md:text-sm font-bold text-[#ff0000] mt-2">
                   {section.heading}
                 </h3>
-                <p className={`text-xs md:text-xs text-gray-200 leading-relaxed ${poppins.className}`}>
+                <p className={`text-xs md:text-sm text-gray-200 leading-relaxed ${poppins.className}`}>
                   {section.content.split('|').map((item, i) => (
                     <span key={i} className="inline-block">
                       {item.trim()}
@@ -106,7 +95,7 @@ export default function Projects(): JSX.Element {
   );
 
   const renderImageContent = (project: Project): JSX.Element => (
-    <div className="w-full max-w-[400px] mx-auto md:pt-24 lg:pt-24 pt-0">
+    <div className="hidden md:block w-full max-w-[400px] mx-auto md:pt-24 lg:pt-24">
       <div className="relative group">
         <Image
           src={project.image.src}
@@ -128,31 +117,25 @@ export default function Projects(): JSX.Element {
       <div
         ref={(el) => { projectRefs.current[index] = el }}
         key={index}
-        className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen md:py-6 py-1 lg:py-6 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 min-h-[auto] md:min-h-screen py-4 md:py-6 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         style={{ 
           opacity: 0,
           transform: 'translateY(20px)',
           transition: 'opacity 0.5s ease-out, transform 0.5s ease-out'
         }}
       >
-        {/* Mobile View (Image always on top) */}
-        <div className="md:hidden w-full">
-          {renderImageContent(project)}
-        </div>
-
-        {/* Desktop View (Alternating layout) */}
         {isEven ? (
           <>
             <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
             </div>
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-4 md:space-y-6">
               {renderProjectContent(project)}
             </div>
           </>
         ) : (
           <>
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-4 md:space-y-6">
               {renderProjectContent(project)}
             </div>
             <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
@@ -174,58 +157,59 @@ export default function Projects(): JSX.Element {
 
   return (
     <div className="relative min-h-screen bg-black">
-      {/* Added Main Heading Section */}
-      <div className="w-full text-center py-4">
-        <h1 className="text-4xl font-bold text-[#ff0000] font-khand " id="#Projects">Unique Summer Projects</h1>
-        <p className="text-white text-lg ">Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
+      {/* Main Heading Section */}
+      <div className="w-full text-center py-4 px-4">
+        <h1 className="text-2xl md:text-4xl font-bold text-[#ff0000] font-khand" id="#Projects">
+          Unique Summer Projects
+        </h1>
+        <p className="text-white text-base md:text-lg mt-2">
+          Learn & Develop a Level Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt
+        </p>
       </div>
 
       <div className="container mx-auto max-w-6xl px-4">
-        <div className="container mx-auto max-w-6xl px-4 pt-4">
-          {/* Projects Section */}
-          <div className="space-y-8">
-            {data.projects.map((project, index) => renderProject(project, index))}
-          </div>
-
-          <div className="flex justify-center py-12">
-            <Button
-              size="lg"
-              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
-              aria-label={data.button.text}
-            >
-              {data.button.text}
-            </Button>
-          </div>
+        <div className="space-y-6 md:space-y-8">
+          {data.projects.map((project, index) => renderProject(project, index))}
         </div>
 
-        <style jsx global>{`
-          html {
-            scroll-behavior: smooth;
-          }
-
-          ::-webkit-scrollbar {
-            width: 8px;
-          }
-
-          ::-webkit-scrollbar-track {
-            background: #1a1a1a;
-          }
-
-          ::-webkit-scrollbar-thumb {
-            background: #ff0000;
-            border-radius: 4px;
-          }
-
-          ::-webkit-scrollbar-thumb:hover {
-            background: #e00000;
-          }
-
-          .project-visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-          }
-        `}</style>
+        <div className="flex justify-center py-8 md:py-12">
+          <Button
+            size="lg"
+            className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-6 md:px-8 py-2 md:py-3 rounded-full shadow-lg hover:shadow-xl text-sm md:text-base`}
+            aria-label={data.button.text}
+          >
+            {data.button.text}
+          </Button>
+        </div>
       </div>
+
+      <style jsx global>{`
+        html {
+          scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: #1a1a1a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: #ff0000;
+          border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background: #e00000;
+        }
+
+        .project-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      `}</style>
     </div>
   );
 }
