@@ -141,7 +141,7 @@ export default function Projects(): JSX.Element {
         }}
       >
         {/* Mobile View (Image always on top) */}
-        <div className="md:hidden w-full">
+        <div className="hidden md:block  w-full">
           {renderImageContent(project)}
         </div>
 
