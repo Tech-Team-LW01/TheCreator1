@@ -45,7 +45,7 @@ const Map = () => {
 
 
 <div className="w-full h-full">
-  <img src="/assets/map/map.png" className="w-full h-[550px]"/>
+  <img src="/assets/map/map.png" className="w-full h-[400px] lg:h-[550px]"/>
 </div>
 
 
