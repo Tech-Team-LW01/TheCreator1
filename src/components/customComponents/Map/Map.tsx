@@ -19,33 +19,40 @@ const Map = () => {
               <div className="absolute right-0 h-full w-[100px] bg-gradient-to-r from-transparent to-red-700/30" />
             </div>
 
-            <div className="relative z-10 pt-8 text-white space-y-5">
-              {/* Main Content Stack */}
-              <div className="space-y-2 ">
-                   <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
-                      Engineering Students from across India participate
-                    </h1>
-                    <p className="text-2xl lg:text-2xl text-red-100 font-[Poppins]">
-                    The One & Only Integration Level Research Based Summer Internship Program 
+            <div className="relative p-8 md:p-0 z-10 pt-8 text-white space-y-5">
+  {/* Main Content Stack */}
+  <div className="space-y-2">
+    <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
+      Engineering Students from across India participate
+    </h1>
+    <p className="text-2xl lg:text-2xl text-red-100 font-[Poppins]">
+      The One & Only Integration Level Research Based Summer Internship Program
+    </p>
+  </div>
 
-                    </p>
-                  </div>
-              <Button
-                size="lg"
-                variant="secondary"
-                className="bg-[#ff0000] p-2 rounded-sm pr-4 text-white  text-lg hover:bg-red-800 font-semibold relative shadow-lg"
-              >
-                  Apply Now
-              </Button>
-             
+  {/* Apply Now Button - Centered on Mobile */}
+  <div className="flex justify-center md:block">
+    <Button
+      size="lg"
+      variant="secondary"
+      className="bg-[#ff0000] p-2 rounded-sm pr-4 text-white text-lg hover:bg-red-800 font-semibold relative shadow-lg"
+    >
+      Apply Now
+    </Button>
+  </div>
 
-                <MapScroll/>
-            </div>
-          </div>
+  <div className="hidden md:block">
+    <MapScroll />
+  </div>
+</div>
+</div>
 
 
 <div className="w-full h-full">
   <img src="/assets/map/map.png" className="w-full h-[400px] lg:h-[550px]"/>
+  <div className=" md:hidden md:mt-4 pt-4">
+             <MapScroll/>
+             </div>
 </div>
 
 
