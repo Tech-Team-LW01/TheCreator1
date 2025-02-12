@@ -22,7 +22,7 @@ export function TopLeaders() {
 
         </h2>
         <p className="text-white p-0 text-sm md:text-2xl max-w-xl mt-0 text-center font-khand">
-        <Quote className={`inline mb-6 space-y-[1px] rotate-180 text-[#ff0000] ${poppins.className}`} />
+        <Quote className={`inline mb-6 md:space-y-[1px] rotate-180 text-[#ff0000] ${poppins.className}`} />
         AtleastOnce, Every Engineer should be part of LinuxWorld&apos;s Summer Internship Program. 
         <Quote className='inline mt-2 text-[#ff0000]'/>
         </p>
