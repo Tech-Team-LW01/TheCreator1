@@ -18,8 +18,8 @@ export default function Footer() {
             <span 
               className={`text-transparent transition-all duration-300 ${
                 hoveredWord === 'THE' 
-                  ? '[-webkit-text-stroke:1px_#ff0000] sm:[-webkit-text-stroke:2px_#ff0000] md:[-webkit-text-stroke:3px_#ff0000] lg:[-webkit-text-stroke:4px_#ff0000]' 
-                  : '[-webkit-text-stroke:1px_#333333] sm:[-webkit-text-stroke:2px_#333333] md:[-webkit-text-stroke:3px_#333333] lg:[-webkit-text-stroke:4px_#333333]'
+                  ? '[-webkit-text-stroke:1px_#ff0000] sm:[-webkit-text-stroke:3px_#ff0000] md:[-webkit-text-stroke:4px_#ff0000] lg:[-webkit-text-stroke:4px_#ff0000]' 
+                  : '[-webkit-text-stroke:1px_#333333] sm:[-webkit-text-stroke:3px_#333333] md:[-webkit-text-stroke:4px_#333333] lg:[-webkit-text-stroke:4px_#333333]'
               }`}
               onMouseEnter={() => setHoveredWord('THE')}
               onMouseLeave={() => setHoveredWord(null)}
@@ -47,8 +47,8 @@ export default function Footer() {
             <span 
               className={`text-transparent transition-all duration-300 ${
                 hoveredWord === 'GATHERING' 
-                  ? '[-webkit-text-stroke:1px_#ff0000] sm:[-webkit-text-stroke:2px_#ff0000] md:[-webkit-text-stroke:3px_#ff0000] lg:[-webkit-text-stroke:4px_#ff0000]' 
-                  : '[-webkit-text-stroke:1px_#333333] sm:[-webkit-text-stroke:2px_#333333] md:[-webkit-text-stroke:3px_#333333] lg:[-webkit-text-stroke:4px_#333333]'
+                  ? '[-webkit-text-stroke:1px_#ff0000] sm:[-webkit-text-stroke:3px_#ff0000] md:[-webkit-text-stroke:4px_#ff0000] lg:[-webkit-text-stroke:4px_#ff0000]' 
+                  : '[-webkit-text-stroke:1px_#333333] sm:[-webkit-text-stroke:3px_#333333] md:[-webkit-text-stroke:4px_#333333] lg:[-webkit-text-stroke:4px_#333333]'
               }`}
               onMouseEnter={() => setHoveredWord('GATHERING')}
               onMouseLeave={() => setHoveredWord(null)}
