@@ -55,7 +55,7 @@ export function LeftRightAlumniCarousel() {
     <div className="max-w-full px-4 md:py-6 lg:py-6 py-6 mx-auto relative bg-white">
       <div className="text-center mb-8">
         <div className="font-bold text-3xl md:text-4xl lg:text-4xl inline-block ">
-          <span className={`text-[#ff0000] ${khandFont.className} text-4xl`}>Our  Summer Learner&apos;s</span> Are Working At
+          <span className={`text-[#ff0000] ${khandFont.className} text-3xl`}>Our  Summer Learner&apos;s</span> Are Working At
         </div>
         {/* <div className="text-gray-500 ">
           Become a part of our Alumni working at Leading Companies

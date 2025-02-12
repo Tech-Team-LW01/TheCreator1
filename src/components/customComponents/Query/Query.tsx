@@ -176,11 +176,11 @@ export default function Query() {
 
   return (
     <div className="min-h-screen w-full bg-black p-4 sm:p-6 flex flex-col items-center justify-center" id="query">
-      <h1 className={`text-3xl sm:text-4xl font-bold text-[#ff0000] mb-2 text-center ${khandFont.className}`}>
+      <h1 className={`text-3xl md:text-4xl font-bold text-[#ff0000] mb-2 text-center ${khandFont.className}`}>
         Lets Talk
       </h1>
 
-      <h1 className="text-lg sm:text-xl text-white mb-4 sm:mb-8 text-center px-4">
+      <h1 className="text-lg md:text-xl text-white mb-4 sm:mb-8 text-center px-4">
         Our Summer Executive will connect in next 24 hours
       </h1>
 

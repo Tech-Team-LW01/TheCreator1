@@ -13,7 +13,7 @@ export default function JazbaaStartupPlatform() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
         {/* Header Section */}
         <div className="text-center mb-12 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold text-[#ff0000] mb-4" id="JAZBAA" >
+          <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#ff0000] mb-4" id="JAZBAA" >
             JAZBAA Start-up Platform
           </h1>
           <p className={`text-gray-200 text-sm md:text-md lg:text-lg px-4 ${poppins.className}`}>

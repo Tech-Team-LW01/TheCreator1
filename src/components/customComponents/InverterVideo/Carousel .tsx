@@ -64,7 +64,7 @@ const VideoCarousel = () => {
       <div className="w-full max-w-6xl h-full mx-auto p-4">
 
         <div className='w-full h-24 flex items-center justify-center'>
-            <h1 className={`text-[#ff0000] text-4xl ${khandFont.className}`}>Hear what Investors &
+            <h1 className={`text-[#ff0000] text-3xl md:text-4xl ${khandFont.className}`}>Hear what Investors &
             Industry Experts have to say</h1>
         </div>
         <swiper-container

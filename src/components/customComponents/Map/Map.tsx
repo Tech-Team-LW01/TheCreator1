@@ -27,27 +27,16 @@ const Map = () => {
               <div className="absolute right-0 h-full w-[100px] bg-gradient-to-r from-transparent to-red-700/30" />
             </div>
 
-<<<<<<< HEAD
-            <div className="relative z-10 pt-8 text-white space-y-5">
-              {/* Main Content Stack */}
-              <div className="space-y-2 ">
-                   <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-[#ff0000] tracking-tight ${khandFont.className}`}>
-                      Engineering Students from across India participate
-                    </h1>
-                    <p className={`text-2xl lg:text-3xl text-red-100  ${poppins.className}`}>
-                    The One & Only Integration Level Research Based Summer Internship Program 
-=======
             <div className="relative p-8 md:p-0 z-10 pt-8 text-white space-y-5">
   {/* Main Content Stack */}
   <div className="space-y-2">
-    <h1 className="text-4xl lg:text-4xl xl:text-5xl font-Khand text-[#ff0000] tracking-tight">
+    <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-[#ff0000] tracking-tight ${khandFont.className}`}>
       Engineering Students from across India participate
     </h1>
-    <p className="text-2xl lg:text-2xl text-red-100 font-[Poppins]">
+    <p className={`text-2xl lg:text-3xl text-red-100  ${poppins.className}`}>
       The One & Only Integration Level Research Based Summer Internship Program
     </p>
   </div>
->>>>>>> e91ab3322c6c6cfc7019459232742adf24d40896
 
   {/* Apply Now Button - Centered on Mobile */}
   <div className="flex justify-center md:block">

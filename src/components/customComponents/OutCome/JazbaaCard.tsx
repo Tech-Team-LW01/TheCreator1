@@ -19,7 +19,7 @@ export default function JazbaaCard() {
         </div>
 
         <p className={`text-center text-gray-300 text-sm leading-relaxed ${poppins.className}`}>
-          {'Only platform where pursuing students showcase their technical startup products developed "'}
+          {'Only platform where pursuing students showcase their technical startup products developed'}
         </p>
       </CardContent>
 
