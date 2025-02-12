@@ -19,8 +19,8 @@ const khandFont = localFont(
 const benefitsData = [
   {
     icon: "🎓",
-    title: "100% Sponsorship",
-    subtitle: "International Conferences & Summits",
+    title: "100% Sponsorship International Conferences & Summits",
+    subtitle: "",
     detail: "Time to meet the Creators of the technologies",
     description:
       "Lifetime Opportunity to visit International conference where you meet the creators of different upcoming technologies, know the Future booming technical concepts, experience a different technical approach & also get unbelievable job opportunities.",
@@ -28,8 +28,8 @@ const benefitsData = [
   },
   {
     icon: "📚",
-    title: "Connect with",
-    subtitle: "Communities & Industry Experts",
+    title: "Connect with Communities & Industry Experts",
+    subtitle: "",
     detail: "Get Connected - Get Inspired",
     description:
       "An Opportunity to meet in person & get connected with many industry experts here during the Summer Program. Also know the path to contribute to major communities namely AWS Community, Docker Community, OpenSource Community & many more.",
@@ -37,8 +37,8 @@ const benefitsData = [
   },
   {
     icon: "💼",
-    title: "Build",
-    subtitle: "Interpersonal Skills",
+    title: "Build Interpersonal Skills",
+    subtitle: "",
     detail: "Become Confident & Interview Ready",
     description:
       "Work on real-world projects that enhance your portfolio and give you practical experience in your field.The One & Only Research Based Internship where you integrate more than 10+ technologies which helps you build a real production environment based Summer Project.",
@@ -46,8 +46,8 @@ const benefitsData = [
   },
   {
     icon: "🌟",
-    title: "Teamwork",
-    subtitle: "& Collaboration",
+    title: "Teamwork & Collaboration",
+    subtitle: "",
     detail: "Exposure to real industry work culture",
     description:
       "Interns from PAN India Engineering Colleges participate in the Summer Program & while doing your projects you all will be working closely with each other which will help you learn team synergy, how to work collaboratively as a team & team building skills.",
@@ -55,8 +55,8 @@ const benefitsData = [
   },
   {
     icon: "🤝",
-    title: "Problem Based",
-    subtitle: "Learning Approach",
+    title: "Problem Based Learning Approach",
+    subtitle: "",
     detail: "Develop Problem Solving Skills",
     description:
       "The problem-based project work @ THE CREATOR 2025 gives you a unique opportunity to acquire new knowledge and technical competences in an independent manner. You get to apply theory to practice when you work to solve real-life problems, and you will be well prepared for your future career.",
@@ -100,7 +100,7 @@ export default function Benefits() {
                 {/* Content */}
                 <div className="relative z-10">
                   <CardHeader className="text-center">
-                    <span className="text-4xl">{benefit.icon}</span>
+                    <span className="text-5xl">{benefit.icon}</span>
                     <CardTitle className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
                     <CardDescription className="text-lg text-gray-200">
                       {benefit.subtitle}
@@ -108,7 +108,7 @@ export default function Benefits() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <h3 className="text-white font-semibold">{benefit.detail}</h3>
-                    <p className={`text-gray-200 text-md mt-2 ${poppins.className}`}>{benefit.description}</p>
+                    <p className={`text-gray-200 text-sm md:text-md mt-2 ${poppins.className}`}>{benefit.description}</p>
                   </CardContent>
                 </div>
               </Card>
@@ -136,15 +136,15 @@ export default function Benefits() {
                 {/* Content */}
                 <div className="relative z-10">
                   <CardHeader className="text-center">
-                    <span className="text-4xl">{benefit.icon}</span>
-                    <CardTitle className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
-                    <CardDescription className="text-lg text-gray-200">
+                    <span className="text-5xl">{benefit.icon}</span>
+                    <CardTitle className={`text-2xl md:text-3xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
+                    <CardDescription className="text-md text-gray-200">
                       {benefit.subtitle}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
                     <h3 className="text-white font-semibold">{benefit.detail}</h3>
-                    <p className={`text-gray-200 mt-2  text-md ${poppins.className}`}>{benefit.description}</p>
+                    <p className={`text-gray-200 mt-2 text-sm md:text-md ${poppins.className}`}>{benefit.description}</p>
                   </CardContent>
                 </div>
               </Card>

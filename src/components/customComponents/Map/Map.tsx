@@ -33,7 +33,7 @@ const Map = () => {
     <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-[#ff0000] tracking-tight ${khandFont.className}`}>
       Engineering Students from across India participate
     </h1>
-    <p className={`text-2xl lg:text-3xl text-red-100  ${poppins.className}`}>
+    <p className={`text-lg lg:text-2xl text-red-100  ${poppins.className}`}>
       The One & Only Integration Level Research Based Summer Internship Program
     </p>
   </div>
