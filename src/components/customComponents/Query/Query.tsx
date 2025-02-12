@@ -180,7 +180,7 @@ export default function Query() {
         Lets Talk
       </h1>
 
-      <h1 className="text-lg md:text-xl text-white mb-4 sm:mb-8 text-center px-4">
+      <h1 className={`text-lg md:text-3xl text-white mb-4 sm:mb-8 text-center px-4 ${poppins.className}`}>
         Our Summer Executive will connect in next 24 hours
       </h1>
 
