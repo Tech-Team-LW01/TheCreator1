@@ -141,9 +141,10 @@ export default function Projects(): JSX.Element {
         }}
       >
         {/* Mobile View (Image always on top) */}
-        <div className="hidden md:block  w-full">
+        {/* todo hide this renderImage in mobile  */}
+        {/* <div className="md:hidden w-full">
           {renderImageContent(project)}
-        </div>
+        </div> */}
 
         {/* Desktop View (Alternating layout) */}
         {isEven ? (
@@ -153,12 +154,30 @@ export default function Projects(): JSX.Element {
             </div>
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
+              <div className="flex justify-center py-12">
+            <Button
+              size="lg"
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+              aria-label={data.button.text}
+            >
+              {data.button.text}
+            </Button>
+          </div>
             </div>
           </>
         ) : (
           <>
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
+              <div className="flex justify-center py-12">
+            <Button
+              size="lg"
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+              aria-label={data.button.text}
+            >
+              {data.button.text}
+            </Button>
+          </div>
             </div>
             <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}
@@ -192,7 +211,7 @@ export default function Projects(): JSX.Element {
             {data.projects.map((project, index) => renderProject(project, index))}
           </div>
 
-          <div className="flex justify-center py-12">
+          {/* <div className="flex justify-center py-12">
             <Button
               size="lg"
               className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
@@ -200,7 +219,7 @@ export default function Projects(): JSX.Element {
             >
               {data.button.text}
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <style jsx global>{`
