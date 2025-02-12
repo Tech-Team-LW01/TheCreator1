@@ -200,8 +200,8 @@ export default function Projects(): JSX.Element {
     <div className="relative min-h-screen bg-black">
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4 " id="#Projects">
-        <h1 className={`{text-3xl  md:text-4xl font-bold text-[#ff0000]  ${khandFont.className}` }>Unique Summer Projects</h1>
-        <p className={`{text-white text-sm md:text-3xl ${poppins.className}`}>Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
+        <h1 className={`text-3xl  md:text-4xl mt-4 text-[#ff0000]  ${khandFont.className}` }>Unique Summer Projects</h1>
+        <p className={`text-white text-sm md:text-lg ${poppins.className}`}>Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
       </div>
 
       <div className="container mx-auto max-w-6xl px-4">
