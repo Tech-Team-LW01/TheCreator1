@@ -38,7 +38,7 @@ export default function TechStack() {
     <section className="container bg-black mx-auto px-4 py-8">
       <div className="grid mx-auto gap-8  lg:grid-cols-2 lg:gap-12 items-center max-w-6xl">
         <div className="space-y-4 w-full mx-auto">
-          <h1 className="text-4xl text-[#ff0000] font-bold tracking-tight text-center sm:text-left lg:text-4xl">
+          <h1 className="text-3xl text-[#ff0000] font-bold tracking-tight text-center sm:text-left lg:text-4xl">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
           <p className={`text-sm md:text-3xl  text-white hidden sm:block ${poppins.className}`}>
