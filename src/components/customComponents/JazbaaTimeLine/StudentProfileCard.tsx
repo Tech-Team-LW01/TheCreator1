@@ -29,14 +29,31 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
         />
       </div>
 
-      {/* Center - Student Info */}
-      <div className="flex-grow flex flex-col justify-center text-center px-2">
-        <h3 className="text-xs sm:text-sm md:text-base font-semibold text-[#ff0000] truncate max-w-[150px] sm:max-w-[200px] md:max-w-[250px]">
-          {studentName}
-        </h3>
-        <p className="text-[8px] sm:text-[10px] md:text-xs text-black font-medium line-clamp-2">
-          {role}
-        </p>
+      {/* Right side content */}
+      <div className="flex-grow flex flex-col justify-between">
+        {/* Top row with name */}
+        <div className="flex justify-between items-start">
+          <h3 className="text-xs sm:text-sm font-semibold text-[#ff0000] truncate max-w-[150px] sm:max-w-[200px]">
+            {studentName} {/* Dynamic Student Name from props */}
+          </h3>
+        </div>
+
+        {/* Company section */}
+        <div className="flex flex-col">
+          <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+            {role} {/* Dynamic Role from props */}
+          </p>
+         
+          <div className="flex items-center justify-end min-w-[90px]">
+           <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1 relative">
+            <img
+              src={companyLogoUrl} // Dynamic Company Logo URL from props
+              alt={`Logo of ${companyLogoUrl}`} // Consider making company name prop for better alt text
+              className="h-full w-full object-contain"
+            />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Right - Company Logo */}
