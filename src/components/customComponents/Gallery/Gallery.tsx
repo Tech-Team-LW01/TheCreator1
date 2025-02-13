@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BentoGrid } from "react-bento";
 import { motion, AnimatePresence } from "framer-motion";
 import { Inter,Poppins } from 'next/font/google'
+import MobileGallery from "./MobileGallery"
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -199,7 +200,8 @@ const BentoGallery: React.FC = () => {
         <p className={`text-white text-sm md:text-3xl ${poppins.className}`}>See How Engineering Students From Across Indis Are Learning Together</p>
       </div>
 
-      {/* Bento Grid */}
+      {/* Bento Grid  for desktop*/} 
+      <div className="hidden md:block">
       <BentoGrid
         items={bentoItems.map((item) => ({
           ...item,
@@ -219,7 +221,13 @@ const BentoGallery: React.FC = () => {
             "bg-white rounded-none gap-0 p-1 gap-2  overflow-hidden hover:opacity-90 transition-opacity duration-300",
         }}
       />
+</div>
 
+{/* for mobile */}
+
+<div className="md:hidden sm:block">
+  <MobileGallery/>
+</div>
       {/* Global Styles */}
       <style jsx global>{`
         .bento-item {
