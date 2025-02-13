@@ -6,6 +6,7 @@ import { Data2014,Data2015,Data2016,Data2017,Data2018,Data2020,Data2021,Data2022
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Inter,Poppins } from 'next/font/google'
+import StudentMobileCard from "./MobileStudentCard"
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -195,6 +196,9 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2018.map((student) => (
+            
+              <>
+            <div className="hidden md:block">
               <StudentProfileCard
                 key={student.id} 
                 linkedinUrl={student.linkedinUrl}
@@ -203,6 +207,22 @@ export function JazbaaTimeLine() {
                 companyLogoUrl={student.companyLogoUrl}
                 profileImage={student.profileImage}
               />
+              </div>
+
+              <div className="md:hidden sm:block">
+
+                <StudentMobileCard
+                key={student.id} 
+                linkedinUrl={student.linkedinUrl}
+                studentName={student.studentName}
+                role={student.role}
+                companyLogoUrl={student.companyLogoUrl}
+                profileImage={student.profileImage}
+                />
+              </div>
+              </>
+              
+
             ))}
 
 

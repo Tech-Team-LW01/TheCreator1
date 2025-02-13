@@ -12,7 +12,7 @@ interface StudentProfileCardProps {
   profileImage: string;
 }
 
-const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
+const StudentMobileCard: React.FC<StudentProfileCardProps> = ({
   linkedinUrl,
   studentName,
   role,
@@ -23,7 +23,7 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
     <Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
       {/* Left side - Student Image */}
       <div className="flex-shrink-0">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-100">
+        <div className="w-12 h-12 sm:w-8 sm:h-8 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-100">
           <img
             src={profileImage} // Dynamic LinkedIn URL from props
             alt={`Profile of ${studentName}`} // Dynamic alt text - more accessible
@@ -42,11 +42,11 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
         </div>
 
         {/* Company section */}
-        <div className="flex flex-col">
+        <div className="flex flex-row">
           <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
             {role} {/* Dynamic Role from props */}
           </p>
-          <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+          <div className="ml-12 h-8 w-8">
             <img
               src={companyLogoUrl} // Dynamic Company Logo URL from props
               alt={`Logo of ${companyLogoUrl}`} // Consider making company name prop for better alt text
@@ -69,4 +69,4 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
   );
 };
 
-export default StudentProfileCard;
+export default StudentMobileCard;
