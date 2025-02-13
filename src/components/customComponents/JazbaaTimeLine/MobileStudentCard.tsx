@@ -43,10 +43,20 @@ const StudentMobileCard: React.FC<StudentProfileCardProps> = ({
 
         {/* Company section */}
         <div className="flex flex-row">
-          <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
-            {role} {/* Dynamic Role from props */}
+            <div className='min-w-[10px]'>
+          <p className="text-[8px] w-full sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+          {/* Right side content */}
+<div className="flex flex-row">
+    <div className='min-w-[10px]'>
+        <p className="text-[8px] w-full sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
+            {role.length < 10 ? role + '.'.repeat(16 - role.length) : role.slice(0, 10)}
+        </p>
+    </div>
+   
+</div>
           </p>
-          <div className="ml-12 h-8 w-8">
+          </div>
+          <div className="ml-16 h-8 w-8 z-80">
             <img
               src={companyLogoUrl} // Dynamic Company Logo URL from props
               alt={`Logo of ${companyLogoUrl}`} // Consider making company name prop for better alt text
