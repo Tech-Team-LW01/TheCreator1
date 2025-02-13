@@ -51,17 +51,17 @@ const Hero2 = () => {
   <div className=" grid grid-row-2 md:hidden lg:hidden sm:block">
 
     {/* Image  */}
-    <div  className="p-4">
+    <div  className="mb-2">
       <img src="/assets/MobileHero.png  " ></img>
 
     </div>
-  <div className="h-full flex items-center justify-center bg-black text-white px-4 py-16">
-      <div className="max-w-4xl mx-auto text-center space-y-6">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4">
+  <div className="h-full flex mt-2 items-center justify-center bg-black text-white px-4 ">
+      <div className="max-w-4xl mx-auto text-center space-y-2">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter ">
           Summer Internship 2025
         </h1>
-        <h2 className="text-3xl md:text-5xl font-bold mb-4">Industrial Training Program</h2>
-        <h3 className="text-xl md:text-3xl font-medium mb-6">For Engineering Students</h3>
+        <h2 className="text-3xl md:text-5xl font-bold ">Industrial Training Program</h2>
+        <h3 className="text-xl md:text-3xl font-medium ">For Engineering Students</h3>
         <p className="text-lg  md:text-xl text-gray-300 mb-[12px]">(Open for B.Tech | M.Tech | BCA | MCA | B.Sc IT)</p>
 <div>
   <a href="/application-form">
