@@ -23,14 +23,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
             {Data2014.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+ <>
+ <div className="hidden md:block">
+   <StudentProfileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+   />
+   </div>
+
+   <div className="md:hidden sm:block">
+
+     <StudentMobileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+     />
+   </div>
+   </>
             ))}
 
 
@@ -56,14 +72,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2015.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+ <>
+ <div className="hidden md:block">
+   <StudentProfileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+   />
+   </div>
+
+   <div className="md:hidden sm:block">
+
+     <StudentMobileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+     />
+   </div>
+   </>
             ))}
 
 
@@ -101,14 +133,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2016.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+               <>
+               <div className="hidden md:block">
+                 <StudentProfileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                 />
+                 </div>
+   
+                 <div className="md:hidden sm:block">
+   
+                   <StudentMobileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                   />
+                 </div>
+                 </>
             ))}
 
 
@@ -148,14 +196,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2017.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+               <>
+               <div className="hidden md:block">
+                 <StudentProfileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                 />
+                 </div>
+   
+                 <div className="md:hidden sm:block">
+   
+                   <StudentMobileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                   />
+                 </div>
+                 </>
             ))}
 
 
@@ -263,14 +327,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2020.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+ <>
+ <div className="hidden md:block">
+   <StudentProfileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+   />
+   </div>
+
+   <div className="md:hidden sm:block">
+
+     <StudentMobileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+     />
+   </div>
+   </>
             ))}
 
 
@@ -310,14 +390,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2021.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+ <>
+ <div className="hidden md:block">
+   <StudentProfileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+   />
+   </div>
+
+   <div className="md:hidden sm:block">
+
+     <StudentMobileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+     />
+   </div>
+   </>
             ))}
 
 
@@ -357,14 +453,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2022.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+ <>
+ <div className="hidden md:block">
+   <StudentProfileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+   />
+   </div>
+
+   <div className="md:hidden sm:block">
+
+     <StudentMobileCard
+     key={student.id} 
+     linkedinUrl={student.linkedinUrl}
+     studentName={student.studentName}
+     role={student.role}
+     companyLogoUrl={student.companyLogoUrl}
+     profileImage={student.profileImage}
+     />
+   </div>
+   </>
             ))}
 
 
@@ -404,14 +516,30 @@ export function JazbaaTimeLine() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
 
           {Data2023.map((student) => (
-              <StudentProfileCard
-                key={student.id} 
-                linkedinUrl={student.linkedinUrl}
-                studentName={student.studentName}
-                role={student.role}
-                companyLogoUrl={student.companyLogoUrl}
-                profileImage={student.profileImage}
-              />
+               <>
+               <div className="hidden md:block">
+                 <StudentProfileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                 />
+                 </div>
+   
+                 <div className="md:hidden sm:block">
+   
+                   <StudentMobileCard
+                   key={student.id} 
+                   linkedinUrl={student.linkedinUrl}
+                   studentName={student.studentName}
+                   role={student.role}
+                   companyLogoUrl={student.companyLogoUrl}
+                   profileImage={student.profileImage}
+                   />
+                 </div>
+                 </>
             ))}
 
 
