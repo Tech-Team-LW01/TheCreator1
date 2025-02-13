@@ -46,9 +46,9 @@ export default function Projects(): JSX.Element {
   }, []);
 
   const renderProjectContent = (project: Project): JSX.Element => (
-    <div className="space-y- bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
+    <div className="space-y-2 bg-[#202020] p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
       {/* Project Code Badge */}
-      <div className="absolute top-0 right-0 sm:block md:hidden">
+      <div className="absolute top-0 right-0 sm:block md:hidden pb-4">
         <Badge
           variant="secondary"
           className="h-6 pt-2 pb-2 bg-[#4a4a4a] text-sm text-white border-none shrink-0"
