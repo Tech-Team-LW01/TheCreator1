@@ -37,19 +37,11 @@ export function JazbaaTimeLine() {
 
 
           </div>
-          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
-  {/* Left side - Student Image */}
-  <div className="flex-shrink-0">
-  </div>
-
-  {/* Right side content */}
-  <div className="flex-grow mt-4 flex items-end flex-col justify-center">
-    {/* Centered Text */}
-    <p className="text-[#ff0000] text-center">And many more...</p>
-
-   
-  </div>
-</Card>
+          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex justify-end w-full h-4 sm:h-8 p-2 relative">
+            <div className="flex-grow flex justify-end items-center">
+              <p className="text-[#ff0000] pr-4">And many more...</p>
+            </div>
+          </Card>
         </div>
       ),
     },
@@ -76,7 +68,7 @@ export function JazbaaTimeLine() {
 
 
           </div>
-          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
+          <Card className="bg-black border-[0px] sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-4 sm:h-8 p-2 relative">
   {/* Left side - Student Image */}
   <div className="flex-shrink-0">
   </div>

@@ -1,128 +1,170 @@
-
-
-import React from 'react';
-import { Card } from "@/components/ui/card";
-import { Check, Globe, User, Flag, Award, Mic2, Briefcase,
-
-  Youtube, Instagram ,Linkedin  ,Cpu ,KeyRound,BriefcaseBusiness 
- } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { Inter,Poppins } from 'next/font/google'
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-   subsets: ['latin'],
-   weight: ['400']
-})
-const Mentor = () => {
-  const achievements = [
-    { icon: Globe, text: "The World Record Holder" },
-    { icon: Mic2, text: "2 Times TEDx Speaker" },
-    { icon: Flag, text: "Sr. Principal IT Consultant " },
-    { icon: Award, text: "Known as “Integration Guru”" },
-  ];
+  subsets: ['latin'],
+  weight: ['400']
+});
 
-  const transfers = [
-    { amount: " subscribers", position: "lg:top-[10%] lg:left-[5%] top-[10%] left-[5%]", plateform: "300k+", logo: Youtube },
-    { amount: "followers", position: "lg:top-[50%] lg:left-[12%] top-[50%] left-[12%]",plateform: "1.1M+" , logo: Instagram },
-    { amount: "followers", position: "lg:bottom-[20%] lg:left-[8%] bottom-[20%] left-[8%]",plateform: "62K+",logo: Linkedin },
-    { amount: "years Experience ", position: "lg:top-[15%] lg:right-[3%] top-[15%] right-[3%]",plateform: "22+",logo: BriefcaseBusiness  },
-    { amount: " tools & technologies", position: "lg:bottom-[30%] lg:right-[10%] bottom-[30%] right-[10%]" ,plateform: "152+ ",logo:Cpu},
-    { amount: " lives Changed ", position: "lg:top-[40%] lg:right-[3%] top-[40%] right-[3%]",plateform: "1M+",logo: Globe }
-  ];
+const ImageCycler = ({ images, interval = 2000, transitionDuration = 1 }: { images: string[], interval?: number, transitionDuration?: number }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
 
   return (
-    <section className="w-full bg-black">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-          {/* Left Section */}
-          <div className="w-full lg:w-1/2 space-y-6">
-            <div className="prose prose-invert max-w-none">
-              <h1 className="text-3xl md:text-4xl lg:text-4xl text-center font-bold mb-3">
-                <p className="text-[#ff0000]">Your Summer Internship Mentor:<br/> Mr Vimal Daga</p>
-              </h1>
-              
-              <p className={`text-sm md:text-3xl text-white  mb-6 ${poppins.className}`}>
-                Visionary Leader Committed to &quot;Making India Future-Ready&quot;
-              </p>
-
-              <div className="grid gap-4">
-                {achievements.map((item, index) => (
-                  <Card 
-                    key={index} 
-                    className="p-3 bg-gradient-to-r from-[#ff0000] to-black/80 
-                      border-[#f0c8c8] hover:bg-red-900/90 transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <item.icon className="w-6 h-6 text-white" />
-                      <span className={`text-sm sm:text-base font-medium ${poppins.className} text-white`}>
-                        {item.text}
-                      </span>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-
-              <blockquote className="text-base sm:text-lg italic mt-8 
-                pl-4 border-l-4 border-[#ff0000] text-white">
-                Mentor to Fortune 500 executives, specializing in knowledge transfer to 
-                <span className="text-[#ff0000] font-medium"> C-level technologists</span> 
-                {" "}across cutting-edge domains.
-              </blockquote>
-            </div>
-          </div>
-
-          {/* Right Section */}
-          <div className="w-full lg:w-1/2">
-            <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden group">
-              <img 
-                src="/assets/Mentor/vimalsir.webp"
-                alt="Mentor Profile"
-                className="w-full h-full object-cover object-center transform 
-                  group-hover:scale-105 transition-transform duration-300"
-              />
-              
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-
-              {/* Animated Badges - Visible on all screens */}
-              <div className="block">
-                {transfers.map((transfer, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ 
-                      delay: index * 0.1,
-                      type: "spring",
-                      stiffness: 260,
-                      damping: 20 
-                    }}
-                    className={`absolute ${transfer.position}`}
-                  >
-                    <Card className="bg-black/90 backdrop-blur-sm p-2 
-                      rounded-lg flex items-center gap-2 
-                      border-red-200 shadow-xl transform hover:scale-105 
-                      transition-transform">
-                      <div className="bg-[#ff0000] p-1.5 rounded-full">
-                        <transfer.logo className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
-                      </div>
-                      <div className="text-white">
-                        <div className="text-xs sm:text-sm font-medium text-[#ff0000]">
-                          {transfer.plateform}
-                        </div>
-                        <div className="text-[10px] sm:text-xs font-semibold">
-                          {transfer.amount}
-                        </div>
-                      </div>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="w-full h-full relative">
+      <AnimatePresence mode="wait">
+        <motion.img
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt="Cycling image"
+          className="w-full h-full object-cover absolute inset-0 rounded-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: transitionDuration }}
+        />
+      </AnimatePresence>
+    </div>
   );
 };
 
-export default Mentor;
+const BentoGallery = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    {
+      squares: [
+        {
+          id: 1,
+          images: ["/assets/event-gallery/G28.jpg", "/assets/event-gallery/G27.jpg"],
+        },
+        {
+          id: 2,
+          images: ["/assets/event-gallery/G26.jpeg", "/assets/event-gallery/G25.jpeg"],
+        }
+      ],
+      rectangle: {
+        id: 3,
+        images: ["/assets/event-gallery/G24.jpg", "/assets/event-gallery/G23.jpg"],
+      }
+    },
+    {
+      squares: [
+        {
+          id: 4,
+          images: ["/assets/event-gallery/G22.jpg", "/assets/event-gallery/G21.jpg"],
+        },
+        {
+          id: 5,
+          images: ["/assets/event-gallery/G20.jpg", "/assets/event-gallery/G19.jpg"],
+        }
+      ],
+      rectangle: {
+        id: 6,
+        images: ["/assets/event-gallery/G18.jpg", "/assets/event-gallery/G17.jpg"],
+      }
+    },
+    {
+      squares: [
+        {
+          id: 7,
+          images: ["/assets/event-gallery/G16.jpeg", "/assets/event-gallery/G15.jpg"],
+        },
+        {
+          id: 8,
+          images: ["/assets/event-gallery/G14.jpeg", "/assets/event-gallery/G13.jpg"],
+        }
+      ],
+      rectangle: {
+        id: 9,
+        images: ["/assets/event-gallery/G12.jpg", "/assets/event-gallery/G11.jpeg"],
+      }
+    }
+  ];
+
+  // Auto-swipe effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  return (
+    <div className="w-full min-h-screen bg-black p-4">
+      {/* Header */}
+      <div className="w-full text-center mb-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#ff0000]" id="Previous">
+          Previous Summer 2024
+        </h1>
+        <p className={`text-white text-sm md:text-3xl ${poppins.className}`}>
+          See How Engineering Students From Across India Are Learning Together
+        </p>
+      </div>
+
+      {/* Mobile Gallery */}
+      <div className="md:hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSlide}
+            initial={{ opacity: 0, x: 300 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -300 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4"
+          >
+            {/* Rectangle Box */}
+            <div className="w-full aspect-[2/1] bg-gray-900 rounded-lg p-2">
+              <ImageCycler 
+                images={slides[currentSlide].rectangle.images} 
+                interval={5000} 
+              />
+            </div>
+
+            {/* Two Square Boxes */}
+            <div className="grid grid-cols-2 gap-4">
+              {slides[currentSlide].squares.map((square) => (
+                <div 
+                  key={square.id} 
+                  className="aspect-square bg-gray-900 rounded-lg p-2"
+                >
+                  <ImageCycler 
+                    images={square.images} 
+                    interval={5000} 
+                  />
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Slide Indicators */}
+        <div className="flex justify-center space-x-2 mt-4">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                currentSlide === index ? 'bg-white' : 'bg-gray-600'
+              }`}
+              onClick={() => setCurrentSlide(index)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Gallery (hidden on mobile) */}
+      <div className="hidden md:block">
+        {/* Your existing desktop gallery layout */}
+      </div>
+    </div>
+  );
+};
+
+export default BentoGallery;

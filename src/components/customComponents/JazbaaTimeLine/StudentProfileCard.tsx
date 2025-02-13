@@ -46,12 +46,15 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
           <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
             {role} {/* Dynamic Role from props */}
           </p>
-          <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+         
+          <div className="flex items-center justify-end min-w-[80px]">
+           <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1 relative">
             <img
               src={companyLogoUrl} // Dynamic Company Logo URL from props
               alt={`Logo of ${companyLogoUrl}`} // Consider making company name prop for better alt text
               className="h-full w-full object-contain"
             />
+            </div>
           </div>
         </div>
       </div>

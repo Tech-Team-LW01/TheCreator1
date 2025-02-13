@@ -35,7 +35,7 @@ export const Data2014 = [
       id: "2014-5",
       linkedinUrl: "https://www.linkedin.com/in/shreya-singh10/",
       studentName: "Shreya Singh",
-      role: "Frontend Developer and Tech Content Developer",
+      role: "Frontend Developer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQEiXV-TPswVtw/company-logo_200_200/company-logo_200_200/0/1713633333114?e=1746662400&v=beta&t=3BMOH9lzavgeTBujsY0aZU3dqeLqfdWOS5-ZzRZzUnw",
       profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQGmAEr9w8YCtg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1592892556559?e=1744243200&v=beta&t=3w4S77lZUWmWQzYSrvPie2lARHbULlZEePedk3y_EAI",
     },
