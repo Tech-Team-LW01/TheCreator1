@@ -176,23 +176,22 @@ const Timeline = () => {
           />
         </div>
 
-        <div className="relative pt-[10px] space-y-2 md:space-y-0">
-  {timelineData.map((item, index) => (
-    <div key={index} className="relative">
-      <NumberCircle 
-        number={item.number} 
-        scrollYProgress={scrollYProgress} 
-        index={index}
-        total={timelineData.length}
-      />
+        <div className="relative pt-[10px]">
+          {timelineData.map((item, index) => (
+            <div key={index} className="relative" style={{ height: '180px' }}>
+              <NumberCircle 
+                number={item.number} 
+                scrollYProgress={scrollYProgress} 
+                index={index}
+                total={timelineData.length}
+              />
 
-      <div className="relative w-full">
-        <TimelineItem {...item} index={index} />
-      </div>
-    </div>
-  ))}
-</div>
-
+              <div className="absolute w-[200] top-1/2 -translate-y-1/2 pl-12 md:pl-0">
+                <TimelineItem {...item} index={index} />
+              </div>
+            </div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );
