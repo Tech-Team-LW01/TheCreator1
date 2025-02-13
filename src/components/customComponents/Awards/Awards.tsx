@@ -37,7 +37,7 @@ const Award = () => {
             <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 right-4 md:bottom-0 md:-top-8 -top-20">
               <div className="relative   border-white">
                 <img
-                  className='relative md:w-[320px] md:h-400px] w-[200px] h-[200px] object-fit'
+                  className='relative md:w-[320px] md:h-400px] w-[200px] h-full object-fit'
                   src='/assets/Award/award-image.png'
                   alt="Award"
                 />

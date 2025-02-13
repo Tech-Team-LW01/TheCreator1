@@ -43,17 +43,11 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow mt-4 flex items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
-    {/* Company section */}
-    {/* <div className="flex flex-col items-center justify-center">
-      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
-      </p>
-      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
-      </div>
-    </div> */}
+   
   </div>
 </Card>
         </div>
@@ -88,7 +82,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -134,7 +128,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -181,9 +175,9 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
-    <p className="text-[#ff0000] text-center">And many more...</p>
+    <p className="text-[#ff0000]  text-center">And many more...</p>
 
     {/* Company section */}
     {/* <div className="flex flex-col items-center justify-center">
@@ -229,7 +223,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -277,7 +271,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -324,9 +318,9 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
-    <p className="text-[#ff0000] text-center">And many more...</p>
+    <p className="text-[#ff0000]  text-center">And many more...</p>
 
     {/* Company section */}
     {/* <div className="flex flex-col items-center justify-center">
@@ -371,7 +365,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
@@ -418,7 +412,7 @@ export function JazbaaTimeLine() {
   </div>
 
   {/* Right side content */}
-  <div className="flex-grow flex items-end flex-col justify-center">
+  <div className="flex-grow flex mt-4 items-end flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 

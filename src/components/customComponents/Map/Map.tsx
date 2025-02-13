@@ -39,19 +39,23 @@ const Map = () => {
   </div>
 
   {/* Apply Now Button - Centered on Mobile */}
-  <div className="flex justify-center md:block">
+  <div className="flex hidden justify-center md:block">
+    <a href="/application-form">
     <Button
-      size="lg"
-      variant="secondary"
-      className="bg-[#ff0000] p-2 rounded-sm pr-4 text-white text-lg hover:bg-red-800 font-semibold relative shadow-lg"
-    >
-      Apply Now
-    </Button>
+                size="lg"
+                className={`transform bg-[#ff0000] hover:bg-red-800 transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+               
+              >
+               Apply Now
+              </Button>
+              </a>
   </div>
 
   <div className="hidden md:block">
     <MapScroll />
   </div>
+
+  
 </div>
 </div>
 
@@ -63,6 +67,18 @@ const Map = () => {
              </div>
 </div>
 
+
+<div className="flex lg:hidden mt-8 justify-center md:hidden">
+    <a href="/application-form">
+    <Button
+                size="lg"
+                className={`transform bg-[#ff0000] hover:bg-red-800 transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+               
+              >
+               Apply Now
+              </Button>
+              </a>
+  </div>
 
       </div>
      
