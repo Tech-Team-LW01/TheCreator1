@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import MobileGalleryFrame from "./MobileGalleryFrame";
-import { bentoItems1, bentoItems2 } from "./MobileGalleryData";
+import { bentoItems1, bentoItems2 ,bentoItems3} from "./MobileGalleryData";
 
 // Import required Swiper styles
 import "swiper/css";
@@ -22,7 +22,7 @@ const MobileGallery = () => {
   return (
     <div className="w-full">
       {/* First Gallery */}
-      <div className="mb-8">
+      <div className="mb-2">
         <Swiper {...swiperConfig}>
 
             <SwiperSlide>
@@ -33,6 +33,10 @@ const MobileGallery = () => {
             <SwiperSlide>
 
               <MobileGalleryFrame bentoItems={bentoItems2} />
+            </SwiperSlide>
+            <SwiperSlide>
+
+              <MobileGalleryFrame bentoItems={bentoItems3} />
             </SwiperSlide>
             
         </Swiper>
