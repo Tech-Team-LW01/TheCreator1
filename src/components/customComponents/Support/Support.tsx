@@ -7,11 +7,11 @@ export default function SupportContact() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="space-y-2 mb-8">
-          <h3 className="text-[2.25rem] font-semibold leading-tight md:text-[2.25rem] sm:text-3xl">
+          <h3 className="text-[2.25rem] font-semibold leading-tight text-center md:text-[2.25rem] sm:text-3xl">
             <span className="text-[#ff0000]">Summer</span>{' '}
             <span className="text-white">Learner Support</span>
           </h3>
-          <p className="text-lg md:text-[1.25rem] text-white font-normal">
+          <p className="text-lg md:text-[1.25rem] text-center text-white font-normal">
             Talk to our experts. We&apos;re available 24/7.
           </p>
         </div>

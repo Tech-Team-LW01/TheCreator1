@@ -83,7 +83,7 @@ const Hero2 = () => {
             {/* strip */}
             <div className="relative mt-4 md:-mt-12 lg:-mt-4 z-30">
               <div className="md:hidden p-4 w-full">
-                <h1 className="text-3xl text-start text-bold text-[#ff0000]">Details of Summer Program</h1>
+                <h1 className="text-3xl text-center text-bold text-[#ff0000]">Details of Summer Program</h1>
               </div>
   <div className="md:bg-black rounded-lg p-3 sm:p-5 md:p-6 shadow-lg max-w-xs sm:max-w-md md:max-w-lg lg:max-w-6xl md:border md:border-white mx-auto">
     <div className="flex flex-col lg:flex-row justify-between items-start gap-3 sm:gap-5 md:gap-6">
