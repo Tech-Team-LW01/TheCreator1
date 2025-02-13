@@ -48,8 +48,9 @@ const StudentMobileCard: React.FC<StudentProfileCardProps> = ({
           {/* Right side content */}
 <div className="flex flex-row">
     <div className='min-w-[10px]'>
-        <p className="text-[8px] w-full sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
-            {role.length < 10 ? role + '.'.repeat(16 - role.length) : role.slice(0, 10)}
+        <p className="text-[8px] w-full sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2"> 
+            
+            {role.length < 10 ? role + '.'.repeat(16 - role.length) :  role.slice(0, 10)}
         </p>
     </div>
    
