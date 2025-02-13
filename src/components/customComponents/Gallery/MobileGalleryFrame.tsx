@@ -69,15 +69,7 @@ interface MobileGalleryProps {
 const MobileGalleryFrame: React.FC<MobileGalleryProps> = ({ bentoItems }) => {
   return (
     <div className="w-full max-w-7xl mx-auto min-h-screen bg-black p-0">
-      {/* Main Heading */}
-      <div className="w-full text-center py-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#ff0000]" id="Preivous">
-          Previous Summer 2024
-        </h1>
-        <p className={`text-white text-sm md:text-3xl ${poppins.className}`}>
-          See How Engineering Students From Across India Are Learning Together
-        </p>
-      </div>
+    
 
       {/* Bento Grid */}
       <BentoGrid

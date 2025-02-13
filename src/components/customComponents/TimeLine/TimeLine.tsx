@@ -35,7 +35,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
   const xInitial = side === 'left' ? -50 : 50;
   
   return (
-    <div className={`flex items-center sm:mb-4 md:mb-0  ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
+    <div className={`flex items-center  sm:mb-4 md:mb-0  ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
       <motion.div 
         initial={{ opacity: 0, x: xInitial }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -45,7 +45,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
           delay: index * 0.2,
           ease: "easeOut"
         }}
-        className={`w-full md:w-[450px]  min-h-[120px] rounded-lg p-6 flex items-start gap-4
+        className={`w-full md:w-[450px]   min-h-[120px] rounded-lg p-6 flex items-start gap-4 
           ${side === 'right' ? 'md:text-right' : ''}
           bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A]
           shadow-[0_0_15px_rgba(255,0,0,0.1)]
@@ -176,9 +176,9 @@ const Timeline = () => {
           />
         </div>
 
-        <div className="relative pt-[10px]">
+        <div className="relative  pt-[10px]">
           {timelineData.map((item, index) => (
-            <div key={index} className="relative" style={{ height: '180px' }}>
+            <div key={index} className="relative mb-12 md:mb-0" style={{ height: '180px' }}>
               <NumberCircle 
                 number={item.number} 
                 scrollYProgress={scrollYProgress} 
@@ -186,8 +186,12 @@ const Timeline = () => {
                 total={timelineData.length}
               />
 
-              <div className="absolute md:w-full  top-1/2 -translate-y-1/2 pl-12 md:pl-0">
+              <div className="absolute md:w-full   top-1/2 -translate-y-1/2 pl-12 md:pl-0">
+              <div className=''>
                 <TimelineItem {...item} index={index} />
+
+            
+                </div>
               </div>
             </div>
           ))}
