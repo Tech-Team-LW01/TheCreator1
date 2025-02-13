@@ -120,7 +120,7 @@ export default function Benefits() {
             {benefitsData.slice(3).map((benefit, index) => (
               <Card 
                 key={index} 
-                className="relative overflow-hidden group min-h-[350px]"
+                className="relative overflow-hidden group min-h-[200px] md:min-h-[300px]"
               >
                 {/* Background Image */}
                 <div 
