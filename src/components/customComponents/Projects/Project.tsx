@@ -169,7 +169,11 @@ export default function Projects(): JSX.Element {
           <>
             <div className="flex flex-col space-y-4">
               {renderProjectContent(project)}
+<<<<<<< HEAD
               <div className="flex justify-center py-0">
+=======
+              <div className="flex justify-center py-8">
+>>>>>>> af8f68273678520afb130de8e45b6e0365f4660a
             <Button
               size="lg"
               className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
@@ -197,9 +201,9 @@ export default function Projects(): JSX.Element {
   }
 
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative min-h-screen bg-black" id="Projects">
       {/* Added Main Heading Section */}
-      <div className="w-full text-center py-4 " id="#Projects">
+      <div className="w-full text-center py-4 " >
         <h1 className={`text-3xl  md:text-4xl mt-4 text-[#ff0000]  ${khandFont.className}` }>Unique Summer Projects</h1>
         <p className={`text-white text-sm md:text-lg ${poppins.className}`}>Learn & Develop a Levek Of Project Which You Can't Find Anywhere – Internet / Google / Chatgpt</p>
       </div>

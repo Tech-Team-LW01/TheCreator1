@@ -26,15 +26,15 @@ const Award = () => {
             {/* Center Section */}
             <div className="flex flex-col text-center sm:text-left mx-6 z-10 mt-2 sm:mt-0"> {/* Added mx-auto, removed sm:ml-8 sm:mr-auto */}
               <h2 className="text-[#000000] text-[20px] sm:text-2xl md:text-4xl px-2 sm:px-4 font-bold  leading-tight text-center">
-                <span className='text-[#ff0000] '>Awarded as #1 </span>
-                <br className="hidden sm:block"/>
+                <span className='text-[#ff0000] '>Awarded as #1 </span> <br/>
+                {/* <br className="hidden sm:block"/> */}
                 <span className=""> </span>
                 for Internship in India & Asia
               </h2>
             </div>
 
             {/* Trophy Image */}
-            <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 right-4 md:bottom-0 md:-top-8 -top-1 ">
+            <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 right-4 md:bottom-0 md:-top-8 -top-10 ">
               <div className="relative   border-white">
                 <img
                   className='relative md:w-[320px] md:h-400px] w-[300px] h-full object-fit'
