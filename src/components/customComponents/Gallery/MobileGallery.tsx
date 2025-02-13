@@ -20,7 +20,7 @@ const MobileGallery = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full max-h-[100px]">
       {/* First Gallery */}
       <div className="mb-0">
         <Swiper {...swiperConfig}>
