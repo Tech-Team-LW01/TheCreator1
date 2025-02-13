@@ -22,7 +22,7 @@ const MobileGallery = () => {
   return (
     <div className="w-full">
       {/* First Gallery */}
-      <div className="mb-2">
+      <div className="mb-0">
         <Swiper {...swiperConfig}>
 
             <SwiperSlide>

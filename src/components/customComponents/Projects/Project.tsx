@@ -43,7 +43,7 @@ export default function Projects(): JSX.Element {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []); 
 
   const renderProjectContent = (project: Project): JSX.Element => (
     <div className="space-y- bg-[#202020] pb-4 p-6 rounded-lg hover:shadow-xl transition-all duration-300 relative">
@@ -157,7 +157,7 @@ export default function Projects(): JSX.Element {
               <div className="flex justify-center py-0">
             <Button
               size="lg"
-              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
               aria-label={data.button.text}
             >
               {data.button.text}
@@ -172,7 +172,7 @@ export default function Projects(): JSX.Element {
               <div className="flex justify-center py-0">
             <Button
               size="lg"
-              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
               aria-label={data.button.text}
             >
               {data.button.text}
