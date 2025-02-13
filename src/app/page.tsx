@@ -53,7 +53,7 @@ export default function Home() {
 <Projets/>
 <Map/>
 <Gallery/>
-<Benifits></Benifits>
+<Benifits/>
 <Timeline/>
 <OutCome/>
 <JazbaaStartupPlatform/>
