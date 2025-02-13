@@ -56,8 +56,8 @@ const Hero2 = () => {
 
     </div>
   <div className="h-full flex mt-2 items-center justify-center bg-black text-white px-4 ">
-      <div className="max-w-4xl mx-auto text-center space-y-2">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter ">
+      <div className="max-w-4xl mx-auto text-center ">
+        <h1 className="text-4xl text-[#ff0000] md:text-6xl font-extrabold leading-tight tracking-tighter ">
           Summer Internship 2025
         </h1>
         <h2 className="text-3xl md:text-5xl font-bold ">Industrial Training Program</h2>
