@@ -28,28 +28,28 @@ export default function VideoTestimonials() {
 
   const videos: VideoCardProps[] = [
     {
-      title: "Aditi's Journey from Summer Internship 2024",
+      title: "Aditi's Journey from Summer Internship ",
       thumbnail: "/assets/videotestinomial/aditi.jpg",
       videoUrl: "https://youtu.be/BUTXyVq2gUE?si=abUFECP-0U7nxhQN"
     },
     {
-      title: "Divya's Journey from Summer Internship 2024",
+      title: "Divya's Journey from Summer Internship ",
       thumbnail: "/assets/videotestinomial/divya.jpg",
       videoUrl: "https://youtu.be/EUGLeid00LE?si=ClY2XmL-8NsuMntG"
     },
     
     {
-      title: "Om's Journey from Summer Internship 2024",
+      title: "Om's Journey from Summer Internship ",
       thumbnail: "/assets/videotestinomial/Om.jpg",
       videoUrl: "https://youtu.be/C4H29L1d3ko?si=_501FeGRlvklcgjk"
     },
     {
-      title: "Shrishti's Journey from Summer Internship 2024",
+      title: "Shrishti's Journey from Summer Internship ",
       thumbnail: "/assets/videotestinomial/Shrishti.jpg",
       videoUrl: " https://youtu.be/o31w8dWX1ZA?si=nQSuiYnGmS_9EGmK"
     },
     {
-      title: "Vidhisha Taneja's Journey from Summer Internship 2024",
+      title: "Vidhisha Taneja's Journey from Summer Internship ",
       thumbnail: "/assets/videotestinomial/vidhisha-taneja.jpg",
       videoUrl: " https://www.youtube.com/watch?v=oi3AiWd7dJk"
     },

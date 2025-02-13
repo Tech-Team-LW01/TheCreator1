@@ -38,10 +38,10 @@ const Mentor = () => {
           <div className="w-full lg:w-1/2 space-y-6">
             <div className="prose prose-invert max-w-none">
               <h1 className="text-3xl md:text-4xl lg:text-4xl text-center font-bold mb-3">
-                <p className="text-[#ff0000]">Your Summer Internship Mentor : <br/> Mr Vimal Daga</p>
+                <p className="text-[#ff0000]">Your Summer Internship Mentor: <br/> Mr Vimal Daga</p>
               </h1>
               
-              <p className={`text-sm md:text-3xl text-center text-white  mb-6 ${poppins.className}`}>
+              <p className={`text-sm md:text-3xl text-center text-white mb-6 ${poppins.className}`}>
                 Visionary Leader Committed to &quot;Making India Future-Ready&quot;
               </p>
               <div className="grid gap-4">
