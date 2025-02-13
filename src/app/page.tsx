@@ -35,6 +35,8 @@ import Timeline from "@/components/customComponents/TimeLine/TimeLine";
 import InvestorCarousel from "@/components/customComponents/InverterVideo/Carousel ";
 import RecapPreviousYear from "@/components/customComponents/recap-previous-year/RecapPreviousYear";
 import SupportContact from "@/components/customComponents/Support/Support";
+// import MobileGallery from "@/components/customComponents/Gallery/MobileGallery";
+import BentoGallery from "@/components/customComponents/Gallery/Gallery";
 // import Timeline from "@/components/customComponents/levels/LearningPath/TimeLine";
 export default function Home() {
   return (
@@ -52,7 +54,8 @@ export default function Home() {
 <Community/>
 <Projets/>
 <Map/>
-<Gallery/>
+{/* <Gallery/> */}
+<BentoGallery/>
 <Benifits/>
 <Timeline/>
 <OutCome/>
