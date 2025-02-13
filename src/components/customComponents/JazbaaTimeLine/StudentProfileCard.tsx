@@ -29,7 +29,6 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
         />
       </div>
 
-<<<<<<< HEAD
       {/* Right side content */}
       <div className="flex-grow flex flex-col justify-between">
         {/* Top row with name */}
@@ -45,7 +44,7 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
             {role} {/* Dynamic Role from props */}
           </p>
          
-          <div className="flex items-center justify-end min-w-[80px]">
+          <div className="flex items-center justify-end min-w-[90px]">
            <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1 relative">
             <img
               src={companyLogoUrl} // Dynamic Company Logo URL from props
@@ -55,16 +54,6 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
             </div>
           </div>
         </div>
-=======
-      {/* Center - Student Info */}
-      <div className="flex-grow flex flex-col justify-center text-center px-2">
-        <h3 className="text-xs sm:text-sm md:text-base font-semibold text-[#ff0000] truncate max-w-[150px] sm:max-w-[200px] md:max-w-[250px]">
-          {studentName}
-        </h3>
-        <p className="text-[8px] sm:text-[10px] md:text-xs text-black font-medium line-clamp-2">
-          {role}
-        </p>
->>>>>>> a1d725a0901be97f3964a0857a1eef77b0bf7d70
       </div>
 
       {/* Right - Company Logo */}

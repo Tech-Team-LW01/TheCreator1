@@ -37,7 +37,7 @@ export function JazbaaTimeLine() {
 
 
           </div>
-          <Card className="bg-black border-[0px] p-2 sm:p-3 md:p-4 flex justify-end w-full h-4 sm:h-8 p-2 relative">
+          <Card className="bg-black border-[0px]  sm:p-3 md:p-4 flex justify-end w-full h-4 sm:h-8 p-2 relative">
             <div className="flex-grow flex justify-end items-center">
               <p className="text-[#ff0000] pr-4">And many more...</p>
             </div>
@@ -141,7 +141,7 @@ export function JazbaaTimeLine() {
       title: "2017",
       content: (
         <div>
-                   <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
+           <p className={`text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 sm:mb-6 md:mb-8 ${poppins.className}`}>
                    Summer Learners, Full-Time Achievers!
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
