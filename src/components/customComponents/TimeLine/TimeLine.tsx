@@ -186,7 +186,7 @@ const Timeline = () => {
                 total={timelineData.length}
               />
 
-              <div className="absolute w-[200] top-1/2 -translate-y-1/2 pl-12 md:pl-0">
+              <div className="absolute md:w-full  top-1/2 -translate-y-1/2 pl-12 md:pl-0">
                 <TimelineItem {...item} index={index} />
               </div>
             </div>
