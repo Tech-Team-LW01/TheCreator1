@@ -35,7 +35,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
   const xInitial = side === 'left' ? -50 : 50;
   
   return (
-    <div className={`flex items-center ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
+    <div className={`flex items-center sm:mb-4 md:mb-0  ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
       <motion.div 
         initial={{ opacity: 0, x: xInitial }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -164,11 +164,11 @@ const Timeline = () => {
         <TimelineHeader />
 
         {/* Timeline line */}
-        <div className="absolute left-4 md:left-1/2 top-[140px] bottom-20 w-[3px] transform md:-translate-x-1/2 bg-white/20 overflow-hidden">
+        <div className="absolute left-4 md:left-1/2 top-[200px] bottom-20 w-[3px] transform md:-translate-x-1/2 bg-white/20 overflow-hidden">
           <motion.div 
             className="absolute top-0 left-0 w-full bg-red-500"
             style={{
-              height: "100%",
+              height: "90%",
               scaleY: scrollYProgress,
               transformOrigin: "top",
               boxShadow: "0 0 10px rgba(255,0,0,0.5)"
@@ -176,7 +176,7 @@ const Timeline = () => {
           />
         </div>
 
-        <div className="relative pt-[60px]">
+        <div className="relative pt-[10px]">
           {timelineData.map((item, index) => (
             <div key={index} className="relative" style={{ height: '180px' }}>
               <NumberCircle 
