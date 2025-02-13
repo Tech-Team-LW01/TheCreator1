@@ -35,10 +35,19 @@ const Award = () => {
 
             {/* Trophy Image */}
             <div className="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 right-4 md:bottom-0 md:-top-8 -top-10 ">
-              <div className="relative   border-white">
+            {/* for desktop */}
+              <div className="relative hidden md:block  border-white">
                 <img
                   className='relative md:w-[320px] md:h-400px] w-[300px] h-full object-fit'
                   src='/assets/Award/award-image.png'
+                  alt="Award"
+                />
+              </div>
+{/* for mobile */}
+              <div className="relative sm:block w-[300px] -ml-16 h-[160px] z-30 md:hidden  border-white">
+                <img
+                  className='relative w-full h-full object-fit'
+                  src='/assets/Award/awardMobile.png'
                   alt="Award"
                 />
               </div>
