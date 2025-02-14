@@ -3,7 +3,6 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Linkedin } from 'lucide-react';
 
-
 interface StudentProfileCardProps {
   linkedinUrl: string;
   studentName: string;
@@ -20,16 +19,14 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
   profileImage,
 }) => {
   return (
-    <Card className="bg-white p-2 sm:p-3 md:p-4 flex gap-2 sm:gap-3 md:gap-4 w-full h-auto sm:h-24 relative">
-      {/* Left side - Student Image */}
-      <div className="flex-shrink-0">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-100">
-          <img
-            src={profileImage} // Dynamic LinkedIn URL from props
-            alt={`Profile of ${studentName}`} // Dynamic alt text - more accessible
-            className="w-full h-full object-cover"
-          />
-        </div>
+    <Card className="bg-white p-2 sm:p-3 md:p-4 flex items-center gap-4 w-full h-auto sm:h-24 relative overflow-hidden">
+      {/* Left - Student Image */}
+      <div className="flex-shrink-0 w-8 h-8 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full overflow-hidden bg-gray-100">
+        <img
+          src={profileImage}
+          alt={`Profile of ${studentName}`}
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Right side content */}
@@ -46,23 +43,35 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
           <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
             {role} {/* Dynamic Role from props */}
           </p>
-          <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
+         
+          <div className="flex items-center justify-end min-w-[90px] ">
+           <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1 relative">
             <img
               src={companyLogoUrl} // Dynamic Company Logo URL from props
               alt={`Logo of ${companyLogoUrl}`} // Consider making company name prop for better alt text
               className="h-full w-full object-contain"
             />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Badge - now a clickable link to LinkedIn Profile */}
-      <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="absolute top-0.5 right-0.5">
+      {/* Right - Company Logo */}
+      <div className="flex-shrink-0 h-6 sm:h-8 md:h-10 w-12 sm:w-16 md:w-20 overflow-hidden flex items-center">
+        <img
+          src={companyLogoUrl}
+          alt={`Company logo`}
+          className="h-full w-full object-contain"
+        />
+      </div>
+
+      {/* LinkedIn Badge */}
+      <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="absolute top-1 right-1">
         <Badge
           variant="outline"
-          className="flex items-center gap-1 hover:bg-blue-50 cursor-pointer text-[8px] sm:text-xs"
+          className="flex items-center gap-1 hover:bg-blue-50 cursor-pointer text-[8px] sm:text-[10px] md:text-xs"
         >
-          <Linkedin className="w-2 h-2" />
+          <Linkedin className="w-3 h-3" />
         </Badge>
       </a>
     </Card>
@@ -70,3 +79,4 @@ const StudentProfileCard: React.FC<StudentProfileCardProps> = ({
 };
 
 export default StudentProfileCard;
+                

@@ -8,14 +8,12 @@ const poppins = Poppins({
   weight: ["400"],
 });
 
-// Define props for ImageCycler
 interface ImageCyclerProps {
   images: string[];
   interval?: number;
   transitionDuration?: number;
 }
 
-// ImageCycler Component
 const ImageCycler: React.FC<ImageCyclerProps> = ({
   images,
   interval = 2000,
@@ -49,7 +47,6 @@ const ImageCycler: React.FC<ImageCyclerProps> = ({
   );
 };
 
-// Define a type for each item in the BentoGrid
 interface BentoItem {
   id: number;
   title: string;
@@ -60,18 +57,13 @@ interface BentoItem {
   transitionDuration: number;
 }
 
-// Define props for MobileGallery
 interface MobileGalleryProps {
   bentoItems: BentoItem[];
 }
 
-// MobileGallery Component
 const MobileGalleryFrame: React.FC<MobileGalleryProps> = ({ bentoItems }) => {
   return (
-    <div className="w-full max-w-7xl mx-auto min-h-screen bg-black p-0">
-    
-
-      {/* Bento Grid */}
+    <div className="w-full max-w-7xl mx-auto h-auto bg-black p-0 mb-8"> {/* Removed min-h-screen */}
       <BentoGrid
         items={bentoItems.map((item) => ({
           ...item,
@@ -84,15 +76,14 @@ const MobileGalleryFrame: React.FC<MobileGalleryProps> = ({ bentoItems }) => {
           ),
         }))}
         gridCols={8}
-        rowHeight={80}
+        rowHeight={60} /* Reduced row height for mobile */
         classNames={{
-          container: "max-w-full mx-auto gap-2",
+          container: "max-w-full mx-auto gap-1", // Reduced gap for mobile
           elementContainer:
-            "bg-white rounded-none gap-0 p-1 gap-2  overflow-hidden hover:opacity-90 transition-opacity duration-300",
+            "bg-white rounded-none p-0.5 overflow-hidden hover:opacity-90 transition-opacity duration-300" // Reduced padding
         }}
       />
 
-      {/* Global Styles */}
       <style jsx global>{`
         .bento-item {
           position: relative;
@@ -104,7 +95,7 @@ const MobileGalleryFrame: React.FC<MobileGalleryProps> = ({ bentoItems }) => {
           bottom: 0;
           left: 0;
           right: 0;
-          padding: 1rem;
+          padding: 0.5rem; /* Reduced padding for mobile */
           background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
           color: white;
           opacity: 0;
