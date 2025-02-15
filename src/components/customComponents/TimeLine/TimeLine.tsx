@@ -22,7 +22,7 @@ const TimelineHeader = () => (
     initial={{ opacity: 0, y: -20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
-    className="text-center mb-16"
+    className="text-center mb-12"
   >
     <h1 className="text-3xl md:text-4xl text-[#ff0000] font-bold mb-2 ">Journey of a Summer Intern 2025</h1>
     <p className={`text-gray-200 uppercase text-sm md:text-lg  ${poppins.className}`}>
@@ -35,7 +35,7 @@ const TimelineItem = ({ number, title, description, side = 'left', avatar = '/ap
   const xInitial = side === 'left' ? -50 : 50;
   
   return (
-    <div className={`flex items-center  sm:mb-4 md:mb-0  ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
+    <div className={`flex items-center  sm:mb-0 md:mb-0  ${side === 'right' ? 'md:flex-row-reverse' : ''}`}>
       <motion.div 
         initial={{ opacity: 0, x: xInitial }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -155,7 +155,7 @@ const Timeline = () => {
   return (
     <div className="min-full bg-[#000000] p-">
       <motion.div 
-        className="md:max-w-6xl max-w-full px-2 md:px-8 mx-auto bg-[#111111] border border-gray-700 rounded-xl shadow-2xl relative pt-10 pb-32"
+        className="md:max-w-6xl max-w-full px-2 md:px-8 mx-auto bg-[#111111] border border-gray-700 rounded-xl shadow-2xl relative pt-10 pb-10"
         ref={containerRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -178,7 +178,7 @@ const Timeline = () => {
 
         <div className="relative  pt-[10px]">
           {timelineData.map((item, index) => (
-            <div key={index} className="relative mb-12 md:mb-0" style={{ height: '180px' }}>
+            <div key={index} className="relative mb-8 md:mb-0" style={{ height: '180px' }}>
               <NumberCircle 
                 number={item.number} 
                 scrollYProgress={scrollYProgress} 
