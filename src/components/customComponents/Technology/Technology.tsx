@@ -41,20 +41,21 @@ export default function TechStack() {
           <h1 className="text-3xl text-[#ff0000] font-bold tracking-tight text-center sm:text-left lg:text-4xl">
             Learn, Research, Integrate & Build Industry Live Summer Project
           </h1>
-          <p className={`text-sm md:text-3xl  text-white hidden sm:block ${poppins.className}`}>
+          <p className={`text-sm md:text-2xl  text-white hidden sm:block ${poppins.className}`}>
             Master modern technologies through hands-on experience with industry-standard tools and frameworks.
           </p>
         </div>
 
         <motion.div
-          className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 w-full"
+          className="grid grid-cols-3  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 md:gap-x-12 gap-x-6 gap-y-4 w-full"
           variants={container}
           initial="hidden"
           animate="show"
         >
           {technologies.map((tech) => (
             <motion.div key={tech.name} variants={item}>
-              <Card className="group relative flex flex-col items-center bg-white justify-center w-24 h-24 space-y-2 overflow-hidden p-2  text-white rounded-lg shadow-lg hover:shadow-xl transition">
+              {/* todo give some horizontal space between cards,  */}
+              <Card className="group  relative flex flex-col items-center bg-white justify-center w-24 h-24 space-y-2 overflow-hidden p-2 text-white rounded-lg shadow-lg hover:shadow-xl transition">
                 <div className="relative flex items-center justify-center w-16 h-16">
                   <img
                     src={tech.image || "/placeholder.svg"}

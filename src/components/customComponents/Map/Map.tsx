@@ -30,16 +30,21 @@ const Map = () => {
             <div className="relative p-8 md:p-0 z-10 pt-8 text-white space-y-5">
   {/* Main Content Stack */}
   <div className="space-y-2">
-    <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-center md:block text-[#ff0000] tracking-tight ${khandFont.className}`}>
+    <h1 className={`text-3xl lg:text-4xl xl:text-4xl  text-center md:text-left md:block text-[#ff0000] tracking-tight ${khandFont.className}`}>
       Engineering Students from across India participate
     </h1>
-    <p className={`text-lg lg:text-2xl text-red-100 text-center md:block ${poppins.className}`}>
+    <p className={`text-lg lg:text-2xl text-red-100 text-center md:text-left md:block ${poppins.className}`}>
       The One & Only Integration Level Research Based Summer Internship Program
     </p>
   </div>
 
   {/* Apply Now Button - Centered on Mobile */}
-  <div className="flex hidden justify-center md:block">
+
+
+  <div className="hidden md:block">
+    <MapScroll />
+  </div>
+  <div className="flex pt-4 hidden justify-center md:block">
     <a href="/application-form">
     <Button
                 size="lg"
@@ -50,10 +55,6 @@ const Map = () => {
               </Button>
               </a>
   </div>
-
-  <div className="hidden md:block">
-    <MapScroll />
-  </div>7
 
   
 </div>
