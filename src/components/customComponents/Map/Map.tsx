@@ -72,7 +72,7 @@ const Map = () => {
     <a href="/application-form">
     <Button
                 size="lg"
-                className={`transform bg-[#ff0000] hover:bg-red-800 transition-all duration-300 hover:scale-105 px-8 py-3 rounded-full shadow-lg hover:shadow-xl`}
+                className={`transform bg-[#ff0000] hover:bg-red-800 transition-all duration-300 hover:scale-105 px-8 py-3 rounded-lg shadow-lg hover:shadow-xl`}
                
               >
                Apply Now
