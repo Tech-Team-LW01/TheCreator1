@@ -38,11 +38,14 @@ export default function RootLayout({
       <body
         className={`${khandFont.className}  bg-black overflow-x-hidden antialiased`}
       >
+
+        <div className="overflow-x-hidden">
         <Navbar/>
         {children}
         <Footer/>
         <Footer3/>
         {/* <Footer2/> */}
+        </div>
       </body>
     </html>
   );
