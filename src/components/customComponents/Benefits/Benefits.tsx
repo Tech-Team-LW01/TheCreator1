@@ -101,10 +101,14 @@ export default function Benefits() {
                 <div className="relative z-10">
                   <CardHeader className="text-center">
                     <span className="text-5xl">{benefit.icon}</span>
-                    <CardTitle className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}</CardTitle>
-                    <CardDescription className="text-lg text-gray-200">
+                    <div className={`text-2xl text-[#ff0000] ${khandFont.className}`}>{benefit.title}
+
+                  
+                    </div>
+                    <div className="text-lg text-gray-200"> 
                       {benefit.subtitle}
-                    </CardDescription>
+                    </div> 
+                    
                   </CardHeader>
                   <CardContent className="text-center">
                     <h3 className="text-white font-semibold">{benefit.detail}</h3>
