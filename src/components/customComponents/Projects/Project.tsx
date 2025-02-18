@@ -107,6 +107,16 @@ export default function Projects(): JSX.Element {
           </div>
         ))}
       </div>
+
+      <div className="flex mt-4 justify-center py-0">
+            <Button
+              size="lg"
+              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
+              aria-label={data.button.text}
+            >
+              {data.button.text}
+            </Button>
+          </div>
     </div>
   );
 
@@ -154,22 +164,14 @@ export default function Projects(): JSX.Element {
             </div>
             <div className="flex flex-col space-y-4">
               {renderProjectContent(project)}
-              <div className="flex justify-center py-0">
-            <Button
-              size="lg"
-              className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
-              aria-label={data.button.text}
-            >
-              {data.button.text}
-            </Button>
-          </div>
+            
             </div>
           </>
         ) : (
           <>
             <div className="flex flex-col space-y-6">
               {renderProjectContent(project)}
-              <div className="flex justify-center py-0">
+              {/* <div className="flex justify-center py-0">
             <Button
               size="lg"
               className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
@@ -177,7 +179,7 @@ export default function Projects(): JSX.Element {
             >
               {data.button.text}
             </Button>
-          </div>
+          </div> */}
             </div>
             <div className="hidden md:block md:sticky md:top-0 self-start md:h-[calc(100vh-80px)] flex items-start">
               {renderImageContent(project)}

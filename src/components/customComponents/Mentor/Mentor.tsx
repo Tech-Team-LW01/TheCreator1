@@ -37,8 +37,15 @@ const Mentor = () => {
           {/* Left Section */}
           <div className="w-full lg:w-1/2 space-y-6">
             <div className="prose prose-invert max-w-none">
-              <h1 className="text-3xl md:text-4xl lg:text-4xl text-center md:text-left font-bold mb-3">
+              {/* this is for desktop */}
+              <h1 className="text-3xl hidden md:block md:text-4xl lg:text-4xl text-center md:text-left font-bold mb-3">
                 <p className="text-[#ff0000]">Your Summer Internship Mentor: <br/> Mr Vimal Daga</p>
+              </h1>
+
+              {/* for mobile  */}
+
+              <h1 className="text-3xl sm:block md:hidden md:text-4xl lg:text-4xl text-center md:text-left font-bold mb-3">
+                <p className="text-[#ff0000]">Your Summer Mentor: <br/> Mr Vimal Daga</p>
               </h1>
               
               <p className={`text-md md:text-2xl text-center md:text-left text-white mb-6 ${poppins.className}`}>
