@@ -45,7 +45,7 @@ export const Data2014 = [
       studentName: "Avrinder Kaur",
       role: "Senior Consultant",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQH-ZV832H4sdA/company-logo_200_200/company-logo_200_200/0/1705572256355/capgemini_logo?e=1746662400&v=beta&t=ylPWz1wzFbAWm3bVw8QybHBmrU0Sxn1VkzNVemPAfhY",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQE3_RPT4LyI0g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1688157115645?e=1739487600&v=beta&t=tihRTbhe-PAZnpECPy-flUqLnHlkio7hSLRJm3H48sE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQE3_RPT4LyI0g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1688157115645?e=1740474000&v=beta&t=19ei1vd-ZksJN9dLznzCspXQLhZ78kJQ-6ZKsw_xxuQ",
     },
     {
       id: "2014-7",
@@ -53,7 +53,7 @@ export const Data2014 = [
       studentName: "Mehul Kulshrestha",
       role: "Senior Software Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQGGLta3hPvdRg/company-logo_200_200/company-logo_200_200/0/1735812238218/ltimindtree_logo?e=1746662400&v=beta&t=JFmRf3e80Me7pQZgT0C0r-FeFjbfDnxRxZtPqE5ewxo",
-      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHcMsFzMrtB9Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1723827648432?e=1739487600&v=beta&t=7QkaADTlC0L_YKFgjeZ9TcWxSM9mVt4LoEvsJoIdhUs",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHcMsFzMrtB9Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1723827648432?e=1740474000&v=beta&t=Mt-JVYpPi5UIHtsIi9oTmefnrWbnn7NraFFH1oJMScg",
     },
     {
       id: "2014-8",
@@ -236,7 +236,7 @@ export const Data2015 = [
       studentName: "Jatin Sharma",
       role: "Associate Consultant",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFZB0C1RYn7ZA/company-logo_200_200/company-logo_200_200/0/1735883672081/newgen_logo?e=1747267200&v=beta&t=QRzyf5zXOAiIBkrLo4HTeFxhYSuLrAJ_5r4XNVB62EE",
-      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHHKKn0RL56-A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1682615493664?e=1739523600&v=beta&t=8W4bZ-n77cPjSmp6BIWweGNfWBIjnx8UWJZnX7ox0aE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHHKKn0RL56-A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1682615493664?e=1740474000&v=beta&t=XttmIkAJdvC9ByZDgbHmt-p1MkUzZaE5wuXRtizAcOM",
     },
     {
       id: "2017-24",
@@ -267,10 +267,10 @@ export const Data2015 = [
     {
       id: "2020-23",
       linkedinUrl: "https://www.linkedin.com/in/hiralrnagda/",
-      studentName: "Hiral Rajesh Nagda",
+      studentName: "Hiral Rajesh ",
       role: "Graduate Teaching Assistant",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQFTLwX9zzCBEQ/company-logo_200_200/company-logo_200_200/0/1662495473963/intralinks_logo?e=1747267200&v=beta&t=HwahbYkrio6FiLqQJMrBFev_DpksBB41WJ58c6nxSXM",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQHZtCTi7cosvQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1738971028527?e=1739599200&v=beta&t=-hCbXJCbyOpAL7CnQX_9RejoQJLdyVZFq6uc6GK9KZg",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQHZtCTi7cosvQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1738971028527?e=1740474000&v=beta&t=2yduxV98NpXK86DFDVNfh862k8xJsYUdab27bms1Ofg",
     },
     {
       id: "2020-24",
@@ -286,7 +286,7 @@ export const Data2015 = [
       studentName: "Abhishek Kumawat",
       role: "Information Security (SOX)",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQH-ZV832H4sdA/company-logo_200_200/company-logo_200_200/0/1705572256355/capgemini_logo?e=1747267200&v=beta&t=WpD4L0QkxsWZ2euhDBORrQeczqq7jn1FgJoAtkVbzI4",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQGAI4zyOGCMQQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719459539098?e=1739599200&v=beta&t=_P1qvDXB90lqvswkniv6u_eHmpu_zB1lQfECZ3SwZUo",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQGAI4zyOGCMQQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719459539098?e=1740474000&v=beta&t=7KqfZybEmwBmVYfmA1CBuDTMycNDEeZ8qL0T3zPYmLs",
     },
   ];
   
@@ -314,7 +314,7 @@ export const Data2016 = [
       studentName: "Yukti Julka",
       role: "Data Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQECKZ_dfD_ZIg/company-logo_200_200/company-logo_200_200/0/1732007839687/indian_school_of_business_logo?e=1746662400&v=beta&t=P3KSKpLaHvU-s_xkbXKazNt5FralLyX0O8_50S6Vue0",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQEiojjphdzRxA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1737926151316?e=1739487600&v=beta&t=vh2sziL3-B__gla492vSaqZP_ud60cq8fTLFriBvjJ8",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQEiojjphdzRxA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1737926151316?e=1740474000&v=beta&t=xsEBoC8A-U6b5B8wF8Sz3flkuvJvQXe7jNsDEp98rsI",
     },
     {
       id: "2016-4",
@@ -330,7 +330,7 @@ export const Data2016 = [
       studentName: "Alisha Agarwal",
       role: "Consultant",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQH-ZV832H4sdA/company-logo_200_200/company-logo_200_200/0/1705572256355/capgemini_logo?e=1746662400&v=beta&t=ylPWz1wzFbAWm3bVw8QybHBmrU0Sxn1VkzNVemPAfhY",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFwomIaib1VIg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736685966306?e=1739487600&v=beta&t=Ja5oUI7OPg_pl6SoWMNfTDSeWjOsk8sxf5cpG5GVWR4",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFwomIaib1VIg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736685966306?e=1740474000&v=beta&t=Svfs-vwu3--ORaSa9dnX0DWKEKwl00lS26mgxNRlJxM",
     },
     {
       id: "2016-6",
@@ -363,7 +363,7 @@ export const Data2016 = [
       studentName: "Riya Jain",
       role: "Data Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFS4KHrj-Gxtw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1734280906708?e=1739523600&v=beta&t=OHwmWFQljld45r41v5s3Ksq8CnH7TYTLfQNCBdf4R5s",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFS4KHrj-Gxtw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1734280906708?e=1740474000&v=beta&t=C7giYYpoxZBLLLY_seJ4ZvFdXcwDrJVEjWOUWPJTzhk",
     },
      {
       id: "2020-26",
@@ -450,7 +450,7 @@ export const Data2017 = [
       studentName: "Ujjwal Gupta",
       role: "Software Developer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQHTvZwCx4p2Qg/company-logo_200_200/company-logo_200_200/0/1630640869849/amazon_logo?e=1746662400&v=beta&t=l0ByYUv5aPnjG6rXuaQtxssaVaCXP5RYcHIrj_mnIlY",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQE0_8JKOQqc6w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724509698088?e=1739487600&v=beta&t=6TOex-J0xrNmfoR7casPkYqUMs2q6pecWBJmpV-wtsE",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQE0_8JKOQqc6w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1724509698088?e=1740474000&v=beta&t=gSIt7vAB5iJMfY3MJ3ZLcML9k3KwL5xmplJvgPYid3A",
     },
     {
       id: "2017-4",
@@ -514,7 +514,7 @@ export const Data2017 = [
       studentName: "Bhavishay Sikka",
       role: "DevOps Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQF-RIoeeMTMKQ/company-logo_200_200/company-logo_200_200/0/1664197008219/hcltech_logo?e=1746662400&v=beta&t=KEGXzefeSUo41jV38lhSHdJKUKWjcvY07sIheR-jmlc",
-      profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQHwu0ch0rpvpg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1705946628027?e=1739487600&v=beta&t=MxY5T51j1FbGTS4Rj1-FtFOwAnLf9bzgx6R2VbdEhaM",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQHwu0ch0rpvpg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1705946628027?e=1740474000&v=beta&t=JNEwnpQ9ndZvBzwXCKD_JEemZ-d9TP9qBi05cqPQaKc",
     },
     {
       id: "2017-12",
@@ -538,7 +538,7 @@ export const Data2017 = [
       studentName: "Ujjwal Bajaj",
       role: "Co-Founder",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGE30sXctd8Mw/company-logo_200_200/company-logo_200_200/0/1693983374590/usquare_newtech_logo?e=1746662400&v=beta&t=YNXJMnKjreUwkQZBTqv34BEOwhPNO237v9Qt_bH2Bdg",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQEmlokk6-NCRg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719439490539?e=1739487600&v=beta&t=BhyL11Ba5aZdfzTQl7FDH-oGFK52PPiyD53xU9_zbsM",
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQEmlokk6-NCRg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719439490539?e=1740474000&v=beta&t=HY982tgNm29VCQkSuIcF2NpFBo8W9TGXG9UW68c-sSQ",
     },
     {
       id: "2017-15",
@@ -660,7 +660,7 @@ export const Data2018 = [
       studentName: "Pratibha Jain",
       role: "Senior Quality Assurance Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQEquVChcBa9BQ/company-logo_200_200/company-logo_200_200/0/1630634659020/penta_arabia_logo?e=1746662400&v=beta&t=k0DVBFozvOHyeOkEGOTVYm6ld-j6nWOfqkqpSntUQkQ",
-      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQFjXoMSyqd0zQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1686579230401?e=1739491200&v=beta&t=kJB4ud1p4QM3suzhS1d12-f-0ou2lFY1M3k4mEm9gI4",
+      profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQFjXoMSyqd0zQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1686579230401?e=1740474000&v=beta&t=i9XE-D-a_EacX0p52dmhuwbsCaEXQ7BkfN0GQxJRXOo",
     },
     {
       id: "2018-13",
@@ -686,7 +686,7 @@ export const Data2018 = [
         studentName: "Maanas Singal",
         role: "AI/ML | Cloud",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQHHoSUe_f2rJg/company-logo_200_200/company-logo_200_200/0/1630638999928/bennett_university_logo?e=1747267200&v=beta&t=S6zI4yNiOD7u1qwzInCfXlkPXME3MIsoMcfGA02lGwY",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQGQklDlJf5X-w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709286300867?e=1744243200&v=beta&t=8r72CTTTCYW_VmLD4kW0t1dP17gumrYaFummCP90IFc"
+        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHX_A9ldsG8yg/profile-displayphoto-shrink_400_400/B56ZTlMMnDGoAg-/0/1739011968064?e=1745452800&v=beta&t=HM5e-BBOO3tJgG0MjQJrGKSQ5SZWgYE5olDNqTDAOFk"
     },
     {
         id: "2021-18",
@@ -897,7 +897,7 @@ export const Data2021 = [
         studentName: "Dev Ji Gupta",
         role: "Java Developer",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQE7Zf1-vvfbUA/company-logo_200_200/company-logo_200_200/0/1692876768583/infosys_logo?e=1746662400&v=beta&t=ajmg0mowfj0bqOvocmGstY3N6v9tj1vEm7Vj5IpkswY",
-        profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQGdNFNfIrtNEA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722271073216?e=1739491200&v=beta&t=8saxqDSsZPFNQ3nzSIORNG6Jw_mI9p9yQiybwI_LeU8"
+        profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQGdNFNfIrtNEA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722271073216?e=1740474000&v=beta&t=U0VR7iXlHgwCmn9H3Wu-Dafb2c1Eq7pEI0nf2GwYBKE"
     },
     {
         id: "2021-2",
@@ -905,7 +905,7 @@ export const Data2021 = [
         studentName: "Shweta Agarwal",
         role: "Packaged App Development Senior Analyst",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHDbmrSIZ2UdA/company-logo_200_200/company-logo_200_200/0/1723130689960/accenture_logo?e=1746662400&v=beta&t=-KA8Fb5uTeWcpuKGaqBeSWiKvOtb9K4lRpq-ucTZafU",
-        profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQF25GplU_e_Tw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1707833086562?e=1739491200&v=beta&t=rAdUInTPOHlntCrE1Kpk7zyBatvDMCMU_m7Tnev6aH8"
+        profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQF25GplU_e_Tw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1707833086562?e=1740474000&v=beta&t=8PRWAAD5aR_nvvmX9FRCcsYuVfksdmnh3ux84KPQKMI"
     },
     // {
     //     id: "2021-3",
@@ -1001,7 +1001,7 @@ export const Data2021 = [
         studentName: "Ankit Pramanik",
         role: "DevOps Engineer",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQH5EcH5fkKmSg/company-logo_200_200/company-logo_200_200/0/1731934962856/persistent_systems_logo?e=1746662400&v=beta&t=OUv6VeY4sR34F1qCJ8OY79_sbBdxjmbLBwRbfmzKNH0",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5635AQF5-Eyf5mwXJA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1733904706042?e=1739491200&v=beta&t=vNmbflEzF94rT4KUBOwfWZlll2quemEedneq2PoT-Sw"
+        profileImage: "https://media.licdn.com/dms/image/v2/D5635AQF5-Eyf5mwXJA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1733904706042?e=1740474000&v=beta&t=kVRQgBTFx2gYaAIRD3NPmBPGZqq_Qwn8LM4HZIUV_nc"
     },
     {
         id: "2021-15",
@@ -1067,7 +1067,7 @@ export const Data2022 = [
         studentName: "Gaurav Kumar",
         role: "Software Engineer",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQG8HWcXGyEuTQ/company-logo_200_200/company-logo_200_200/0/1630591862119/apex_financial_technology_limited_logo?e=1746662400&v=beta&t=9Oae4oV0CeK-1WWJWqbwDAWl87_CaBpZabp3WyqPza8",
-        profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHSrcMxCCrE6w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1728559747873?e=1739491200&v=beta&t=13fi8ngsltcR6urbQeoZt30rn-K23LRZ8Xep9zpXWfM"
+        profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHSrcMxCCrE6w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1728559747873?e=1740474000&v=beta&t=IWQ6qHbwYDT5fbJlJ5Rmw4NnVU2ymbFOP0qmE0wLqY8"
     },
     {
         id: "2022-2",
@@ -1155,7 +1155,7 @@ export const Data2022 = [
         studentName: "Mohit Singh Tomar",
         role: "DevOps Engineer",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQErCLEoV9lYeg/company-logo_200_200/company-logo_200_200/0/1631346923481?e=1746662400&v=beta&t=H8WZw4ExdjET_zCr_UHGOlgnbp9B9Q3mugTf35Y85L4",
-        profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQGMlmfgTwnZFg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1687665510487?e=1739491200&v=beta&t=CVizZjmnSSAd0NwzmTE47W31zFeKcvPm0bmYTQYNJFg"
+        profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQGMlmfgTwnZFg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1687665510487?e=1740474000&v=beta&t=7uOV0Lo8NAbTC3XbE_xCIKCQUvcQHWV258Bds_EHFjo"
     },
     {
         id: "2022-13",
@@ -1207,7 +1207,7 @@ export const Data2022 = [
       studentName: "Bhavishya Sharma",
       role: "SRE",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQEkpY-KGcpVSg/company-logo_200_200/company-logo_200_200/0/1719255793521/enableit_dk_logo?e=1747267200&v=beta&t=3bUg9QuM7UZQiIkVA5uh_y1JBvDKmm8pZdJrbdmC5nI",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQGYauKuDHCi_Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719446705537?e=1739602800&v=beta&t=jorEoJ8rfKxB8RPJfvRCocttJLqq9mYvpVIptzalHc4"
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQGYauKuDHCi_Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719446705537?e=1740474000&v=beta&t=hAPV3F6dmHtduSn9-DsUpBqvq_YTjSvzCCRJZn1zRL0"
   },
   {
       id: "2023-22",
@@ -1252,7 +1252,7 @@ export const Data2023 = [
       studentName: "Prachi Saini",
       role: "Aspiring DevOps Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQFhvi_VNigwYw/company-logo_200_200/company-logo_200_200/0/1630586316192/indus_towers_limited_logo?e=1747267200&v=beta&t=6dNKK_kKrlx02R7Fblt1V87c58bH0SDLKxQXG0Bhzvc",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQH54ky-F5Ma5w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722741763477?e=1739516400&v=beta&t=jQ5OMrpv0BftPy49UB4EKTFlpGtvyCmdwQUBTQ-AgTE"
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQH54ky-F5Ma5w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1722741763477?e=1740474000&v=beta&t=U8x5Js6AzbVATi-rP6lNdlIEgNVPvHmBiEr15bKeJTE"
   },
   {
       id: "2023-03",
@@ -1324,7 +1324,7 @@ export const Data2023 = [
       studentName: "Diwakar Singh",
       role: "DevOps Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQET3FpMXBg_Dg/company-logo_200_200/company-logo_200_200/0/1675399012796?e=1747267200&v=beta&t=2A33zi-sQrN5GdQQLjYChAt76v1LXCjvZW7KoYA1C3A",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFopVPSN6N9Fw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1712413289322?e=1739516400&v=beta&t=TNR1jJTaqX2q7hSiRGJWg-4bncTes8bJDjzSZIPEUUY"
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFopVPSN6N9Fw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1712413289322?e=1740474000&v=beta&t=Trm2FwIeOprAc9CO6FFhoKuegssT7f3tZm-tebZAn0g"
   },
   {
       id: "2023-12",
@@ -1332,7 +1332,7 @@ export const Data2023 = [
       studentName: "Saurav Patel",
       role: "System Engineer",
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
-      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFXP5rj3MLrRQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730548442580?e=1739516400&v=beta&t=wCU7FCFbxkYPVNhsdzHxcWTsbuM7PC0Ugvgnbg4J9Fc"
+      profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFXP5rj3MLrRQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730548442580?e=1740474000&v=beta&t=C7-PhUI0-HHcDSECrlfFCDdoOqseNml1PZScLMPqzOE"
   },
   // {
   //     id: "2023-13",
