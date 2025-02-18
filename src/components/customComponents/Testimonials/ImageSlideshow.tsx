@@ -24,7 +24,7 @@ const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
           key={currentIndex}
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-full object-fit"
+          className="w-full h-48 object-fit"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

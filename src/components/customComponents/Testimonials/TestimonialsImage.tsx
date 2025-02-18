@@ -27,9 +27,9 @@ export default function ImageTestimonials() {
   };
 
   return (
-    <section className="bg-[#000000] py-6">
+    <section className="bg-[#000000] py-6 ">
       <div className="max-w-6xl mx-auto px-2">
-        <div className="bg-[#111111] border border-gray-600 rounded-xl p-6 shadow-2xl">
+        <div className="bg-[#111111] border  border-gray-600 rounded-xl p-6 shadow-2xl">
           {/* Header Section */}
           <div className="text-center mb-12">
             <h2 className="text-[#ff0000] text-3xl md:text-4xl font-bold mt-2">
@@ -46,7 +46,7 @@ export default function ImageTestimonials() {
                 {/* Testimonial Screenshot Card (Static Image) */}
                 <Card className="relative overflow-hidden bg-[#000000] border border-gray-500 hover:border-gray-400 transition-colors">
                   <CardContent className="p-4">
-                    <img className="w-full h-auto rounded-lg" src={testimonial.testimonialScreenShot} alt={`Testimonial ${testimonial.id}`} />
+                    <img className="w-full h-[96] rounded-lg" src={testimonial.testimonialScreenShot} alt={`Testimonial ${testimonial.id}`} />
                   </CardContent>
                 </Card>
 
@@ -72,7 +72,7 @@ export default function ImageTestimonials() {
 
 
           </div>
-          <div className="flex-grow flex items-end flex-col justify-center">
+          <div className="flex-grow flex items-end mt-4 flex-col justify-center">
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 

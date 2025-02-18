@@ -55,9 +55,12 @@ export function JazbaaTimeLine() {
 
           </div>
           <Card className="bg-black border-[0px]  sm:p-3 md:p-4 flex justify-end w-full h-4 sm:h-8 p-2 relative">
-            <div className="flex-grow flex justify-end items-center">
-              <p className="text-[#ff0000] pr-4">And many more...</p>
-            </div>
+          <div className="flex-grow flex mt-4 items-end flex-col justify-center">
+    {/* Centered Text */}
+    <p className="text-[#ff0000] text-center">And many more...</p>
+
+ 
+  </div>
           </Card>
         </div>
       ),
@@ -111,13 +114,7 @@ export function JazbaaTimeLine() {
     {/* Centered Text */}
     <p className="text-[#ff0000] text-center">And many more...</p>
 
-    {/* Company section */}
-    {/* <div className="flex flex-col items-center justify-center">
-      <p className="text-[8px] sm:text-[9px] p-[2px] text-black font-semibold line-clamp-2">
-      </p>
-      <div className="h-4 sm:h-5 w-12 sm:w-16 mb-1">
-      </div>
-    </div> */}
+ 
   </div>
 </Card>
         </div>

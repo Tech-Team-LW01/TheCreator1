@@ -31,7 +31,7 @@ export const landingPageTestimonialPosts = [
       testimonialScreenShot:"/assets/imagetestinomial/image11.png",
       images:[
           "/assets/event-gallery/G16.jpeg",
-          "/assets/event-gallery/G21.jpeg",
+          "/assets/event-gallery/G4.jpeg",
         
   
       ]
@@ -59,6 +59,8 @@ export const landingPageTestimonialPosts = [
     
         
         "/assets/Jazbaa/JAZBAA 19.jpg",
+        "/assets/Jazbaa/DSC_3450.jpg",
+        
         
    
        ]
