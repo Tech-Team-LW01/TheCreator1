@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 overflow-x-hidden w-full transition-colors duration-300",
+        "sticky top-0 z-50  w-full transition-colors duration-300",
         scrolled ? "bg-black shadow-lg" : "bg-black"
       )}
     >
@@ -177,8 +177,9 @@ const Navbar: React.FC = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
+            
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-lg z-40 rounded-lg border border-gray-800"
+            className="lg:hidden absolute right-4 top-full bg-black w-64 shadow-lg z-10 rounded-lg border border-gray-800"
           >
             <div className="p-4">
               <ul className="space-y-4">
