@@ -7,7 +7,7 @@ const poppins = Poppins({
 })
 const Award = () => {
   return (
-    <div className='max-w-6xl mx-auto py-12 md:py-12'>
+    <div className='hidden md:block max-w-6xl mx-auto py-12 md:py-12'>
       <div className="w-full max-w-5xl mx-auto bg-black px-4 sm:px-12">
         <Card className="relative bg-white shadow-lg rounded-[40px] px-2 sm:px-6 md:px-10 py-4 sm:h-[140px] min-h-[200px] sm:min-h-0">
           <div className="flex flex-col sm:flex-row items-center  h-full w-full pt-16 sm:pt-0"> {/* Changed to justify-center */}
