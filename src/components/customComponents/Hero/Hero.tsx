@@ -50,6 +50,7 @@ const Hero = () => {
               </div>
 
               {/* CTA Button */}
+              <a href="/application-form">
               <Button
                 size="lg"
                 variant="secondary"
@@ -57,6 +58,7 @@ const Hero = () => {
               >
                 Applications Open
               </Button>
+              </a>
             </div>
           </div>
 
