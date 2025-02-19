@@ -56,6 +56,7 @@ export default function RecapPreviousYear() {
   // Handlers
   const handleVideoPlay = () => {
     if (!mainVideo.isYoutube && videoRef.current) {
+      videoRef.current.muted = true;
       videoRef.current.play().catch((error) => {
         console.error("Video playback error:", error);
       });
@@ -102,13 +103,14 @@ export default function RecapPreviousYear() {
     }
 
     return (
+      // todo -> 
       <video
         ref={videoRef}
         className="w-full aspect-[16/8] object-cover h-[200px] sm:h-auto"
         poster={mainVideo.image}
         autoPlay={isPlaying}
         loop
-        muted
+        muted 
         playsInline
       >
         <source src={mainVideo.videoUrl} type="video/mp4" />
