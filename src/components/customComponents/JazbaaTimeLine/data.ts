@@ -392,14 +392,14 @@ export const Data2016 = [
 
 
 
-     {
-      id: "2020-18",
-      linkedinUrl: "https://www.linkedin.com/in/arpit-sironiya-854455111/",
-      studentName: "Arpit Sironiya",
-      role: "Not Working",
-      companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1747267200&v=beta&t=FQk3lvQ7-M-JbROxUAfT-SvPWWmi3tgazD2MtabHEgg",
-      profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHn_9xE4LQlqw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1589715969803?e=1744243200&v=beta&t=gkHthZDrvW35SEh--kCsVGFKPkqqAsGG3xbaEWEHMcg",
-    },
+    //  {
+    //   id: "2020-18",
+    //   linkedinUrl: "https://www.linkedin.com/in/arpit-sironiya-854455111/",
+    //   studentName: "Arpit Sironiya",
+    //   role: "Not Working",
+    //   companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQER-Sage-ex_A/company-logo_200_200/company-logo_200_200/0/1639050566015/linuxworld_informatics_pvt_ltd_logo?e=1747267200&v=beta&t=FQk3lvQ7-M-JbROxUAfT-SvPWWmi3tgazD2MtabHEgg",
+    //   profileImage: "https://media.licdn.com/dms/image/v2/C4D03AQHn_9xE4LQlqw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1589715969803?e=1744243200&v=beta&t=gkHthZDrvW35SEh--kCsVGFKPkqqAsGG3xbaEWEHMcg",
+    // },
     {
       id: "2020-19",
       linkedinUrl: "https://www.linkedin.com/in/shailja-tripathi-104168177/",
