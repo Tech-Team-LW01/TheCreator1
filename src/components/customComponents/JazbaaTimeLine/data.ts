@@ -903,7 +903,7 @@ export const Data2021 = [
         id: "2021-2",
         linkedinUrl: "https://www.linkedin.com/in/shweta-agarwal-200064186/",
         studentName: "Shweta Agarwal",
-        role: "Packaged App Development Senior Analyst",
+        role: "Packaged Development ",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHDbmrSIZ2UdA/company-logo_200_200/company-logo_200_200/0/1723130689960/accenture_logo?e=1746662400&v=beta&t=-KA8Fb5uTeWcpuKGaqBeSWiKvOtb9K4lRpq-ucTZafU",
         profileImage: "https://media.licdn.com/dms/image/v2/D4E35AQF25GplU_e_Tw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1707833086562?e=1740474000&v=beta&t=8PRWAAD5aR_nvvmX9FRCcsYuVfksdmnh3ux84KPQKMI"
     },
@@ -919,7 +919,7 @@ export const Data2021 = [
         id: "2021-4",
         linkedinUrl: "https://www.linkedin.com/in/vanshita-kashyap-00841a160/",
         studentName: "Vanshita Kashyap",
-        role: "Global IT Service Desk Lead",
+        role: "Global IT Service ",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQET9qbhCANpBQ/company-logo_200_200/company-logo_200_200/0/1660725970407/atotech_logo?e=1746662400&v=beta&t=ChbfV6GREfPd0x3wSIfVg-ASfIHnSN5olGJPqDk3v2M",
         profileImage: "https://media.licdn.com/dms/image/v2/C5103AQGtoyO9GuL8qw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1566236498131?e=1744243200&v=beta&t=FjNdLbDxf8TbmxdeFhoPm3JXNKO4T0Knd549P37acmE"
     },
@@ -927,7 +927,7 @@ export const Data2021 = [
         id: "2021-5",
         linkedinUrl: "https://www.linkedin.com/in/shailesh-gond-1a8aa320a/",
         studentName: "Shailesh Gond",
-        role: "Assistant System Engineer",
+        role: "System Engineer",
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1746662400&v=beta&t=h5Pwd5MvbfFj-2Rre9K1zvTCJw94X9892ZHO1-xxFN4",
         profileImage: "https://media.licdn.com/dms/image/v2/D5603AQE1FKTRYUb2gg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691575029976?e=1744243200&v=beta&t=VqT4YMk_xdc6bVI0dxKgFpaTC1Z3y6dY4OdyWo5SVo4"
     },
