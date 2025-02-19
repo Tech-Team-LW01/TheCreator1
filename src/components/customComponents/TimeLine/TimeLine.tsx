@@ -25,8 +25,9 @@ const TimelineHeader = () => (
     className="text-center mb-12"
   >
     <h1 className="text-3xl md:text-4xl text-[#ff0000] font-bold mb-2 ">Journey of a Summer Intern 2025</h1>
-    <p className={`text-gray-200 uppercase text-sm md:text-lg  ${poppins.className}`}>
-      Learn Intergrate Implement & Develop a Live Summer Project
+    <p className={`text-gray-200 text-sm md:text-lg  ${poppins.className}`}>
+      Learn Integrate Implement & Develop a Live Summer Project
+       
     </p>
   </motion.div>
 );
@@ -132,7 +133,7 @@ const Timeline = () => {
     {
       number: 4,
       title: "Showcase the Summer Project",
-      description: "JAZBAA 3.0, a platform to showcase project to industry experts & investors .",
+      description: "JAZBAA 4.0, a platform to showcase project to industry experts & investors .",
       side: "right",
        avatar:"/assets/journey image/4.png"
     },

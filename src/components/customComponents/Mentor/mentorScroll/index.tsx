@@ -88,7 +88,7 @@ export function MentorScroll() {
     },
     {
       title: "The World Record Holder",
-      description: "The First One Only One in the World to achieve RedHat Certified Architect Level 25 with Enterprise Application Level 11",
+      description: "The One & Only in the World to achieve RedHat Certified Architect Level 25 with Enterprise Application Level 11",
       imageUrl: Image2.src
     },
     {

@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { CalendarDays } from "lucide-react";
 import { MdCircle } from "react-icons/md";
 import { Inter,Khand,Poppins } from 'next/font/google'
+import Link from 'next/link';
 const poppins = Poppins({
    subsets: ['latin'],
    weight: ['400']
@@ -109,6 +110,7 @@ export default function Projects(): JSX.Element {
       </div>
 
       <div className="flex mt-4 justify-center py-0">
+        <Link href="/application-form">
             <Button
               size="lg"
               className={`${data.button.className} hover:bg-[#e00000] transform transition-all duration-300 hover:scale-105 px-8 py-3  shadow-lg hover:shadow-xl`}
@@ -116,6 +118,7 @@ export default function Projects(): JSX.Element {
             >
               {data.button.text}
             </Button>
+            </Link>
           </div>
     </div>
   );

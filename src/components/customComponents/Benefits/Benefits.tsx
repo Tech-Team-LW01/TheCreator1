@@ -55,7 +55,7 @@ const benefitsData = [
   },
   {
     icon: "🤝",
-    title: "Problem Based Learning Approach",
+    title: "Project Based Learning Approach",
     subtitle: "",
     detail: "Develop Problem Solving Skills",
     description:

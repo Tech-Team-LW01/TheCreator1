@@ -159,7 +159,7 @@ const Hero2 = () => {
         <div className="flex  flex-col items-center justify-center w-full lg:w-auto">
           <Link href="/application-form" rel="noopener noreferrer" className="w-full flex justify-center">
             <Button
-              className={`bg-[#ff0000] text-xs sm:text-sm py-3 px-5 sm:py-4 sm:px-6 md:py-6 md:px-8 hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 ${poppins.className}`}
+              className={`bg-[#ff0000] text-xs sm:text-sm py-3 px-5 sm:py-4 sm:px-6 md:py-6 md:px-8 hover:bg-[#ff0000]/90 hover:shadow-lg transition-all duration-300 font-semibold ${poppins.className}`}
             >
               Apply Now
             </Button>

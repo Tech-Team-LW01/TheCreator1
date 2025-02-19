@@ -70,7 +70,7 @@ const Mentor = () => {
 
               <blockquote className="text-base sm:text-lg italic mt-8 
                 pl-4 border-l-4 border-[#ff0000] text-white">
-                Mentor to Fortune 500 executives, specializing in knowledge transfer to 
+                Mentor to Fortune 500 executives, specializing in knowledge transfer to <br/>
                 <span className="text-[#ff0000] font-medium"> C-level technologists</span> 
                 {" "}across cutting-edge domains.
               </blockquote>
