@@ -211,7 +211,7 @@ export default function Query() {
                   }}
                 >
                   <div className="text-center">
-                    <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-white font-khand">
+                    <h2 className={`text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-white ${khandFont.className}`}>
                       Hello, Friend!
                     </h2>
                     <p className={`mb-6 sm:mb-8 text-base sm:text-lg text-white ${poppins.className}`}>

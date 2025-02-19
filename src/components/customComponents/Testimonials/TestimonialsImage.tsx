@@ -5,7 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import ImageSlideshow from "./ImageSlideshow";
 import { motion } from "framer-motion";
 import { landingPageTestimonialPosts } from "./data";
+import { Inter, Poppins } from 'next/font/google';
 
+const poppins = Poppins({
+   subsets: ['latin'],
+   weight: ['400']
+});
 // Define interface for testimonial data
 interface Testimonial {
   id: string | number;
@@ -36,7 +41,7 @@ export default function ImageTestimonials() {
               Summer Interns felt <br />
               “It’s a Life Changing Program”
             </h2>
-            <h2 className="text-white pt-2 text-lg font-semibold">Let's Hear From Them Why ?</h2>
+            <h2 className={`text-white ${poppins.className} pt-2 text-lg font-semibold`}>Let's Hear From Them Why ?</h2>
           </div>
 
           {/* Testimonials Grid */}
