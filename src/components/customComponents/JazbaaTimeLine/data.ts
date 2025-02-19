@@ -939,14 +939,7 @@ export const Data2021 = [
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C4D0BAQH-n33egdHRgg/company-logo_200_200/company-logo_200_200/0/1631348649936?e=1746662400&v=beta&t=dj2anurO5J9veC3IYzmIRk-GdctP-sFAidM8Ayge1AY",
         profileImage: "https://media.licdn.com/dms/image/v2/D4E03AQGIpjlfZMk04w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691677267702?e=1744243200&v=beta&t=ignkY08Wfkt3laPlENaJFjsr1PD7WqahsmXGAcYe1kk"
     },
-    // {
-    //     id: "2021-7",
-    //     linkedinUrl: "https://www.linkedin.com/in/satvik-arya/",
-    //     studentName: "Satvik Arya",
-    //     role: "Course Creator",
-    //     companyLogoUrl: "/assets/company-logos/speak.png",
-    //     profileImage: "https://media.licdn.com/dms/image/v2/C5103AQHH0OAlPfLwdg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1576077348575?e=1744243200&v=beta&t=s6xsXo77kNkvgEw1QQRtNGJmMvgc-9PVEDN7TGYmj_E"
-    // },
+    
     {
         id: "2021-8",
         linkedinUrl: "https://www.linkedin.com/in/aadil-khan-03b5301aa/",
@@ -971,14 +964,7 @@ export const Data2021 = [
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/D560BAQFWdpVaQbfINA/company-logo_200_200/company-logo_200_200/0/1719858503821/zscaler_logo?e=1746662400&v=beta&t=W8PniR3PbgU34sA7j5zqY0V6OMMTo0_9I5FxNqquG4w",
         profileImage: "https://media.licdn.com/dms/image/v2/C4E03AQHj2pTIeVgzLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1602145035354?e=1744243200&v=beta&t=zHJ0oTwqtw7rfQclGCz8SjDgUVy1GNrvISNCDt3LBdg"
     },
-    // {
-    //     id: "2021-11",
-    //     linkedinUrl: "https://www.linkedin.com/in/fareena-shaik/",
-    //     studentName: "Fareena Shaik",
-    //     role: "Data Engineer",
-    //     companyLogoUrl: "/assets/company-logos/danske-bank.png",
-    //     profileImage: "/assets/profiles/fareena-shaik.jpg"
-    // },
+   
     {
         id: "2021-12",
         linkedinUrl: "https://www.linkedin.com/in/nupur-rathod/",
@@ -1012,14 +998,7 @@ export const Data2021 = [
         profileImage: "https://media.licdn.com/dms/image/v2/C4E03AQFfEgQMTz6GXg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1601189825651?e=1744243200&v=beta&t=kHXqJwd_XI2A3k4LWzDrsg5RFtiN7j03LUePIYB783M"
     },
 
-    //  {
-    //     id: "2022-16",
-    //     linkedinUrl: "https://www.linkedin.com/in/sakshi-ghogre-68b075170/",
-    //     studentName: "Sakshi Ghogre", // no profile image
-    //     role: "Software Analyst",
-    //     companyLogoUrl: "/assets/company-logos/capgemini.png",
-    //     profileImage: "/assets/profiles/sakshi-ghogre.jpg"
-    // },
+    
 
      {
       id: "2023-23",
@@ -1058,7 +1037,7 @@ export const Data2021 = [
   
 ];
 
-// =================================================================================
+
 
 export const Data2022 = [
     {
@@ -1077,14 +1056,7 @@ export const Data2022 = [
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQH1u_3VYK88yA/company-logo_200_200/company-logo_200_200/0/1679572102869/carestack_logo?e=1746662400&v=beta&t=llw0iAvVVnJKcw0GZpX1YnoK6fZVMBM_9QzoJeljeEo",
         profileImage: "https://media.licdn.com/dms/image/v2/D5603AQFYLRXkLFXjug/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696749304289?e=1744243200&v=beta&t=g3nJouJI4gnhp7rhrnwcd1Z3RQX3lDp3eFWApfI0ouk"
     },
-    // {
-    //     id: "2022-3",
-    //     linkedinUrl: "https://www.linkedin.com/in/himanshu-ganglani-112b6b11b/",
-    //     studentName: "Himanshu Ganglani",
-    //     role: "Software Engineer",
-    //     companyLogoUrl: "/assets/company-logos/simpplr.png",
-    //     profileImage: "/assets/profiles/himanshu-ganglani.jpg"
-    // },
+   
     {
         id: "2022-4",
         linkedinUrl: "https://www.linkedin.com/in/alokikkanchan/",
@@ -1294,14 +1266,7 @@ export const Data2023 = [
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
       profileImage: "https://media.licdn.com/dms/image/v2/D5603AQGXQfw_m2oKtQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709955540243?e=1744243200&v=beta&t=ykj-9J0ScEYuIeHJye3LP_FZtUhKdFenpBwdVBJXr-M"
   },
-  // {
-  //     id: "2023-08",
-  //     linkedinUrl: "https://www.linkedin.com/in/shubhanghichoudhary/",
-  //     studentName: "Shubhanghi Choudhary", // no profile
-  //     role: "",
-  //     companyLogoUrl: "",
-  //     profileImage: ""
-  // },
+ 
   {
       id: "2023-09",
       linkedinUrl: "https://www.linkedin.com/in/akash-baghel67/",
@@ -1334,14 +1299,7 @@ export const Data2023 = [
       companyLogoUrl: "https://media.licdn.com/dms/image/v2/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1747267200&v=beta&t=fR2qId0TxZs-vOy58SYtFipClhTr1UxFVj-NisPelzg",
       profileImage: "https://media.licdn.com/dms/image/v2/D5635AQFXP5rj3MLrRQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730548442580?e=1740474000&v=beta&t=C7-PhUI0-HHcDSECrlfFCDdoOqseNml1PZScLMPqzOE"
   },
-  // {
-  //     id: "2023-13",
-  //     linkedinUrl: "https://www.linkedin.com/in/srivastavayushmaan/",
-  //     studentName: "Ayush (Ayushmaan) Srivastav",
-  //     role: "Technical Content Creator",
-  //     companyLogoUrl: "",
-  //     profileImage: ""
-  // },
+ 
   {
       id: "2023-14",
       linkedinUrl: "https://www.linkedin.com/in/rupesh-jha-/",
@@ -1371,4 +1329,3 @@ export const Data2023 = [
  
  
 ];
-// ==========================================================================================
