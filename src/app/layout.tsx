@@ -22,10 +22,10 @@ const khandFont = localFont(
 
 )
 
-
+// https://www.thecreator.one/
 export const metadata: Metadata = {
   title: "The Creator",
-  description: "Linux World by Mr Vimal Daga",
+  description: "Summer Internship Industrial Training Program 2025 | Exclusively for Engineering Students",
 };
 
 export default function RootLayout({
