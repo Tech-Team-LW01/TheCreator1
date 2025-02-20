@@ -64,11 +64,18 @@ const Hero2 = () => {
         <h3 className="text-xl md:text-3xl font-medium ">For Engineering Students</h3>
         <p className="text-lg  md:text-xl text-gray-300 mb-[12px]">(Open for B.Tech | M.Tech | BCA | MCA | B.Sc IT)</p>
 <div>
-  <a href="/application-form">
+  {/* <a href="/application-form">
         <Button variant="destructive" size="lg" className="text-lg bg-[#ff0000] px-8 py-6 rounded-md font-semibold">
           Applications Open
         </Button>
-        </a>
+        </a> */}
+         
+     <Link
+  href="/application-form"
+  className="bg-[#ff0000]  p-1 text-sm md:p-2 md:text-lg rounded-sm pr-4 text-white hover:bg-red-800 font-semibold relative z-10 shadow-lg"
+>
+  Applications Open
+</Link>
         </div>
       </div>
     </div>
