@@ -7,6 +7,7 @@ import Navbar from "@/components/customComponents/Navbar";
 import Footer from "@/components/customComponents/Footer";
 import Footer2 from "@/components/customComponents/Footer2";
 import Footer3 from "@/components/Footer3";
+import WhatsAppBot from "@/components/customComponents/Whatsapp/Whatsapp";
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -42,6 +43,7 @@ export default function RootLayout({
         <div className="overflow-x-hidden">
         <Navbar/>
         {children}
+        <WhatsAppBot/>
         <Footer/>
         <Footer3/>
         {/* <Footer2/> */}
