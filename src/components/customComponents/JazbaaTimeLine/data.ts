@@ -1048,14 +1048,14 @@ export const Data2022 = [
         companyLogoUrl: "https://media.licdn.com/dms/image/v2/C510BAQG8HWcXGyEuTQ/company-logo_200_200/company-logo_200_200/0/1630591862119/apex_financial_technology_limited_logo?e=1746662400&v=beta&t=9Oae4oV0CeK-1WWJWqbwDAWl87_CaBpZabp3WyqPza8",
         profileImage: "https://media.licdn.com/dms/image/v2/D4D35AQHSrcMxCCrE6w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1728559747873?e=1740474000&v=beta&t=IWQ6qHbwYDT5fbJlJ5Rmw4NnVU2ymbFOP0qmE0wLqY8"
     },
-    {
-        id: "2022-2",
-        linkedinUrl: "https://www.linkedin.com/in/ashwingunadeep/",
-        studentName: "Ashwin Gunadeep",
-        role: "Product Manager",
-        companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQH1u_3VYK88yA/company-logo_200_200/company-logo_200_200/0/1679572102869/carestack_logo?e=1746662400&v=beta&t=llw0iAvVVnJKcw0GZpX1YnoK6fZVMBM_9QzoJeljeEo",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQFYLRXkLFXjug/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696749304289?e=1744243200&v=beta&t=g3nJouJI4gnhp7rhrnwcd1Z3RQX3lDp3eFWApfI0ouk"
-    },
+    // {
+    //     id: "2022-2",
+    //     linkedinUrl: "https://www.linkedin.com/in/ashwingunadeep/",
+    //     studentName: "Ashwin Gunadeep",
+    //     role: "Product Manager",
+    //     companyLogoUrl: "https://media.licdn.com/dms/image/v2/C560BAQH1u_3VYK88yA/company-logo_200_200/company-logo_200_200/0/1679572102869/carestack_logo?e=1746662400&v=beta&t=llw0iAvVVnJKcw0GZpX1YnoK6fZVMBM_9QzoJeljeEo",
+    //     profileImage: "https://media.licdn.com/dms/image/v2/D5603AQFYLRXkLFXjug/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696749304289?e=1744243200&v=beta&t=g3nJouJI4gnhp7rhrnwcd1Z3RQX3lDp3eFWApfI0ouk"
+    // },
    
     {
         id: "2022-4",
