@@ -124,7 +124,7 @@ export default function Projects(): JSX.Element {
   );
 
   const renderImageContent = (project: Project): JSX.Element => (
-    <div className="w-full max-w-[400px] mx-auto md:pt-24 lg:pt-24 pt-0">
+    <div className="relative w-full max-w-[400px] sticky mx-auto md:pt-24 lg:pt-24 pt-0">
       <div className="relative group">
         <Image
           src={project.image.src}
@@ -146,7 +146,7 @@ export default function Projects(): JSX.Element {
       <div
         ref={(el) => { projectRefs.current[index] = el }}
         key={index}
-        className="grid grid-cols-1 gap-8 md:grid-cols-2 min-h-screen md:py-6 py-1 lg:py-6 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
+        className="grid grid-cols-1 gap-8 md:grid-cols-2  md:py-6 py-1 lg:py-6 opacity-0 transform translate-y-4 transition-all duration-500 ease-out"
         style={{ 
           opacity: 0,
           transform: 'translateY(20px)',
@@ -202,7 +202,7 @@ export default function Projects(): JSX.Element {
   }
 
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative       bg-black">
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4 " id="#Projects">
         <h1 className={`text-3xl  md:text-4xl mt-4 text-[#ff0000]  ${khandFont.className}` }>Unique Summer Projects</h1>

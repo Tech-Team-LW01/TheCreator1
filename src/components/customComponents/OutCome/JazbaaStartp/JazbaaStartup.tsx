@@ -70,10 +70,10 @@ export default function JazbaaStartupPlatform() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">123+ Startups</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-white">133+ Startups</h3>
                 <p className={`text-white text-sm md:text-base  ${poppins.className}`}>
 
-                &quot;Unbelievable&quot; was the feedback from the investors to these 123+ Startups which were ideated, build
+                &quot;Unbelievable&quot; was the feedback from the investors to these 133+ Startups which were ideated, build
                   and showcased at JAZBAA 2.0 & JAZBAA 3.0
                 </p>
               </div>
