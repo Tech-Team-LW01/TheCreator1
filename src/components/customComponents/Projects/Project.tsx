@@ -202,7 +202,7 @@ export default function Projects(): JSX.Element {
   }
 
   return (
-    <div className="relative       bg-black">
+    <div className="relative bg-black">
       {/* Added Main Heading Section */}
       <div className="w-full text-center py-4 " id="#Projects">
         <h1 className={`text-3xl  md:text-4xl mt-4 text-[#ff0000]  ${khandFont.className}` }>Unique Summer Projects</h1>
