@@ -23,23 +23,44 @@ export const data = {
         },
         {
           heading: "Programming Language",
-          content: "Python | Python TUI (Text-based User Interface)",
+          content: "Python ",
         },
         {
-          heading: "Containerization",
-          content: "Docker | Podman",
+          heading: "Version Control ",
+          content: " Git | Github ",
         },
         {
-          heading: "Web & Mobile development",
-          content: "Html | CSS | Javascript | Web Development Framework | Django OR Flask OR Nodejs (Web App) | RestAPI | Flutter OR React Native (Mobile App)",
+          heading: "Model Fine-Tuning",
+          content: " LoRA |  QLoRA | Parameter Efficient Tuning",
         },
         {
-          heading: "DataBase & Storage",
-          content: "Mysql | MongoDB",
+          heading: "Vector Search & RAG:",
+          content: "LangChain | LlamaIndex |  Vector Databases",
         },
         {
-          heading: "Version Control",
-          content: "Git | Github",
+          heading: "ML Python libraries:",
+          content: " Pandas |  NumP |  Dask | TensorFlow  | PYTorch",
+        },
+        {
+          heading: "LLM APIs :",
+          content: "  OpenAI | Anthropic |  Hugging Face APIs ",
+        },
+        
+        {
+          heading: " Conversational AI:",
+          content: " Rasa |  BotPress | AutoGPT | BabyAGI | CrewAI | Speech AI: OpenAI Whisper, Mozilla DeepSpeech",
+        },
+        {
+          heading: "CI/CD:",
+          content: "  GitHub Actions |  Jenkins |  ArgoCD ",
+        },
+        {
+          heading: " Infrastructure as a Code :",
+          content: " Terraform, Ansible",
+        },
+        {
+          heading: " Operating system :",
+          content: "  RHEL 9 ",
         },
       ],
       
@@ -382,6 +403,79 @@ export const data = {
         {
           heading: "NLP",
           content: "Text Analytics | Speech Analytics | Model Deployment and Scalability: Association Mining | Recommendation System",
+        },
+        {
+          heading: "AWS Cloud Services",
+          content: "AWS Cloud | Amazon SageMaker | Rekognition | Comprehend | Transcribe | Amazon Forecast | Personalize | Lex | Fraud Detector | Translate | Polly",
+        },
+        {
+          heading: "DevOps Tools",
+          content: "Pipeline as Code | Docker | Podman | Kubernetes | Openshift | Terraform | Jenkins",
+        },
+        {
+          heading: "Infrastructure and DevOps",
+          content: "RedHat Linux | Kubernetes | Terraform | Jenkins | Virtualization (Web App) | RestAPI | Flutter OR React Native (Mobile App)",
+        },
+        {
+          heading: "Web & Mobile development",
+          content: "Html | CSS | Javascript | Django OR Flask OR Nodejs (Web App) | RestAPI | Flutter OR React Native (Mobile App)",
+        },
+        {
+          heading: "Databases",
+          content: "Mysql | MongoDB",
+        },
+        {
+          heading: "Version Control",
+          content: "Git | Github",
+        },
+        {
+          heading: "Operating System",
+          content: "RHELv9 (Red Hat Enterprise Linux)",
+        },
+      ],
+    },
+    {
+      title: "8. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
+      description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",
+      projectCode:": LW-PSI-SP-107",
+      image: {
+        src: "/assets/Projects/106.gif",
+        alt: "Generative AIOps Project",
+        width: 400,
+        height: 400,
+        className: "rounded-[32px] h-auto w-auto object-contain",
+        priority: true,
+      },
+      
+      sections: [
+        {
+          heading: "Generative AI & LLMs",
+          content: "GPT |  Claude | Gemini |  Mistral | Prompt Engineering | Chain-of-Thought | Few-Shot Learning",
+        },
+        {
+          heading: "Cloud computing",
+          content: " AWS CLoud ",
+        },
+        {
+          heading: "Machine Learning",
+          content: "Model tuning and performance analytics | Data preprocessing | Data Transformation | Data Reduction | Data Visualization | Classification | Exploratory Data Analysis | Clustering | Regression Models",
+        },
+        {
+          heading: "Neural Networks",
+          content: "Neural Network | Simple Neural Networks | Advance Neural Network | CNN (Convolutional Neural Network) | RNN (Recurrent Neural Network) | GAN (Generative Adversarial Network) | LSTM (Long Short-Term Memory) | Filtering Methods | RBM | Advanced NN models | Transfer Learning | Reinforcement Learning",
+        },
+        {
+          heading: "Generative AI",
+          content: "Artificial Intelligence to generate all kinds of data, including audio, code, images, text, simulations. (Eg. ChatGPT) | Data Processing and Analytics | NLP – Text Analytics | Speech Analytics",
+        },
+        {
+          heading: "NLP",
+          content: "Text Analytics | Speech Analytics ",
+        },
+        {
+          heading: "Operating System ",
+          content: " Model Deployment and Scalability: Association Mining | Recommendation System",
+      
         },
         {
           heading: "AWS Cloud Services",
