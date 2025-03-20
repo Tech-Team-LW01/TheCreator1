@@ -435,8 +435,8 @@ export const data = {
       ],
     },
     {
-      title: "8. Create Your OWN Artificial Intelligence Platform Using ML/DL & Generative AI Integrated With DevOps Pipeline Along With Cloud Computing - Generative AIOps",
-      description: "Develop Own Cloud Computing with AI Intelligence by Custom Machine/Deep Learning Model that deploy using DevOps Technology Integrated with Generative AI - ChatGPT API",
+      title: "8.Develop a Smart Agentic AI Application – ML/DL ",
+      description: "Build Autonomous AI Agents with ML/DL for Intelligent Task Execution and Decision-Making",
       projectCode:": LW-PSI-SP-107",
       image: {
         src: "/assets/Projects/106.gif",
