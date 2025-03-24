@@ -8,6 +8,8 @@ import Footer from "@/components/customComponents/Footer";
 import Footer2 from "@/components/customComponents/Footer2";
 import Footer3 from "@/components/Footer3";
 import WhatsAppBot from "@/components/customComponents/Whatsapp/Whatsapp";
+
+import Script from "next/script";
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -36,6 +38,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+       {/* Google Analytics Script */}
+       <Script src="https://www.googletagmanager.com/gtag/js?id=AW-1011251689" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-1011251689');
+          `}
+        </Script>
+        </head>
       <body
         className={`${khandFont.className}  bg-black overflow-x-hidden antialiased`}
       >
