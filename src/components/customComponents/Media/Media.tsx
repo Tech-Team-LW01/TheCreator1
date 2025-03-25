@@ -85,6 +85,8 @@ export default function MediaSection() {
             </h1>
           </div>
 
+          
+
           {/* Media Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
             {mediaData.map((media, index) => (
@@ -114,8 +116,9 @@ export default function MediaSection() {
                 </CardHeader>
 
                 {/* Optional: Source Name Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent
-                  p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent
+                  p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"> */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white text-xs text-center truncate">
                     
                   </p>
