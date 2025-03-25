@@ -290,7 +290,7 @@ export function ApplicationForm() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                  <SelectItem value="cloud">Agentic AI</SelectItem>
+                    <SelectItem value="agentic">Agentic AI</SelectItem>
                     <SelectItem value="cloud">Cloud Computing</SelectItem>
                     <SelectItem value="fullstack">FullStack Development</SelectItem>
                     <SelectItem value="ml">Machine Learning(AI)</SelectItem>

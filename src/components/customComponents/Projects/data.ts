@@ -29,27 +29,7 @@ export const data = {
           heading: "Version Control ",
           content: " Git | Github ",
         },
-        {
-          heading: "Model Fine-Tuning",
-          content: " LoRA |  QLoRA | Parameter Efficient Tuning",
-        },
-        {
-          heading: "Vector Search & RAG:",
-          content: "LangChain | LlamaIndex |  Vector Databases",
-        },
-        {
-          heading: "ML Python libraries:",
-          content: " Pandas |  NumP |  Dask | TensorFlow  | PYTorch",
-        },
-        {
-          heading: "LLM APIs :",
-          content: "  OpenAI | Anthropic |  Hugging Face APIs ",
-        },
         
-        {
-          heading: " Conversational AI:",
-          content: " Rasa |  BotPress | AutoGPT | BabyAGI | CrewAI | Speech AI: OpenAI Whisper, Mozilla DeepSpeech",
-        },
         {
           heading: "CI/CD:",
           content: "  GitHub Actions |  Jenkins |  ArgoCD ",
