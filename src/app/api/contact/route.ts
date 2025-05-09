@@ -21,10 +21,10 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: process.env.SMTP_USER,
       to: process.env.RECIPIENT_EMAIL,
-      subject: `New Query from ${fullName}`,
+      subject: `thecreator.one New Query from ${fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
-          <h2>New Query Received</h2>
+          <h2>The Creator New Query Received</h2>
           <p><strong>Name:</strong> ${fullName}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Phone:</strong> ${phone}</p>
