@@ -120,7 +120,7 @@ import nodemailer from 'nodemailer';
 function getApplicationEmailTemplate(formData: any) {
   return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px;">
-      <h2 style="color:#dc2626">New Summer Program Application</h2>
+      <h2 style="color:#dc2626">TheCreator.one New Summer Program Application</h2>
       <ul>
         <li><b>Name:</b> ${formData.fullName}</li>
         <li><b>WhatsApp No:</b> ${formData.whatsappNo}</li>
