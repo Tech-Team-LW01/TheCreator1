@@ -5,6 +5,7 @@ import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import LOGO from "../../../public/assets/logo2.webp";
+import LOGO1 from "../../../public/assets/LNB.png";
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link'; // Import Link from next/link
@@ -115,8 +116,22 @@ const Navbar: React.FC = () => {
             height={18}
             className="object-contain overflow-hidden"
             priority
+            
           />
+           <Image
+              src={LOGO1}
+              alt="Logo"
+              width={0}
+              height={46}
+              className="h-[48px] w-auto object-contain overflow-hidden"
+              priority
+            />
+          
         </Link>
+        
+          {/* <Link href="/" className="flex items-center ml-2">
+           
+          </Link> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
