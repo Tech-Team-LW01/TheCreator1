@@ -129,10 +129,7 @@ const Navbar: React.FC = () => {
           
         </Link>
         
-          {/* <Link href="/" className="flex items-center ml-2">
-           
-          </Link> */}
-
+       
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
           <ul className="flex space-x-6">
