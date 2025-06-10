@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,13 +41,13 @@ export default function Query() {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>(initialFormData);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
-  };
+  }, []);
 
   const validateForm = () => {
     if (!formData.fullName.trim()) {
@@ -108,72 +108,6 @@ export default function Query() {
     setIsSignInForm(!isSignInForm);
   };
 
-  // Form component to avoid duplication
-  const FormContent = () => (
-    <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
-      <Input 
-        type="text" 
-        name="fullName"
-        placeholder="Full Name" 
-        value={formData.fullName}
-        onChange={handleChange}
-        className="bg-gray-50" 
-        disabled={loading}
-      />
-      <Input 
-        type="email" 
-        name="email"
-        placeholder="Email" 
-        value={formData.email}
-        onChange={handleChange}
-        className="bg-gray-50"
-        disabled={loading}
-      />
-      <Input 
-        type="tel" 
-        name="phone"
-        placeholder="Phone" 
-        value={formData.phone}
-        onChange={handleChange}
-        className="bg-gray-50"
-        disabled={loading}
-        maxLength={10}
-      />
-      <Input 
-        type="text" 
-        name="college"
-        placeholder="College Name" 
-        value={formData.college}
-        onChange={handleChange}
-        className="bg-gray-50"
-        disabled={loading}
-      />
-      <Input 
-        type="text" 
-        name="query"
-        placeholder="Query" 
-        value={formData.query}
-        onChange={handleChange}
-        className="bg-gray-50 min-h-[100px]"
-        disabled={loading}
-      />
-      <Button
-        type="submit"
-        className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
-        disabled={loading}
-      >
-        {loading ? (
-          <>
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Submitting...
-          </>
-        ) : (
-          'Submit'
-        )}
-      </Button>
-    </form>
-  );
-
   return (
     <div className="min-h-screen w-full bg-black p-4 sm:p-6 flex flex-col items-center justify-center" id="query">
       <h1 className={`text-3xl md:text-4xl font-bold text-[#ff0000] mb-2 text-center ${khandFont.className}`}>
@@ -200,7 +134,68 @@ export default function Query() {
               <div className="flex flex-col lg:flex-row">
                 {/* Form Section */}
                 <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:p-16">
-                  <FormContent />
+                  <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+                    <Input 
+                      type="text" 
+                      name="fullName"
+                      placeholder="Full Name" 
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      className="bg-gray-50" 
+                      disabled={loading}
+                    />
+                    <Input 
+                      type="email" 
+                      name="email"
+                      placeholder="Email" 
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="bg-gray-50"
+                      disabled={loading}
+                    />
+                    <Input 
+                      type="tel" 
+                      name="phone"
+                      placeholder="Phone" 
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="bg-gray-50"
+                      disabled={loading}
+                      maxLength={10}
+                    />
+                    <Input 
+                      type="text" 
+                      name="college"
+                      placeholder="College Name" 
+                      value={formData.college}
+                      onChange={handleChange}
+                      className="bg-gray-50"
+                      disabled={loading}
+                    />
+                    <Input 
+                      type="text" 
+                      name="query"
+                      placeholder="Query" 
+                      value={formData.query}
+                      onChange={handleChange}
+                      className="bg-gray-50 min-h-[100px]"
+                      disabled={loading}
+                    />
+                    <Button
+                      type="submit"
+                      className="w-full bg-[#ff0000] hover:bg-[#6f6f6f] text-white"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Submitting...
+                        </>
+                      ) : (
+                        'Submit'
+                      )}
+                    </Button>
+                  </form>
                 </div>
 
                 {/* Welcome Panel */}
