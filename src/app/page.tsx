@@ -44,6 +44,7 @@ export default function Home() {
 {/* <Hero></Hero> */}
 
 <Hero2></Hero2>
+      <Query/>
 <TechStack/>
 <RecapPreviousYear />
 
